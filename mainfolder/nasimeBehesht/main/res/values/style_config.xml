@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ======================================================  -->
+    <!-- Master -->
+    <color name="styleConfigMasterButtonBackground">@color/colorPrimary</color>
+    <color name="styleConfigMasterButtonTitle">@android:color/white</color>
+    <color name="styleConfigMasterButton2Background">@color/material_grey_700</color>
+    <color name="styleConfigMasterButton2Title">@android:color/white</color>
+    <!-- ======================================================  -->
+    <!-- Splash -->
+    <color name="styleConfigSplashMasterBackground">@android:color/white</color>
+    <color name="styleConfigSplashMasterImageColor">@android:color/transparent</color>
+    <!-- ======================================================  -->
+    <!-- Toolbar -->
+    <color name="styleConfigToolbarMaster">#448aff</color>
+    <color name="styleConfigToolbarMasterTitleTextColor">@android:color/white</color>
+    <color name="styleConfigToolbarMasterSubTitleTextColor">@color/material_grey_200</color>
+    <color name="styleConfigToolbarMasterImageColor">@android:color/white</color>
+    <!-- ======================================================  -->
+    <!-- Navigation -->
+    <color name="styleConfigNavigationHeaderBackground">@color/colorPrimary</color>
+    <color name="styleConfigNavigationMasterBackground">@color/colorPrimaryDark</color>
+    <color name="styleConfigLineSplitter">@color/colorPrimary</color>
+    <!-- ======================================================  -->
+    <!-- Service -->
+    <color name="styleConfigServiceItem">@android:color/white</color>
+    <color name="styleConfigServiceBackground">@android:color/white</color>
+    <color name="styleConfigServiceTitle">@color/material_grey_500</color>
+    <color name="styleConfigServiceSubTitle">@color/material_grey_900</color>
+    <color name="styleConfigServiceTintColorImage">@android:color/black</color>
+    <!-- ======================================================  -->
+    <!-- MessageBar -->
+    <color name="styleConfigMessageBarBackground">@android:color/white</color>
+    <color name="styleConfigMessageBarTitle">@android:color/black</color>
+    <color name="styleConfigMessageBarButtonBackground">@color/material_grey_200</color>
+    <color name="styleConfigMessageBarButtonTitle">@color/colorPrimary</color>
+    <!-- ======================================================  -->
+    <!-- TAB -->
+    <color name="styleConfigTabBackground">@color/colorPrimary</color>
+    <color name="styleConfigTabTitleSelected">@android:color/white</color>
+    <color name="styleConfigTabTitleNormal">@color/material_grey_100</color>
+</resources>

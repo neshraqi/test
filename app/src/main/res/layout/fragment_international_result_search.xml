@@ -12,7 +12,7 @@
         android:background="@android:color/white">
 
 
-        <hami.aniticket.View.HeaderBar
+        <hami.hamibelit.View.HeaderBar
             android:id="@+id/headerBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -35,7 +35,7 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/headerBar" />
 
-        <hami.aniticket.View.MessageBar
+        <hami.hamibelit.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

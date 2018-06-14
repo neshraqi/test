@@ -19,7 +19,7 @@
 
             <include layout="@layout/layout_toolbar_service" />
 
-            <hami.aniticket.View.HeaderBar
+            <hami.hamibelit.View.HeaderBar
                 android:id="@+id/headerBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

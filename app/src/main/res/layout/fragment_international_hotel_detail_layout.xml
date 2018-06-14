@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <hami.aniticket.View.HeaderBarLtr
+    <hami.hamibelit.View.HeaderBarLtr
         android:id="@+id/headerBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -204,7 +204,7 @@
         </android.support.design.widget.CoordinatorLayout>
 
 
-        <hami.aniticket.View.MessageBar
+        <hami.hamibelit.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

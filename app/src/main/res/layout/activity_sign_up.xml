@@ -104,7 +104,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textStyle="bold" />
 
-                <hami.aniticket.View.Progressbar.ButtonWithProgress
+                <hami.hamibelit.View.Progressbar.ButtonWithProgress
                     android:id="@+id/btnSignIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/main_color_grey_50"
+    app:cardElevation="2dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitleRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="left"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Room 1"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adultEng" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spAdultCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:entries="@array/passengerHotel"
+                    android:prompt="@string/app_name"
+                    android:spinnerMode="dropdown" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/childEng" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="0dp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spChildCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:entries="@array/passengerHotelChild"
+                    android:prompt="@string/app_name"
+                    android:spinnerMode="dropdown" />
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layoutChildAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <!--<include layout="@layout/row_child_age_hotel_layout" />-->
+
+            <!--<include layout="@layout/row_child_age_hotel_layout" />-->
+
+            <!--<include layout="@layout/row_child_age_hotel_layout" />-->
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

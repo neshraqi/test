@@ -60,7 +60,7 @@
                 android:orientation="vertical" />
         </android.support.v4.widget.NestedScrollView>
 
-        <hami.aniticket.View.MessageBar
+        <hami.hamibelit.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

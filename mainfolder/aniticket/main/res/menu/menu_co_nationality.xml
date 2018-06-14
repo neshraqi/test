@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuIran"
+        android:title="@string/irani"></item>
+    <item
+        android:id="@+id/menuForeign"
+        android:title="@string/foreign"></item>
+</menu>

@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/styleConfigServiceBackground">
+    android:background="@color/styleConfigServiceBackground"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/coordinator"
@@ -13,7 +13,7 @@
         android:background="@android:color/white">
 
 
-        <hami.aniticket.View.HeaderBar
+        <hami.hamibelit.View.HeaderBar
             android:id="@+id/headerBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -31,7 +31,7 @@
             android:scrollbars="vertical" />
 
 
-        <hami.aniticket.View.MessageBar
+        <hami.hamibelit.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -53,5 +53,5 @@
         app:backgroundTint="@color/styleConfigToolbarMaster"
         app:elevation="0dp"
         app:layout_anchorGravity="bottom|left"
-        app:layout_behavior="hami.aniticket.Animation.ScrollBehaviorFab" />
+        app:layout_behavior="hami.hamibelit.Animation.ScrollBehaviorFab" />
 </android.support.design.widget.CoordinatorLayout>

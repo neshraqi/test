@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -7,252 +12,535 @@
     <list default="true" id="f434aaae-165f-414d-b7cf-ab3c9de45eef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-11-15-15-27-253.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-11-15-16-20-401.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-27-06-780.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-27-06-780.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-32-16-031.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-32-16-031.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-38-32-328.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-38-32-328.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-39-37-440.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-39-37-440.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-46-09-252.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-46-09-252.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-57-29-797.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-57-29-797.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-58-08-960.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-10-58-08-960.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-11-19-456.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-11-19-456.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-52-35-799.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-52-35-799.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-56-45-607.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-56-45-607.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-57-18-062.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-11-57-18-062.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-09-10-064.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-09-10-064.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-15-08-391.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-15-08-391.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-16-54-012.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-16-54-012.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-20-24-456.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-20-24-456.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-20-33-893.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-20-33-893.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-40-28-500.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-40-28-500.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-54-22-083.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-54-22-083.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-56-01-604.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-56-01-604.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-58-06-428.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-58-06-428.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-59-06-360.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-12-59-06-360.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-13-00-50-627.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-13-00-50-627.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-13-01-19-845.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-13-01-19-845.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-13-14-31-821.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-13-14-31-821.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-04-21-015.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-04-21-015.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-07-48-463.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-07-48-463.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-24-43-077.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-24-43-077.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-25-54-785.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-25-54-785.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-31-06-200.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-31-06-200.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-32-34-041.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-32-34-041.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-34-08-494.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-34-08-494.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-35-00-985.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-35-00-985.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-39-23-667.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-39-23-667.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-41-26-936.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-41-26-936.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-42-37-849.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-42-37-849.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-53-26-612.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-53-26-612.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-54-05-432.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-54-05-432.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-58-55-228.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-14-58-55-228.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-06-09-413.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-06-09-413.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-12-21-246.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-12-21-246.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-14-02-423.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-14-02-423.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-16-44-035.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-16-44-035.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-18-57-499.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-18-57-499.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-34-22-715.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-34-22-715.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-37-58-665.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-37-58-665.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-39-40-971.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-39-40-971.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-41-04-495.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-41-04-495.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-43-11-488.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-43-11-488.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-44-01-284.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-44-01-284.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-47-47-687.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-47-47-687.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-51-39-590.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-51-39-590.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-53-32-476.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-53-32-476.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-54-58-782.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-15-54-58-782.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-01-00-969.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-01-00-969.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-03-20-284.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-03-20-284.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-12-40-199.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-12-40-199.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-18-39-897.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-18-39-897.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-21-22-525.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-21-22-525.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-22-26-435.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-22-26-435.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-24-53-655.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-24-53-655.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-26-39-785.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-26-39-785.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-27-59-583.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-27-59-583.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-30-19-475.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-30-19-475.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-32-46-226.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-32-46-226.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-33-12-966.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-33-12-966.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-35-01-345.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-35-01-345.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-35-23-647.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-35-23-647.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-43-25-621.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-43-25-621.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-46-54-850.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-46-54-850.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-47-51-723.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-47-51-723.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-49-33-927.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-49-33-927.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-55-25-012.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-12-16-55-25-012.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-09-37-03-162.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-09-37-03-162.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-09-57-51-927.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-09-57-51-927.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-14-41-412.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-14-41-412.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-19-32-129.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-19-32-129.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-20-56-298.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-20-56-298.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-22-17-807.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-22-17-807.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-23-05-201.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-23-05-201.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-38-52-802.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-38-52-802.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-42-47-802.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-42-47-802.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-44-56-887.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-44-56-887.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-47-52-184.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-47-52-184.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-49-33-129.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-49-33-129.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-54-34-630.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-10-54-34-630.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-02-55-797.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-02-55-797.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-05-01-110.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-05-01-110.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-06-08-982.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-06-08-982.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-06-35-566.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-06-35-566.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-12-38-427.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-12-38-427.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-15-15-853.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-15-15-853.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-17-19-259.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-17-19-259.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-18-11-529.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-18-11-529.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-19-13-405.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-19-13-405.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-23-14-563.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-23-14-563.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-23-56-104.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-23-56-104.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-57-46-299.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-11-57-46-299.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-03-40-134.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-03-40-134.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-04-06-530.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-04-06-530.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-05-04-743.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-05-04-743.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-18-25-745.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-18-25-745.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-21-23-315.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-12-21-23-315.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-13-13-50-501.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-13-13-50-501.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-13-14-28-196.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-13-14-28-196.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-13-17-29-451.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-13-13-17-29-451.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-21-35-992.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-21-35-992.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-21-49-251.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-21-49-251.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-26-51-551.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-26-51-551.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-29-31-558.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-29-31-558.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-37-02-880.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-10-37-02-880.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-07-20-597.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-07-20-597.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-24-58-668.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-24-58-668.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-26-00-822.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-26-00-822.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-42-23-416.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-42-23-416.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-42-34-194.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-42-34-194.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-49-38-492.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-11-49-38-492.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-12-06-36-312.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-14-12-06-36-312.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/orginal.iml" afterPath="$PROJECT_DIR$/orginal.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/hami/nasimebehesht724/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/hami/hamibelit/ExampleInstrumentedTest.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Authentication/Controller/UserApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Authentication/Controller/UserResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Authentication/Controller/UserResult.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Authentication/ForgetPasswordActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Authentication/SettingUserMaterial.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Authentication/SignUpActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ContactUs/ContactUsMaterialFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ContactUs/ViewType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/FilterHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/FilterList.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesInternationalFlightListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListBusAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListFlightBusPassengerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListFlightDomesticAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListFlightDomesticPassengerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListFlightInternationalAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListFlightInternationalPassengerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListTrainAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/PastPurchasesListTrainPassengerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/ReFoundListFlightDomesticPassengerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Adapter/ReFoundMoneyFlightDomesticPassengerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Bus/ShowDetailsTicketBusActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Controller/WeatherApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/DomesticFlight/RefundMoneyFlightDomesticFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/DomesticFlight/RefundTicketFlightDomesticActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/DomesticFlight/RefundTicketFlightDomesticFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/DomesticFlight/ShowDetailsTicketFlightDomesticActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/InternationalFlight/ShowDetailsTicketFlightInternationalActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/Forecast.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/LocationWeather.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PassengerFlightDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PassengerFlightDomesticResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesBus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesBusResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesFlightDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesFlightDomesticResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesFlightInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesFlightInternationalResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/PurchasesTrainResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/ReFoundPassenger.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/ReFoundPassengerResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/ReFoundResponseDataFlightDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/ReFoundResponseFlightDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/ResponseWeather.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Model/SplitResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/PastPurchasesServicesMaterialFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/PastPurchases/Train/ShowDetailsTicketTrainActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/SearchBarService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/ActivityMainHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Adapter/DomesticHotelSlidingImageAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Adapter/NewDomesticHotelListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Adapter/SearchPlaceHotelDomesticAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/DomesticHotelApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelBookingProcess.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelBookingProcessData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelDetailInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelDetailsResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelMoreInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelMoreInfoValue.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelOptions.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelOptionsExtra.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelPreBookingRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelPreBookingResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerViewParams.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRoom.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRoomDiscount.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRoomOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRoomPrice.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelRoomPriceList.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/DomesticHotelSearchRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/Controller/Model/HotelDomesticCity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/FragmentDetailDomesticHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/FragmentFinalBookingDomesticHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/FragmentFullDetailDomesticHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/FragmentListDomesticHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/FragmentPassengerDomesticHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/Domestic/dialog/NewDesignFilterDomesticHotelFragmentDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/HotelServicesSearchMaterialFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Adapter/ListPassengerInternationalHotelListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Adapter/NewInternationalHotelListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Adapter/SearchPlaceCityHotelInternationalAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Adapter/SearchPlaceHotelInternationalAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Adapter/SlidingImageAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/InternationalHotelApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/ArrayListRegisterPassengerInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelCancellationPolicies.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelContactInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelContactInfoResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelDetail.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelDetailData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelDetailResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelFacilityResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelMoreInfoFacilities.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelMoreInfoFacility.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelMoreInfoFacilityRecords.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelMoreInfoRoom.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelMoreInfoRoomObject.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelsMoreInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelsMoreInfoImages.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/HotelsMoreInfoObject.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/InternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/InternationalHotelSearchRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/InternationalHotelsResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/PassengerInfoInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RegisterHotelRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RegisterPassengerInternationalHotelParams.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RegisterPassengerInternationalHotelResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/Room.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RoomInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RoomPassengerInfoInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/Rooms.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RoomsObject.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/RowTypeHotelPassenger.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/SearchCity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/SearchDestination.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Controller/Model/ToolsHotelFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/Dialog/NewDesignFilterInternationalHotelFragmentDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/FragmentBookingInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/FragmentDetailInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/FragmentFullDetailInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/FragmentListInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/International/FragmentPassengerInternationalHotel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceHotel/SearchPlaceHotelActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/Adapter/ServiceViewPagerAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ConstService/ServiceID.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/MainServicesSearchMaterialFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/SearchPlaceMainActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/SearchTopSheetDialogFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/ActivityMainBus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Adapter/SearchPlaceBusAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Dialog/NewDesignFilterBusFragmentDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Adapter/ResultSearchBusListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/BusTicketInformation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/BusTicketInformationResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/City.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/RegisterBusRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/RegisterBusResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/RegisterTrainParams.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/RegisterTrainViewData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SearchBusDataResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SearchBusRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SearchBusResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SeatData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SeatResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SeatResponseData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Model/SeatRow.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/BusApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/BusWarehouse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/PaymentPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/PaymentResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/RegisterBusPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/ResultSearchBusPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/SeatChairBusPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/SelectItemBus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentListChairBus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentListWentBus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentReserveBus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/View/SelectChairListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceBus/View/ToolsBusChair.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/ActivityMainFlight.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Adapter/SearchPlaceFlightAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/SearchCountryActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/NewDomesticListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/PassengerDomesticListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/PassengerInfoLisDomesticAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticFlight.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticFlightResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticLocation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticLocationResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticParams.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticPassengerInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/FlightInformationItem.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/FlightInformationResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/ListModelPassengerInfoDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/PassengerInfoDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/RegisterFlightDomesticRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/RegisterFlightResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/TestFlight.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/ViewParamsDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/AirlineListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/DomesticApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/FlightInformationDomesticPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/OnSelectItemPassengerDomesticListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/RegisterFlightDomesticPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/ResultSearchDomesticPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/SelectItemFlightDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/WarehouseDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Dialog/NewDesignFilterFlightDomesticFragmentDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentDomesticDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentFinalBookingFlightDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentListWentDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/View/ActivityRegisterPassengerDomestic.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/View/OnAddPassengerListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/ActivityRegisterPassengerInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/CapacityInternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/CountryAutoCompleteAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/CountryListArrayAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/DelayAutoCompleteTextView.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/IatiRulesInternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/InternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/ListPassengerInternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/NewInternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/PartoRulesInternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/PassengerInfoListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/PlaceAutoCompleteFlightAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/RoutingInternationalListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Adapter/SearchCountryAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/BaggaegeResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/BaggageInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/BaseResult.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/BestAirLine.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/Country.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/DataPassengerInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/DataPassengerInfoResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/FareRules.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/FlightInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/FlightInternationalRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/FlightInternationalResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/Legs.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/OutBound.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/Passenger.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/PassengerInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/RegisterPassengerData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/RegisterPassengerRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/RegisterPassengerResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/ReserveRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/ResultFactorResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/RuleDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/SearchInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/TicketInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/ViewRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/AllFlightInternationalIati.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/AllFlightInternationalParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/AllFlightInternationalResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/FinalFlightInternationalIati.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/LegsIati.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/LegsParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/LegsResponseParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/OperatingAirlineParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/PackageCompletedFlightInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/ResultRegisterFlightInternationalResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/ResultRegisterPassengerFlightInternationalResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesDetailItemParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesIati.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesItemParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesResponseIati.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model2/RulesResponseParto.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/CaptchaInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/InternationalApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/InternationalApi2.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/InternationalWarehouse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/NationalCodePresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/NetworkListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/RegisterPassengerInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/ReserveInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/ResultReturnListInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/ResultSearchInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/RulesInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/SearchInternationalPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/SelectItemFlightInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/SelectItemPassengerInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/SelectItemSearchInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/SelectItemShowRoutingFlightInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Dialog/NewDesignFilterFlightInternationalFragmentDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentFinalBookingFlightInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentInternationalDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentInternationalRouting.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentListWentInternational.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/ActivityMainTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Adapter/PlaceAutoCompleteTrainAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Adapter/SearchPlaceTrainAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/NewDesignFilterTrainFragmentDialog.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/SearchPlaceTrainActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Adapter/PassengerInfoLisTrainAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Adapter/PassengerTrainListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Adapter/TrainListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/CityTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/ListModelPassengerInfoTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/ParamTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/PassengerInfoTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/PricePassengerTrainParam.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/RegisterTrainRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/RegisterTrainResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/TrainDataResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/TrainPassengerInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/TrainRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/TrainResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/ViewParamsTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/OnSelectItemPassengerTrainListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/RegisterTrainPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/ResultSearchTrainPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/SelectItemTrainSearchListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/TrainApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/TrainWarehouse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentFinalBookingTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentListWentTrain.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentTrainDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Fragment/View/DialogTrainAddPassenger.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceSearch/ServiceTrain/Services/Fragment/View/OnPassengerTrainListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/ActivityMainTour.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/BottomSheetLayoutPriceTour.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/FinalPassengerTourListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/OnAddPassengerTourListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/OnSelectItemPassengerTourListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/PassengerTourListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/SearchDateTourAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/SearchPlaceTourAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/TourListAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Adapter/TourSlidingImageAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourDetails.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourDetailsPassenger.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourDetailsPayment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourDetailsTicket.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourDetailsUser.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/BookingTourUserData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/DateTour.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/IdName.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/InitialTourResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/InitialTourValueResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/NameValue.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/PassengerTour.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/SearchTourRequest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/TourDetailData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/TourDetailResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/TourItem.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/TourItemFilter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/Model/TourItemsResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Controller/TourApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Fragment/ActivityRegisterPassengerTour.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Fragment/FragmentTourAddPassenger.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Fragment/FragmentTourDetail.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Fragment/FragmentTourFinalBooking.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/Fragment/FragmentTourList.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/MainTourServicesMaterialFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/ServiceTour/SearchPlaceAndDateTourActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Splash/SplashActivity.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Updates/DownloadFile.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Updates/DownloadFileListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Updates/GetUpdatePresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Updates/UpdateResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Activity/Updates/UpdatesApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Animation/ScrollBehaviorFab.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Animation/UtilAnimation.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/AccessApi.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/AccessStatusPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/AccessStatusResponse.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/AppliedFilters.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/BaseAppKeyAndSecret.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/CallBackRequestSearch.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/DividerItemDecoration.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/Exclude.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/FailSafeDoubleTypeAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/FailSafeNumberTypeAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/FailSafeStringTypeAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/NameValueBoolean.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/RecyclerTouchListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/ResultSearchPresenter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/SelectItemList.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseController/ToStringClass.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseNetwork/BaseConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseNetwork/NetworkUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/BaseNetwork/WebServiceNetwork.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Const/FlightRules.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Const/HotelRules.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Const/KeyConst.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Const/RespinaConst.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Const/TourRules.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Const/TrainRules.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/MainActivityMaterial.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/MainActivityMaterialService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Notification/Config.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Notification/NotificationUtils.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Reminder/UtilReminder.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/ShareBroadCast.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CurrentLocation/GetAddressByLocationListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CurrentLocation/LocationAddress.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomTypefaceSpan.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/CustomTabActivityHelper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/CustomTabsHelper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/CustomTabsPackages.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/KeepAliveService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/ServiceConnection.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/ServiceConnectionCallback.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/CustomeChrome/WebviewFallback.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/BusOffline.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/DataBaseHelper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/DataSaver.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/FlightDomesticOffline.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/FlightInternationalOffline.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/HotelDomesticOffline.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Database/TrainOffline.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Hashing.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Keyboard.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/PaginationScrollListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Rating/DialogRatingApp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/Rating/UtilReportError.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/SecureAndroid.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/TimeDate.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/ToolsPersianCalendar.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilActionCall.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilDate.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilFonts.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilFragment.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilImage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilImageLoader.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilMap.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilPrice.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilScreen.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilShowCase.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/UtilVibrator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/Util/ValidateNationalCode.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/AddToolsTourOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/CheckBox.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/CheckBoxLtr.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/CheckBoxRateLtr.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/CheckBoxRateRtl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/DialogExpire.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/DottedLine.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ErrorBar.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/HeaderBar.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/HeaderBarLtr.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/Learning/LearningClass.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/MessageBar.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/Progressbar/ButtonWithProgress.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ReadMoreTextView.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/TextToggleView.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/Timeline/TimelineRow.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/Timeline/TimelineViewAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToastMessageBar.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsFlightOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsHotelChildAge.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsHotelRoomCountOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsHotelRoomOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsSearchPassengerRespina.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsTourOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/ToolsTrainOption.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/UtilImage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/aniticket/View/Validation/ValidationClass.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/logo.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_new_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_new_material.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_details_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_details_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place_ltr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place_ltr.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour_register_passenger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting_user_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting_user_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_bus.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_bus.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_flight_domestic.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_flight_domestic.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_flight_international.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_flight_international.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_train.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_details_tickets_train.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_accept_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_accept_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_hotel_detail_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_hotel_detail_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_result_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_result_search.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level1_refund.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level1_refund.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level2_refund.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level2_refund.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_material.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_tour_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_tour_material.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_bus_select_chair.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_bus_select_chair.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_flight_domestic_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_flight_domestic_details.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_train_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_train_details.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_detail_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_detail_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_passengerl_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_passengerl_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_service_material_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_service_material_search.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_service_material_tour_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_service_material_tour_search.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_tools_service_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_tools_service_search.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_tour_price_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_tour_price_detail.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/past_purchases_main_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/past_purchases_main_material.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_domestic_hotel_room_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_domestic_hotel_room_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_footer_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_footer_item.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_airplane_to_left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_airplane_to_right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_airplane_to_left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_airplane_to_right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_airplane_to_left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_airplane_to_right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_airplane_to_left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_airplane_to_right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_airplane_to_left.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_airplane_to_right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/style_config.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/style_config.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/hami/nasimebehesht724/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/hami/hamibelit/ExampleUnitTest.java" />
       <change beforePath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" afterPath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -277,27 +565,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="147">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="D:\hami\orginal\key\reseller.jks" />
+    <option name="KEY_ALIAS" value="reseller" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -3114,7 +3404,19 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceBus/Services/Fragment/R.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentListChairBus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentDomesticDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentInternationalDetails.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentTrainDetails.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2" />
     <option name="y" value="6" />
     <option name="width" value="697" />
@@ -3152,12 +3454,6 @@
             </path>
             <path>
               <item name="orginal" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="aniticket" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="orginal" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -3170,10 +3466,25 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/key/reseller.jks" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
+    <property name="device.picker.selection" value="127.0.0.1:62001" />
+    <property name="DEBUGGABLE_DEVICE" value="motorola-aosp_on_shama-127.0.0.1:62001" />
+    <property name="DEBUGGABLE_PROCESS" value="hami.aniticket" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="ExportApk.ApkPath" value="D:\hami\orginal\app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Fragment" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -3211,7 +3522,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -3364,36 +3675,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25377643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27114803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2152568" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -3402,7 +3713,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/BaseController/AccessApi.java</url>
+          <line>54</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -3430,10 +3750,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/aniticket/MainActivityMaterial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/Splash/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/MainActivityMaterialTourService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/MainActivityMaterial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/BaseController/AccessApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceBus/Services/Fragment/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentDomesticDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="312" column="58" lean-forward="false" selection-start-line="312" selection-start-column="58" selection-end-line="312" selection-end-column="58" />
+          <folding>
+            <element signature="e#15942#15967#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentListChairBus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="376" column="5" lean-forward="false" selection-start-line="376" selection-start-column="5" selection-end-line="376" selection-end-column="58" />
+          <folding>
+            <element signature="e#16520#16545#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentInternationalDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="420" column="58" lean-forward="false" selection-start-line="420" selection-start-column="58" selection-end-line="420" selection-end-column="58" />
+          <folding>
+            <element signature="e#25334#25359#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceTour/Fragment/FragmentTourAddPassenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="297" column="16" lean-forward="false" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/hamibelit/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentTrainDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="271" column="58" lean-forward="false" selection-start-line="271" selection-start-column="58" selection-end-line="271" selection-end-column="58" />
+          <folding>
+            <element signature="e#13214#13239#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="147">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">AniTicket</string>
-    <string name="app_namePR">آنی تیکت</string>
-    <string name="app_nameBrand">آنی تیکت</string>
+    <string name="app_name">HamiBelit</string>
+    <string name="app_namePR">حامی بلیط</string>
+    <string name="app_nameBrand">حامی بلیط حامی هر بلیط</string>
     <!-- ====================================================== -->
     <string name="number_picker_formatter">%02d</string>
     <!-- ====================================================== -->

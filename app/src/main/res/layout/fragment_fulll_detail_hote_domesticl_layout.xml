@@ -113,7 +113,7 @@
                         android:layout_height="0.5dp"
                         android:background="@color/styleConfigLineSplitter" />
 
-                    <hami.aniticket.View.ReadMoreTextView
+                    <hami.hamibelit.View.ReadMoreTextView
                         android:id="@+id/txtHotelDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

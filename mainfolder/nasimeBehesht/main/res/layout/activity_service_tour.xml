@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ec="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".Activity.ServiceTour.Fragment.FragmentTourList">
+
+    <com.ramotion.expandingcollection.ECPagerView
+        android:id="@+id/ec_pager_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        ec:cardHeaderHeightExpanded="200dp"
+        ec:cardHeight="250dp"
+        ec:cardWidth="250dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ec_pager_element"
+        android:background="@color/main_color_grey_100"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" />
+
+    <include
+        layout="@layout/layout_shimmer_layout_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerBar"
+        android:visibility="gone" />
+
+    <hami.nasimbehesht724.View.MessageBar
+        android:id="@+id/messageBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>
