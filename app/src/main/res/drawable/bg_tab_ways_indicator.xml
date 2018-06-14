@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- UNSELECTED TAB STATE -->
+    <item android:state_checked="true" android:state_pressed="true">
+        <layer-list>
+            <!-- Bottom indicator color for the UNSELECTED tab state -->
+            <item>
+
+                <shape android:shape="rectangle">
+                    <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+                    <solid android:color="@android:color/transparent" />
+                    <stroke android:width="0.5dp" android:color="@color/styleConfigServiceSubTitle" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Bottom indicator color for the UNSELECTED tab state -->
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+                    <solid android:color="@android:color/transparent" />
+                    <stroke android:width="0.5dp" android:color="@color/styleConfigServiceSubTitle" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- Bottom indicator color for the UNSELECTED tab state -->
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+                    <solid android:color="@android:color/transparent" />
+                    <stroke android:width="0.5dp" android:color="@color/styleConfigServiceSubTitle" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- Bottom indicator color for the UNSELECTED tab state -->
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/transparent" />
+                    <stroke android:width="0.5dp" android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>

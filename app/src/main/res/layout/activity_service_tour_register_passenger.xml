@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/styleConfigServiceBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar_service" />
+
+    <hami.aniticket.View.HeaderBar
+        android:id="@+id/headerBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnRegister">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabsTypePassenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/styleConfigTabBackground"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/styleConfigTabTitleSelected"
+                    app:tabTextColor="@color/styleConfigTabTitleNormal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtBirthDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/birthDayPersian"
+                            android:inputType="none" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilNationalCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtNationalCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:gravity="right"
+                            android:hint="@string/nationalCode"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:nextFocusDown="@+id/edtFName"
+                            android:nextFocusForward="@+id/edtFName" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/gender"
+                            android:inputType="none" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilCountryExporting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtExportingCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/exportingCountryDomestic"
+                            android:inputType="none" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutFullNameEng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtLName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="right"
+                            android:hint="@string/lName"
+                            android:inputType="textPersonName"
+                            android:nextFocusForward="@+id/edtFnameFarsi"
+                            android:singleLine="true"
+                            android:textIsSelectable="false" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtFName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="right"
+                            android:hint="@string/fName"
+                            android:inputType="textPersonName"
+                            android:nextFocusForward="@+id/edtLName"
+                            android:singleLine="true"
+                            android:textIsSelectable="false" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtLNameFarsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/lNameFarsi"
+                            android:inputType="textPersonName"
+                            android:nextFocusForward="@+id/edtNoPassport"
+                            android:singleLine="true"
+                            android:textIsSelectable="false" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtFnameFarsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/fNameFarsi"
+                            android:inputType="textPersonName"
+                            android:nextFocusForward="@+id/edtLNameFarsi"
+                            android:singleLine="true"
+                            android:textIsSelectable="false" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutForeignPassport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtDatePassport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/passportDate"
+                            android:inputType="none" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:theme="@style/TextLabel"
+                        app:hintTextAppearance="@android:style/TextAppearance">
+
+                        <EditText
+                            android:id="@+id/edtNoPassport"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:hint="@string/noPassport"
+                            android:inputType="text"
+                            android:nextFocusForward="@+id/etSearchExportingCountry" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/registerFlight"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/styleConfigMasterButtonTitle"
+            app:backgroundTint="@color/styleConfigMasterButtonBackground" />
+    </RelativeLayout>
+</LinearLayout>

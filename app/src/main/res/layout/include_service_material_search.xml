@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchBarMaster"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/styleConfigServiceItem"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/layoutPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgCircle"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabsService"
+                    style="@style/MyTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@android:color/white"
+                    android:layoutDirection="ltr"
+                    app:tabBackground="@drawable/bg_tab_ways"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@android:color/black"
+                    app:tabTextColor="@color/main_color_grey_400" />
+
+
+                <include
+                    layout="@layout/layout_tools_service_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layoutChildPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/edtToPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@mipmap/ic_airplane_to_left"
+                                android:gravity="center"
+                                android:hint="@string/toPlace"
+                                android:lines="1"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                android:textColor="@color/styleConfigServiceSubTitle"
+                                android:textColorHint="@color/styleConfigServiceTitle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                            <EditText
+                                android:id="@+id/edtFromPlace"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@mipmap/ic_airplane_to_right"
+                                android:gravity="center"
+                                android:hint="@string/fromPlace"
+                                android:lines="1"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                android:textColor="@color/styleConfigServiceSubTitle"
+                                android:textColorHint="@color/styleConfigServiceTitle" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgMovementPlace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutChildPlace"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/main_color_grey_500"
+                        android:src="@mipmap/ic_reload_orange" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtToDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/ic_went_date_master"
+                        android:gravity="center"
+                        android:hint="@string/toDate"
+                        android:lines="1"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/styleConfigServiceSubTitle"
+                        android:textColorHint="@color/styleConfigServiceTitle" />
+
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edtFromDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/ic_went_date_master"
+                        android:gravity="center"
+                        android:hint="@string/fromDate"
+                        android:lines="1"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/styleConfigServiceSubTitle"
+                        android:textColorHint="@color/styleConfigServiceTitle" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

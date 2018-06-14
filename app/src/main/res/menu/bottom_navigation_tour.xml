@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/actionDayTour"
+        android:enabled="true"
+        android:icon="@mipmap/ic_train"
+        android:title="@string/dayTour"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/actionInternationalTour"
+        android:enabled="true"
+        android:icon="@mipmap/ic_flight_international"
+        android:title="@string/InternationalTour"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionDomesticTour"
+        android:enabled="true"
+        android:icon="@mipmap/ic_flight_domestic"
+        android:title="@string/domesticTour"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/actionAllTour"
+        android:enabled="true"
+        android:icon="@mipmap/ic_flight_domestic"
+        android:title="@string/allTour"
+        app:showAsAction="ifRoom" />
+
+</menu>

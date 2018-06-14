@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/styleConfigServiceItem"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/btnImgRemove"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTypePassenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="ویرایش اطلاعات مسافر (بزرگسال)"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/styleConfigServiceTitle" />
+
+            <TextView
+                android:id="@+id/txtFullNameEng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="jalal ranjbar saber"
+                android:textColor="@color/styleConfigServiceSubTitle"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/txtNationalCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="کد ملی : 0945983026"
+                android:textColor="@color/styleConfigServiceSubTitle"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:text="---"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/styleConfigServiceSubTitle" />
+
+                <ImageView
+                    android:id="@+id/imgError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/ic_error_outline"
+                    android:tint="@color/bpRed"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/btnImgRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:tint="@color/styleConfigServiceTintColorImage"
+            app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
