@@ -15,8 +15,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:gravity="center"
         android:text="@string/searchFlight"
         android:textColor="@android:color/white"
-        app:backgroundTint="@color/styleConfigMasterButtonBackground" />
+        android:background="@color/main_color_A600" />
+
+    <!--app:backgroundTint="@color/styleConfigMasterButtonBackground"-->
 </LinearLayout>

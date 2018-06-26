@@ -1,4 +1,4 @@
-package hami.hamibelit.Activity;
+package hami.nasimbehesht724.Activity;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -35,32 +35,32 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import hami.hamibelit.Activity.ServiceHotel.ActivityMainHotel;
-import hami.hamibelit.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
-import hami.hamibelit.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
-import hami.hamibelit.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
-import hami.hamibelit.Activity.ServiceHotel.International.Controller.Model.SearchCity;
-import hami.hamibelit.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
-import hami.hamibelit.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.ActivityMainBus;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusRequest;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.ActivityMainFlight;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.FlightInternationalRequest;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
-import hami.hamibelit.Activity.ServiceSearch.ServiceTrain.ActivityMainTrain;
-import hami.hamibelit.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
-import hami.hamibelit.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
-import hami.hamibelit.MainActivityMaterial;
-import hami.hamibelit.R;
-import hami.hamibelit.Util.TimeDate;
-import hami.hamibelit.Util.ToolsPersianCalendar;
-import hami.hamibelit.Util.UtilFonts;
-import hami.hamibelit.View.ToastMessageBar;
-import hami.hamibelit.View.ToolsFlightOption;
-import hami.hamibelit.View.ToolsHotelRoomCountOption;
+import hami.nasimbehesht724.Activity.ServiceHotel.ActivityMainHotel;
+import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
+import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
+import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
+import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchCity;
+import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
+import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.ActivityMainBus;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusRequest;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.ActivityMainFlight;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.FlightInternationalRequest;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.ActivityMainTrain;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
+import hami.nasimbehesht724.MainActivityMaterial;
+import hami.nasimbehesht724.R;
+import hami.nasimbehesht724.Util.TimeDate;
+import hami.nasimbehesht724.Util.ToolsPersianCalendar;
+import hami.nasimbehesht724.Util.UtilFonts;
+import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.nasimbehesht724.View.ToolsFlightOption;
+import hami.nasimbehesht724.View.ToolsHotelRoomCountOption;
 
 /**
  * Created by renjer on 2018-04-18.

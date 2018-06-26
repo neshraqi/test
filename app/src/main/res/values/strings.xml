@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">HamiBelit</string>
-    <string name="app_namePR">حامی بلیط</string>
-    <string name="app_nameBrand">حامی بلیط حامی هر بلیط</string>
+    <string name="app_name">نسیم بهشت</string>
+    <string name="app_namePR">نسیم بهشت</string>
+    <string name="app_nameBrand">نسیم بهشت</string>
     <!-- ====================================================== -->
     <string name="number_picker_formatter">%02d</string>
     <!-- ====================================================== -->
@@ -573,6 +573,12 @@
     <string name="moreEng">More</string>
     <string name="closeEng">Close</string>
     <string name="gettingDetailHotelEng">Getting hotel details</string>
+
+
+    <string name="name">nasim  -  e  behesht  Travel  Agency </string>
+    <string name="website">www.nasimbehesht724.com</string>
+
+
 </resources>
 
 

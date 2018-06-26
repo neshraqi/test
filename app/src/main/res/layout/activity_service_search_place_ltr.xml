@@ -59,7 +59,7 @@
             android:tint="@android:color/white" />
     </RelativeLayout>
 
-    <hami.hamibelit.View.HeaderBarLtr
+    <hami.nasimbehesht724.View.HeaderBarLtr
         android:id="@+id/headerBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <hami.hamibelit.View.MessageBar
+        <hami.nasimbehesht724.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

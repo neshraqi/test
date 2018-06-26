@@ -4,63 +4,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.CoordinatorLayout
+    <LinearLayout
+        android:id="@+id/layoutSearch"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/blueLight2"
-        android:fitsSystemWindows="true">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fabSearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            android:tint="@android:color/black"
-            app:backgroundTint="#cad9f0"
-            app:layout_anchor="@id/app_bar"
-            app:layout_anchorGravity="bottom|left"
-            app:srcCompat="@android:drawable/ic_search_category_default" />
-
-        <android.support.design.widget.AppBarLayout
-            android:id="@+id/app_bar"
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsService"
+            style="@style/MyTabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="5dp"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:layout_gravity="right"
+            android:background="@color/colorPrimaryDark"
+            android:layoutDirection="ltr"
+            app:tabBackground="@drawable/bg_tab_ways"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@color/main_color_grey_400" />
 
-            <LinearLayout
-                android:id="@+id/layoutSearch"
-                android:layout_width="match_parent"
+        <!--<include layout="@layout/include_service_material_tour_search" />-->
+        <LinearLayout
+            android:id="@+id/layoutPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+
+
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtPlace"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
-                android:orientation="vertical">
-
-                <android.support.design.widget.TabLayout
-                    android:id="@+id/tabsService"
-                    style="@style/MyTabLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:background="@color/colorPrimaryDark"
-                    android:layoutDirection="ltr"
-                    app:tabBackground="@drawable/bg_tab_ways"
-                    app:tabGravity="fill"
-                    app:tabMode="fixed"
-                    app:tabSelectedTextColor="@android:color/white"
-                    app:tabTextColor="@color/main_color_grey_400" />
-
-                <include layout="@layout/include_service_material_tour_search" />
+                android:layout_weight="1"
+                android:hint="@string/fromPlace"
+                android:lines="1" />
 
 
-            </LinearLayout>
-        </android.support.design.widget.AppBarLayout>
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/moveDate"
+                android:lines="1" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/searchFlight"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/styleConfigMasterButtonBackground" />
+    </LinearLayout>
 
 
-    </android.support.design.widget.CoordinatorLayout>
-
-
-    <hami.hamibelit.View.MessageBar
+    <hami.nasimbehesht724.View.MessageBar
         android:id="@+id/messageBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

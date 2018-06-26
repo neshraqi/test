@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#3179f6</color>
-    <color name="colorPrimaryDark">#1b3259</color>
+    <color name="colorPrimary">#448aff</color>
+    <color name="colorPrimaryDark">#1f64d5</color>
     <color name="colorAccent">#FF4081</color>
     <color name="blueLight">#cad9f0</color>
     <color name="blueLight2">#e0f2fd</color>
@@ -28,6 +28,9 @@
     <color name="main_color_A100">@color/material_pink_A100</color>
     <color name="main_color_A200">@color/material_pink_A200</color>
     <color name="main_color_A400">@color/material_pink_A400</color>
+    <color name="main_color_A500">@color/material_pink_A800</color>
+    <color name="main_color_A600">@color/material_blue_A800</color>
+    <color name="main_color_A700">@color/material_blue_A900</color>
 
     <color name="main_color_grey_500">@color/material_grey_500</color>
     <color name="main_color_grey_50">@color/material_grey_50</color>
@@ -50,5 +53,10 @@
     <color name="headGradientEnd">#96000000</color>
 
     <color name="colorListDivider">#e6e6e6</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="main_color_blue_A200">@color/material_cyan_A800</color>
+    <color name="main_color_blue_A800">@color/material_light_blue_A800</color>
 
 </resources>

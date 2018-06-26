@@ -1,4 +1,4 @@
-package hami.hamibelit;
+package hami.nasimbehesht724;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -29,19 +29,19 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.hamibelit.Activity.Authentication.SettingUserMaterial;
-import hami.hamibelit.Activity.PastPurchases.PastPurchasesServicesMaterialFragment;
-import hami.hamibelit.Activity.ServiceSearch.MainServicesSearchMaterialFragment;
-import hami.hamibelit.Activity.Updates.GetUpdatePresenter;
-import hami.hamibelit.Activity.Updates.UpdatesApi;
-import hami.hamibelit.BaseController.AccessStatusResponse;
-import hami.hamibelit.BaseNetwork.BaseConfig;
-import hami.hamibelit.Const.KeyConst;
-import hami.hamibelit.Util.CustomTypefaceSpan;
-import hami.hamibelit.Util.CustomeChrome.CustomTabsPackages;
-import hami.hamibelit.Util.UtilFonts;
-import hami.hamibelit.Util.UtilFragment;
-import hami.hamibelit.View.ToastMessageBar;
+import hami.nasimbehesht724.Activity.Authentication.SettingUserMaterial;
+import hami.nasimbehesht724.Activity.PastPurchases.PastPurchasesServicesMaterialFragment;
+import hami.nasimbehesht724.Activity.ServiceSearch.MainServicesSearchMaterialFragment;
+import hami.nasimbehesht724.Activity.Updates.GetUpdatePresenter;
+import hami.nasimbehesht724.Activity.Updates.UpdatesApi;
+import hami.nasimbehesht724.BaseController.AccessStatusResponse;
+import hami.nasimbehesht724.BaseNetwork.BaseConfig;
+import hami.nasimbehesht724.Const.KeyConst;
+import hami.nasimbehesht724.Util.CustomTypefaceSpan;
+import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
+import hami.nasimbehesht724.Util.UtilFonts;
+import hami.nasimbehesht724.Util.UtilFragment;
+import hami.nasimbehesht724.View.ToastMessageBar;
 
 
 public class MainActivityMaterial extends AppCompatActivity {

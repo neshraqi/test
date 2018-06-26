@@ -6,7 +6,9 @@
         android:enabled="true"
         android:icon="@mipmap/ic_bus"
         android:title="@string/bus"
-        app:showAsAction="ifRoom" />
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"
+        />
 
 
     <item
@@ -14,6 +16,7 @@
         android:enabled="true"
         android:icon="@mipmap/ic_train"
         android:title="@string/train"
+        android:iconTint="@color/white"
         app:showAsAction="ifRoom" />
 
     <item
@@ -21,12 +24,14 @@
         android:enabled="true"
         android:icon="@mipmap/ic_flight_international"
         android:title="@string/airPlanInternational"
+        android:iconTint="@color/white"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/actionDomesticFlight"
         android:enabled="true"
         android:icon="@mipmap/ic_flight_domestic"
         android:title="@string/airPlanDomestic"
+        android:iconTint="@color/white"
         app:showAsAction="ifRoom" />
 
 

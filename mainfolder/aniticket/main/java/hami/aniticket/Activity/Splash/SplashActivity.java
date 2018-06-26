@@ -1,4 +1,4 @@
-package hami.hamibelit.Activity.Splash;
+package hami.nasimbehesht724.Activity.Splash;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +10,11 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import hami.hamibelit.BaseController.AccessApi;
-import hami.hamibelit.BaseController.AccessStatusPresenter;
-import hami.hamibelit.BaseController.AccessStatusResponse;
-import hami.hamibelit.MainActivityMaterial;
-import hami.hamibelit.R;
+import hami.nasimbehesht724.BaseController.AccessApi;
+import hami.nasimbehesht724.BaseController.AccessStatusPresenter;
+import hami.nasimbehesht724.BaseController.AccessStatusResponse;
+import hami.nasimbehesht724.MainActivityMaterial;
+import hami.nasimbehesht724.R;
 
 public class SplashActivity extends AppCompatActivity {
 

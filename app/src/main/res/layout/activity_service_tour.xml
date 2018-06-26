@@ -34,7 +34,7 @@
         android:layout_below="@+id/headerBar"
         android:visibility="gone" />
 
-    <hami.hamibelit.View.MessageBar
+    <hami.nasimbehesht724.View.MessageBar
         android:id="@+id/messageBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

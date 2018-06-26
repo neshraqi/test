@@ -2,63 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/layoutPlace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp">
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/imgCircle"
+        android:layout_toRightOf="@+id/imgMovementPlace"
+        android:orientation="horizontal">
 
-
-        <ImageView
-            android:id="@+id/imgCircle"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/edtPlace"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_margin="20dp"
-            android:src="@mipmap/ic_place_to_date"
-            android:tint="#cad9f0" />
+            android:layout_weight="1"
+            android:hint="@string/fromPlace"
+            android:lines="1" />
 
-        <LinearLayout
-            android:id="@+id/layoutPlace"
-            android:layout_width="match_parent"
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="5dp"
-            android:layout_toLeftOf="@+id/imgCircle"
-            android:layout_toRightOf="@+id/imgMovementPlace"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:hint="@string/moveDate"
+            android:lines="1" />
 
-            <EditText
-                android:id="@+id/edtPlace"
-                style="@style/editTextSearchPlaceStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/fromPlace"
-                android:lines="1" />
-
-            <View
-                android:id="@+id/layoutSplitter"
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_below="@+id/edtFromPlace"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:background="#cad9f0" />
-
-            <EditText
-                android:id="@+id/edtDate"
-                style="@style/editTextSearchPlaceStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/moveDate"
-                android:lines="1" />
-
-        </LinearLayout>
+    </LinearLayout>
 
 
-    </RelativeLayout>
 </LinearLayout>

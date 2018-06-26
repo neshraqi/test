@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name="hami.hamibelit.Activity.Splash.SplashActivity"
+            android:name="hami.nasimbehesht724.Activity.Splash.SplashActivity"
             android:exported="true"
             android:noHistory="true"
             android:screenOrientation="portrait">
@@ -28,17 +28,17 @@
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.Authentication.ForgetPasswordActivity"
+            android:name="hami.nasimbehesht724.Activity.Authentication.ForgetPasswordActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.MainActivityMaterialService"
+            android:name="hami.nasimbehesht724.MainActivityMaterialService"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.MainActivityMaterial"
+            android:name="hami.nasimbehesht724.MainActivityMaterial"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden">
@@ -55,123 +55,123 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.Authentication.SettingUserMaterial"
+            android:name="hami.nasimbehesht724.Activity.Authentication.SettingUserMaterial"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.PastPurchases.InternationalFlight.ShowDetailsTicketFlightInternationalActivity"
+            android:name="hami.nasimbehesht724.Activity.PastPurchases.InternationalFlight.ShowDetailsTicketFlightInternationalActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.PastPurchases.DomesticFlight.RefundTicketFlightDomesticActivity"
+            android:name="hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight.RefundTicketFlightDomesticActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.PastPurchases.Train.ShowDetailsTicketTrainActivity"
+            android:name="hami.nasimbehesht724.Activity.PastPurchases.Train.ShowDetailsTicketTrainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.PastPurchases.Bus.ShowDetailsTicketBusActivity"
+            android:name="hami.nasimbehesht724.Activity.PastPurchases.Bus.ShowDetailsTicketBusActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.Authentication.SignUpActivity"
+            android:name="hami.nasimbehesht724.Activity.Authentication.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.ServiceHotel.ActivityMainHotel"
+            android:name="hami.nasimbehesht724.Activity.ServiceHotel.ActivityMainHotel"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.ActivityRegisterPassengerInternational"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.ActivityRegisterPassengerInternational"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View.ActivityRegisterPassengerDomestic"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View.ActivityRegisterPassengerDomestic"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateVisible|adjustPan">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceHotel.SearchPlaceHotelActivity"
+            android:name="hami.nasimbehesht724.Activity.ServiceHotel.SearchPlaceHotelActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceTrain.SearchPlaceTrainActivity"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.SearchPlaceTrainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceFlight.ActivityMainFlight"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.ActivityMainFlight"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceBus.ActivityMainBus"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.ActivityMainBus"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.SearchPlaceMainActivity"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.SearchPlaceMainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="hami.hamibelit.Activity.ServiceSearch.ServiceTrain.ActivityMainTrain"
+            android:name="hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.ActivityMainTrain"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.PastPurchases.DomesticFlight.ShowDetailsTicketFlightDomesticActivity"
+            android:name="hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight.ShowDetailsTicketFlightDomesticActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceTour.ActivityMainTour"
+            android:name="hami.nasimbehesht724.Activity.ServiceTour.ActivityMainTour"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceTour.SearchPlaceAndDateTourActivity"
+            android:name="hami.nasimbehesht724.Activity.ServiceTour.SearchPlaceAndDateTourActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name="hami.hamibelit.Activity.ServiceTour.Fragment.ActivityRegisterPassengerTour"
+            android:name="hami.nasimbehesht724.Activity.ServiceTour.Fragment.ActivityRegisterPassengerTour"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
 
-        <service android:name="hami.hamibelit.Notification.MyFirebaseMessagingService">
+        <service android:name="hami.nasimbehesht724.Notification.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <service android:name="hami.hamibelit.Notification.MyFirebaseInstanceIDService">
+        <service android:name="hami.nasimbehesht724.Notification.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>

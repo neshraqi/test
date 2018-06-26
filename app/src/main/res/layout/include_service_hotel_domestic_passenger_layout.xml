@@ -197,7 +197,7 @@
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
 
-        <hami.hamibelit.View.CheckBox
+        <hami.nasimbehesht724.View.CheckBox
             android:id="@+id/chkAcceptRule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -15,7 +15,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/logo" />
+        android:tint="@color/colorPrimaryDark"
+        android:src="@drawable/logo2" />
 
     <RelativeLayout
         android:id="@+id/mainLayout"
@@ -104,7 +105,7 @@
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textStyle="bold" />
 
-                <hami.hamibelit.View.Progressbar.ButtonWithProgress
+                <hami.nasimbehesht724.View.Progressbar.ButtonWithProgress
                     android:id="@+id/btnSignIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

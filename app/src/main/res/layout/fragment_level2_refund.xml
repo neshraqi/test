@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <hami.hamibelit.View.HeaderBar
+    <hami.nasimbehesht724.View.HeaderBar
         android:id="@+id/headerBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -76,7 +76,7 @@
 
         <include layout="@layout/layout_shimmer_layout_progressbar_small" />
 
-        <hami.hamibelit.View.MessageBar
+        <hami.nasimbehesht724.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

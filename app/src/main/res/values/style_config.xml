@@ -12,7 +12,7 @@
     <color name="styleConfigSplashMasterImageColor">@android:color/transparent</color>
     <!-- ======================================================  -->
     <!-- Toolbar -->
-    <color name="styleConfigToolbarMaster">#555c79</color>
+    <color name="styleConfigToolbarMaster">#448aff</color>
     <color name="styleConfigToolbarMasterTitleTextColor">@android:color/white</color>
     <color name="styleConfigToolbarMasterSubTitleTextColor">@color/material_grey_200</color>
     <color name="styleConfigToolbarMasterImageColor">@android:color/white</color>

@@ -24,7 +24,7 @@
             app:tabSelectedTextColor="@color/styleConfigTabTitleSelected"
             app:tabTextColor="@color/styleConfigTabTitleNormal" />
 
-        <hami.hamibelit.View.HeaderBar
+        <hami.nasimbehesht724.View.HeaderBar
             android:id="@+id/headerBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:scrollbars="vertical" />
 
 
-        <hami.hamibelit.View.MessageBar
+        <hami.nasimbehesht724.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

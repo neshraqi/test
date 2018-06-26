@@ -1,4 +1,4 @@
-package hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Fragment;
+package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,18 +15,18 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.BusTicketInformation;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.BusApi;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
-import hami.hamibelit.BaseNetwork.BaseConfig;
-import hami.hamibelit.R;
-import hami.hamibelit.Util.CustomeChrome.CustomTabsPackages;
-import hami.hamibelit.Util.Hashing;
-import hami.hamibelit.Util.UtilFonts;
-import hami.hamibelit.Util.UtilImageLoader;
-import hami.hamibelit.View.ToastMessageBar;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.BusTicketInformation;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.BusApi;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
+import hami.nasimbehesht724.BaseNetwork.BaseConfig;
+import hami.nasimbehesht724.R;
+import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
+import hami.nasimbehesht724.Util.Hashing;
+import hami.nasimbehesht724.Util.UtilFonts;
+import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.nasimbehesht724.View.ToastMessageBar;
 
 
 public class FragmentReserveBus extends Fragment {

@@ -10,31 +10,38 @@
             android:checked="true"
             android:icon="@mipmap/ic_passport"
             android:title="@string/buyTicket"
+            android:iconTint="@color/white"
             app:actionProviderClass="ThemeOverlay.AppCompat.Dark.ActionBar" />
         <item
             android:id="@+id/menuPastPurchases"
             android:checkable="true"
             android:icon="@mipmap/ic_refresh_left_arrow"
+            android:iconTint="@color/white"
             android:title="@string/pastPurchases" />
         <item
             android:id="@+id/menuRules"
             android:checkable="true"
             android:icon="@mipmap/ic_amonestation"
+            android:iconTint="@color/white"
             android:title="@string/rulesAndLaw" />
         <item
             android:id="@+id/menuCallSupport"
             android:checkable="true"
             android:icon="@mipmap/ic_call_support"
+            android:iconTint="@color/white"
             android:title="@string/callToSupport" />
         <item
             android:id="@+id/menuAccount"
             android:checkable="true"
             android:icon="@mipmap/ic_account_box"
+            android:iconTint="@color/white"
+
             android:title="@string/userAccount" />
         <item
             android:id="@+id/menuExit"
             android:checkable="true"
             android:icon="@mipmap/ic_exit"
+            android:iconTint="@color/white"
             android:title="@string/exit" />
     </group>
 </menu>

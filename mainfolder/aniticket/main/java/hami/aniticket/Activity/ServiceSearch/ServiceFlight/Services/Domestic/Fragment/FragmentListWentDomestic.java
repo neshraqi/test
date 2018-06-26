@@ -1,4 +1,4 @@
-package hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment;
+package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,24 +18,24 @@ import com.allattentionhere.fabulousfilter.AAH_FabulousFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.hamibelit.Activity.ServiceSearch.SearchTopSheetDialogFragment;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter.NewDomesticListAdapter;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlight;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlightResponse;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.DomesticApi;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.ResultSearchDomesticPresenter;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.SelectItemFlightDomestic;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Dialog.NewDesignFilterFlightDomesticFragmentDialog;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
-import hami.hamibelit.BaseController.CallBackRequestSearch;
-import hami.hamibelit.BaseController.DividerItemDecoration;
-import hami.hamibelit.R;
-import hami.hamibelit.Util.UtilFonts;
-import hami.hamibelit.Util.UtilFragment;
-import hami.hamibelit.Util.UtilVibrator;
-import hami.hamibelit.View.HeaderBar;
-import hami.hamibelit.View.MessageBar;
+import hami.nasimbehesht724.Activity.ServiceSearch.SearchTopSheetDialogFragment;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter.NewDomesticListAdapter;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlight;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlightResponse;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.DomesticApi;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.ResultSearchDomesticPresenter;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.SelectItemFlightDomestic;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Dialog.NewDesignFilterFlightDomesticFragmentDialog;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.nasimbehesht724.BaseController.CallBackRequestSearch;
+import hami.nasimbehesht724.BaseController.DividerItemDecoration;
+import hami.nasimbehesht724.R;
+import hami.nasimbehesht724.Util.UtilFonts;
+import hami.nasimbehesht724.Util.UtilFragment;
+import hami.nasimbehesht724.Util.UtilVibrator;
+import hami.nasimbehesht724.View.HeaderBar;
+import hami.nasimbehesht724.View.MessageBar;
 
 
 public class FragmentListWentDomestic extends Fragment {

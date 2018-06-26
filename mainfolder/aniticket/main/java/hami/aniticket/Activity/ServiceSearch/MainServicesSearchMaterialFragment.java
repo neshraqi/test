@@ -1,4 +1,4 @@
-package hami.hamibelit.Activity.ServiceSearch;
+package hami.nasimbehesht724.Activity.ServiceSearch;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,24 +9,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import hami.hamibelit.Activity.SearchBarService;
-import hami.hamibelit.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
-import hami.hamibelit.Activity.ServiceHotel.International.Controller.Model.SearchCity;
-import hami.hamibelit.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
-import hami.hamibelit.Activity.ServiceHotel.SearchPlaceHotelActivity;
-import hami.hamibelit.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.hamibelit.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
-import hami.hamibelit.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
-import hami.hamibelit.Activity.ServiceSearch.ServiceTrain.SearchPlaceTrainActivity;
-import hami.hamibelit.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
-import hami.hamibelit.BaseController.AccessStatusResponse;
-import hami.hamibelit.MainActivityMaterial;
-import hami.hamibelit.MainActivityMaterialService;
-import hami.hamibelit.R;
-import hami.hamibelit.Util.Keyboard;
-import hami.hamibelit.Util.UtilFonts;
+import hami.nasimbehesht724.Activity.SearchBarService;
+import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
+import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchCity;
+import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
+import hami.nasimbehesht724.Activity.ServiceHotel.SearchPlaceHotelActivity;
+import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.SearchPlaceTrainActivity;
+import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
+import hami.nasimbehesht724.BaseController.AccessStatusResponse;
+import hami.nasimbehesht724.MainActivityMaterial;
+import hami.nasimbehesht724.MainActivityMaterialService;
+import hami.nasimbehesht724.R;
+import hami.nasimbehesht724.Util.Keyboard;
+import hami.nasimbehesht724.Util.UtilFonts;
 
 public class MainServicesSearchMaterialFragment extends Fragment {
 

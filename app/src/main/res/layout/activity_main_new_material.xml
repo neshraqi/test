@@ -18,11 +18,9 @@
 
         <include layout="@layout/layout_toolbar_main" />
 
-
         <FrameLayout
             android:id="@+id/frame_Layout"
             android:layout_width="match_parent"
-
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomNavigationView" />
 
@@ -43,12 +41,13 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="2dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/logo" />
+                android:scaleType="fitXY"
+                android:src="@drawable/logo2" />
 
             <TextView
                 android:id="@+id/txtBrand"
@@ -58,7 +57,8 @@
                 android:layout_marginTop="5dp"
                 android:text="@string/app_nameBrand"
                 android:textColor="@android:color/white"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:visibility="gone"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -113,12 +113,14 @@
                 android:background="@android:color/transparent"
                 android:layoutDirection="rtl"
                 app:itemTextColor="@android:color/white"
+                app:itemIconTint="@color/white"
                 app:menu="@menu/menu_drawable" />
 
             <LinearLayout
                 android:id="@+id/layoutSocial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="visible"
                 android:layout_alignParentBottom="true"
                 android:orientation="vertical">
 
@@ -127,18 +129,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Www.Hamibelit.com"
+                    android:text="@string/website"
                     android:textColor="@android:color/white" />
-
-                <TextView
-                    android:id="@+id/txtSite2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:text="Www.belit98.com"
-                    android:textColor="@android:color/white" />
-
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -154,7 +146,8 @@
                         android:layout_height="20dp"
                         android:layout_marginRight="5dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/facebook" />
+                        android:src="@drawable/facebook"
+                        android:visibility="gone"/>
 
                     <ImageView
                         android:id="@+id/imgInstagram"
@@ -177,7 +170,8 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/aparat" />
+                        android:src="@drawable/aparat"
+                        android:visibility="gone"/>
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>

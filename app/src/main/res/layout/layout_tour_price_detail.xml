@@ -40,7 +40,7 @@
                 android:text="@string/pricePerPerson"
                 android:textColor="@android:color/black" />
 
-            <hami.hamibelit.View.ToolsTourOption
+            <hami.nasimbehesht724.View.ToolsTourOption
                 android:id="@+id/toolsTourOption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
