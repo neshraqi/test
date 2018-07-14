@@ -63,7 +63,7 @@ public class NewDomesticListAdapter extends RecyclerView.Adapter<NewDomesticList
 
         final DomesticFlight outBound = listItem.get(position);
         String url = BaseConfig.FOLDER_IMAGE_DOMESTIC_URL + outBound.getAirlineCode() + ".png";
-        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.mipmap.ic_airplan_top);
+        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.drawable.flight);
         viewHolder.txtTimeTakeOff.setText(outBound.getTakeoffTime());
         String duration = "";
         if (outBound.getArriveTime() != null && outBound.getArriveTime().length() != 0) {

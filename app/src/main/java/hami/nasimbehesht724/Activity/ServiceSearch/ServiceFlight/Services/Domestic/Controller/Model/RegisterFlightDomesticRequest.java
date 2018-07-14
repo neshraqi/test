@@ -66,6 +66,9 @@ public class RegisterFlightDomesticRequest implements Parcelable {
     @SerializedName("from")
     private String from;
 
+    @SerializedName("international")
+    private int international;
+
     @SerializedName("to")
     private String to;
 
@@ -124,6 +127,7 @@ public class RegisterFlightDomesticRequest implements Parcelable {
     private String count = "6";
 
     private String takeOffDatePersian;
+
     //-----------------------------------------------
     public RegisterFlightDomesticRequest() {
     }
@@ -149,6 +153,7 @@ public class RegisterFlightDomesticRequest implements Parcelable {
         flightName = in.readString();
         takeoffTime = in.readString();
         arriveTime = in.readString();
+        international = in.readInt();
         stops = in.readString();
         type = in.readString();
         time = in.readString();
@@ -179,9 +184,10 @@ public class RegisterFlightDomesticRequest implements Parcelable {
     };
 
     //-----------------------------------------------
-    public void addListModelPassengerInfoDomestic(ListModelPassengerInfoDomestic passengerInfoDomestics){
+    public void addListModelPassengerInfoDomestic(ListModelPassengerInfoDomestic passengerInfoDomestics) {
         this.passengerInfoDomestics.add(passengerInfoDomestics);
     }
+
     ////-----------------------------------------------
     public void setPassengerInfoDomestics(List<ListModelPassengerInfoDomestic> passengerInfoDomestics) {
         this.passengerInfoDomestics = passengerInfoDomestics;
@@ -229,6 +235,10 @@ public class RegisterFlightDomesticRequest implements Parcelable {
 
     public void setAdultPrice(String adultPrice) {
         this.adultPrice = adultPrice;
+    }
+
+    public void setInternational(int international) {
+        this.international = international;
     }
 
     public void setChildPrice(String childPrice) {
@@ -391,6 +401,10 @@ public class RegisterFlightDomesticRequest implements Parcelable {
 
     public String getFlightTime() {
         return flightTime;
+    }
+
+    public int getInternational() {
+        return international;
     }
 
     public String getFrom() {

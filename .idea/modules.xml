@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/orginal.iml" filepath="$PROJECT_DIR$/orginal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nasimebehesht.iml" filepath="$PROJECT_DIR$/nasimebehesht.iml" />
       <module fileurl="file://$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" filepath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" />
     </modules>
   </component>

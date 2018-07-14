@@ -214,7 +214,7 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
         txtWentFlightDateTime.setText(registerFlightResponse.getTakeOffDatePersian() + " ، " + domesticParams.getDeparture());
         txtAirLineAndTypeClass.setText(domesticParams.getAirline() + "(" + domesticParams.getFlightName_() + "-" + domesticParams.getFlight_number_() + ")");
         String url = BaseConfig.FOLDER_IMAGE_DOMESTIC_URL + registerFlightResponse.getAirlineCode() + ".png";
-        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.mipmap.ic_airplan_top);
+        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.drawable.flight);
     }
 
     //-----------------------------------------------

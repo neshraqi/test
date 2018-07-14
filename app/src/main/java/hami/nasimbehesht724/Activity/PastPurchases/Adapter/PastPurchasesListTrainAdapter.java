@@ -55,7 +55,7 @@ public class PastPurchasesListTrainAdapter extends RecyclerView.Adapter<PastPurc
     public void onBindViewHolder(final MyViewHolder viewHolder, final int position) {
 
         final PurchasesTrain outBound = listItem.get(position);
-        UtilImageLoader.loadImage(context,viewHolder.imgLogoAirLine,outBound.getImage(),R.mipmap.ic_train);
+        UtilImageLoader.loadImage(context,viewHolder.imgLogoAirLine,outBound.getImage(),R.drawable.train);
         viewHolder.txtTimeTakeOff.setText("ساعت حرکت: " + outBound.getTtime());
         viewHolder.txtDateTakeOff.setText("تاریخ رسیدن: " + outBound.getTdate_persian_show());
         //viewHolder.txtFlyTime.setVisibility(View.GONE);

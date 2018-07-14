@@ -52,7 +52,7 @@ public class PastPurchasesListBusAdapter extends RecyclerView.Adapter<PastPurcha
     public void onBindViewHolder(final MyViewHolder viewHolder, final int position) {
 
         final PurchasesBus outBound = listItem.get(position);
-        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, outBound.getImage(), R.mipmap.ic_bus);
+        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, outBound.getImage(), R.drawable.bus);
         viewHolder.txtTimeTakeOff.setText("ساعت حرکت: " + outBound.getTtime());
         viewHolder.txtDateTakeOff.setText("تاریخ رسیدن: " + outBound.getTdate_persian_show());
         viewHolder.txtAirLineAndTypeClass.setText(outBound.getCompany());

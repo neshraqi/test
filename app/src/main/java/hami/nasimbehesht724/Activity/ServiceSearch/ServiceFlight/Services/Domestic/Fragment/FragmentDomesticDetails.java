@@ -1,7 +1,6 @@
 package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,7 +12,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -30,7 +28,6 @@ import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domest
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.DomesticApi;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View.ActivityRegisterPassengerDomestic;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
 import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
 import hami.nasimbehesht724.BaseNetwork.BaseConfig;
 import hami.nasimbehesht724.R;
@@ -56,11 +53,13 @@ public class FragmentDomesticDetails extends Fragment {
     private DomesticRequest domesticRequest;
     private DomesticFlight domesticFlight;
     private TextView tvCountPassenger;
-    private Button btnAddPassenger;
+    private AppCompatButton btnAddPassenger;
     private MessageBar messageBar;
     private static final String TAG = "FragmentDomesticDetails";
     private AlertDialog alertDialog;
     private AlertDialog alertDialogError;
+    private Boolean hasRefresh = false;
+
     //-----------------------------------------------
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -68,7 +67,7 @@ public class FragmentDomesticDetails extends Fragment {
         setRetainInstance(true);
         if (getArguments() != null) {
             domesticRequest = (DomesticRequest) getArguments().getSerializable(DomesticRequest.class.getName());
-            domesticFlight = (DomesticFlight) getArguments().getParcelable(DomesticFlight.class.getName());
+            domesticFlight = getArguments().getParcelable(DomesticFlight.class.getName());
         }
 
     }
@@ -118,19 +117,35 @@ public class FragmentDomesticDetails extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        //setupHeaderToolbar();
+    }
+    //-----------------------------------------------
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        try {
+            if (alertDialogError != null)
+                alertDialogError.cancel();
+            if (alertDialog != null)
+                alertDialog.cancel();
+        } catch (Exception e) {
+
+        }
     }
 
     //-----------------------------------------------
     private void initialComponentFragment() {
-        coordinator = (RelativeLayout) view.findViewById(R.id.coordinator);
+        coordinator = view.findViewById(R.id.coordinator);
         UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_BOLD);
-        messageBar = (MessageBar) view.findViewById(R.id.messageBar);
+        messageBar = view.findViewById(R.id.messageBar);
         messageBar.setMainBackground(R.color.main_color_grey_200);
         messageBar.setTitleButton(" + " + getString(R.string.addPassenger));
         messageBar.showMessageBar(R.string.warningNoAddPassenger);
         messageBar.setCallbackButtonNewSearch(callbackMessageBar);
-        tvCountPassenger = (TextView) view.findViewById(R.id.tvCountPassenger);
-        btnRegister = (AppCompatButton) view.findViewById(R.id.btnRegister);
+        //tvCountPassenger = (TextView) view.findViewById(R.id.tvCountPassenger);
+        btnRegister = view.findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(onClickListener);
         try {
             setupPlace();
@@ -161,33 +176,33 @@ public class FragmentDomesticDetails extends Fragment {
 
     //-----------------------------------------------
     private void setupAddPassenger() {
-        btnAddPassenger = (Button) view.findViewById(R.id.btnAddPassenger);
-        btnAddPassenger.setPaintFlags(btnAddPassenger.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        btnAddPassenger = view.findViewById(R.id.btnAddPassenger);
+        btnAddPassenger.setText(R.string.addPassenger);
         btnAddPassenger.setOnClickListener(onClickListener);
     }
 
     //-----------------------------------------------
     private void setupRecyclerView() {
-        rvResult = (RecyclerView) view.findViewById(R.id.rvResult);
+        rvResult = view.findViewById(R.id.rvResult);
         rvResult.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rvResult.setLayoutManager(mLayoutManager);
         rvResult.setItemAnimator(new DefaultItemAnimator());
-        rvResult.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
         mAdapter = new PassengerDomesticListAdapter(getActivity(), onSelectItemPassengerDomesticListener);
         String adultPrice = domesticFlight.getAdultPrice1() == null ? domesticFlight.getAdultPrice() : domesticFlight.getAdultPrice1();
         mAdapter.setConfigPrice(adultPrice, domesticFlight.getChildPrice(), domesticFlight.getInfantPrice());
+        mAdapter.setConfigInternational(domesticFlight.getInternational());
         rvResult.setAdapter(mAdapter);
     }
 
     //-----------------------------------------------
     private void setupPlace() {
-        TextView txtWentFlightCity = (TextView) view.findViewById(R.id.txtWentFlightCity);
-        TextView txtWentFlightDateTime = (TextView) view.findViewById(R.id.txtWentFlightDateTime);
-        ImageView imgLogoAirLine = (ImageView) view.findViewById(R.id.imgLogoAirLine);
-        TextView txtAirLineAndTypeClass = (TextView) view.findViewById(R.id.txtAirLineAndTypeClass);
-        TextView txtFlightNumber = (TextView) view.findViewById(R.id.txtFlightNumber);
-        TextView txtFlightName = (TextView) view.findViewById(R.id.txtFlightName);
+        TextView txtWentFlightCity = view.findViewById(R.id.txtWentFlightCity);
+        TextView txtWentFlightDateTime = view.findViewById(R.id.txtWentFlightDateTime);
+        ImageView imgLogoAirLine = view.findViewById(R.id.imgLogoAirLine);
+        TextView txtAirLineAndTypeClass = view.findViewById(R.id.txtAirLineAndTypeClass);
+        TextView txtFlightNumber = view.findViewById(R.id.txtFlightNumber);
+        TextView txtFlightName = view.findViewById(R.id.txtFlightName);
         String flightLocation = "پرواز از " + domesticRequest.getSourcePersian() + " به " + domesticRequest.getDestinationPersian();
         txtWentFlightCity.setText(flightLocation);
         txtWentFlightDateTime.setText(domesticRequest.getDepartureGoPersian() + " , " + domesticFlight.getTakeoffTime());
@@ -195,13 +210,13 @@ public class FragmentDomesticDetails extends Fragment {
         txtFlightNumber.setText("شماره پرواز:" + domesticFlight.getFlightNumber());
         txtFlightName.setText(domesticFlight.getFlightName().trim());
         String url = BaseConfig.FOLDER_IMAGE_DOMESTIC_URL + domesticFlight.getAirlineCode() + ".png";
-        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.mipmap.ic_airplan_top);
+        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.mipmap.ic_launcher);
     }
 
     //-----------------------------------------------
     private void updateCountPassenger() {
-        int capacity = Integer.valueOf(domesticFlight.getNum());
-        tvCountPassenger.setText("(" + mAdapter.getItemCount() + "/" + capacity + ")");
+//        int capacity = Integer.valueOf(domesticFlight.getNum());
+//        tvCountPassenger.setText("(" + mAdapter.getItemCount() + "/" + capacity + ")");
     }
 
     //-----------------------------------------------
@@ -220,7 +235,6 @@ public class FragmentDomesticDetails extends Fragment {
                 updateCountPassenger();
             }
 
-
         } catch (Exception e) {
 
         }
@@ -228,12 +242,13 @@ public class FragmentDomesticDetails extends Fragment {
     }
 
     //-----------------------------------------------
-    OnSelectItemPassengerDomesticListener onSelectItemPassengerDomesticListener = new OnSelectItemPassengerDomesticListener() {
+    private OnSelectItemPassengerDomesticListener onSelectItemPassengerDomesticListener = new OnSelectItemPassengerDomesticListener() {
         @Override
         public void onSelectItemFlightDomestic(DomesticPassengerInfo domesticPassengerInfo, int position) {
             Intent intent = new Intent(getActivity(), ActivityRegisterPassengerDomestic.class);
             intent.putExtra("listPassengers", mAdapter.getListItem());
             intent.putExtra(DomesticPassengerInfo.class.getName(), domesticPassengerInfo);
+            intent.putExtra("isForeign", (domesticFlight.getInternational() == 1));
             intent.putExtra("index", position);
             startActivityForResult(intent, 0);
         }
@@ -249,7 +264,7 @@ public class FragmentDomesticDetails extends Fragment {
         }
     };
     //-----------------------------------------------
-    View.OnClickListener onClickListener = new View.OnClickListener() {
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
@@ -264,6 +279,7 @@ public class FragmentDomesticDetails extends Fragment {
                     if (capacity > mAdapter.getItemCount()) {
                         Intent intent = new Intent(getActivity(), ActivityRegisterPassengerDomestic.class);
                         intent.putExtra("listPassengers", mAdapter.getListItem());
+                        intent.putExtra("isForeign", (domesticFlight.getInternational() == 1));
                         startActivityForResult(intent, 0);
                     } else {
                         ToastMessageBar.show(getActivity(), R.string.msgErrorFullCapacityDomestic);
@@ -299,6 +315,11 @@ public class FragmentDomesticDetails extends Fragment {
         showDialogFinalPreReserve(registerFlightDomesticRequest);
     }
 
+    //-----------------------------------------------
+    private void setupHeaderToolbar() {
+        TextView txtSubTitleMenu = getActivity().findViewById(R.id.txtSubTitleMenu);
+        txtSubTitleMenu.setText("ثبت مسافر و رزرو");
+    }
 
     //-----------------------------------------------
     public void showDialogFinalPreReserve(final RegisterFlightDomesticRequest registerFlightDomesticRequest) {
@@ -307,9 +328,13 @@ public class FragmentDomesticDetails extends Fragment {
         final View dialogView = inflater.inflate(R.layout.dialog_service_register_final_layout, null);
 
         UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.IRAN_SANS_NORMAL);
-        final EditText edtMobile = (EditText) dialogView.findViewById(R.id.edtMobile);
-        final EditText edtEmail = (EditText) dialogView.findViewById(R.id.edtEmail);
-        final CheckBox chkAcceptRule = (CheckBox) dialogView.findViewById(R.id.chkAcceptRule);
+        final EditText edtMobile = dialogView.findViewById(R.id.edtMobile);
+        final EditText edtEmail = dialogView.findViewById(R.id.edtEmail);
+//        TextInputLayout tilMobile = dialogView.findViewById(R.id.tilMobile);
+//        TextInputLayout tilEmail = dialogView.findViewById(R.id.tilEmail);
+//        tilMobile.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+//        tilEmail.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        final CheckBox chkAcceptRule = dialogView.findViewById(R.id.chkAcceptRule);
         chkAcceptRule.setTitle(R.string.rulesInternetBuy);
 //        chkAcceptRule.setCallBackTitle(new View.OnClickListener() {
 //            @Override
@@ -320,7 +345,7 @@ public class FragmentDomesticDetails extends Fragment {
         DataSaver dataSaver = new DataSaver(getActivity());
         edtEmail.setText(dataSaver.getEmail());
         edtMobile.setText(dataSaver.getMobile());
-        final ButtonWithProgress btnReserve = (ButtonWithProgress) dialogView.findViewById(R.id.btnRegister);
+        final ButtonWithProgress btnReserve = dialogView.findViewById(R.id.btnRegister);
         btnReserve.setConfig(R.string.reserve, R.string.reserving, R.string.reserve);
         btnReserve.setBackgroundButton(R.drawable.bg_button_orange);
 
@@ -368,6 +393,7 @@ public class FragmentDomesticDetails extends Fragment {
                     registerFlightDomesticRequest.setTo(domesticFlight.getTo());
                     registerFlightDomesticRequest.setFlightNumber(domesticFlight.getFlightNumber());
                     registerFlightDomesticRequest.setFlightName(domesticFlight.getFlightName());
+                    registerFlightDomesticRequest.setInternational(domesticFlight.getInternational());
                     registerFlightDomesticRequest.setTakeoffTime(domesticFlight.getTakeoffTime());
                     registerFlightDomesticRequest.setArriveTime(domesticFlight.getArriveTime());
                     registerFlightDomesticRequest.setStops(domesticFlight.getStops());
@@ -485,7 +511,6 @@ public class FragmentDomesticDetails extends Fragment {
                     });
                 } catch (Exception e) {
 
-
                     ToastMessageBar.show(getActivity(), R.string.msgErrorReserveFlight);
                 }
             }
@@ -497,6 +522,7 @@ public class FragmentDomesticDetails extends Fragment {
     //-----------------------------------------------
     public void showDialogError1030() {
         try {
+            hasRefresh = true;
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
             LayoutInflater inflater = getLayoutInflater();
             final View dialogView = inflater.inflate(R.layout.include_layout_expire_time_message, null);
@@ -505,11 +531,12 @@ public class FragmentDomesticDetails extends Fragment {
             alertDialogError.setCancelable(false);
             alertDialogError.setCanceledOnTouchOutside(false);
             UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.IRAN_SANS_BOLD);
-            final TextView tvTitleCenter = (TextView) dialogView.findViewById(R.id.tvTitleCenter);
-            AppCompatButton tvButtonRetry = (AppCompatButton) dialogView.findViewById(R.id.tvButtonRetry);
-            AppCompatButton btnBack = (AppCompatButton) dialogView.findViewById(R.id.btnBack);
+            final TextView tvTitleCenter = dialogView.findViewById(R.id.tvTitleCenter);
+            AppCompatButton tvButtonRetry = dialogView.findViewById(R.id.tvButtonRetry);
+            AppCompatButton btnBack = dialogView.findViewById(R.id.btnBack);
             tvTitleCenter.setText(R.string.msgErrorFullCapacityFlight);
             tvButtonRetry.setText("جستجو مجدد");
+
             btnBack.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -520,17 +547,22 @@ public class FragmentDomesticDetails extends Fragment {
             tvButtonRetry.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    hasRefresh = true;
                     alertDialogError.dismiss();
+                    //UtilFragment.changeFragment(getActivity().getSupportFragmentManager(), FragmentListWentDomestic.newInstance(domesticRequest));
                     getActivity().onBackPressed();
-                    UtilFragment.changeFragment(getActivity().getSupportFragmentManager(), FragmentListWentDomestic.newInstance(domesticRequest));
                 }
             });
             alertDialogError.show();
         } catch (Exception e) {
 
         }
-
     }
 
+    //-----------------------------------------------
+    public Boolean hasRefresh() {
+        return hasRefresh;
+    }
+    //-----------------------------------------------
 }
 

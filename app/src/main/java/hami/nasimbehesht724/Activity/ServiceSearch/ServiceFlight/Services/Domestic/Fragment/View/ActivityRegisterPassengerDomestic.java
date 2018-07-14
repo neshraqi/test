@@ -8,11 +8,8 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatButton;
 import android.text.Editable;
-import android.text.TextPaint;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
@@ -20,13 +17,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 
 import com.codetroopers.betterpickers.calendardatepicker.CalendarDatePickerDialogFragment;
 
-
-import java.lang.reflect.Field;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -56,10 +52,12 @@ import hami.nasimbehesht724.View.ToastMessageBar;
 
 public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
 
-    private EditText edtNationalCode, edtGender, edtType, edtFirstNamePersian, edtLastNamePersian, edtFirstName, edtLastName, edtDatePassport, edtNoPassport, edtExportingCountry;
+    private EditText edtNationalCode, edtGender, edtType, edtFirstName, edtLastName, edtDatePassport, edtNoPassport, edtExportingCountry;
+    //private EditText edtFirstNamePersian, edtLastNamePersian;
     private TabLayout tabsTypePassenger;
     private TextInputLayout tilNationalCode, tilCountryExporting;
-    private int position, isForeign;
+    private int position;
+    private Boolean isForeign;
     private DomesticPassengerInfo domesticPassengerInfo;
     private Boolean hasShowAndEdit = false, hasFirstShowEdit = false, hasIranian = true;
     private ArrayList<DomesticPassengerInfo> listPassengers;
@@ -77,7 +75,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_flight_domestic_register_passenger);
         listPassengers = getIntent().getParcelableArrayListExtra("listPassengers");
-        isForeign = getIntent().getExtras().getInt("isForeign");
+        isForeign = getIntent().getExtras().getBoolean("isForeign", false);
         if (getIntent().hasExtra(DomesticPassengerInfo.class.getName())) {
             hasShowAndEdit = hasFirstShowEdit = true;
             domesticPassengerInfo = getIntent().getParcelableExtra(DomesticPassengerInfo.class.getName());
@@ -99,7 +97,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
             outState.putBoolean("hasFirstShowEdit", hasFirstShowEdit);
             outState.putBoolean("hasIranian", hasIranian);
             outState.putInt("position", position);
-            outState.putInt("isForeign", isForeign);
+            outState.putBoolean("isForeign", isForeign);
             outState.putInt("accessTranslateCounter", accessTranslateCounter);
 
         }
@@ -118,7 +116,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
             hasFirstShowEdit = savedInstanceState.getBoolean("hasFirstShowEdit");
             hasIranian = savedInstanceState.getBoolean("hasIranian");
             position = savedInstanceState.getInt("position");
-            isForeign = savedInstanceState.getInt("isForeign");
+            isForeign = savedInstanceState.getBoolean("isForeign");
             accessTranslateCounter = savedInstanceState.getInt("accessTranslateCounter");
 
         }
@@ -127,70 +125,30 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
     //-----------------------------------------------
     private void initialComponentActivity() {
         UtilFonts.overrideFonts(this, findViewById(R.id.layoutMain), UtilFonts.IRAN_SANS_NORMAL);
-        //setupToolbar(false);
+        setupToolbar(false);
         internationalApi = new InternationalApi(this);
-        headerBar = (HeaderBar) findViewById(R.id.headerBar);
+        headerBar = findViewById(R.id.headerBar);
         headerBar.showMessageBar(R.string.msgErrorCheckInfoPassenger);
-        AppCompatButton txtBtnAddPassenger = (AppCompatButton) findViewById(R.id.btnRegister);
+        Button txtBtnAddPassenger = findViewById(R.id.btnRegister);
         txtBtnAddPassenger.setText(hasFirstShowEdit ? R.string.editPassenger : R.string.registerPassenger);
-        tabsTypePassenger = (TabLayout) findViewById(R.id.tabsTypePassenger);
+        tabsTypePassenger = findViewById(R.id.tabsTypePassenger);
         UtilFonts.applyFontTabPassenger(this, tabsTypePassenger);
         //-----------------------------------------------
-        layoutForeignPassport = (LinearLayout) findViewById(R.id.layoutForeignPassport);
-        edtNationalCode = (EditText) findViewById(R.id.edtNationalCode);
+        layoutForeignPassport = findViewById(R.id.layoutForeignPassport);
+        edtNationalCode = findViewById(R.id.edtNationalCode);
         edtNationalCode.addTextChangedListener(textWatcherNationalCode);
-        edtGender = (EditText) findViewById(R.id.edtGender);
-        edtFirstNamePersian = (EditText) findViewById(R.id.edtFnameFarsi);
-        edtType = (EditText) findViewById(R.id.edtType);
-        edtLastNamePersian = (EditText) findViewById(R.id.edtLNameFarsi);
-        edtFirstName = (EditText) findViewById(R.id.edtFName);
-        edtDatePassport = (EditText) findViewById(R.id.edtDatePassport);
-        edtLastName = (EditText) findViewById(R.id.edtLName);
-        edtNoPassport = (EditText) findViewById(R.id.edtNoPassport);
-        edtExportingCountry = (EditText) findViewById(R.id.edtExportingCountry);
-        tilNationalCode = (TextInputLayout) findViewById(R.id.tilNationalCode);
-        tilCountryExporting = (TextInputLayout) findViewById(R.id.tilCountryExporting);
+        edtGender = findViewById(R.id.edtGender);
+        //edtFirstNamePersian = (EditText) findViewById(R.id.edtFnameFarsi);
+        edtType = findViewById(R.id.edtType);
+        //edtLastNamePersian = (EditText) findViewById(R.id.edtLNameFarsi);
+        edtFirstName = findViewById(R.id.edtFName);
+        edtDatePassport = findViewById(R.id.edtDatePassport);
+        edtLastName = findViewById(R.id.edtLName);
+        edtNoPassport = findViewById(R.id.edtNoPassport);
+        edtExportingCountry = findViewById(R.id.edtExportingCountry);
+        tilNationalCode = findViewById(R.id.tilNationalCode);
+        tilCountryExporting = findViewById(R.id.tilCountryExporting);
         //66 = next;
-        edtFirstName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtFirstNamePersian.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtFirstName.getText().toString(), edtFirstNamePersian);
-            }
-        });
-        edtLastName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtLastNamePersian.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtLastName.getText().toString(), edtLastNamePersian);
-            }
-        });
-        edtFirstNamePersian.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtFirstName.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtFirstNamePersian.getText().toString(), edtFirstName);
-            }
-        });
-        edtLastNamePersian.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtLastName.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtLastNamePersian.getText().toString(), edtLastName);
-            }
-        });
-//        edtFirstName.setOnHoverListener(new View.OnHoverListener() {
-//            @Override
-//            public boolean onHover(View v, MotionEvent event) {
-//                translateWord(edtFirstName.getText().toString(), edtFirstNamePersian);
-//                return false;
-//            }
-//        });
-//        callbackTextChange(edtFirstName, edtFirstNamePersian);
-//        callbackTextChange(edtLastName, edtLastNamePersian);
-//        callbackTextChange(edtFirstNamePersian, edtFirstName);
-//        callbackTextChange(edtLastNamePersian, edtLastName);
-        //-----------------------------------------------
         edtExportingCountry.setOnClickListener(onClickListener);
         edtExportingCountry.setFocusable(false);
         edtExportingCountry.setCursorVisible(false);
@@ -215,38 +173,73 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         edtType.setOnClickListener(onClickListener);
         edtType.setFocusable(false);
         edtType.setCursorVisible(false);
-        setupStyleIran();
-        txtBtnAddPassenger.setOnClickListener(onClickListener);
-        if (hasShowAndEdit) {
-            iniInfoDefault();
+        if (isForeign) {
+            setupStyleForeign();
             edtFirstName.requestFocus();
         } else {
-            domesticPassengerInfo = new DomesticPassengerInfo();
+            setupStyleIran();
             edtNationalCode.requestFocus();
         }
+        txtBtnAddPassenger.setOnClickListener(onClickListener);
+        if (hasShowAndEdit) {
+            setupToolbar(true);
+            iniInfoDefault();
+            edtFirstName.requestFocus();
+
+        } else {
+            domesticPassengerInfo = new DomesticPassengerInfo();
+            edtExportingCountry.setText(domesticPassengerInfo.getExportingCountryName());
+            setupToolbar(false);
+        }
+        setTypeFace();
     }
 
     //-----------------------------------------------
-    private void setTypefaceToInputLayout(TextInputLayout inputLayout, String typeFace) {
+    private void setTypeFace() {
+        tilCountryExporting = findViewById(R.id.tilCountryExporting);
+        TextInputLayout tilNationality = findViewById(R.id.tilNationality);
+        TextInputLayout tilGender = findViewById(R.id.tilGender);
+        TextInputLayout tilLastNameEng = findViewById(R.id.tilLastNameEng);
+        TextInputLayout tilFirstNameEng = findViewById(R.id.tilFirstNameEng);
+        TextInputLayout tilLastNamePersian = findViewById(R.id.tilLastNamePersian);
+        TextInputLayout tilFirstNamePersian = findViewById(R.id.tilFirstNamePersian);
+        TextInputLayout tilPassportNumber = findViewById(R.id.tilPassportNumber);
+        TextInputLayout tilExpireDatePassport = findViewById(R.id.tilExpireDatePassport);
 
-        final Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/" + typeFace);
 
-        inputLayout.getEditText().setTypeface(tf);
-        try {
-            // Retrieve the CollapsingTextHelper Field
-            final Field collapsingTextHelperField = inputLayout.getClass().getDeclaredField("mCollapsingTextHelper");
-            collapsingTextHelperField.setAccessible(true);
+        tilNationalCode.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilCountryExporting.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilNationality.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilGender.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilLastNameEng.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilFirstNameEng.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilLastNamePersian.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilFirstNamePersian.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilPassportNumber.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilExpireDatePassport.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+    }
 
-            // Retrieve an instance of CollapsingTextHelper and its TextPaint
-            final Object collapsingTextHelper = collapsingTextHelperField.get(inputLayout);
-            final Field tpf = collapsingTextHelper.getClass().getDeclaredField("mTextPaint");
-            tpf.setAccessible(true);
+    //-----------------------------------------------
+    private void setupToolbar(Boolean hasEdit) {
+//        TextView txtTitleMenu = findViewById(R.id.txtTitleMenu);
+//        TextView txtSubTitleMenu = findViewById(R.id.txtSubTitleMenu);
+        ImageView btnBack = findViewById(R.id.btnBack);
+//        if (hasEdit)
+//            txtTitleMenu.setText(R.string.editInfoPassenger);
+//        else
+//            txtTitleMenu.setText(R.string.contactInfoPassenger);
+//        if (domesticPassengerInfo != null)
+//            //txtSubTitleMenu.setText(domesticPassengerInfo.getFirstNamePersian() + " " + domesticPassengerInfo.getLastNamePersian());
+//            txtSubTitleMenu.setText(domesticPassengerInfo.getFirstNameEng() + " " + domesticPassengerInfo.getLastNameEng());
+//        else
+//            txtSubTitleMenu.setText("------");
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
-            // Apply your Typeface to the CollapsingTextHelper TextPaint
-            ((TextPaint) tpf.get(collapsingTextHelper)).setTypeface(tf);
-        } catch (Exception ignored) {
-            // Nothing to do
-        }
     }
 
     //-----------------------------------------------
@@ -254,8 +247,8 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         edtNationalCode.setText(domesticPassengerInfo.getNationalCode());
         edtFirstName.setText(domesticPassengerInfo.getFirstNameEng());
         edtLastName.setText(domesticPassengerInfo.getLastNameEng());
-        edtFirstNamePersian.setText(domesticPassengerInfo.getFirstNamePersian());
-        edtLastNamePersian.setText(domesticPassengerInfo.getLastNamePersian());
+        //edtFirstNamePersian.setText(domesticPassengerInfo.getFirstNamePersian());
+        //edtLastNamePersian.setText(domesticPassengerInfo.getLastNamePersian());
 
         int genderId = domesticPassengerInfo.getGender();
         int typeNationality = domesticPassengerInfo.getNationalityType();
@@ -264,7 +257,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         } else if (genderId == DomesticPassengerInfo.GENDER_FEMALE) {
             edtGender.setText(R.string.female);
         }
-        if (isForeign == 0 && typeNationality == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN) {
+        if (!isForeign && typeNationality == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN) {
             hasIranian = true;
             setupStyleIran();
             edtType.setText(R.string.irani);
@@ -313,6 +306,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
                 index++;
             }
         } catch (Exception e) {
+
 
         }
         return false;
@@ -366,7 +360,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
 
     //-----------------------------------------------
     private void translateWord(String word, final EditText toEditText) {
-        internationalApi.translateWord(word, new ResultSearchPresenter<BaseResult>() {
+        new InternationalApi(this).translateWord(word, new ResultSearchPresenter<BaseResult>() {
             @Override
             public void onStart() {
                 runOnUiThread(new Runnable() {
@@ -472,8 +466,8 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
                             } else if (dataPassengerInfo.getPassengersType().contentEquals(String.valueOf(FlightRules.TP_INFANT))) {
                                 tabsTypePassenger.getTabAt(0).select();
                             }
-                            edtFirstNamePersian.setText(dataPassengerInfo.getPassengerNamePersian());
-                            edtLastNamePersian.setText(dataPassengerInfo.getPassengerFamilyPersian());
+                            //edtFirstNamePersian.setText(dataPassengerInfo.getPassengerNamePersian());
+                            //edtLastNamePersian.setText(dataPassengerInfo.getPassengerFamilyPersian());
                             edtFirstName.setText(dataPassengerInfo.getPassengerNameEnglish());
                             edtLastName.setText(dataPassengerInfo.getPassengerFamilyEnglish());
                             if (Integer.valueOf(dataPassengerInfo.getGender()) == DomesticPassengerInfo.GENDER_MALE) {
@@ -552,7 +546,10 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 edtType.setText(item.getTitle());
                 if (item.getItemId() == R.id.menuIran) {
-                    setupStyleIran();
+                    if (isForeign)
+                        setupStyleForeign();
+                    else
+                        setupStyleIran();
                     domesticPassengerInfo.setNationalityType(DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN);
                     hasIranian = true;
                 } else {
@@ -665,7 +662,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
                 Date d = dateFormatter.parse(domesticPassengerInfo.getPassportExpireDate());
                 newCalendar.setTime(d);
             }
-            fromDatePickerDialog = new DatePickerDialog(this, new android.app.DatePickerDialog.OnDateSetListener() {
+            fromDatePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     Calendar newDate = Calendar.getInstance();
@@ -680,8 +677,10 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
             fromDatePickerDialog.show();
         } catch (ParseException e) {
 
+
             e.printStackTrace();
         } catch (Exception e) {
+
 
             e.printStackTrace();
         }
@@ -692,14 +691,14 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         //edtNoPassport.setText(Keyboard.convertPersianNumberToEngNumber(edtNoPassport.getText().toString()));
         //edtNationalCode.setText(Keyboard.convertPersianNumberToEngNumber(edtNationalCode.getText().toString()));
         int type = domesticPassengerInfo.getNationalityType();
-        if (type == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN && !ValidateNationalCode.isValidNationalCode(edtNationalCode.getText().toString())) {
+        if (!isForeign && type == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN && !ValidateNationalCode.isValidNationalCode(edtNationalCode.getText().toString())) {
             ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.validateNationalCode);
             Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
             edtNationalCode.startAnimation(vibrateAnimation);
             edtNationalCode.requestFocus();
             return;
         }
-        if (type == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN && checkExistPassenger(edtNationalCode.getText().toString())) {
+        if (!isForeign && type == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN && checkExistPassenger(edtNationalCode.getText().toString())) {
             ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.msgErrorExistPassenger);
             Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
             edtNationalCode.startAnimation(vibrateAnimation);
@@ -718,18 +717,18 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
             edtLastName.startAnimation(vibrateAnimation);
             return;
         }
-        if (edtFirstNamePersian.length() == 0) {
-            ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.validateFirstNamePersian);
-            Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
-            edtFirstNamePersian.startAnimation(vibrateAnimation);
-            return;
-        }
-        if (edtLastNamePersian.length() == 0) {
-            ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.validateLastNamePersian);
-            Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
-            edtLastNamePersian.startAnimation(vibrateAnimation);
-            return;
-        }
+//        if (edtFirstNamePersian.length() == 0) {
+//            ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.validateFirstNamePersian);
+//            Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
+//            edtFirstNamePersian.startAnimation(vibrateAnimation);
+//            return;
+//        }
+//        if (edtLastNamePersian.length() == 0) {
+//            ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.validateLastNamePersian);
+//            Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
+//            edtLastNamePersian.startAnimation(vibrateAnimation);
+//            return;
+//        }
         if (type == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN && edtNoPassport.length() == 0) {
             ToastMessageBar.show(ActivityRegisterPassengerDomestic.this, R.string.validatePassportCode);
             Animation vibrateAnimation = AnimationUtils.loadAnimation(this, R.anim.shake);
@@ -751,11 +750,13 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         domesticPassengerInfo.setTypePassenger(getTypePassenger());
         domesticPassengerInfo.setFirstNameEng(edtFirstName.getText().toString());
         domesticPassengerInfo.setLastNameEng(edtLastName.getText().toString());
-        domesticPassengerInfo.setFirstNamePersian(edtFirstNamePersian.getText().toString());
-        domesticPassengerInfo.setLastNamePersian(edtLastNamePersian.getText().toString());
+//        domesticPassengerInfo.setFirstNamePersian(edtFirstNamePersian.getText().toString());
+//        domesticPassengerInfo.setLastNamePersian(edtLastNamePersian.getText().toString());
+        domesticPassengerInfo.setFirstNamePersian("علی");
+        domesticPassengerInfo.setLastNamePersian("احمدی");
         domesticPassengerInfo.setNationalCode(edtNationalCode.getText().toString());
         if (hasShowAndEdit) {
-            if (type == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
+            if (isForeign || type == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
                 domesticPassengerInfo.setPassportCo(edtNoPassport.getText().toString());
                 domesticPassengerInfo.setPassportExpireDate(edtDatePassport.getText().toString());
             }
@@ -765,7 +766,7 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
             setResult(RESULT_OK_EDIT_PASSENGER, intent);
             finish();
         } else {
-            if (type == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
+            if (isForeign || type == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
                 domesticPassengerInfo.setPassportCo(edtNoPassport.getText().toString());
                 domesticPassengerInfo.setPassportExpireDate(edtDatePassport.getText().toString());
 

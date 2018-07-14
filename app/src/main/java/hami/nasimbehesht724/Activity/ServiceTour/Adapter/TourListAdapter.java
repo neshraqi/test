@@ -53,7 +53,7 @@ public class TourListAdapter extends RecyclerView.Adapter<TourListAdapter.MyView
 
         final TourItem outBound = listItem.get(position);
         String url = BaseConfig.FOLDER_IMAGE_TOUR_URL + outBound.getImg() + ".jpg";
-        UtilImageLoader.loadImage(context, viewHolder.imgService, url, R.mipmap.ic_toor2);
+        UtilImageLoader.loadImage(context, viewHolder.imgService, url, R.drawable.tour);
         viewHolder.txtTourName.setText(outBound.getName());
         String dateCounter = outBound.getDay_count() + context.getString(R.string.day) + " و " + outBound.getNight_count() + context.getString(R.string.night);
         viewHolder.txtTourFromDate.setText("تاریخ حرکت: " + outBound.getStart_date() + "(" + dateCounter + ")");

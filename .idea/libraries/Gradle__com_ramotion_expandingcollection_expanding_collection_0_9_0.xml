@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.ramotion.expandingcollection:expanding-collection-0.9.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expanding-collection-0.9.0.aar/37e8f988ca780d1c10ed8db80d991e26/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expanding-collection-0.9.0.aar/37e8f988ca780d1c10ed8db80d991e26/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expanding-collection-0.9.0.aar/0daf2650d78bff9a37f5a89b88890567/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/expanding-collection-0.9.0.aar/0daf2650d78bff9a37f5a89b88890567/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -2,9 +2,11 @@ package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Inter
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -42,9 +45,9 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
     public final static String TAG_FLIGHT_INTERNATIONAL = "TAG_FLIGHT_INTERNATIONAL ";
     public TextInputEditText edtFirstNameEng,
             edtLastNameEng,
-            edtFirstNamePersian,
-            edtLastNamePersian,
-            edtNationalCode,
+    //            edtFirstNamePersian,
+//            edtLastNamePersian,
+    edtNationalCode,
             edtGender,
             edtBirthDay,
             edtCountry,
@@ -52,6 +55,7 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
             edtPassportNumber,
             edtDateOfIssueOfThePassport,
             edtExportingCountry;
+
     private AppCompatButton btnRegister;
     private PassengerInfo passengerInfo;
     private int index;
@@ -60,6 +64,7 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
     private int accessTranslateCounter = 2;
     private InternationalApi internationalApi;
     private static final String TAG = "ActivityRegisterPassengerInternational";
+    private TextInputLayout tilNationalCode;
 
     //-----------------------------------------------
     @Override
@@ -97,55 +102,53 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
     //-----------------------------------------------
     private void initialComponentActivity() {
         UtilFonts.overrideFonts(this, findViewById(R.id.layoutMain), UtilFonts.IRAN_SANS_NORMAL);
-        //layoutFullNamePersian = (LinearLayout) findViewById(R.id.layoutFullNamePersian);
         internationalApi = new InternationalApi(this);
-        headerBar = (HeaderBar) findViewById(R.id.headerBar);
+        headerBar = findViewById(R.id.headerBar);
         headerBar.showMessageBar(R.string.warningPassenger);
-        edtFirstNameEng = (TextInputEditText) findViewById(R.id.tietFirstNameEng);
-        edtLastNameEng = (TextInputEditText) findViewById(R.id.tietLastNameEng);
-        edtFirstNamePersian = (TextInputEditText) findViewById(R.id.tietFirstNamePersian);
-        edtLastNamePersian = (TextInputEditText) findViewById(R.id.tietLastNamePersian);
-        edtNationalCode = (TextInputEditText) findViewById(R.id.tietNationalCode);
-        edtGender = (TextInputEditText) findViewById(R.id.tietGender);
-        edtBirthDay = (TextInputEditText) findViewById(R.id.tietBirthday);
-        edtCountry = (TextInputEditText) findViewById(R.id.tietCountry);
-        edtExportingCountry = (TextInputEditText) findViewById(R.id.tietCountryExporting);
-        edtPassportNumber = (TextInputEditText) findViewById(R.id.tietPassportNumber);
-        edtExpireDatePassport = (TextInputEditText) findViewById(R.id.tietExpireDatePassport);
-        edtDateOfIssueOfThePassport = (TextInputEditText) findViewById(R.id.tietDateOfIssueOfThePassport);
-        btnRegister = (AppCompatButton) findViewById(R.id.btnRegister);
+        tilNationalCode = findViewById(R.id.tilNationalCode);
+        edtFirstNameEng = findViewById(R.id.tietFirstNameEng);
+        edtLastNameEng = findViewById(R.id.tietLastNameEng);
+//        edtFirstNamePersian = findViewById(R.id.tietFirstNamePersian);
+//        edtLastNamePersian = findViewById(R.id.tietLastNamePersian);
+        edtNationalCode = findViewById(R.id.tietNationalCode);
+        edtGender = findViewById(R.id.tietGender);
+        edtBirthDay = findViewById(R.id.tietBirthday);
+        edtCountry = findViewById(R.id.tietCountry);
+        edtExportingCountry = findViewById(R.id.tietCountryExporting);
+        edtPassportNumber = findViewById(R.id.tietPassportNumber);
+        edtExpireDatePassport = findViewById(R.id.tietExpireDatePassport);
+        edtDateOfIssueOfThePassport = findViewById(R.id.tietDateOfIssueOfThePassport);
+        btnRegister = findViewById(R.id.btnRegister);
+//
+//        edtFirstNameEng.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View v, boolean hasFocus) {
+//                if (!hasFocus && edtFirstNamePersian.length() == 0 && accessTranslateCounter > 0)
+//                    translateWord(edtFirstNameEng.getText().toString(), edtFirstNamePersian);
+//            }
+//        });
+//        edtLastNameEng.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View v, boolean hasFocus) {
+//                if (!hasFocus && edtLastNamePersian.length() == 0 && accessTranslateCounter > 0)
+//                    translateWord(edtLastNameEng.getText().toString(), edtLastNamePersian);
+//            }
+//        });
+//        edtFirstNamePersian.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View v, boolean hasFocus) {
+//                if (!hasFocus && edtFirstNameEng.length() == 0 && accessTranslateCounter > 0)
+//                    translateWord(edtFirstNamePersian.getText().toString(), edtFirstNameEng);
+//            }
+//        });
+//        edtLastNamePersian.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//            @Override
+//            public void onFocusChange(View v, boolean hasFocus) {
+//                if (!hasFocus && edtLastNameEng.length() == 0 && accessTranslateCounter > 0)
+//                    translateWord(edtLastNamePersian.getText().toString(), edtLastNameEng);
+//            }
+//        });
 
-        edtFirstNameEng.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtFirstNamePersian.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtFirstNameEng.getText().toString(), edtFirstNamePersian);
-            }
-        });
-        edtLastNameEng.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtLastNamePersian.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtLastNameEng.getText().toString(), edtLastNamePersian);
-            }
-        });
-        edtFirstNamePersian.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtFirstNameEng.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtFirstNamePersian.getText().toString(), edtFirstNameEng);
-            }
-        });
-        edtLastNamePersian.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus && edtLastNameEng.length() == 0 && accessTranslateCounter > 0)
-                    translateWord(edtLastNamePersian.getText().toString(), edtLastNameEng);
-            }
-        });
-
-        //final Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/"+UtilFonts.IRAN_SANS_BOLD);
-        //edtExportingCountry.setTypeface(tf);
         edtGender.setOnClickListener(onClickListener);
         edtGender.setFocusable(false);
         edtGender.setCursorVisible(false);
@@ -174,19 +177,48 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
         btnRegister.setOnClickListener(onClickListener);
         iniInfo();
         edtNationalCode.addTextChangedListener(textWatcher);
+        setTypeFace();
+        setupToolbar();
+    }
+
+    //-----------------------------------------------
+    private void setTypeFace() {
+        TextInputLayout tilCountryExporting = findViewById(R.id.tilCountryExporting);
+
+        TextInputLayout tilCountry = findViewById(R.id.tilCountry);
+        TextInputLayout tilGender = findViewById(R.id.tilGender);
+        TextInputLayout tilLastNameEng = findViewById(R.id.tilLastNameEng);
+        TextInputLayout tilFirstNameEng = findViewById(R.id.tilFirstNameEng);
+        TextInputLayout tilLastNamePersian = findViewById(R.id.tilLastNamePersian);
+        TextInputLayout tilFirstNamePersian = findViewById(R.id.tilFirstNamePersian);
+        TextInputLayout tilPassportNumber = findViewById(R.id.tilPassportNumber);
+        TextInputLayout tilBirthday = findViewById(R.id.tilBirthday);
+        TextInputLayout tilExpireDatePassport = findViewById(R.id.tilExpireDatePassport);
+        TextInputLayout tilDateOfIssueOfThePassport = findViewById(R.id.tilDateOfIssueOfThePassport);
+
+
+        tilNationalCode.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilCountryExporting.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilCountry.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilGender.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilLastNameEng.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilFirstNameEng.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilLastNamePersian.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilFirstNamePersian.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilPassportNumber.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilBirthday.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilExpireDatePassport.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
+        tilDateOfIssueOfThePassport.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL));
     }
 
     //-----------------------------------------------
     private void iniInfo() {
         edtFirstNameEng.setText(passengerInfo.getName());
         edtLastNameEng.setText(passengerInfo.getFamily());
-//        if (getIntent().hasExtra("hasPersian")) {
-        //layoutFullNamePersian.setVisibility(View.VISIBLE);
-        edtFirstNamePersian.setText(passengerInfo.getNamePersian());
-        edtLastNamePersian.setText(passengerInfo.getFamilyPersian());
-//        } else {
-//            layoutFullNamePersian.setVisibility(View.GONE);
-//        }
+//        edtFirstNamePersian.setText(passengerInfo.getNamePersian());
+//        edtLastNamePersian.setText(passengerInfo.getFamilyPersian());
+//        edtFirstNamePersian.setText(passengerInfo.getName());
+//        edtLastNamePersian.setText(passengerInfo.getFamily());
         if (passengerInfo.getGender().contentEquals(PassengerInfo.MALE))
             edtGender.setText(getString(R.string.male));
         else if (passengerInfo.getGender().contentEquals(PassengerInfo.FEMALE))
@@ -288,6 +320,24 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
         });
     }
 
+    //-----------------------------------------------
+    private void setupToolbar() {
+        ImageView btnBack = findViewById(R.id.btnBack);
+//        LinearLayout layoutTitleToolbar = findViewById(R.id.layoutTitleToolbar);
+//        TextView txtTitle = findViewById(R.id.txtTitleMenu);
+//        TextView txtSubTitleMenu = findViewById(R.id.txtSubTitleMenu);
+//        String valueTitle = "ویرایش اطلاعات مسافر";
+//        String valueSubTitle = passengerInfo.getName() + " " + passengerInfo.getFamily();
+//        txtTitle.setText(valueTitle);
+//        txtSubTitleMenu.setText(valueSubTitle);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+    }
 
     //-----------------------------------------------
     TextWatcher textWatcher = new TextWatcher() {
@@ -363,9 +413,9 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
                 if (resultCode == ServiceID.SERVICE_COUNTRY) {
                     Country country = (Country) data.getExtras().getSerializable(Country.class.getName());
                     if (country.getCode().contentEquals("IR")) {
-                        edtNationalCode.setVisibility(View.VISIBLE);
+                        tilNationalCode.setVisibility(View.VISIBLE);
                     } else {
-                        edtNationalCode.setVisibility(View.GONE);
+                        tilNationalCode.setVisibility(View.GONE);
                     }
                     edtCountry.setText(country.getPersian());
                     passengerInfo.setNationalityCountryCode(country.getCode());
@@ -397,14 +447,14 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
             status = false;
         }
 //        if (getIntent().hasExtra("hasPersian")) {
-        if (edtFirstNamePersian.length() == 0) {
-            edtFirstNamePersian.setError("نام را فارسی وارد کنید");
-            status = false;
-        }
-        if (edtLastNamePersian.length() == 0) {
-            edtLastNamePersian.setError("نام خانوادگی را فارسی وارد کنید");
-            status = false;
-        }
+//        if (edtFirstNamePersian.length() == 0) {
+//            edtFirstNamePersian.setError("نام را فارسی وارد کنید");
+//            status = false;
+//        }
+//        if (edtLastNamePersian.length() == 0) {
+//            edtLastNamePersian.setError("نام خانوادگی را فارسی وارد کنید");
+//            status = false;
+//        }
 //        }
         if (edtBirthDay.length() == 0) {
             edtBirthDay.setError("تاریخ تولد مطابق با پاسپورت");
@@ -419,7 +469,7 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
             status = false;
         }
         if (edtExpireDatePassport.length() == 0) {
-            edtExpireDatePassport.setError("تاریخ انقضا پاسپورت را با دقت وارد کنید");
+            edtExpireDatePassport.setError("تاریخ انقضا پاسپورت را با دقت انتخاب کنید");
             status = false;
         }
         if (edtCountry.length() == 0) {
@@ -442,27 +492,27 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
         if (edtLastNameEng.length() == 0) {
             status = false;
         }
-        if (edtFirstNamePersian.length() == 0) {
-            status = false;
+//        if (edtFirstNamePersian.length() == 0) {
+//            status = false;
+//        }
+        if (getIntent().hasExtra("hasPersian")) {
+//        if (edtLastNamePersian.length() == 0) {
+//            status = false;
+//        }
+            if (edtNationalCode.length() == 0) {
+                status = false;
+            }
         }
-//        if (getIntent().hasExtra("hasPersian")) {
-        if (edtLastNamePersian.length() == 0) {
-            status = false;
-        }
-        if (edtNationalCode.length() == 0) {
-            status = false;
-        }
-        //}
         if (edtBirthDay.length() == 0) {
             status = false;
         }
         if (edtPassportNumber.length() == 0) {
             status = false;
         }
-        if (edtDateOfIssueOfThePassport.length() == 0) {
+        if (edtExpireDatePassport.length() == 0) {
             status = false;
         }
-        if (edtExpireDatePassport.length() == 0) {
+        if (edtDateOfIssueOfThePassport.length() == 0) {
             status = false;
         }
         if (edtCountry.length() == 0) {
@@ -479,13 +529,10 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
         passengerInfo.setHasError(hasError);
         passengerInfo.setName(edtFirstNameEng.getText().toString());
         passengerInfo.setFamily(edtLastNameEng.getText().toString());
-//        if (getIntent().hasExtra("hasPersian")) {
-        passengerInfo.setNamePersian(edtFirstNamePersian.getText().toString());
-        passengerInfo.setFamilyPersian(edtLastNamePersian.getText().toString());
-//        } else {
-//            passengerInfo.setNamePersian(edtFirstNameEng.getText().toString());
-//            passengerInfo.setFamilyPersian(edtLastNameEng.getText().toString());
-//        }
+//        passengerInfo.setNamePersian(edtFirstNamePersian.getText().toString());
+//        passengerInfo.setFamilyPersian(edtLastNamePersian.getText().toString());
+        passengerInfo.setNamePersian("علی");
+        passengerInfo.setFamilyPersian("احمدی");
         passengerInfo.setBirthday(edtBirthDay.getText().toString());
         passengerInfo.setNid(edtNationalCode.getText().toString());
         passengerInfo.setExpDate(edtExpireDatePassport.getText().toString());
@@ -506,8 +553,8 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
         View dialogView = inflater.inflate(R.layout.dialog_tools_gender_dialog_layout_, null);
         dialogBuilder.setView(dialogView);
         final AlertDialog alertDialog = dialogBuilder.create();
-        final TextView txtMale = (TextView) dialogView.findViewById(R.id.txtMale);
-        TextView txtFemale = (TextView) dialogView.findViewById(R.id.txtFemale);
+        final TextView txtMale = dialogView.findViewById(R.id.txtMale);
+        TextView txtFemale = dialogView.findViewById(R.id.txtFemale);
         txtMale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -540,7 +587,7 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
                 //long milliseconds = d.getTime();
                 newCalendar.setTime(d);
             }
-            fromDatePickerDialog = new DatePickerDialog(this, new android.app.DatePickerDialog.OnDateSetListener() {
+            fromDatePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     Calendar newDate = Calendar.getInstance();
@@ -555,8 +602,10 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
             fromDatePickerDialog.show();
         } catch (ParseException e) {
 
+
             e.printStackTrace();
         } catch (Exception e) {
+
 
             e.printStackTrace();
         }
@@ -574,7 +623,7 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
                 Date d = dateFormatter.parse(passengerInfo.getExpDate());
                 newCalendar.setTime(d);
             }
-            fromDatePickerDialog = new DatePickerDialog(this, new android.app.DatePickerDialog.OnDateSetListener() {
+            fromDatePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     Calendar newDate = Calendar.getInstance();
@@ -588,8 +637,10 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
             fromDatePickerDialog.show();
         } catch (ParseException e) {
 
+
             e.printStackTrace();
         } catch (Exception e) {
+
 
             e.printStackTrace();
         }
@@ -607,7 +658,7 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
                 Date d = dateFormatter.parse(passengerInfo.getExpDate());
                 newCalendar.setTime(d);
             }
-            fromDatePickerDialog = new DatePickerDialog(this, new android.app.DatePickerDialog.OnDateSetListener() {
+            fromDatePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     Calendar newDate = Calendar.getInstance();
@@ -664,8 +715,8 @@ public class ActivityRegisterPassengerInternational extends AppCompatActivity {
                                 edtGender.setText(R.string.female);
                             edtFirstNameEng.setText(dataPassengerInfo.getPassengerNameEnglish());
                             edtLastNameEng.setText(dataPassengerInfo.getPassengerFamilyEnglish());
-                            edtFirstNamePersian.setText(dataPassengerInfo.getPassengerNamePersian());
-                            edtLastNamePersian.setText(dataPassengerInfo.getPassengerFamilyPersian());
+//                            edtFirstNamePersian.setText(dataPassengerInfo.getPassengerNamePersian());
+//                            edtLastNamePersian.setText(dataPassengerInfo.getPassengerFamilyPersian());
                             edtBirthDay.setText(dataPassengerInfo.getDateOfBirth());
                             edtPassportNumber.requestFocus();
                             accessTranslateCounter = 0;

@@ -53,7 +53,7 @@ public class InternationalListAdapter extends RecyclerView.Adapter<International
 
         final OutBound outBound = listItem.get(position);
         String url = BaseConfig.BASE_URL_MASTER + BaseConfig.FOLDER_IMAGE_INTERNATIONAL_URL + outBound.getFileName();
-        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.mipmap.ic_airplan_top);
+        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.drawable.flight);
         viewHolder.txtTimeTakeOff.setText(outBound.getTakeoffTime());
         viewHolder.txtTimeLanding.setText(outBound.getArriveTime());
         viewHolder.txtAirLineAndTypeClass.setText(outBound.getAireLineName() + "(" + outBound.getType() + ")");

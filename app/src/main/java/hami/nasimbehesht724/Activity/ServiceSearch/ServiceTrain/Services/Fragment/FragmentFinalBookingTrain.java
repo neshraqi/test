@@ -238,7 +238,7 @@ public class FragmentFinalBookingTrain extends Fragment {
         }
         txtAirLineAndTypeClass.setText(trainResponse.getWagonName() + "(" + type + ")");
         String url = BaseConfig.FOLDER_IMAGE_TRAIN_URL + trainResponse.getOwner().toLowerCase() + ".png";
-        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.mipmap.ic_train);
+        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.drawable.train);
     }
 
     //-----------------------------------------------

@@ -56,7 +56,4 @@
 
     <color name="white">#ffffff</color>
 
-    <color name="main_color_blue_A200">@color/material_cyan_A800</color>
-    <color name="main_color_blue_A800">@color/material_light_blue_A800</color>
-
 </resources>

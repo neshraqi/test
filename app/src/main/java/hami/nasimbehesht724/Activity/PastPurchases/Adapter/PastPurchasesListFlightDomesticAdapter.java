@@ -55,7 +55,7 @@ public class PastPurchasesListFlightDomesticAdapter extends RecyclerView.Adapter
     public void onBindViewHolder(final MyViewHolder viewHolder, final int position) {
 
         final PurchasesFlightDomestic outBound = listItem.get(position);
-        UtilImageLoader.loadImage(context,viewHolder.imgLogoAirLine,outBound.getImg_airline(),R.mipmap.ic_airplan_top);
+        UtilImageLoader.loadImage(context,viewHolder.imgLogoAirLine,outBound.getImg_airline(),R.drawable.flight);
         viewHolder.txtTimeTakeOff.setText("ساعت پرواز: " + outBound.getTtime());
         viewHolder.txtDateTakeOff.setText("تاریخ پرواز: " + outBound.getTdate_persian_show());
         //viewHolder.txtFlyTime.setVisibility(View.GONE);

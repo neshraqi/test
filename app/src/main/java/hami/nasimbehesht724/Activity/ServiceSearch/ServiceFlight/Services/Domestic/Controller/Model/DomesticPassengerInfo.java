@@ -33,8 +33,9 @@ public class DomesticPassengerInfo implements Parcelable {
 
     public DomesticPassengerInfo() {
         nationalityType = EXPORTING_COUNTRY_IRAN;
-        exportingCountry = "";
-        nationalitycode = "";
+        exportingCountry = "IRN";
+        exportingCountryName = "ایران";
+        nationalitycode = "IRN";
         passportCo = "";
         passportExpireDate = "";
         gender = Integer.parseInt(PassengerInfo.MALE);
@@ -139,11 +140,11 @@ public class DomesticPassengerInfo implements Parcelable {
     }
 
     public String getFirstNameEng() {
-        return firstNameEng;
+        return firstNameEng == null || firstNameEng.length() == 0 ? "---" : firstNameEng;
     }
 
     public String getLastNameEng() {
-        return lastNameEng;
+        return lastNameEng == null || lastNameEng.length() == 0 ? "---" : lastNameEng;
     }
 
     public int getGender() {

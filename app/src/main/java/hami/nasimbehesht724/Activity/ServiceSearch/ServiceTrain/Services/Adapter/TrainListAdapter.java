@@ -62,7 +62,7 @@ public class TrainListAdapter extends RecyclerView.Adapter<TrainListAdapter.MyVi
 
         final TrainResponse trainResponse = listItem.get(position);
         String url = BaseConfig.FOLDER_IMAGE_TRAIN_URL + trainResponse.getOwner().toLowerCase() + ".png";
-        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.mipmap.ic_train);
+        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.drawable.train);
         if (!hasCapacity(trainResponse.getCapacity())) {
             viewHolder.itemView.setBackgroundColor(context.getResources().getColor(R.color.main_color_grey_100));
         } else

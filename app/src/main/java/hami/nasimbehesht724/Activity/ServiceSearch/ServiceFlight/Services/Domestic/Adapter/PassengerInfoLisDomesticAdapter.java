@@ -2,13 +2,11 @@ package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domes
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -17,6 +15,7 @@ import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domest
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
 import hami.nasimbehesht724.R;
 import hami.nasimbehesht724.Util.UtilFonts;
+
 
 /**
  * Created by renjer on 1/8/2017.
@@ -27,6 +26,7 @@ public class PassengerInfoLisDomesticAdapter extends RecyclerView.Adapter<Passen
     private Context context;
     DomesticParams domesticParams;
     private static final String TAG = "PassengerInfoLisDomesticAdapter";
+
     //-----------------------------------------------
     public PassengerInfoLisDomesticAdapter(Context context, DomesticParams domesticParams) {
         this.context = context;
@@ -35,7 +35,7 @@ public class PassengerInfoLisDomesticAdapter extends RecyclerView.Adapter<Passen
 
     //-----------------------------------------------
     @Override
-    public PassengerInfoLisDomesticAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_service_flight_passnger_pre_reserve, null);
         MyViewHolder myViewHolder = new MyViewHolder(view);
         return myViewHolder;
@@ -48,11 +48,15 @@ public class PassengerInfoLisDomesticAdapter extends RecyclerView.Adapter<Passen
         viewHolder.txtTypePassenger.setText("مسافر " + context.getString(domesticParams.getTypeString(position)));
         String passport = "";
         Integer nationality = Integer.valueOf(domesticParams.getNationality()[position]);
-        if (nationality == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN) {
-            viewHolder.txtCoNational.setText("کد ملی:" + domesticParams.getMelicode()[position]);
-        } else if (nationality == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
+        int international = domesticParams.getInternational();
+        if (international == 1 || nationality == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
             passport = "شماره پاسپورت:" + domesticParams.getPassport_number()[position];
             viewHolder.txtCoNational.setText(passport);
+            viewHolder.layoutExpireDatePassport.setVisibility(View.VISIBLE);
+            viewHolder.txtDateExpirePassport.setText(domesticParams.getExpdate()[position]);
+        } else {
+            viewHolder.txtCoNational.setText("کد ملی:" + domesticParams.getMelicode()[position]);
+            viewHolder.layoutExpireDatePassport.setVisibility(View.GONE);
         }
         viewHolder.txtPrice.setText(getFinalPrice(domesticParams.getPrice()[position]));
     }
@@ -68,6 +72,7 @@ public class PassengerInfoLisDomesticAdapter extends RecyclerView.Adapter<Passen
             return finalPrice;
         } catch (Exception e) {
 
+
             return price + " ریال";
         }
 
@@ -79,19 +84,22 @@ public class PassengerInfoLisDomesticAdapter extends RecyclerView.Adapter<Passen
         public TextView txtFullName;
         public TextView txtTypePassenger;
         public TextView txtCoNational;
-        //public TextView txtBirthDay;
         public TextView txtPrice;
+        public TextView txtDateExpirePassport;
+        public RelativeLayout layoutBirthDay, layoutExpireDatePassport;
 
         public MyViewHolder(final View itemLayoutView) {
             super(itemLayoutView);
             UtilFonts.overrideFonts(context, itemLayoutView, UtilFonts.IRAN_SANS_NORMAL);
-            txtFullName = (TextView) itemLayoutView.findViewById(R.id.txtFullname);
-            txtTypePassenger = (TextView) itemLayoutView.findViewById(R.id.txtTypePassenger);
-            txtCoNational = (TextView) itemLayoutView.findViewById(R.id.txtCoNational);
-            //txtCoPassport = (TextView) itemLayoutView.findViewById(R.id.txtCoPassport);
-            //txtBirthDay = (TextView) itemLayoutView.findViewById(R.id.txtBirthDay);
-            txtPrice = (TextView) itemLayoutView.findViewById(R.id.txtPrice);
-            // txtTypePrice = itemLayoutView.findViewById(R.id.txtTypePrice);
+            txtFullName = itemLayoutView.findViewById(R.id.txtFullname);
+            txtTypePassenger = itemLayoutView.findViewById(R.id.txtTypePassenger);
+            txtCoNational = itemLayoutView.findViewById(R.id.txtCoNational);
+            txtDateExpirePassport = itemLayoutView.findViewById(R.id.txtDateExpirePassport);
+            layoutExpireDatePassport = itemLayoutView.findViewById(R.id.layoutExpireDatePassport);
+            layoutExpireDatePassport.setVisibility(View.VISIBLE);
+            layoutBirthDay = itemLayoutView.findViewById(R.id.layoutBirthDay);
+            layoutBirthDay.setVisibility(View.GONE);
+            txtPrice = itemLayoutView.findViewById(R.id.txtPrice);
         }
     }
 

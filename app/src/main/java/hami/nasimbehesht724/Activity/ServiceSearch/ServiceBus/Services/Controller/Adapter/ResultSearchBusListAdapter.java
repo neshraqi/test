@@ -62,7 +62,7 @@ public class ResultSearchBusListAdapter extends RecyclerView.Adapter<ResultSearc
 
         final SearchBusResponse searchBusResponse = listItem.get(position);
         String url = BaseConfig.BASE_URL_MASTER + BaseConfig.FOLDER_IMAGE_BUS_URL + searchBusResponse.getImg();
-        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.mipmap.ic_bus);
+        UtilImageLoader.loadImage(context, viewHolder.imgLogoAirLine, url, R.drawable.bus);
         viewHolder.txtTimeTakeOff.setText(searchBusResponse.getDeparureTime());
         viewHolder.txtTimeLanding.setText("---");
         viewHolder.txtFlyTime.setText(searchBusResponse.getCapacity() + "نفر");

@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
 
 import hami.nasimbehesht724.R;
 
+
 /**
  * Created by renjer on 2017-05-24.
  */
@@ -76,6 +77,8 @@ public class DomesticParams implements Parcelable {
     private String fromfa;
     @SerializedName("tofa")
     private String tofa;
+    @SerializedName("international")
+    private int international;
     //-----------------------------------------------
 
     public DomesticParams() {
@@ -116,6 +119,7 @@ public class DomesticParams implements Parcelable {
         airlineen = in.readString();
         fromfa = in.readString();
         tofa = in.readString();
+        international = in.readInt();
     }
 
     public static final Creator<DomesticParams> CREATOR = new Creator<DomesticParams>() {
@@ -196,6 +200,10 @@ public class DomesticParams implements Parcelable {
 
     public String[] getMelicode() {
         return melicode;
+    }
+
+    public int getInternational() {
+        return international;
     }
 
     public int getTypeString(int index) {
@@ -308,5 +316,6 @@ public class DomesticParams implements Parcelable {
         dest.writeString(airlineen);
         dest.writeString(fromfa);
         dest.writeString(tofa);
+        dest.writeInt(international);
     }
 }

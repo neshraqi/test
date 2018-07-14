@@ -52,8 +52,8 @@ public class SimpleMonthView extends MonthView {
         }
 
         canvas.drawText(LanguageUtils.getPersianNumbers(String.format("%d", day)), x, y, mMonthNumPaint);
-        if (month == 4 && day < 15) {
-            canvas.drawText(LanguageUtils.getPersianNumbers(String.format("%d", 100)) + "ت", x, y + 30, mMonthPriceDayPaint);
-        }
+//        if (month == 4 && day < 15) {
+//            canvas.drawText(LanguageUtils.getPersianNumbers(String.format("%d", 100)) + "ت", x, y + 30, mMonthPriceDayPaint);
+//        }
     }
 }

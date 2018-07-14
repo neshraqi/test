@@ -35,12 +35,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:background="@color/styleConfigTabBackground"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
                     app:tabBackground="@drawable/bg_tab_ways"
                     app:tabGravity="fill"
                     app:tabMode="fixed"
-                    app:tabSelectedTextColor="@color/styleConfigTabTitleSelected"
-                    app:tabTextColor="@color/styleConfigTabTitleNormal" />
+                    app:tabSelectedTextColor="@android:color/black"
+                    app:tabTextColor="@color/main_color_grey_400" />
 
 
                 <LinearLayout
@@ -101,6 +104,7 @@
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilGender"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -120,6 +124,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilNationality"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -146,6 +151,7 @@
 
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLastNameEng"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -169,6 +175,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilFirstNameEng"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -195,10 +202,12 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLastNamePersian"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -221,6 +230,7 @@
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilFirstNamePersian"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -250,6 +260,7 @@
                     android:orientation="horizontal">
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilExpireDatePassport"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -265,10 +276,11 @@
                             android:layout_gravity="right"
                             android:gravity="right"
                             android:hint="@string/passportDate"
-                            android:inputType="none" />
+                            android:inputType="datetime" />
                     </android.support.design.widget.TextInputLayout>
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilPassportNumber"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
@@ -293,16 +305,16 @@
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
 
-        <android.support.v7.widget.AppCompatButton
+        <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_gravity="center"
+            android:background="@drawable/bg_button_orange"
             android:gravity="center"
             android:text="@string/registerFlight"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-            android:textColor="@color/styleConfigMasterButtonTitle"
-            app:backgroundTint="@color/styleConfigMasterButtonBackground" />
+            android:textColor="@android:color/white" />
     </RelativeLayout>
 </LinearLayout>

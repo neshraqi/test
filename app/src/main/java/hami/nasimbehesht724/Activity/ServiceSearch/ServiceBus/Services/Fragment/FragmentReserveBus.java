@@ -233,7 +233,7 @@ public class FragmentReserveBus extends Fragment {
         TextView txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
 
         String url = BaseConfig.BASE_URL_MASTER + BaseConfig.FOLDER_IMAGE_BUS_URL + searchBusResponse.getImg();
-        UtilImageLoader.loadImage(getActivity(), imgLogoBusCompany, url, R.mipmap.ic_bus);
+        UtilImageLoader.loadImage(getActivity(), imgLogoBusCompany, url, R.drawable.bus);
         txtWentBusDateTime.setText(busTicketInformation.gettDate() + "," + busTicketInformation.gettTime1());
         txtWentBusCity.setText("سفر از " + busTicketInformation.getFrom() + " به " + busTicketInformation.getTo());
         txtCompanyAndTypeClass.setText(busTicketInformation.getCompany());
