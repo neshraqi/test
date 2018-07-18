@@ -578,6 +578,12 @@
     <string name="name">nasim  -  e  behesht  Travel  Agency </string>
     <string name="website">www.nasimbehesht724.com</string>
 
+    <string name="finalPriceWithDiscount">مبلغ پرداخت با تخفیف:</string>
+    <string name="msgErrorRunningGetTicketEng"> Sorry, we encountered a problem in your application, click to issue a ticket to receive a ticket.</string>
+    <string name="msgErrorRunningGetTicket"> متاسفانه در اجرای درخواست شما با مشکل مواجه شدیم،جهت صدور بلیط روی دریافت بلیط کلیک کنید.</string>
+
+    <string name="IRealized">متوجه شدم</string>
+
 
 </resources>
 

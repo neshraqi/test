@@ -13,6 +13,9 @@ public class RegisterTrainResponse implements Parcelable {
     @SerializedName("id")
     private String ticketId;
 
+    @SerializedName("msg")
+    private String msg;
+
     @SerializedName("code")
     private int code;
 
@@ -25,10 +28,24 @@ public class RegisterTrainResponse implements Parcelable {
 
     //-----------------------------------------------
 
-
     protected RegisterTrainResponse(Parcel in) {
         ticketId = in.readString();
+        msg = in.readString();
         code = in.readInt();
+        viewParamsTrain = in.readParcelable(ViewParamsTrain.class.getClassLoader());
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(ticketId);
+        dest.writeString(msg);
+        dest.writeInt(code);
+        dest.writeParcelable(viewParamsTrain, flags);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
     public static final Creator<RegisterTrainResponse> CREATOR = new Creator<RegisterTrainResponse>() {
@@ -55,14 +72,7 @@ public class RegisterTrainResponse implements Parcelable {
         return ticketId;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(ticketId);
-        dest.writeInt(code);
+    public String getMsg() {
+        return msg;
     }
 }

@@ -20,9 +20,7 @@ import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
 import hami.nasimbehesht724.BaseNetwork.BaseConfig;
 import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
 import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.R;
 import hami.nasimbehesht724.Util.Hashing;
-
 
 /**
  * Created by renjer on 1/10/2017.
@@ -132,7 +130,7 @@ public class TrainApi {
                                     registerTrainResponse.getTicketId().length() > 0 && registerTrainResponse.getViewParamsTrain() != null) {
                                 registerTrainPresenter.onSuccessResultSearch(registerTrainResponse);
                             } else if ((registerTrainResponse != null && registerTrainResponse.getCode() == 0) || registerTrainResponse.getTicketId() == null)
-                                registerTrainPresenter.onError(context.getString(R.string.msgErrorServer));
+                                registerTrainPresenter.onError(registerTrainResponse.getMsg());
                             else
                                 registerTrainPresenter.onErrorServer(0);
                         } catch (Exception e) {
@@ -149,7 +147,7 @@ public class TrainApi {
     }
 
     //-----------------------------------------------
-    public void hasBuyTicket(String ticketId, final PaymentPresenter paymentPresenter) {
+    public void hasBuyTicket(String ticketId, final PaymentPresenter paymentBuyPresenter) {
         String hash = Hashing.getHash(ticketId);
         final HashMap<String, String> getHashMap = new HashMap<>();
         getHashMap.put(KeyConst.APP_KEY, KeyConst.appKey);
@@ -162,19 +160,19 @@ public class TrainApi {
                 new WebServiceNetwork(context).requestWebServiceByPost(url, getHashMap, new NetworkListener() {
                     @Override
                     public void onStart() {
-                        paymentPresenter.onStart();
+                        paymentBuyPresenter.onStart();
                     }
 
                     @Override
                     public void onErrorInternetConnection() {
-                        paymentPresenter.onErrorInternetConnection();
-                        paymentPresenter.onFinish();
+                        paymentBuyPresenter.onErrorInternetConnection();
+                        paymentBuyPresenter.onFinish();
                     }
 
                     @Override
                     public void onErrorServer() {
-                        paymentPresenter.onErrorServer();
-                        paymentPresenter.onFinish();
+                        paymentBuyPresenter.onErrorServer();
+                        paymentBuyPresenter.onFinish();
                     }
 
                     @Override
@@ -183,13 +181,15 @@ public class TrainApi {
                             Gson gson = new Gson();
                             PaymentResponse paymentResponse = gson.fromJson(result, PaymentResponse.class);
                             if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && paymentResponse.getStatus() == 3) {
-                                paymentPresenter.onSuccessBuy();
+                                paymentBuyPresenter.onSuccessBuy();
+                            } else if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && (paymentResponse.getStatus() == 2 || paymentResponse.getStatus() == 1)) {
+                                paymentBuyPresenter.onReTryGetTicket();
                             } else
-                                paymentPresenter.onReTryGetTicket();
+                                paymentBuyPresenter.onReTryGetPayment();
                         } catch (Exception e) {
-                            paymentPresenter.onErrorServer();
+                            paymentBuyPresenter.onErrorServer();
                         } finally {
-                            paymentPresenter.onFinish();
+                            paymentBuyPresenter.onFinish();
                         }
 
                     }

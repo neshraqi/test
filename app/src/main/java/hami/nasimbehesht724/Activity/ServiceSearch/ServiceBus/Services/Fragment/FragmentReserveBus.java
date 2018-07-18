@@ -1,8 +1,11 @@
 package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Fragment;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -25,21 +30,20 @@ import hami.nasimbehesht724.R;
 import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
 import hami.nasimbehesht724.Util.Hashing;
 import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
-import hami.nasimbehesht724.View.ToastMessageBar;
 
 
 public class FragmentReserveBus extends Fragment {
     //-----------------------------------------------
     private RelativeLayout coordinator;
     private View view;
-    private TextView txtTitleFinalTicket;
+    private TextView txtTitleFinalTicket, txtWarningCheckInfo;
     private AppCompatButton btnGetTicket, btnBuy, btnEdit, btnExit;
     private LinearLayout chairs;
     private Boolean hasReserve = false, hasPayment = false;
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
     private BusTicketInformation busTicketInformation;
     private SearchBusResponse searchBusResponse;
+    private TextView txtCountPassenger;
     private static final String TAG = "FragmentReserveBus";
 
     //-----------------------------------------------
@@ -61,7 +65,7 @@ public class FragmentReserveBus extends Fragment {
         if (savedInstanceState != null) {
             hasReserve = savedInstanceState.getBoolean("hasReserve");
             hasPayment = savedInstanceState.getBoolean("hasPayment");
-            busTicketInformation = (BusTicketInformation) savedInstanceState.getParcelable(BusTicketInformation.class.getName());
+            busTicketInformation = savedInstanceState.getParcelable(BusTicketInformation.class.getName());
             searchBusResponse = savedInstanceState.getParcelable(SearchBusResponse.class.getName());
         }
     }
@@ -104,6 +108,7 @@ public class FragmentReserveBus extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        setupHeaderToolbar();
         if (hasReserve) {
             new BusApi(getActivity()).hasBuyTicket(busTicketInformation.getId(), new PaymentPresenter() {
                 @Override
@@ -127,8 +132,17 @@ public class FragmentReserveBus extends Fragment {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                txtWarningCheckInfo.setVisibility(View.GONE);
                                 hasPayment = true;
                                 setupGetTicket();
+                                txtTitleFinalTicket.setText(R.string.successGetTicket);
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(getResources().getColor(R.color.greenSelectedChair)));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
                             }
                         });
                     }
@@ -140,12 +154,38 @@ public class FragmentReserveBus extends Fragment {
                 }
 
                 @Override
-                public void onReTryGetTicket() {
+                public void onReTryGetPayment() {
                     if (getActivity() != null) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 setupPayment();
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onReTryGetTicket() {
+                    if (getActivity() != null) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                setupGetTicket();
+                                txtTitleFinalTicket.setText(getString(R.string.msgErrorRunningGetTicket));
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(Color.RED));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        showPayment();
+                                    }
+                                });
                             }
                         });
                     }
@@ -168,16 +208,19 @@ public class FragmentReserveBus extends Fragment {
     private void initialComponentFragment() {
         //coordinator = (RelativeLayout) view.findViewById(R.id.coordinator);
         UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_BOLD);
-        chairs = (LinearLayout) view.findViewById(R.id.layoutChairs);
-        layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
-        layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
-        txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
+        txtCountPassenger = view.findViewById(R.id.txtCountPassenger);
+        chairs = view.findViewById(R.id.layoutChairs);
+        layoutButtonGetTicket = view.findViewById(R.id.layoutButtonGetTicket);
+        layoutButtonPayment = view.findViewById(R.id.layoutButtonPayment);
+        txtTitleFinalTicket = view.findViewById(R.id.titleFinalTicket);
+       // txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+        txtWarningCheckInfo.setSelected(true);
+        txtWarningCheckInfo.setVisibility(View.VISIBLE);
+        btnBuy = view.findViewById(R.id.btnBuy);
+        btnEdit = view.findViewById(R.id.btnEditBuy);
 
-        btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
-        btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
-
-        btnGetTicket = (AppCompatButton) view.findViewById(R.id.btnGetTicket);
-        btnExit = (AppCompatButton) view.findViewById(R.id.btnExit);
+        btnGetTicket = view.findViewById(R.id.btnGetTicket);
+        btnExit = view.findViewById(R.id.btnExit);
 
         btnGetTicket.setOnClickListener(onClickListener);
         btnBuy.setOnClickListener(onClickListener);
@@ -186,8 +229,7 @@ public class FragmentReserveBus extends Fragment {
         try {
             setupInfo();
         } catch (Exception e) {
-            ToastMessageBar.show(getActivity(), R.string.msgErrorPayment);
-            getActivity().onBackPressed();
+
 
         }
 
@@ -218,32 +260,37 @@ public class FragmentReserveBus extends Fragment {
     private void setupInfo() {
         //BusTicketInformation busTicketInformation = BusWarehouse.getBusTicketInformation();
 
-        TextView txtWentBusCity = (TextView) view.findViewById(R.id.txtWentBusCity);
-        TextView txtWentBusDateTime = (TextView) view.findViewById(R.id.txtWentBusDateTime);
-        TextView txtCompanyAndTypeClass = (TextView) view.findViewById(R.id.txtCompanyAndTypeClass);
-        TextView txtWentBusBusType = (TextView) view.findViewById(R.id.txtWentBusBusType);
-        ImageView imgLogoBusCompany = (ImageView) view.findViewById(R.id.imgLogoBusCompany);
+        TextView txtWentBusCity = view.findViewById(R.id.txtWentBusCity);
+        TextView txtWentBusDateTime = view.findViewById(R.id.txtWentBusCity);
+        TextView txtCompanyAndTypeClass = view.findViewById(R.id.txtCompanyAndTypeClass);
+        TextView txtWentBusBusType = view.findViewById(R.id.txtWentBusBusType);
+        ImageView imgLogoBusCompany = view.findViewById(R.id.imgLogoBusCompany);
 
 
-        TextView txtFullName = (TextView) view.findViewById(R.id.txtFullname);
-        TextView txtGender = (TextView) view.findViewById(R.id.txtGender);
-        TextView txtNationalCode = (TextView) view.findViewById(R.id.txtCoNational);
-        TextView txtPrice = (TextView) view.findViewById(R.id.txtPrice);
+        TextView txtFullName = view.findViewById(R.id.txtFullname);
+        TextView txtGender = view.findViewById(R.id.txtGender);
+        TextView txtNationalCode = view.findViewById(R.id.txtCoNational);
+        TextView txtPrice = view.findViewById(R.id.txtPrice);
 
-        TextView txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
+        TextView txtFinalPrice = view.findViewById(R.id.txtFinalPrice);
 
-        String url = BaseConfig.BASE_URL_MASTER + BaseConfig.FOLDER_IMAGE_BUS_URL + searchBusResponse.getImg();
-        UtilImageLoader.loadImage(getActivity(), imgLogoBusCompany, url, R.drawable.bus);
+
+        Picasso.with(getActivity())
+                .load(BaseConfig.BASE_URL_MASTER + BaseConfig.FOLDER_IMAGE_BUS_URL + searchBusResponse.getImg())
+                .into(imgLogoBusCompany);
+        int countPassenger = busTicketInformation.getChairs().split(",").length;
+        txtCountPassenger.setText(getString(R.string.contactInfoPassenger) + "(" + countPassenger + ")");
         txtWentBusDateTime.setText(busTicketInformation.gettDate() + "," + busTicketInformation.gettTime1());
-        txtWentBusCity.setText("سفر از " + busTicketInformation.getFrom() + " به " + busTicketInformation.getTo());
+        txtWentBusCity.setText("سفر به " + busTicketInformation.getTo());
         txtCompanyAndTypeClass.setText(busTicketInformation.getCompany());
-        txtPrice.setText(getFinalPrice(searchBusResponse.getPrice()));
+        txtPrice.setText(getPriceByPassenger(searchBusResponse.getPrice()));
         txtWentBusBusType.setText(busTicketInformation.getBusType());
 
         //txtCountPassenger.setText("تعداد مسافر:" + String.valueOf(countPassenger));
         //txtTypeBus.setText(busTicketInformation.getBusType());
         txtFullName.setText(busTicketInformation.getUserName());
         txtNationalCode.setText("کد ملی:" + busTicketInformation.getNid());
+        txtNationalCode.setVisibility(View.GONE);
         txtGender.setText("جنسیت:" + getString(busTicketInformation.getGender()));
         txtFinalPrice.setText("قیمت نهایی:" + getFinalPrice(busTicketInformation.getFinalPrice()));
         setupChairs(busTicketInformation);
@@ -257,12 +304,31 @@ public class FragmentReserveBus extends Fragment {
 
             finalPrice = price.replace(",", "");
             finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
-            finalPrice += " تومان";
-
+            finalPrice = getString(R.string.finalPriceWithDiscount) + finalPrice + " تومان";
             return finalPrice;
         } catch (Exception e) {
 
-            return price + " ریال";
+
+            finalPrice = getString(R.string.finalPriceWithDiscount) + price;
+            return finalPrice + " ریال";
+        }
+
+    }
+
+    //-----------------------------------------------
+    private String getPriceByPassenger(String price) {
+        String finalPrice = "";
+        try {
+
+            finalPrice = price.replace(",", "");
+            finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
+            finalPrice = getString(R.string.pricePerPerson) + finalPrice + " تومان";
+            return finalPrice;
+        } catch (Exception e) {
+
+
+            finalPrice = getString(R.string.finalPriceWithDiscount) + price;
+            return finalPrice + " ریال";
         }
 
     }
@@ -275,7 +341,6 @@ public class FragmentReserveBus extends Fragment {
             ToolsBusChair toolsBusChair = new ToolsBusChair(getActivity(), ToolsBusChair.CHAIR_TYPE_CAN_SELECT, number);
             chairs.addView(toolsBusChair);
         }
-        //chairs
     }
 
     //-----------------------------------------------
@@ -290,6 +355,7 @@ public class FragmentReserveBus extends Fragment {
         layoutButtonPayment.setVisibility(View.GONE);
         layoutButtonGetTicket.setVisibility(View.VISIBLE);
         txtTitleFinalTicket.setVisibility(View.VISIBLE);
+        txtWarningCheckInfo.setVisibility(View.GONE);
         getActivity().findViewById(R.id.btnBack).setVisibility(View.INVISIBLE);
     }
 
@@ -300,10 +366,6 @@ public class FragmentReserveBus extends Fragment {
         String hash = Hashing.getHash(ticketId);
         String url = BaseConfig.MELLAT_BANK_BUS + ticketId + "/" + hash;
         new CustomTabsPackages(getActivity()).showUrl(url);
-//        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-//        CustomTabsIntent customTabsIntent = builder.build();
-//        builder.setToolbarColor(ContextCompat.getColor(getActivity(), R.color.colorPrimaryDark));
-//        customTabsIntent.launchUrl(getActivity(), Uri.parse(url));
     }
 
     //-----------------------------------------------
@@ -312,12 +374,13 @@ public class FragmentReserveBus extends Fragment {
         String hash = Hashing.getHash(ticketId);
         String url = BaseConfig.BASE_URL_MASTER + "bus/pdfticket/" + ticketId + "/" + hash;
         new CustomTabsPackages(getActivity()).showUrl(url);
-//        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-//        CustomTabsIntent customTabsIntent = builder.build();
-//        builder.setToolbarColor(ContextCompat.getColor(getActivity(), R.color.colorPrimaryDark));
-//        customTabsIntent.launchUrl(getActivity(), Uri.parse(url));
     }
 
+    //-----------------------------------------------
+    private void setupHeaderToolbar() {
+        TextView txtSubTitleMenu = getActivity().findViewById(R.id.txtSubTitleMenu);
+        txtSubTitleMenu.setText("تایید نهایی و پرداخت");
+    }
 
     //-----------------------------------------------
     public Boolean hasBuyTicket() {

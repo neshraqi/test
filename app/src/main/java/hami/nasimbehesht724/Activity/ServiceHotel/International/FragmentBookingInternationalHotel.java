@@ -2,9 +2,12 @@ package hami.nasimbehesht724.Activity.ServiceHotel.International;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -35,13 +38,12 @@ import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
 import hami.nasimbehesht724.Util.UtilFonts;
 import hami.nasimbehesht724.View.ToastMessageBar;
 
-
 public class FragmentBookingInternationalHotel extends Fragment {
 
     private HotelDetailResponse hotelDetailResponse;
     private RegisterPassengerInternationalHotelResponse registerPassengerInternationalHotelResponse;
     private View view;
-    private TextView txtTitleFinalTicket, txtFinalPrice;
+    private TextView txtTitleFinalTicket, txtFinalPrice , txtWarningCheckInfo;
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
     private Boolean hasReserve = false, hasPayment = false;
     private AlertDialog alertDialog;
@@ -117,20 +119,23 @@ public class FragmentBookingInternationalHotel extends Fragment {
 
     //-----------------------------------------------
     private void initialComponentFragment(View view) {
-        UtilFonts.overrideFonts(getActivity(), view, UtilFonts.TAHOMA);
+        UtilFonts.overrideFonts(getActivity(), view, UtilFonts.BOOK);
         hotelApi = new InternationalHotelApi(getActivity());
-        btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
-        btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
-        btnGetTicket = (AppCompatButton) view.findViewById(R.id.btnGetTicket);
-        btnExit = (AppCompatButton) view.findViewById(R.id.btnExit);
+        btnBuy = view.findViewById(R.id.btnBuy);
+        btnEdit = view.findViewById(R.id.btnEditBuy);
+        btnGetTicket = view.findViewById(R.id.btnGetTicket);
+        btnExit = view.findViewById(R.id.btnExit);
+       // txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+        txtWarningCheckInfo.setSelected(true);
+        txtWarningCheckInfo.setVisibility(View.VISIBLE);
         btnGetTicket.setOnClickListener(onClickListener);
         btnBuy.setOnClickListener(onClickListener);
         btnExit.setOnClickListener(onClickListener);
         btnEdit.setOnClickListener(onClickListener);
-        layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
-        layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
-        txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
-        txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
+        layoutButtonGetTicket = view.findViewById(R.id.layoutButtonGetTicket);
+        layoutButtonPayment = view.findViewById(R.id.layoutButtonPayment);
+        txtTitleFinalTicket = view.findViewById(R.id.titleFinalTicket);
+        txtFinalPrice = view.findViewById(R.id.txtFinalPrice);
         txtFinalPrice.setText(getFinalPrice());
         setupHotelDetail();
         setupPassengerRequest();
@@ -182,8 +187,17 @@ public class FragmentBookingInternationalHotel extends Fragment {
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        txtWarningCheckInfo.setVisibility(View.GONE);
                         hasPayment = true;
                         setupGetTicket();
+                        txtTitleFinalTicket.setText(R.string.successGetTicket);
+                        ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(getResources().getColor(R.color.greenSelectedChair)));
+                        btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                getTicket();
+                            }
+                        });
                     }
                 });
             }
@@ -195,17 +209,42 @@ public class FragmentBookingInternationalHotel extends Fragment {
         }
 
         @Override
-        public void onReTryGetTicket() {
+        public void onReTryGetPayment() {
             if (getActivity() != null) {
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         setupPayment();
+                        btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                getTicket();
+                            }
+                        });
                     }
                 });
             }
         }
 
+        @Override
+        public void onReTryGetTicket() {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        setupGetTicket();
+                        txtTitleFinalTicket.setText(getString(R.string.msgErrorRunningGetTicketEng));
+                        ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(Color.RED));
+                        btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                showPayment();
+                            }
+                        });
+                    }
+                });
+            }
+        }
 
         @Override
         public void onError(String msg) {
@@ -236,10 +275,10 @@ public class FragmentBookingInternationalHotel extends Fragment {
 
     //-----------------------------------------------
     private void setupPassengerRequest() {
-        TextView txtRoomCount = (TextView) view.findViewById(R.id.txtRoomCount);
-        TextView txtPassengerCount = (TextView) view.findViewById(R.id.txtPassengerCount);
-        TextView txtCheckIn = (TextView) view.findViewById(R.id.txtCheckIn);
-        TextView txtCheckOut = (TextView) view.findViewById(R.id.txtCheckOut);
+        TextView txtRoomCount = view.findViewById(R.id.txtRoomCount);
+        TextView txtPassengerCount = view.findViewById(R.id.txtPassengerCount);
+        TextView txtCheckIn = view.findViewById(R.id.txtCheckIn);
+        TextView txtCheckOut = view.findViewById(R.id.txtCheckOut);
         String roomCount = hotelDetailResponse.getHotelDetailData().getHotelSearchRequest().getRooms();
         int adultCount = Integer.parseInt(hotelDetailResponse.getHotelDetailData().getHotelSearchRequest().getAdult());
         int childCount = Integer.parseInt(hotelDetailResponse.getHotelDetailData().getHotelSearchRequest().getChild());
@@ -251,15 +290,15 @@ public class FragmentBookingInternationalHotel extends Fragment {
 
     //-----------------------------------------------
     private void setupHotelDetail() {
-        TextView txtHotelName = (TextView) view.findViewById(R.id.txtHotelName);
-        TextView txtHotelArea = (TextView) view.findViewById(R.id.txtHotelArea);
+        TextView txtHotelName = view.findViewById(R.id.txtHotelName);
+        TextView txtHotelArea = view.findViewById(R.id.txtHotelArea);
         txtHotelName.setText(hotelDetailResponse.getHotelDetailData().getHotels().getHotelInfo().getHotelName());
         txtHotelArea.setText(hotelDetailResponse.getHotelDetailData().getHotelSearchRequest().getCityName());
     }
 
     //-----------------------------------------------
     private void setupRecyclerViewPassenger() {
-        RecyclerView rvResult = (RecyclerView) view.findViewById(R.id.rvResult);
+        RecyclerView rvResult = view.findViewById(R.id.rvResult);
         rvResult.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rvResult.setLayoutManager(mLayoutManager);
@@ -307,6 +346,7 @@ public class FragmentBookingInternationalHotel extends Fragment {
 
     //-----------------------------------------------
     public void showPayment() {
+        hasReserve = true;
         String ticketId = registerPassengerInternationalHotelResponse.getRegisterPassengerInternationalHotelParams().getTicket_id();
         String hashId = registerPassengerInternationalHotelResponse.getRegisterPassengerInternationalHotelParams().getHashId();
         String url = BaseConfig.BANK_HOTEL + ticketId + "/" + hashId;
@@ -330,10 +370,10 @@ public class FragmentBookingInternationalHotel extends Fragment {
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
             LayoutInflater inflater = getActivity().getLayoutInflater();
             View dialogView = inflater.inflate(R.layout.dialog_international_hotel_booking_final_layout, null);
-            UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.TAHOMA);
+            UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.BOOK);
 
-            AppCompatButton btnAcceptRules = (AppCompatButton) dialogView.findViewById(R.id.btnAcceptRules);
-            AppCompatButton btnCancel = (AppCompatButton) dialogView.findViewById(R.id.btnCancel);
+            AppCompatButton btnAcceptRules = dialogView.findViewById(R.id.btnAcceptRules);
+            AppCompatButton btnCancel = dialogView.findViewById(R.id.btnCancel);
             btnAcceptRules.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

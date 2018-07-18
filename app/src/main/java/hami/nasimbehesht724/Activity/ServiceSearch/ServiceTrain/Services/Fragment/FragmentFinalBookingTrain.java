@@ -1,8 +1,11 @@
 package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,6 +16,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -28,7 +33,6 @@ import hami.nasimbehesht724.R;
 import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
 import hami.nasimbehesht724.Util.Hashing;
 import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
 
 
 public class FragmentFinalBookingTrain extends Fragment {
@@ -38,7 +42,7 @@ public class FragmentFinalBookingTrain extends Fragment {
     private Boolean hasReserve = false, hasPayment = false;
     private RecyclerView rvResult;
     private PassengerInfoLisTrainAdapter mAdapter;
-    private TextView txtTitleFinalTicket, txtFinalPrice;
+    private TextView txtTitleFinalTicket, txtFinalPrice, txtWarningCheckInfo;
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
     private RegisterTrainResponse registerTrainResponse;
     private TrainResponse trainResponse;
@@ -106,6 +110,7 @@ public class FragmentFinalBookingTrain extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        setupHeaderToolbar();
         if (hasReserve) {
             new TrainApi(getActivity()).hasBuyTicket(registerTrainResponse.getTicketId(), new PaymentPresenter() {
                 @Override
@@ -129,8 +134,17 @@ public class FragmentFinalBookingTrain extends Fragment {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                txtWarningCheckInfo.setVisibility(View.GONE);
                                 hasPayment = true;
                                 setupGetTicket();
+                                txtTitleFinalTicket.setText(R.string.successGetTicket);
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(getResources().getColor(R.color.greenSelectedChair)));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
                             }
                         });
                     }
@@ -142,12 +156,38 @@ public class FragmentFinalBookingTrain extends Fragment {
                 }
 
                 @Override
-                public void onReTryGetTicket() {
+                public void onReTryGetPayment() {
                     if (getActivity() != null) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 setupPayment();
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onReTryGetTicket() {
+                    if (getActivity() != null) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                setupGetTicket();
+                                txtTitleFinalTicket.setText(getString(R.string.msgErrorRunningGetTicket));
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(Color.RED));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        showPayment();
+                                    }
+                                });
                             }
                         });
                     }
@@ -169,15 +209,16 @@ public class FragmentFinalBookingTrain extends Fragment {
     //-----------------------------------------------
     private void initialComponentFragment() {
         UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_BOLD);
-        layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
-        layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
-        txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
-        txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
-        btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
-        btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
+        layoutButtonGetTicket = view.findViewById(R.id.layoutButtonGetTicket);
+        layoutButtonPayment = view.findViewById(R.id.layoutButtonPayment);
+        txtTitleFinalTicket = view.findViewById(R.id.titleFinalTicket);
+       // txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+        txtFinalPrice = view.findViewById(R.id.txtFinalPrice);
+        btnBuy = view.findViewById(R.id.btnBuy);
+        btnEdit = view.findViewById(R.id.btnEditBuy);
 
-        btnGetTicket = (AppCompatButton) view.findViewById(R.id.btnGetTicket);
-        btnExit = (AppCompatButton) view.findViewById(R.id.btnExit);
+        btnGetTicket = view.findViewById(R.id.btnGetTicket);
+        btnExit = view.findViewById(R.id.btnExit);
 
         btnGetTicket.setOnClickListener(onClickListener);
         btnBuy.setOnClickListener(onClickListener);
@@ -191,13 +232,19 @@ public class FragmentFinalBookingTrain extends Fragment {
 
     //-----------------------------------------------
     private void setupRecyclerView() {
-        rvResult = (RecyclerView) view.findViewById(R.id.rvResult);
+        rvResult = view.findViewById(R.id.rvResult);
         rvResult.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rvResult.setLayoutManager(mLayoutManager);
         rvResult.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new PassengerInfoLisTrainAdapter(getActivity(), registerTrainResponse);
         rvResult.setAdapter(mAdapter);
+    }
+
+    //-----------------------------------------------
+    private void setupHeaderToolbar() {
+        TextView txtSubTitleMenu = getActivity().findViewById(R.id.txtSubTitleMenu);
+        txtSubTitleMenu.setText("تایید نهایی و پرداخت");
     }
 
     //-----------------------------------------------
@@ -224,10 +271,10 @@ public class FragmentFinalBookingTrain extends Fragment {
     //-----------------------------------------------
     private void setupPlace() {
         txtFinalPrice.setText(getFinalPrice());
-        TextView txtWentFlightCity = (TextView) view.findViewById(R.id.txtWentFlightCity);
-        TextView txtWentFlightDateTime = (TextView) view.findViewById(R.id.txtWentFlightDateTime);
-        ImageView imgLogoAirLine = (ImageView) view.findViewById(R.id.imgLogoAirLine);
-        TextView txtAirLineAndTypeClass = (TextView) view.findViewById(R.id.txtAirLineAndTypeClass);
+        TextView txtWentFlightCity = view.findViewById(R.id.txtWentFlightCity);
+        TextView txtWentFlightDateTime = view.findViewById(R.id.txtWentFlightDateTime);
+        ImageView imgLogoAirLine = view.findViewById(R.id.imgLogoAirLine);
+        TextView txtAirLineAndTypeClass = view.findViewById(R.id.txtAirLineAndTypeClass);
         txtWentFlightCity.setText("سفر به " + trainRequest.getDestinationTrain());
         txtWentFlightDateTime.setText(trainRequest.getDepartureGoTrainPersian() + " , " + trainResponse.getExitTime());
         String type = "";
@@ -237,8 +284,10 @@ public class FragmentFinalBookingTrain extends Fragment {
             type = (getText(R.string.hall) + " " + trainResponse.getCompartmentCapicity() + " " + getText(R.string.unitCountTrain));
         }
         txtAirLineAndTypeClass.setText(trainResponse.getWagonName() + "(" + type + ")");
-        String url = BaseConfig.FOLDER_IMAGE_TRAIN_URL + trainResponse.getOwner().toLowerCase() + ".png";
-        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.drawable.train);
+        Picasso.with(getActivity())
+                .load(BaseConfig.FOLDER_IMAGE_TRAIN_URL + trainResponse.getOwner().toLowerCase() + ".png")
+                .into(imgLogoAirLine);
+
     }
 
     //-----------------------------------------------
@@ -247,10 +296,10 @@ public class FragmentFinalBookingTrain extends Fragment {
         try {
             finalPrice = registerTrainResponse.getViewParamsTrain().getFinalPrice();
             finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
-            finalPrice = "مبلغ نهایی پرداخت:" + finalPrice + " تومان";
+            finalPrice = getString(R.string.finalPriceWithDiscount) + finalPrice + " تومان";
             return finalPrice;
         } catch (Exception e) {
-            finalPrice = "مبلغ نهایی پرداخت:" + registerTrainResponse.getViewParamsTrain().getFinalPrice();
+            finalPrice = getString(R.string.finalPriceWithDiscount) + registerTrainResponse.getViewParamsTrain().getFinalPrice();
             return finalPrice + " ریال";
         }
 
@@ -268,6 +317,8 @@ public class FragmentFinalBookingTrain extends Fragment {
         layoutButtonPayment.setVisibility(View.GONE);
         layoutButtonGetTicket.setVisibility(View.VISIBLE);
         txtTitleFinalTicket.setVisibility(View.VISIBLE);
+        txtWarningCheckInfo.setVisibility(View.GONE);
+        getActivity().findViewById(R.id.btnBack).setVisibility(View.INVISIBLE);
     }
 
     //-----------------------------------------------

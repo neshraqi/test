@@ -11,6 +11,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 
 import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
@@ -31,7 +32,6 @@ import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
 import hami.nasimbehesht724.BaseNetwork.BaseConfig;
 import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
 import hami.nasimbehesht724.Const.KeyConst;
-
 
 /**
  * Created by renjer on 1/10/2017.
@@ -235,23 +235,26 @@ public class InternationalHotelApi {
                             HotelDetailResponse hotelsResponse = gson.fromJson(result, HotelDetailResponse.class);
                             if (hotelsResponse != null && hotelsResponse.getCode() == 1 && hotelsResponse.getHotelDetailData().getHotels() != null) {
                                 JSONObject jsonObject = new JSONObject(result);
-                                JSONArray jsonArray = jsonObject.getJSONObject("data").getJSONObject("hotels").getJSONArray("RoomsInfo");
-                                if (jsonArray.length() > 0) {
-                                    JSONObject jsonObject1 = jsonArray.getJSONObject(0).getJSONObject("Rooms");
-                                    Gson gson2 = new Gson();
-                                    if (jsonObject1.get("Room") instanceof JSONObject) {
-                                        ArrayList<HotelMoreInfoRoomObject> list = gson2.fromJson(jsonArray.toString(), new TypeToken<ArrayList<HotelMoreInfoRoomObject>>() {
-                                        }.getType());
-                                        hotelsResponse.getHotelDetailData().getHotels().setRoomsInfoRoomObjectsList(list);
-                                        //ArrayList<HotelMoreInfoRoom> test = gson2.fromJson(jsonArray.toString() , jsonArrayList<HotelMoreInfoRoom>)
-                                        //hotelsResponse.getHotelDetailData().getHotels().setRoomsInfoRoomObjectsList();
-                                        jsonObject1.toString();
+                                if (jsonObject.getJSONObject("data").getJSONObject("hotels").has("RoomsInfo")) {
+                                    JSONArray jsonArray = jsonObject.getJSONObject("data").getJSONObject("hotels").getJSONArray("RoomsInfo");
+                                    if (jsonArray.length() > 0) {
+                                        JSONObject jsonObject1 = jsonArray.getJSONObject(0).getJSONObject("Rooms");
+                                        Gson gson2 = new Gson();
+                                        if (jsonObject1.get("Room") instanceof JSONObject) {
+                                            ArrayList<HotelMoreInfoRoomObject> list = gson2.fromJson(jsonArray.toString(), new TypeToken<ArrayList<HotelMoreInfoRoomObject>>() {
+                                            }.getType());
+                                            hotelsResponse.getHotelDetailData().getHotels().setRoomsInfoRoomObjectsList(list);
+                                         //   hotelsResponse.getHotelDetailData().getHotels().getHotelsMoreInfoData().getHotelMoreInfoFacilities().getHotelMoreInfoFacilities().get(0).getHotelMoreInfoFacilityRecords().check();
+                                            //ArrayList<HotelMoreInfoRoom> test = gson2.fromJson(jsonArray.toString() , jsonArrayList<HotelMoreInfoRoom>)
+                                            //hotelsResponse.getHotelDetailData().getHotels().setRoomsInfoRoomObjectsList();
+                                            //jsonObject1.toString();
 
-                                    } else if (jsonObject1.get("Room")  instanceof JSONArray) {
-                                        ArrayList<HotelMoreInfoRoom> list = gson2.fromJson(jsonArray.toString(), new TypeToken<ArrayList<HotelMoreInfoRoom>>() {
-                                        }.getType());
-                                        hotelsResponse.getHotelDetailData().getHotels().setRoomsInfo(list);
-                                        jsonObject1.toString();
+                                        } else if (jsonObject1.get("Room") instanceof JSONArray) {
+                                            ArrayList<HotelMoreInfoRoom> list = gson2.fromJson(jsonArray.toString(), new TypeToken<ArrayList<HotelMoreInfoRoom>>() {
+                                            }.getType());
+                                            hotelsResponse.getHotelDetailData().getHotels().setRoomsInfo(list);
+                                            //jsonObject1.toString();
+                                        }
                                     }
                                 }
                                 resultSearchPresenter.onSuccessResultSearch(hotelsResponse);
@@ -406,8 +409,10 @@ public class InternationalHotelApi {
                             PaymentResponse paymentResponse = gson.fromJson(result, PaymentResponse.class);
                             if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && paymentResponse.getStatus() == 3) {
                                 paymentBuyPresenter.onSuccessBuy();
-                            } else
+                            } else if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && (paymentResponse.getStatus() == 2 || paymentResponse.getStatus() == 1)) {
                                 paymentBuyPresenter.onReTryGetTicket();
+                            } else
+                                paymentBuyPresenter.onReTryGetPayment();
                         } catch (Exception e) {
 
 
@@ -429,15 +434,12 @@ public class InternationalHotelApi {
         ArrayList<String> rateList = new ArrayList<>();
         try {
             for (InternationalHotel hotel : hotelInternationalList) {
-
-                Integer rateValue = (hotel != null) ? Integer.valueOf(hotel.getHotelStar()) : 0;
-//                if (hotel.getOffer() != null && hotel.getOffer().length() > 0 && !offerList.contains(hotel.getOffer())) {
-//                    offerList.add(hotel.getOffer());
-//                }
+                float rateValue = (hotel.getHotelStar() != null && hotel.getHotelStar().length() > 0) ? Float.valueOf(hotel.getHotelStar()) : 0;
                 if (rateValue >= 0 && !rateList.contains(String.valueOf(rateValue))) {
                     rateList.add(String.valueOf(rateValue));
                 }
             }
+            rateList = sortRate(rateList);
             ToolsHotelFilter toolsHotelFilter = new ToolsHotelFilter();
             toolsHotelFilter.setFilterOffer(offerList);
             toolsHotelFilter.setFilterRate(rateList);
@@ -447,6 +449,24 @@ public class InternationalHotelApi {
 
             return new ToolsHotelFilter();
         }
+    }
+
+    //-----------------------------------------------
+    public ArrayList<String> sortRate(ArrayList<String> listItem) {
+        try {
+            Collections.sort(listItem, new Comparator<String>() {
+                @Override
+                public int compare(String item1, String item2) {
+                    Float value1 = Float.parseFloat(item1);
+                    Float value2 = Float.parseFloat(item2);
+                    return value1.compareTo(value2);
+                }
+            });
+            return listItem;
+        } catch (Exception e) {
+
+        }
+        return new ArrayList<>();
     }
 
     //-----------------------------------------------

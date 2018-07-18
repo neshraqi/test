@@ -1,9 +1,11 @@
 package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment;
 
-import android.content.DialogInterface;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -14,20 +16,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
-import java.text.NumberFormat;
-import java.util.Locale;
+import com.bumptech.glide.Glide;
 
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter.PassengerInfoLisDomesticAdapter;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticParams;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightResponse;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.DomesticApi;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
 import hami.nasimbehesht724.BaseNetwork.BaseConfig;
 import hami.nasimbehesht724.Const.FlightRules;
 import hami.nasimbehesht724.R;
@@ -35,20 +32,21 @@ import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
 import hami.nasimbehesht724.Util.Hashing;
 import hami.nasimbehesht724.Util.UtilFonts;
 import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.nasimbehesht724.Util.UtilPrice;
 
 
 public class FragmentFinalBookingFlightDomestic extends Fragment {
     //-----------------------------------------------
-    private RelativeLayout coordinator;
     private AppCompatButton btnGetTicket, btnBuy, btnEdit, btnExit;
     private Boolean hasReserve = false, hasPayment = false;
     private RecyclerView rvResult;
     private PassengerInfoLisDomesticAdapter mAdapter;
-    private TextView txtTitleFinalTicket, txtFinalPrice;
+    private TextView txtTitleFinalTicket, txtFinalPrice, txtWarningCheckInfo;
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
     private RegisterFlightResponse registerFlightResponse;
     private static final String TAG = "FragmentFinalBookingFlightDomestic";
     private String adultPrice;
+    private AlertDialog alertDialogChangePrice;
 
     //-----------------------------------------------
     @Override
@@ -108,11 +106,21 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
         //}
         return view;
     }
-    //-----------------------------------------------
 
+    //-----------------------------------------------
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (alertDialogChangePrice != null) {
+            alertDialogChangePrice.cancel();
+        }
+    }
+
+    //-----------------------------------------------
     @Override
     public void onResume() {
         super.onResume();
+        setupHeaderToolbar();
         if (hasReserve) {
             new DomesticApi(getActivity()).hasBuyTicket(registerFlightResponse.getTicketId(), new PaymentPresenter() {
                 @Override
@@ -136,8 +144,17 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                txtWarningCheckInfo.setVisibility(View.GONE);
                                 hasPayment = true;
                                 setupGetTicket();
+                                txtTitleFinalTicket.setText(R.string.successGetTicket);
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(getResources().getColor(R.color.greenSelectedChair)));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
                             }
                         });
                     }
@@ -149,12 +166,38 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
                 }
 
                 @Override
-                public void onReTryGetTicket() {
+                public void onReTryGetPayment() {
                     if (getActivity() != null) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 setupPayment();
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onReTryGetTicket() {
+                    if (getActivity() != null) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                setupGetTicket();
+                                txtTitleFinalTicket.setText(getString(R.string.msgErrorRunningGetTicket));
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(Color.RED));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        showPayment();
+                                    }
+                                });
                             }
                         });
                     }
@@ -175,17 +218,18 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
 
     //-----------------------------------------------
     private void initialComponentFragment(View view) {
-        coordinator = (RelativeLayout) view.findViewById(R.id.coordinator);
         UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_NORMAL);
-        layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
-        layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
-        txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
-        txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
-        btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
-        btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
-
-        btnGetTicket = (AppCompatButton) view.findViewById(R.id.btnGetTicket);
-        btnExit = (AppCompatButton) view.findViewById(R.id.btnExit);
+        layoutButtonGetTicket = view.findViewById(R.id.layoutButtonGetTicket);
+        layoutButtonPayment = view.findViewById(R.id.layoutButtonPayment);
+        txtFinalPrice = view.findViewById(R.id.txtFinalPrice);
+        txtTitleFinalTicket = view.findViewById(R.id.titleFinalTicket);
+       // txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+        txtWarningCheckInfo.setSelected(true);
+        txtWarningCheckInfo.setVisibility(View.VISIBLE);
+        btnBuy = view.findViewById(R.id.btnBuy);
+        btnEdit = view.findViewById(R.id.btnEditBuy);
+        btnGetTicket = view.findViewById(R.id.btnGetTicket);
+        btnExit = view.findViewById(R.id.btnExit);
 
         btnGetTicket.setOnClickListener(onClickListener);
         btnBuy.setOnClickListener(onClickListener);
@@ -196,17 +240,24 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
         CheckChangePrice();
     }
 
+    //-----------------------------------------------
+    private void setupHeaderToolbar() {
+        TextView txtSubTitleMenu = getActivity().findViewById(R.id.txtSubTitleMenu);
+        txtSubTitleMenu.setText("تایید نهایی و پرداخت");
+    }
 
     //-----------------------------------------------
     private void setupPlace(View view) {
         DomesticParams domesticParams = registerFlightResponse.getViewParamsDomestic().getDomesticParams();
-        txtFinalPrice.setText(getFinalPrice());
-        TextView txtWentFlightCity = (TextView) view.findViewById(R.id.txtWentFlightCity);
-        TextView txtWentFlightDateTime = (TextView) view.findViewById(R.id.txtWentFlightDateTime);
-        ImageView imgLogoAirLine = (ImageView) view.findViewById(R.id.imgLogoAirLine);
-        TextView txtAirLineAndTypeClass = (TextView) view.findViewById(R.id.txtAirLineAndTypeClass);
-        TextView txtFlightNumber = (TextView) view.findViewById(R.id.txtFlightNumber);
-        TextView txtFlightName = (TextView) view.findViewById(R.id.txtFlightName);
+       // txtFinalPrice.setText(getString(R.string.finalPriceWithDiscount) + UtilPrice.convertToToman(registerFlightResponse.getViewParamsDomestic().getFinalPrice()));
+       // TextView txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+        TextView txtWentFlightCity = view.findViewById(R.id.txtWentFlightCity);
+        TextView txtWentFlightDateTime = view.findViewById(R.id.txtWentFlightDateTime);
+        ImageView imgLogoAirLine = view.findViewById(R.id.imgLogoAirLine);
+        TextView txtAirLineAndTypeClass = view.findViewById(R.id.txtAirLineAndTypeClass);
+        TextView txtFlightNumber = view.findViewById(R.id.txtFlightNumber);
+        TextView txtFlightName = view.findViewById(R.id.txtFlightName);
+        txtWarningCheckInfo.setSelected(true);
         txtFlightNumber.setText("شماره پرواز:" + domesticParams.getFlight_number_());
         txtFlightName.setText(domesticParams.getFlightName_().trim());
         String flightLocation = "پرواز از " + domesticParams.getFromfa() + " به " + domesticParams.getTofa();
@@ -214,33 +265,16 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
         txtWentFlightDateTime.setText(registerFlightResponse.getTakeOffDatePersian() + " ، " + domesticParams.getDeparture());
         txtAirLineAndTypeClass.setText(domesticParams.getAirline() + "(" + domesticParams.getFlightName_() + "-" + domesticParams.getFlight_number_() + ")");
         String url = BaseConfig.FOLDER_IMAGE_DOMESTIC_URL + registerFlightResponse.getAirlineCode() + ".png";
-        UtilImageLoader.loadImage(getActivity(), imgLogoAirLine, url, R.drawable.flight);
-    }
-
-    //-----------------------------------------------
-    private String getFinalPrice() {
-        String finalPrice = "";
-        try {
-            finalPrice = registerFlightResponse.getViewParamsDomestic().getFinalPrice();
-            finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
-            finalPrice = "مبلغ نهایی پرداخت:" + finalPrice + " تومان";
-            return finalPrice;
-        } catch (Exception e) {
-
-            finalPrice = "مبلغ نهایی پرداخت:" + registerFlightResponse.getViewParamsDomestic().getFinalPrice();
-            return finalPrice + " ریال";
-        }
-
+        UtilImageLoader.loadImageWithCacheGlid(Glide.with(getActivity()), url, imgLogoAirLine, R.mipmap.ic_launcher);
     }
 
     //-----------------------------------------------
     private void setupRecyclerView(View view) {
-        rvResult = (RecyclerView) view.findViewById(R.id.rvResult);
+        rvResult = view.findViewById(R.id.rvResult);
         rvResult.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rvResult.setLayoutManager(mLayoutManager);
         rvResult.setItemAnimator(new DefaultItemAnimator());
-        rvResult.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
         mAdapter = new PassengerInfoLisDomesticAdapter(getActivity(), registerFlightResponse.getViewParamsDomestic().getDomesticParams());
         rvResult.setAdapter(mAdapter);
     }
@@ -271,6 +305,7 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
         layoutButtonPayment.setVisibility(View.VISIBLE);
         layoutButtonGetTicket.setVisibility(View.GONE);
         txtTitleFinalTicket.setVisibility(View.GONE);
+
     }
 
     //-----------------------------------------------
@@ -278,7 +313,9 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
         layoutButtonPayment.setVisibility(View.GONE);
         layoutButtonGetTicket.setVisibility(View.VISIBLE);
         txtTitleFinalTicket.setVisibility(View.VISIBLE);
+        txtWarningCheckInfo.setVisibility(View.GONE);
         getActivity().findViewById(R.id.btnBack).setVisibility(View.INVISIBLE);
+
     }
 
     //-----------------------------------------------
@@ -307,39 +344,71 @@ public class FragmentFinalBookingFlightDomestic extends Fragment {
     private void CheckChangePrice() {
         try {
             Boolean statusChangePrice = false;
-            long adultPriceNew = 0;
-            long adultPriceOld = Long.parseLong(adultPrice);
+            double adultPriceNew = 0;
+            double remainPrice = 0;
+            double adultPriceOld = Double.parseDouble(adultPrice);
             String[] result = registerFlightResponse.getViewParamsDomestic().getDomesticParams().getPrice();
             DomesticParams domesticParams = registerFlightResponse.getViewParamsDomestic().getDomesticParams();
+            String title3 = "";
             for (int index = 0; index < domesticParams.getTypep().length; index++) {
                 int pType = Integer.parseInt(domesticParams.getTypep()[index]);
                 if (pType == FlightRules.TP_ADULTS) {
+
                     adultPriceNew = Long.parseLong(domesticParams.getPrice()[index]);
-                    if (adultPriceOld < adultPriceNew) {
+                    if ((adultPriceOld < adultPriceNew) && (adultPriceNew - adultPriceOld) >= 1000) {
+                        remainPrice = adultPriceNew - adultPriceOld;
+                        String finalPrice = UtilPrice.convertToToman(remainPrice);
+                        title3 = "مبلغ  " + finalPrice + " به قیمت هر مسافر(بزرگسال) افزوده شده است.";
                         statusChangePrice = true;
+                    } else if (adultPriceOld > adultPriceNew) {
+                        remainPrice = adultPriceOld - adultPriceNew;
+                        String finalPrice = UtilPrice.convertToToman(remainPrice);
+                        title3 = "مبلغ  " + finalPrice + " از قیمت هر مسافر(بزرگسال) کسر شده است.";
+                        statusChangePrice = true;
+                    } else {
+                        statusChangePrice = false;
                     }
                     break;
                 } else
                     continue;
             }
             if (statusChangePrice) {
-                String finalPrice = NumberFormat.getNumberInstance(Locale.US).format(adultPriceNew / 10);
-                finalPrice = finalPrice + " تومان";
-                AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
-                String infoFlight = registerFlightResponse.getViewParamsDomestic().getDomesticParams().getFromfa() + " به "
-                        + registerFlightResponse.getViewParamsDomestic().getDomesticParams().getTofa();
-                dialogBuilder.setMessage("مسافر گرامی: نرخ کلاس پرواز " + infoFlight + " به مبلغ " + finalPrice + " تغییر کرده است. ");
-                dialogBuilder.setPositiveButton(R.string.accept_, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                dialogBuilder.show();
+
+
+                showDialogChangePrice(title3);
             }
         } catch (Exception e) {
 
         }
 
     }
+
+    //-----------------------------------------------
+    public void showDialogChangePrice(String title1) {
+        try {
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity());
+            LayoutInflater inflater = getActivity().getLayoutInflater();
+            final View dialogView = inflater.inflate(R.layout.include_layout_change_price_message, null);
+            UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.IRAN_SANS_NORMAL);
+            dialogBuilder.setView(dialogView);
+            alertDialogChangePrice = dialogBuilder.create();
+            alertDialogChangePrice.setCancelable(true);
+            alertDialogChangePrice.setCanceledOnTouchOutside(true);
+            TextView txtTitle1 = dialogView.findViewById(R.id.txtTitle1);
+            txtTitle1.setText(title1);
+            txtTitle1.setSelected(true);
+            AppCompatButton btnAccept = dialogView.findViewById(R.id.btnAccept);
+            btnAccept.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    alertDialogChangePrice.dismiss();
+                }
+            });
+            alertDialogChangePrice.show();
+        } catch (Exception e) {
+
+        }
+
+    }
+    //-----------------------------------------------
 }

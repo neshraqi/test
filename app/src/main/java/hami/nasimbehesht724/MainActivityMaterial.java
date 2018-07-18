@@ -63,7 +63,7 @@ public class MainActivityMaterial extends AppCompatActivity {
 
         if (getIntent().hasExtra(AccessStatusResponse.class.getName())) {
             accessStatusResponse = (AccessStatusResponse) getIntent().getExtras().getSerializable(AccessStatusResponse.class.getName());
-            serviceId =  getIntent().getExtras().getInt(ServiceID.INTENT_SERVICE_ID);
+            serviceId = getIntent().getExtras().getInt(ServiceID.INTENT_SERVICE_ID);
 
             //initialGCM();
             initialComponentActivity();

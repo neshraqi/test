@@ -688,7 +688,9 @@ public class SearchBarService extends LinearLayout {
     }
 
     //-----------------------------------------------
-    private void setupFlightDomestic() {
+    public void setupFlightDomestic() {
+        setupSearchMaster(VISIBLE);
+        setupHotelMaster(GONE);
         edtFromPlace.getText().clear();
         edtToPlace.getText().clear();
         edtFromDate.getText().clear();
@@ -701,7 +703,9 @@ public class SearchBarService extends LinearLayout {
     }
 
     //-----------------------------------------------
-    private void setupFlightInternational() {
+    public void setupFlightInternational() {
+        setupSearchMaster(VISIBLE);
+        setupHotelMaster(GONE);
         flightRequest = new FlightInternationalRequest();
         domesticRequest = null;
         trainRequest = null;
@@ -784,6 +788,7 @@ public class SearchBarService extends LinearLayout {
 
     //-----------------------------------------------
     public void setupBus() {
+
         searchBusRequest = new SearchBusRequest();
         domesticRequest = null;
         domesticHotelSearchRequest = null;

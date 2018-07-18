@@ -2,8 +2,6 @@ package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller;
 
 
 import android.content.Context;
-import android.util.Log;
-
 
 import com.google.gson.Gson;
 
@@ -27,7 +25,6 @@ import hami.nasimbehesht724.BaseNetwork.BaseConfig;
 import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
 import hami.nasimbehesht724.Const.KeyConst;
 import hami.nasimbehesht724.R;
-
 
 /**
  * Created by renjer on 1/10/2017.
@@ -105,9 +102,11 @@ public class DomesticHotelApi {
         String checkIn = domesticHotelSearchRequest.getCheckInPersian() + "/";
         String checkOut = domesticHotelSearchRequest.getCheckOutPersian() + "/";
         String hotelId = domesticHotelSearchRequest.getHotelId() + "/";
+        //String hotelName = domesticHotelSearchRequest.getHotelName() + "/";
         String apiType = domesticHotelSearchRequest.getApiType() + "/";
         String url = "";
         try {
+            //hotelName = URLEncoder.encode(hotelName, "utf-8").toString();
             url = BaseConfig.BASE_URL_MASTER + CONTROLLER_HOTEL + "detail/" + cityName + hotelId + checkIn + checkOut + apiType;
 
         } catch (Exception e) {
@@ -119,6 +118,7 @@ public class DomesticHotelApi {
             @Override
             public void run() {
                 String urlEncode = "";
+
                 String appKeyAndAppSecret = new BaseAppKeyAndSecret().toString();
                 new WebServiceNetwork(context).requestWebServiceByPost(finalUrl, appKeyAndAppSecret, new NetworkListener() {
                     @Override
@@ -297,8 +297,10 @@ public class DomesticHotelApi {
                             PaymentResponse paymentResponse = gson.fromJson(result, PaymentResponse.class);
                             if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && paymentResponse.getStatus() == 3) {
                                 paymentBuyPresenter.onSuccessBuy();
-                            } else
+                            } else if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && (paymentResponse.getStatus() == 2 || paymentResponse.getStatus() == 1)) {
                                 paymentBuyPresenter.onReTryGetTicket();
+                            } else
+                                paymentBuyPresenter.onReTryGetPayment();
                         } catch (Exception e) {
 
 

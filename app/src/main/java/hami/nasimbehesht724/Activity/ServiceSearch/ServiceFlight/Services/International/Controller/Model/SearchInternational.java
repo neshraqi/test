@@ -50,7 +50,20 @@ public class SearchInternational implements Serializable {
         searchInternational.countryNameP = "";
         return searchInternational;
     }
-
+    public static SearchInternational newInstanceHeader(String country, String countryF,String countryE) {
+        SearchInternational searchInternational = new SearchInternational();
+        searchInternational.type = HEADER;
+        searchInternational.country = country;
+        searchInternational.data = countryE;
+        searchInternational.dataF = countryF;
+        searchInternational.yata = "";
+        searchInternational.parent = "";
+        searchInternational.airport = "";
+        searchInternational.airportF = "";
+        searchInternational.countryNameE = countryE;
+        searchInternational.countryNameP = countryF;
+        return searchInternational;
+    }
     public static SearchInternational newInstance(String data) {
         SearchInternational searchInternational = new SearchInternational();
         searchInternational.type = HEADER;

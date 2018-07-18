@@ -36,6 +36,7 @@ public class DomesticApi {
     public final static String SESSION_ID = "sessionId";
     public final static String SEARCH_ID = "searchId";
     private Thread thread;
+    private Thread threadSearch;
     private static final String TAG = "DomesticApi";
     //-----------------------------------------------
 
@@ -51,13 +52,14 @@ public class DomesticApi {
     //-----------------------------------------------
     public void searchFlight(final DomesticRequest domesticRequest, final ResultSearchDomesticPresenter resultSearchDomesticPresenter) {
         final String url = BaseConfig.BASE_URL_API + "flight/getFlightAjax";
-        final HashMap<String, String> getHashMap = domesticRequest.toHashMap();
+        final HashMap<String, String> getHashMap = domesticRequest.toHashMapFastFlight();
         getHashMap.put(KeyConst.APP_KEY, KeyConst.appKey);
         getHashMap.put(KeyConst.APP_SECRET, KeyConst.appSecret);
-        cancelRequest();
-        thread = new Thread(new Runnable() {
+        cancelRequestSearchMaster();
+        threadSearch = new Thread(new Runnable() {
             @Override
             public void run() {
+
                 new WebServiceNetwork(context).requestWebServiceByPost(url, getHashMap, new NetworkListener() {
                     @Override
                     public void onStart() {
@@ -96,9 +98,10 @@ public class DomesticApi {
 
                     }
                 });
+                new WebServiceNetwork(context).requestWebServiceByPost(url, domesticRequest.toHashMapFlight());
             }
         });
-        thread.start();
+        threadSearch.start();
     }
 
     //-----------------------------------------------
@@ -145,8 +148,6 @@ public class DomesticApi {
                             else
                                 registerFlightDomesticPresenter.onErrorServer(0);
                         } catch (Exception e) {
-
-
                             registerFlightDomesticPresenter.onErrorServer(0);
                         } finally {
                             registerFlightDomesticPresenter.onFinish();
@@ -193,10 +194,13 @@ public class DomesticApi {
                         try {
                             Gson gson = new Gson();
                             PaymentResponse paymentResponse = gson.fromJson(result, PaymentResponse.class);
+                            //paymentResponse = new PaymentResponse(true,2,1);
                             if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && paymentResponse.getStatus() == 3) {
                                 paymentBuyPresenter.onSuccessBuy();
-                            } else
+                            } else if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && (paymentResponse.getStatus() == 2 || paymentResponse.getStatus() == 1)) {
                                 paymentBuyPresenter.onReTryGetTicket();
+                            } else
+                                paymentBuyPresenter.onReTryGetPayment();
                         } catch (Exception e) {
 
 
@@ -223,6 +227,7 @@ public class DomesticApi {
             return airline;
 
         } catch (Exception e) {
+
 
             return airline;
         }
@@ -255,5 +260,12 @@ public class DomesticApi {
         }
     }
 
+    //-----------------------------------------------
+    public synchronized void cancelRequestSearchMaster() {
+        if (threadSearch != null) {
+            threadSearch.interrupt();
+            threadSearch = null;
+        }
+    }
 
 }

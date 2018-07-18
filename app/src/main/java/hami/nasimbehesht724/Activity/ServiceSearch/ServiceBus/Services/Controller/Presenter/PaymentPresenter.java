@@ -18,6 +18,8 @@ public interface PaymentPresenter {
 
     public void onReTryGetTicket();
 
+    public void onReTryGetPayment();
+
     public void onError(String msg);
 
     public void onFinish();

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.net.Uri;
 import android.widget.ImageView;
 
+import com.bumptech.glide.RequestManager;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.squareup.picasso.Picasso;
 
 public class UtilImageLoader {
@@ -21,4 +23,15 @@ public class UtilImageLoader {
                 .error(errorImage)
                 .placeholder(errorImage).into(imageView);
     }
+    //-----------------------------------------------
+    public static void loadImageWithCacheGlid(RequestManager request, String url, ImageView imageView, int errorImage) {
+        request.load(url)
+                .skipMemoryCache(true)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(errorImage)
+                .centerCrop()
+                .crossFade()
+                .into(imageView);
+    }
+
 }

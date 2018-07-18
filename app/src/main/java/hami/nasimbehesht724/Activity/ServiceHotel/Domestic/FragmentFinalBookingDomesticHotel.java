@@ -1,8 +1,11 @@
 package hami.nasimbehesht724.Activity.ServiceHotel.Domestic;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +28,6 @@ import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
 import hami.nasimbehesht724.Util.UtilFonts;
 import hami.nasimbehesht724.View.ToastMessageBar;
 
-
 public class FragmentFinalBookingDomesticHotel extends Fragment {
 
     //-----------------------------------------------
@@ -34,7 +36,7 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
     private static final String TAG = "FragmentFinalBookingDomesticHotel";
     private DomesticHotelRegisterPassengerResponse domesticHotelRegisterPassengerResponse;
     private AppCompatButton btnGetTicket, btnBuy, btnEdit, btnExit;
-    private TextView txtTitleFinalTicket, txtFinalPrice;
+    private TextView txtTitleFinalTicket, txtFinalPrice, txtWarningCheckInfo;
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
     private Boolean hasReserve = false, hasPayment = false;
 
@@ -93,8 +95,16 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
 
     //-----------------------------------------------
     @Override
+    public void onPause() {
+        super.onPause();
+        setupHeaderToolbar();
+    }
+
+    //-----------------------------------------------
+    @Override
     public void onResume() {
         super.onResume();
+        setupHeaderToolbar();
         if (hasReserve) {
             String ticketId = domesticHotelRegisterPassengerResponse.getViewParams().getId();
             String hashId = domesticHotelRegisterPassengerResponse.getViewParams().getHashId();
@@ -120,8 +130,17 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                txtWarningCheckInfo.setVisibility(View.GONE);
                                 hasPayment = true;
                                 setupGetTicket();
+                                txtTitleFinalTicket.setText(R.string.successGetTicket);
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(getResources().getColor(R.color.greenSelectedChair)));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
                             }
                         });
                     }
@@ -133,12 +152,38 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
                 }
 
                 @Override
-                public void onReTryGetTicket() {
+                public void onReTryGetPayment() {
                     if (getActivity() != null) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 setupPayment();
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        getTicket();
+                                    }
+                                });
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onReTryGetTicket() {
+                    if (getActivity() != null) {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                setupGetTicket();
+                                txtTitleFinalTicket.setText(getString(R.string.msgErrorRunningGetTicket));
+                                ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(Color.RED));
+                                btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        showPayment();
+                                    }
+                                });
                             }
                         });
                     }
@@ -161,15 +206,18 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
     private void initialComponentFragment(View view) {
         UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_NORMAL);
         hotelApi = new DomesticHotelApi(getActivity());
-        layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
-        layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
-        txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
-        txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
-        btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
-        btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
+        layoutButtonGetTicket = view.findViewById(R.id.layoutButtonGetTicket);
+        layoutButtonPayment = view.findViewById(R.id.layoutButtonPayment);
+        txtFinalPrice = view.findViewById(R.id.txtFinalPrice);
+        txtTitleFinalTicket = view.findViewById(R.id.titleFinalTicket);
+       // txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+        txtWarningCheckInfo.setVisibility(View.VISIBLE);
+        txtWarningCheckInfo.setSelected(true);
+        btnBuy = view.findViewById(R.id.btnBuy);
+        btnEdit = view.findViewById(R.id.btnEditBuy);
 
-        btnGetTicket = (AppCompatButton) view.findViewById(R.id.btnGetTicket);
-        btnExit = (AppCompatButton) view.findViewById(R.id.btnExit);
+        btnGetTicket = view.findViewById(R.id.btnGetTicket);
+        btnExit = view.findViewById(R.id.btnExit);
 
         btnGetTicket.setOnClickListener(onClickListener);
         btnBuy.setOnClickListener(onClickListener);
@@ -182,12 +230,12 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
     //-----------------------------------------------
     private void setupPassengerRequest() {
         try {
-            TextView txtHotelName = (TextView) view.findViewById(R.id.txtHotelName);
-            TextView txtHotelRoom = (TextView) view.findViewById(R.id.txtHotelRoom);
-            TextView txtHotelDateRequest = (TextView) view.findViewById(R.id.txtHotelDateRequest);
-            TextView txtPriceRoom = (TextView) view.findViewById(R.id.txtPriceRoom);
+            TextView txtHotelName = view.findViewById(R.id.txtHotelName);
+            TextView txtHotelRoom = view.findViewById(R.id.txtHotelRoom);
+            TextView txtHotelDateRequest = view.findViewById(R.id.txtHotelDateRequest);
+            TextView txtPriceRoom = view.findViewById(R.id.txtPriceRoom);
             txtPriceRoom.setVisibility(View.GONE);
-            RatingBar rbRating = (RatingBar) view.findViewById(R.id.rbRating);
+            RatingBar rbRating = view.findViewById(R.id.rbRating);
             DomesticHotelRegisterPassengerViewParams domesticHotelRegisterPassengerViewParams = domesticHotelRegisterPassengerResponse.getViewParams();
             txtHotelName.setText(domesticHotelRegisterPassengerViewParams.getHotelNameFa());
             Integer rating = Integer.valueOf(domesticHotelRegisterPassengerViewParams.getHotelStar());
@@ -210,12 +258,19 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
 
 
     //-----------------------------------------------
+    private void setupHeaderToolbar() {
+        TextView txtSubTitleMenu = getActivity().findViewById(R.id.txtSubTitleMenu);
+        txtSubTitleMenu.setText(getString(R.string.acceptAndPayment));
+        txtSubTitleMenu.setSelected(true);
+    }
+
+    //-----------------------------------------------
     public void setupRegisterPassenger() {
         try {
-            TextView txtEmail = (TextView) view.findViewById(R.id.txtEmail);
-            TextView txtFullNamePerson = (TextView) view.findViewById(R.id.txtFullNamePerson);
-            TextView txtTelephone = (TextView) view.findViewById(R.id.txtTelephone);
-            TextView txtMobile = (TextView) view.findViewById(R.id.txtMobile);
+            TextView txtEmail = view.findViewById(R.id.txtEmail);
+            TextView txtFullNamePerson = view.findViewById(R.id.txtFullNamePerson);
+            TextView txtTelephone = view.findViewById(R.id.txtTelephone);
+            TextView txtMobile = view.findViewById(R.id.txtMobile);
             DomesticHotelRegisterPassengerInfo infoParam = domesticHotelRegisterPassengerResponse.getViewParams().getDomesticHotelRegisterPassengerInfo();
             txtEmail.setText(getString(R.string.email) + ":" + infoParam.getEmail().get(0));
             txtFullNamePerson.setText(infoParam.getName().get(0) + " " + infoParam.getFamily().get(0));
@@ -234,11 +289,12 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
         try {
             finalPrice = priceCurrent;
             finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
-            finalPrice = "مبلغ نهایی پرداخت:" + finalPrice + " تومان";
+            finalPrice = getString(R.string.finalPriceWithDiscount) + finalPrice + " تومان";
             return finalPrice;
         } catch (Exception e) {
 
-            finalPrice = "مبلغ نهایی پرداخت:" + priceCurrent;
+
+            finalPrice = getString(R.string.finalPriceWithDiscount) + priceCurrent;
             return finalPrice + " ریال";
         }
 
@@ -277,11 +333,13 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
         layoutButtonPayment.setVisibility(View.GONE);
         layoutButtonGetTicket.setVisibility(View.VISIBLE);
         txtTitleFinalTicket.setVisibility(View.VISIBLE);
+        txtWarningCheckInfo.setVisibility(View.GONE);
         getActivity().findViewById(R.id.btnBack).setVisibility(View.INVISIBLE);
     }
 
     //-----------------------------------------------
     public void showPayment() {
+        hasReserve = true;
         String ticketId = domesticHotelRegisterPassengerResponse.getViewParams().getId();
         String hash = domesticHotelRegisterPassengerResponse.getViewParams().getHashId();
         String url = BaseConfig.BANK_HOTEL_DOMESTIC + ticketId + "/" + hash;
@@ -292,7 +350,7 @@ public class FragmentFinalBookingDomesticHotel extends Fragment {
     public void getTicket() {
         String ticketId = domesticHotelRegisterPassengerResponse.getViewParams().getId();
         String hash = domesticHotelRegisterPassengerResponse.getViewParams().getHashId();
-        String url = BaseConfig.BASE_URL_MASTER + "flight/pdfticket/" + ticketId + "/" + hash;
+        String url = BaseConfig.BASE_URL_MASTER + "hotel/pdfticket/" + ticketId + "/" + hash;
         new CustomTabsPackages(getActivity()).showUrl(url);
     }
 

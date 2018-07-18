@@ -105,5 +105,23 @@ public class DomesticRequest implements Serializable {
         return hashMap;
     }
     //-----------------------------------------------
+//-----------------------------------------------
+    public HashMap<String, String> toHashMapFastFlight() {
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("source[]", source);
+        hashMap.put("destination[]", destination);
+        hashMap.put("DepartureGo", departureGo);
+        hashMap.put("type", "fast");
+        return hashMap;
+    }
 
+    //-----------------------------------------------
+    public HashMap<String, String> toHashMapFlight() {
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("source[]", source);
+        hashMap.put("destination[]", destination);
+        hashMap.put("DepartureGo", departureGo);
+        hashMap.put("type", "");
+        return hashMap;
+    }
 }

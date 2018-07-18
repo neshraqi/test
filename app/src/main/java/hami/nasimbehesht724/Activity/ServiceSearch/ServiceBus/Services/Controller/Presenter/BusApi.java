@@ -2,8 +2,6 @@ package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controll
 
 
 import android.content.Context;
-import android.util.Log;
-
 
 import com.google.gson.Gson;
 
@@ -30,7 +28,6 @@ import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
 import hami.nasimbehesht724.Const.KeyConst;
 import hami.nasimbehesht724.R;
 import hami.nasimbehesht724.Util.Hashing;
-
 
 
 public class BusApi {
@@ -241,8 +238,10 @@ public class BusApi {
                             PaymentResponse paymentResponse = gson.fromJson(result, PaymentResponse.class);
                             if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && paymentResponse.getStatus() == 3) {
                                 paymentBuyPresenter.onSuccessBuy();
-                            } else
+                            } else if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && (paymentResponse.getStatus() == 2 || paymentResponse.getStatus() == 1)) {
                                 paymentBuyPresenter.onReTryGetTicket();
+                            } else
+                                paymentBuyPresenter.onReTryGetPayment();
                         } catch (Exception e) {
 
 
@@ -290,6 +289,7 @@ public class BusApi {
             return new SeatResponse(capacity, col, floor, row, seatData);
 
         } catch (Exception e) {
+
 
             return null;
         }

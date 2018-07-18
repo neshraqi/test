@@ -2,10 +2,12 @@ package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Inter
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,7 +38,6 @@ import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Intern
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesRequest;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
 import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.ReserveInternationalPresenter;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
 import hami.nasimbehesht724.BaseNetwork.BaseConfig;
 import hami.nasimbehesht724.Const.FlightRules;
 import hami.nasimbehesht724.R;
@@ -53,10 +55,11 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
     private RegisterPassengerResponse registerPassengerResponse;
     private AppCompatButton btnGetTicket, btnBuy, btnEdit, btnExit;
-    private TextView txtTitleFinalTicket, txtFinalPrice;
+    private TextView txtTitleFinalTicket, txtFinalPrice, txtWarningCheckInfo;
     private InternationalApi internationalApi;
     private ProgressDialog progressDialog;
     private AlertDialog alertDialog;
+    private android.support.v7.app.AlertDialog alertDialogChangePrice;
     private Boolean hasReserve = false, hasPayment = false;
     private TicketInternational ticketInternational;
     private AllFlightInternationalParto allFlightInternationalParto;
@@ -180,27 +183,48 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
+        setupHeaderToolbar();
         if (hasReserve) {
             new InternationalApi(getActivity()).hasBuyTicket(registerPassengerResponse.getRegisterPassengerData().getTicketId(), paymentPresenter);
+        }
+    }
+    //-----------------------------------------------
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        setupHeaderToolbar();
+    }
+    //-----------------------------------------------
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (alertDialogChangePrice != null) {
+            alertDialogChangePrice.cancel();
+        }
+        if (alertDialog != null) {
+            alertDialog.cancel();
         }
     }
 
     //-----------------------------------------------
     private void initialComponentFragment() {
         try {
-
-
-            UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_WEB);
+            UtilFonts.overrideFonts(getActivity(), view, UtilFonts.IRAN_SANS_NORMAL);
             internationalApi = new InternationalApi(getActivity());
-            layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
-            layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
-            txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
-            txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
-            btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
-            btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
-            btnGetTicket = (AppCompatButton) view.findViewById(R.id.btnGetTicket);
-            btnExit = (AppCompatButton) view.findViewById(R.id.btnExit);
+            layoutButtonGetTicket = view.findViewById(R.id.layoutButtonGetTicket);
+            layoutButtonPayment = view.findViewById(R.id.layoutButtonPayment);
+            txtFinalPrice = view.findViewById(R.id.txtFinalPrice);
+            UtilFonts.overrideFonts(getActivity(), txtFinalPrice, UtilFonts.IRAN_SANS_BOLD);
+            txtTitleFinalTicket = view.findViewById(R.id.titleFinalTicket);
+            //txtWarningCheckInfo = view.findViewById(R.id.txtWarningCheckInfo);
+            txtWarningCheckInfo.setVisibility(View.VISIBLE);
+            txtWarningCheckInfo.setSelected(true);
+            btnBuy = view.findViewById(R.id.btnBuy);
+            btnEdit = view.findViewById(R.id.btnEditBuy);
+            btnGetTicket = view.findViewById(R.id.btnGetTicket);
+            btnExit = view.findViewById(R.id.btnExit);
 
             btnGetTicket.setOnClickListener(onClickShowDatailsListener);
             btnBuy.setOnClickListener(onClickShowDatailsListener);
@@ -211,6 +235,7 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
             showListPassenger();
             CheckChangePrice();
         } catch (Exception e) {
+
 
             ToastMessageBar.show(getActivity(), R.string.msgErrorPayment);
             getActivity().onBackPressed();
@@ -243,8 +268,9 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
     //-----------------------------------------------
     private void setupTools() {
         txtFinalPrice.setText(getFinalPrice());
-        TextView txtWentFlightCity = (TextView) view.findViewById(R.id.txtWentFlightCity);
-        TextView txtWentFlightDateTime = (TextView) view.findViewById(R.id.txtWentFlightDateTime);
+        TextView txtWentFlightCity = view.findViewById(R.id.txtWentFlightCity);
+//        TextView txtWentFlightDate = view.findViewById(R.id.txtWentFlightDate);
+//        TextView txtWentFlightTime = view.findViewById(R.id.txtWentFlightTime);
         String timeTakeOff = "";
         String dateTakeOff = "";
         ResultRegisterFlightInternationalResponse outbound = registerPassengerResponse.getRegisterPassengerData().getOutbound_();
@@ -254,7 +280,8 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
         String departure = outbound.getFrom();
         String arrival = outbound.getTo();
         txtWentFlightCity.setText("پرواز رفت از" + departure);
-        txtWentFlightDateTime.setText("تاریخ حرکت:" + dateTakeOff + " زمان پرواز:" + timeTakeOff);
+//        txtWentFlightDate.setText("تاریخ حرکت:" + dateTakeOff);
+//        txtWentFlightTime.setText(" زمان پرواز:" + timeTakeOff);
         view.findViewById(R.id.cvWentFlight).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -275,8 +302,11 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
         ResultRegisterFlightInternationalResponse return_ = registerPassengerResponse.getRegisterPassengerData().getReturn_();
         if (return_ != null) {
             view.findViewById(R.id.cvReturnFlight).setVisibility(View.VISIBLE);
-            TextView txtReturnFlightCity = (TextView) view.findViewById(R.id.txtReturnFlightCity);
-            TextView txtReturnFlightDateTime = (TextView) view.findViewById(R.id.txtReturnFlightDateTime);
+            view.findViewById(R.id.line).setVisibility(View.VISIBLE);
+            TextView txtReturnFlightCity = view.findViewById(R.id.txtReturnFlightCity);
+            //TextView txtReturnFlightDate = view.findViewById(R.id.txtReturnFlightDate);
+            //TextView txtReturnFlightTime = view.findViewById(R.id.txtReturnFlightTime);
+            ImageView btnMoreReturnFlight = view.findViewById(R.id.btnMoreReturnFlight);
             String timeTakeOffReturn = "";
             String dateTakeOffReturn = "";
             timeTakeOffReturn = return_.getTdate();
@@ -284,7 +314,8 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
             String departureReturn = return_.getFrom();
             String arrivalReturn = return_.getTo();
             txtReturnFlightCity.setText("پرواز برگشت از" + departureReturn);
-            txtReturnFlightDateTime.setText("تاریخ حرکت:" + dateTakeOffReturn + " زمان پرواز:" + timeTakeOffReturn);
+//            txtReturnFlightDate.setText("تاریخ حرکت:" + dateTakeOffReturn + " زمان پرواز:" + timeTakeOffReturn);
+//            txtReturnFlightTime.setText(" زمان پرواز:" + timeTakeOffReturn);
             view.findViewById(R.id.cvReturnFlight).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -304,7 +335,7 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
             });
         } else {
             view.findViewById(R.id.cvReturnFlight).setVisibility(View.GONE);
-
+            view.findViewById(R.id.line).setVisibility(View.GONE);
         }
 
     }
@@ -316,10 +347,10 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
         try {
             finalPrice = registerPassengerResponse.getRegisterPassengerData().getSumFinalPrice();
             finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
-            finalPrice = "مبلغ نهایی پرداخت:" + finalPrice + " تومان";
+            finalPrice = getString(R.string.finalPriceWithDiscount) + finalPrice + " تومان";
             return finalPrice;
         } catch (Exception e) {
-            finalPrice = "مبلغ نهایی پرداخت:" + registerPassengerResponse.getRegisterPassengerData().getSumFinalPrice();
+            finalPrice = getString(R.string.finalPriceWithDiscount) + registerPassengerResponse.getRegisterPassengerData().getSumFinalPrice();
             return finalPrice + " ریال";
         }
 
@@ -327,12 +358,11 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
 
     //-----------------------------------------------
     private void showListPassenger() {
-        rvResult = (RecyclerView) view.findViewById(R.id.rvResult);
+        rvResult = view.findViewById(R.id.rvResult);
         rvResult.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rvResult.setLayoutManager(mLayoutManager);
         rvResult.setItemAnimator(new DefaultItemAnimator());
-        rvResult.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
         PassengerInfoListAdapter mAdapter = new PassengerInfoListAdapter(getActivity(), registerPassengerResponse.getRegisterPassengerData().getPassengers(), "", "", "");
         rvResult.setAdapter(mAdapter);
     }
@@ -349,11 +379,13 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
         layoutButtonPayment.setVisibility(View.GONE);
         layoutButtonGetTicket.setVisibility(View.VISIBLE);
         txtTitleFinalTicket.setVisibility(View.VISIBLE);
+        txtWarningCheckInfo.setVisibility(View.GONE);
         getActivity().findViewById(R.id.btnBack).setVisibility(View.INVISIBLE);
     }
 
     //-----------------------------------------------
     public void showPayment() {
+        hasReserve = true;
         String ticketId = registerPassengerResponse.getRegisterPassengerData().getTicketId();
         String hash = Hashing.getHash(ticketId);
         String url = BaseConfig.PARSIAN_BANK_FLIGHT + ticketId + "/" + hash;
@@ -379,8 +411,8 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
             View dialogView = inflater.inflate(R.layout.dialog_flight_international_reserve_final_layout, null);
             UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.IRAN_SANS_NORMAL);
 
-            Button btnAcceptRules = (Button) dialogView.findViewById(R.id.btnAcceptRules);
-            Button btnCancel = (Button) dialogView.findViewById(R.id.btnCancel);
+            Button btnAcceptRules = dialogView.findViewById(R.id.btnAcceptRules);
+            Button btnCancel = dialogView.findViewById(R.id.btnCancel);
             btnAcceptRules.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -503,8 +535,17 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+                        txtWarningCheckInfo.setVisibility(View.GONE);
                         hasPayment = true;
                         setupGetTicket();
+                        txtTitleFinalTicket.setText(R.string.successGetTicket);
+                        ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(getResources().getColor(R.color.greenSelectedChair)));
+                        btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                getTicket();
+                            }
+                        });
                     }
                 });
             }
@@ -516,12 +557,38 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
         }
 
         @Override
-        public void onReTryGetTicket() {
+        public void onReTryGetPayment() {
             if (getActivity() != null) {
                 getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         setupPayment();
+                        btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                getTicket();
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+        @Override
+        public void onReTryGetTicket() {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        setupGetTicket();
+                        txtTitleFinalTicket.setText(getString(R.string.msgErrorRunningGetTicket));
+                        ViewCompat.setBackgroundTintList(btnGetTicket, ColorStateList.valueOf(Color.RED));
+                        btnGetTicket.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                showPayment();
+                            }
+                        });
                     }
                 });
             }
@@ -538,6 +605,12 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
 
         }
     };
+
+    //-----------------------------------------------
+    private void setupHeaderToolbar() {
+        TextView txtSubTitleMenu = getActivity().findViewById(R.id.txtSubTitleMenu);
+        txtSubTitleMenu.setText("تایید نهایی و پرداخت");
+    }
 
     //-----------------------------------------------
     private void showRulesPartoWent(RulesRequest rulesRequest, AllFlightInternationalParto allFlightInternationalParto) {
@@ -572,6 +645,8 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
     //-----------------------------------------------
     private void CheckChangePrice() {
         try {
+            String finalPrice = "";
+            String title3 = "";
             long adultPriceOld = 0;
             if (allFlightInternationalParto != null) {
                 adultPriceOld = allFlightInternationalParto.getAdultPrice();
@@ -587,8 +662,14 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
             for (int index = 0; index < passengers.getTypep().length; index++) {
                 int pType = Integer.parseInt(passengers.getTypep()[index]);
                 if (pType == FlightRules.TP_ADULTS) {
-                    adultPriceNew = Long.parseLong(passengers.getFinalprice()[index]);
-                    if (adultPriceOld < adultPriceNew) {
+                    adultPriceNew = Long.parseLong(passengers.getFinalprice()[index]) / 10;
+                    if ((adultPriceOld < adultPriceNew) && (adultPriceNew - adultPriceOld) >= 1000) {
+                        finalPrice = NumberFormat.getNumberInstance(Locale.US).format(adultPriceNew - adultPriceOld) + " تومان";
+                        title3 = "مبلغ  " + finalPrice + " به قیمت هر مسافر افزوده شده است.";
+                        statusChangePrice = true;
+                    } else if (adultPriceOld > adultPriceNew) {
+                        finalPrice = NumberFormat.getNumberInstance(Locale.US).format(adultPriceOld - adultPriceNew) + " تومان";
+                        title3 = "مبلغ  " + finalPrice + " از قیمت هر مسافر کسر شده است.";
                         statusChangePrice = true;
                     }
                     break;
@@ -596,24 +677,42 @@ public class FragmentFinalBookingFlightInternational extends Fragment {
                     continue;
             }
             if (statusChangePrice) {
-                String finalPrice = NumberFormat.getNumberInstance(Locale.US).format(adultPriceNew / 10);
-                finalPrice = finalPrice + " تومان";
-                android.support.v7.app.AlertDialog.Builder dialogBuilder = new android.support.v7.app.AlertDialog.Builder(getActivity());
-                String infoFlight = registerPassengerResponse.getRegisterPassengerData().getOutbound_().getFrom() + " به "
-                        + registerPassengerResponse.getRegisterPassengerData().getOutbound_().getTo();
-                dialogBuilder.setMessage("مسافر گرامی: نرخ کلاس پرواز " + infoFlight + " به مبلغ " + finalPrice + " تغییر کرده است. ");
-                dialogBuilder.setPositiveButton(R.string.accept_, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                dialogBuilder.show();
+
+                showDialogChangePrice(title3);
             }
         } catch (Exception e) {
 
         }
 
     }
+
+    //-----------------------------------------------
+    public void showDialogChangePrice(String title1) {
+        try {
+            android.support.v7.app.AlertDialog.Builder dialogBuilder = new android.support.v7.app.AlertDialog.Builder(getActivity());
+            LayoutInflater inflater = getActivity().getLayoutInflater();
+            final View dialogView = inflater.inflate(R.layout.include_layout_change_price_message, null);
+            UtilFonts.overrideFonts(getActivity(), dialogView, UtilFonts.IRAN_SANS_NORMAL);
+            dialogBuilder.setView(dialogView);
+            alertDialogChangePrice = dialogBuilder.create();
+            alertDialogChangePrice.setCancelable(true);
+            alertDialogChangePrice.setCanceledOnTouchOutside(true);
+            TextView txtTitle1 = dialogView.findViewById(R.id.txtTitle1);
+            txtTitle1.setText(title1);
+            txtTitle1.setSelected(true);
+            AppCompatButton btnAccept = dialogView.findViewById(R.id.btnAccept);
+            btnAccept.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    alertDialogChangePrice.dismiss();
+                }
+            });
+            alertDialogChangePrice.show();
+        } catch (Exception e) {
+
+        }
+
+    }
+
 }
 

@@ -257,7 +257,21 @@ public class ActivityRegisterPassengerDomestic extends AppCompatActivity {
         } else if (genderId == DomesticPassengerInfo.GENDER_FEMALE) {
             edtGender.setText(R.string.female);
         }
-        if (!isForeign && typeNationality == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN) {
+        if (isForeign && typeNationality == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN) {
+            hasIranian = true;
+            setupStyleForeign();
+            edtType.setText(R.string.irani);
+            edtExportingCountry.setText(domesticPassengerInfo.getExportingCountryName());
+            edtNoPassport.setText(domesticPassengerInfo.getPassportCo());
+            edtDatePassport.setText(domesticPassengerInfo.getPassportExpireDate());
+        } else if (isForeign && typeNationality == DomesticPassengerInfo.EXPORTING_COUNTRY_FOREIGN) {
+            hasIranian = false;
+            setupStyleForeign();
+            edtType.setText(R.string.foreign);
+            edtExportingCountry.setText(domesticPassengerInfo.getExportingCountryName());
+            edtNoPassport.setText(domesticPassengerInfo.getPassportCo());
+            edtDatePassport.setText(domesticPassengerInfo.getPassportExpireDate());
+        } else if (!isForeign && typeNationality == DomesticPassengerInfo.EXPORTING_COUNTRY_IRAN) {
             hasIranian = true;
             setupStyleIran();
             edtType.setText(R.string.irani);

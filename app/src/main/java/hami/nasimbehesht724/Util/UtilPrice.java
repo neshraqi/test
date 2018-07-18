@@ -36,4 +36,19 @@ public class UtilPrice {
         }
 
     }
+    //-----------------------------------------------
+    public static String convertToToman(double price) {
+        String finalPrice = "";
+        try {
+            Long value = Math.round(Math.ceil(price));
+            finalPrice = NumberFormat.getNumberInstance(Locale.US).format(value / 10);
+            finalPrice += " تومان";
+            return finalPrice;
+        } catch (Exception e) {
+            return price + " ریال";
+        }
+
+    }
+
+    //-----------------------------------------------
 }

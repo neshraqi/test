@@ -37,7 +37,6 @@ import hami.nasimbehesht724.Util.Database.FlightDomesticOffline;
 import hami.nasimbehesht724.Util.Hashing;
 import hami.nasimbehesht724.Util.Keyboard;
 
-
 /**
  * Created by renjer on 1/10/2017.
  */
@@ -92,8 +91,10 @@ public class InternationalApi {
                             Gson gson = new Gson();
                             SearchInternational[] searchInternationalArray = gson.fromJson(result, SearchInternational[].class);
                             List<SearchInternational> searchInternationalList = Arrays.asList(searchInternationalArray);
-                            searchPresenter.onSuccessSearch(searchInternationalList);
+                            searchPresenter.onSuccessSearch(groupByCity(searchInternationalList));
                         } catch (Exception e) {
+
+
                         } finally {
                             searchPresenter.onFinish();
                         }
@@ -103,6 +104,29 @@ public class InternationalApi {
             }
         });
         thread.start();
+    }
+
+    //-----------------------------------------------
+    public List<SearchInternational> groupByCity(List<SearchInternational> searchInternationalList) {
+        List<SearchInternational> result = new ArrayList<>();
+        HashMap<String, List<SearchInternational>> hashMap = new HashMap<>();
+        try {
+            for (SearchInternational searchInternational : searchInternationalList) {
+                if (!hashMap.containsKey(searchInternational.getCountry())) {
+                    List<SearchInternational> list = new ArrayList<>();
+                    list.add(searchInternational);
+                    hashMap.put(searchInternational.getCountry(), list);
+                    result.add(SearchInternational.newInstanceHeader(searchInternational.getCountry(),searchInternational.getCountryNameP(),searchInternational.getCountryNameE()));
+                    result.add(searchInternational);
+                } else {
+                    hashMap.get(searchInternational.getCountry()).add(searchInternational);
+                    result.add(searchInternational);
+                }
+            }
+        } catch (Exception e) {
+            return searchInternationalList;
+        }
+        return result;
     }
 
     //-----------------------------------------------
@@ -119,6 +143,7 @@ public class InternationalApi {
             List<SearchInternational> searchInternationalList = Arrays.asList(searchInternationalArray);
             return searchInternationalList;
         } catch (Exception e) {
+
 
             return null;
         }
@@ -139,6 +164,7 @@ public class InternationalApi {
             List<Country> searchInternationalList = Arrays.asList(searchInternationalArray);
             return searchInternationalList;
         } catch (Exception e) {
+
 
             return null;
         }
@@ -204,6 +230,7 @@ public class InternationalApi {
 
                         } catch (Exception e) {
 
+
                             if (hasShowRules) {
                                 rulesInternationalPresenter.onError(context.getString(R.string.msgErrorNoRules));
                             } else {
@@ -260,6 +287,8 @@ public class InternationalApi {
                             else
                                 registerPassengerInternationalPresenter.onError(registerPassengerResponse.getMsg());
                         } catch (Exception e) {
+
+
                             registerPassengerInternationalPresenter.onErrorServer(0);
                         } finally {
                             registerPassengerInternationalPresenter.onFinish();
@@ -310,6 +339,8 @@ public class InternationalApi {
                                 reserveInternationalPresenter.onError(baseResult.getMsg());
 
                         } catch (Exception e) {
+
+
                             reserveInternationalPresenter.onErrorServer();
                         } finally {
                             reserveInternationalPresenter.onFinish();
@@ -360,6 +391,8 @@ public class InternationalApi {
                                 nationalCodePresenter.onError(baseResult.getMsg());
 
                         } catch (Exception e) {
+
+
                             nationalCodePresenter.onErrorServer();
                         } finally {
                             nationalCodePresenter.onFinish();
@@ -408,6 +441,8 @@ public class InternationalApi {
                                 resultSearchPresenter.onError(baseResult.getMsg());
 
                         } catch (Exception e) {
+
+
                             resultSearchPresenter.onErrorServer(0);
                         } finally {
                             resultSearchPresenter.onFinish();
@@ -435,6 +470,7 @@ public class InternationalApi {
                     }
                     airlineListener.getAirlineList(airline);
                 } catch (Exception e) {
+
 
                     airlineListener.noAirline();
                 }
@@ -479,9 +515,13 @@ public class InternationalApi {
                             PaymentResponse paymentResponse = gson.fromJson(result, PaymentResponse.class);
                             if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && paymentResponse.getStatus() == 3) {
                                 paymentBuyPresenter.onSuccessBuy();
-                            } else
+                            } else if (paymentResponse != null && paymentResponse.getSuccess() && paymentResponse.getPaymentStatus() == 1 && (paymentResponse.getStatus() == 2 || paymentResponse.getStatus() == 1)) {
                                 paymentBuyPresenter.onReTryGetTicket();
+                            } else
+                                paymentBuyPresenter.onReTryGetPayment();
                         } catch (Exception e) {
+
+
                             paymentBuyPresenter.onErrorServer();
                         } finally {
                             paymentBuyPresenter.onFinish();
@@ -503,6 +543,7 @@ public class InternationalApi {
                     ArrayList<TicketInternational> responses = new FlightDomesticOffline(context).getFlightInternationalPastPurchases();
                     registerFlightResponseCallBackRequestSearch.getResponse(responses);
                 } catch (Exception e) {
+
 
                     registerFlightResponseCallBackRequestSearch.getResponse(null);
                 }

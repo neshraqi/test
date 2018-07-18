@@ -1,21 +1,31 @@
 package hami.nasimbehesht724.Activity.PastPurchases;
 
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import java.util.ArrayList;
-
 import hami.nasimbehesht724.Activity.Authentication.Controller.UserApi;
 import hami.nasimbehesht724.Activity.Authentication.Controller.UserResponse;
 import hami.nasimbehesht724.Activity.Authentication.SignUpActivity;
@@ -25,23 +35,22 @@ import hami.nasimbehesht724.Activity.PastPurchases.Adapter.PastPurchasesListFlig
 import hami.nasimbehesht724.Activity.PastPurchases.Adapter.PastPurchasesListTrainAdapter;
 import hami.nasimbehesht724.Activity.PastPurchases.Bus.ShowDetailsTicketBusActivity;
 import hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight.ShowDetailsTicketFlightDomesticActivity;
-import hami.nasimbehesht724.Activity.PastPurchases.InternationalFlight.ShowDetailsTicketFlightInternationalActivity;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBus;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBusResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomesticResponse;
+import hami.nasimbehesht724.Activity.PastPurchases.InternationalFlight.ShowDetailsTicketFlightInternationalActivity;import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBus;import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBusResponse;import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomestic;import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomesticResponse;
 import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightInternational;
 import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightInternationalResponse;
 import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesTrain;
 import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesTrainResponse;
 import hami.nasimbehesht724.Activity.PastPurchases.Train.ShowDetailsTicketTrainActivity;
+import hami.nasimbehesht724.Activity.SearchBarService;
 import hami.nasimbehesht724.Activity.ServiceSearch.MainServicesSearchMaterialFragment;
 import hami.nasimbehesht724.BaseController.AccessApi;
 import hami.nasimbehesht724.BaseController.AccessStatusPresenter;
 import hami.nasimbehesht724.BaseController.AccessStatusResponse;
+import hami.nasimbehesht724.BaseController.BaseMenuPermit;
 import hami.nasimbehesht724.BaseController.DividerItemDecoration;
 import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
 import hami.nasimbehesht724.BaseController.SelectItemList;
+import hami.nasimbehesht724.MainActivityMaterial;
 import hami.nasimbehesht724.R;
 import hami.nasimbehesht724.Util.Database.DataSaver;
 import hami.nasimbehesht724.Util.Keyboard;
@@ -51,50 +60,294 @@ import hami.nasimbehesht724.Util.UtilFragment;
 import hami.nasimbehesht724.View.HeaderBar;
 import hami.nasimbehesht724.View.MessageBar;
 
-public class PastPurchasesServicesMaterialFragment extends Fragment {
+public class PastPurchasesServicesMaterialFragment extends Fragment { public final static int PAGE_COUNT = 20;protected final static int REQUEST_SIGN_UP = 145654;private static final int PAGE_START = 0;private TabLayout navigationService;private RecyclerView rvResult;private MessageBar messageBar;private HeaderBar headerBar;private LinearLayoutManager mLayoutManager;private PastPurchasesListFlightDomesticAdapter mAdapterFlightDomestic;private PastPurchasesListTrainAdapter mAdapterTrainAdapter;private PastPurchasesListBusAdapter mAdapterListBusAdapter;private PastPurchasesListFlightInternationalAdapter mAdapterFlightInternational;private int currentPage = PAGE_START;private Boolean isLoading;private CoordinatorLayout coordinatorLayout;private View view;private AccessStatusResponse accessStatusResponse;private int flightDomesticIndex = -1, flightInternationalIndex = -1, trainIndex = -1, busIndex = -1;private AccessApi accessApi;private int serviceId ;private SearchBarService searchBarService;/*-----------------------------------------------*///-----------------------------------------------
 
-    private TabLayout navigationService;
-    private RecyclerView rvResult;
-    private MessageBar messageBar;
-    protected final static int REQUEST_SIGN_UP = 145654;
-    private HeaderBar headerBar;
-    private LinearLayoutManager mLayoutManager;
-    public final static int PAGE_COUNT = 20;
-    private PastPurchasesListFlightDomesticAdapter mAdapterFlightDomestic;
-    private PastPurchasesListTrainAdapter mAdapterTrainAdapter;
-    private PastPurchasesListBusAdapter mAdapterListBusAdapter;
-    private PastPurchasesListFlightInternationalAdapter mAdapterFlightInternational;
-    private static final int PAGE_START = 0;
-    private int currentPage = PAGE_START;
-    private Boolean isLoading;
-    private CoordinatorLayout coordinatorLayout;
-    private View view;
-    private AccessStatusResponse accessStatusResponse;
-    private int flightDomesticIndex = -1, flightInternationalIndex = -1, trainIndex = -1, busIndex = -1;
-    private AccessApi accessApi;
-    private int serviceId ;
+    private ProgressDialog progressDialog;
     //-----------------------------------------------
-    public static PastPurchasesServicesMaterialFragment newInstance() {
-        Bundle args = new Bundle();
-        PastPurchasesServicesMaterialFragment fragment = new PastPurchasesServicesMaterialFragment();
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        if (savedInstanceState != null) {
-            accessStatusResponse = (AccessStatusResponse) savedInstanceState.getSerializable(AccessStatusResponse.class.getName());
-            flightInternationalIndex = savedInstanceState.getInt("flightInternationalIndex");
-            flightDomesticIndex = savedInstanceState.getInt("flightDomesticIndex");
-            trainIndex = savedInstanceState.getInt("trainIndex");
-            busIndex = savedInstanceState.getInt("busIndex");
+    private SelectItemList<PurchasesFlightInternational> ticketInternationalSelectItemList = new SelectItemList<PurchasesFlightInternational>() {
+        @Override
+        public void onSelectItem(PurchasesFlightInternational object, int index) {
+            Intent intent = new Intent(getActivity(), ShowDetailsTicketFlightInternationalActivity.class);
+            intent.putExtra(PurchasesFlightInternational.class.getName(), object);
+            startActivity(intent);
         }
-        super.onActivityCreated(savedInstanceState);
-    }
+    };
+    //-----------------------------------------------
+    private SelectItemList<PurchasesFlightDomestic> selectItemList = new SelectItemList<PurchasesFlightDomestic>() {
+        @Override
+        public void onSelectItem(PurchasesFlightDomestic object, int index) {
+            Intent intent = new Intent(getActivity(), ShowDetailsTicketFlightDomesticActivity.class);
+            intent.putExtra(PurchasesFlightDomestic.class.getName(), object);
+            startActivity(intent);
+        }
+    };
+    //-----------------------------------------------
+    private SelectItemList<PurchasesTrain> purchasesTrainSelectItemList = new SelectItemList<PurchasesTrain>() {
+        @Override
+        public void onSelectItem(PurchasesTrain object, int index) {
+            Intent intent = new Intent(getActivity(), ShowDetailsTicketTrainActivity.class);
+            intent.putExtra(PurchasesTrain.class.getName(), object);
+            startActivity(intent);
+        }
+    };
+    //-----------------------------------------------
+    private SelectItemList<PurchasesBus> purchasesBusSelectItemList = new SelectItemList<PurchasesBus>() {
+        @Override
+        public void onSelectItem(PurchasesBus object, int index) {
+            Intent intent = new Intent(getActivity(), ShowDetailsTicketBusActivity.class);
+            intent.putExtra(PurchasesBus.class.getName(), object);
+            startActivity(intent);
+        }
+    };
+    //-----------------------------------------------
+    private View.OnClickListener callbackMessageBarClickListenerReSignIn = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
+            new UserApi(getActivity()).reSignIn(userResponseResultSearchPresenter);
+        }
+    };
+    //-----------------------------------------------
+    private View.OnClickListener callbackMessageBarSearchClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            showSearchPage();
+        }
+    };
+    //-----------------------------------------------
+    private View.OnClickListener callbackMessageBarDomesticFlightClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            resetFlightDomesticUi(currentPage);
+        }
+    };
+
+    //----------------------------------------
+    //-----------------------------------------------
+    private View.OnClickListener callbackMessageBarTrainClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            resetTrainUi(currentPage);
+        }
+    };
 
     //-----------------------------------------------
+//    private void setupService(final View view) {
+//        searchBarService = view.findViewById(R.id.searchBarService);
+//        MainActivityMaterial mainActivityMaterial = (MainActivityMaterial) getActivity();
+//        searchBarService.setActivity(mainActivityMaterial);
+//        setupTab(view);
+//    }
+
+    //-----------------------------------------------
+//
+//        int index = 0;
+//        Integer[] tabIcons = new Integer[0];
+//        Integer[] tabTitle = new Integer[0];
+//        ArrayList<Integer> integersIcon = new ArrayList<Integer>();
+//        ArrayList<Integer> integersTitle = new ArrayList<Integer>();
+//        if (accessStatusResponse.getBus()) {
+//            busIndex = index;
+//            integersIcon.add(R.mipmap.ic_bus);
+//            integersTitle.add(R.string.bus);
+//            //tabIcons[index] = R.drawable.bus;
+//            //tabTitle[index] = R.string.bus;
+//            //index++;
+//        }
+//        if (accessStatusResponse.getTrain()) {
+//            trainIndex = index;
+//            integersIcon.add(R.mipmap.ic_train);
+//            integersTitle.add(R.string.train);
+////            tabIcons[index] = R.drawable.train;
+////            tabTitle[index] = R.string.train;
+//            //index++;
+//        }
+//        if (accessStatusResponse.getInternational()) {
+//            flightDomesticIndex = index;
+//            integersIcon.add(R.mipmap.ic_airplan_top);
+//            integersTitle.add(R.string.airPlanInternational);
+////            tabIcons[index] = R.drawable.flight;
+////            tabTitle[index] = R.string.airPlanInternational;
+////            index++;
+//        }
+//        if (accessStatusResponse.getFlight()) {
+//            flightInternationalIndex = index;
+//            integersIcon.add(R.mipmap.ic_airplan_top);
+//            integersTitle.add(R.string.airPlanDomestic);
+////            tabIcons[index] = R.drawable.flight;
+////            tabTitle[index] = R.string.airPlanDomestic;
+//            //index++;
+//        }
+//
+//        UtilFonts.applyFontTabServices(getActivity(), navigationService, integersTitle, integersIcon);
+//        navigationService.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//                resetMainUi();
+//                if (!new DataSaver(getActivity()).hasLogin()) {
+//                    headerBar.setVisibility(View.GONE);
+//                    messageBar.showMessageBar(R.string.msgErrorNeedLogin);
+//                    messageBar.setTitleButton(R.string.loginPanel);
+//                    messageBar.setCallbackButtonNewSearch(new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            startActivityForResult(new Intent(getActivity(), SignUpActivity.class), 100);
+//                        }
+//                    });
+//                    return;
+//                } else {
+//                    messageBar.setTitleButton(R.string.searchFlight);
+//                }
+//                if (tab.getPosition() == busIndex) {
+//                    resetBusUi(currentPage);
+//                } else if (tab.getPosition() == trainIndex) {
+//                    resetTrainUi(currentPage);
+//                } else if (tab.getPosition() == flightDomesticIndex) {
+//                    resetFlightDomesticUi(currentPage);
+//                } else if (tab.getPosition() == flightInternationalIndex) {
+//                    resetFlightInternationalUi(currentPage);
+//                }
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//
+//            }
+//        });
+//        navigationService.getTabAt(navigationService.getTabCount() - 1).select();
+//    }
+    //-----------------------------------------------
+    private View.OnClickListener callbackMessageBarBusClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            resetBusUi(currentPage);
+        }
+    };
+    //-----------------------------------------------
+    private View.OnClickListener callbackMessageBarInternationalFlightClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            resetFlightInternationalUi(currentPage);
+        }
+    };
+    //-----------------------------------------------
+    ResultSearchPresenter<UserResponse> userResponseResultSearchPresenter = new ResultSearchPresenter<UserResponse>() {
+        @Override
+        public void onStart() {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        headerBar.showMessageBar(R.string.authenticating);
+                        messageBar.showProgress(getString(R.string.authenticating));
+                    }
+                });
+            }
+        }
+
+        @Override
+        public void onErrorServer(int type) {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        messageBar.showMessageBar(R.string.msgErrorServer);
+                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
+                        headerBar.showMessageBar(R.string.error);
+                    }
+                });
+            }
+        }
+
+        @Override
+        public void onErrorInternetConnection() {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        messageBar.showMessageBar(R.string.msgErrorInternetConnection);
+                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
+                        headerBar.showMessageBar(R.string.error);
+                    }
+                });
+
+            }
+        }
+
+        @Override
+        public void noResult(final int type) {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        messageBar.showMessageBar(R.string.msgErrorNoLang);
+                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
+                        headerBar.showMessageBar(R.string.validateSelectTikcet);
+                    }
+                });
+            }
+        }
+
+        @Override
+        public void onSuccessResultSearch(UserResponse result) {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        messageBar.hideMessageBar();
+                        switch (navigationService.getSelectedTabPosition()) {
+                            case 0:
+                                resetBusUi(currentPage);
+                            case 1:
+                                resetTrainUi(currentPage);
+                            case 2:
+                                resetFlightInternationalUi(currentPage);
+                            case 3:
+                                resetFlightDomesticUi(currentPage);
+                        }
+                    }
+                });
+            }
+
+        }
+
+        @Override
+        public void onError(final String msg) {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        messageBar.showMessageBar(msg);
+                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
+                        headerBar.showMessageBar(R.string.error);
+                    }
+                });
+            }
+        }
+
+        @Override
+        public void onFinish() {
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        messageBar.hideProgress();
+                    }
+                });
+            }
+        }
+
+
+    };
+
+    public static PastPurchasesServicesMaterialFragment newInstance() { Bundle args = new Bundle();PastPurchasesServicesMaterialFragment fragment = new PastPurchasesServicesMaterialFragment();fragment.setArguments(args);return fragment; }
+
+    @Override public void onActivityCreated(@Nullable Bundle savedInstanceState) { if (savedInstanceState != null) { accessStatusResponse = (AccessStatusResponse) savedInstanceState.getSerializable(AccessStatusResponse.class.getName());flightInternationalIndex = savedInstanceState.getInt("flightInternationalIndex");flightDomesticIndex = savedInstanceState.getInt("flightDomesticIndex");trainIndex = savedInstanceState.getInt("trainIndex");busIndex = savedInstanceState.getInt("busIndex"); }super.onActivityCreated(savedInstanceState); }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -113,6 +366,7 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.past_purchases_main_material, container, false);
         initialComponentFragment(view);
+        // setupService(view);
         return view;
     }
 
@@ -233,45 +487,35 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
     //-----------------------------------------------
     private void setupTab(final View view) {
         navigationService.setVisibility(View.VISIBLE);
-        int index = 0;
-        Integer[] tabIcons = new Integer[0];
-        Integer[] tabTitle = new Integer[0];
-        ArrayList<Integer> integersIcon = new ArrayList<Integer>();
-        ArrayList<Integer> integersTitle = new ArrayList<Integer>();
-        if (accessStatusResponse.getBus()) {
-            busIndex = index;
-            integersIcon.add(R.mipmap.ic_bus);
-            integersTitle.add(R.string.bus);
-            //tabIcons[index] = R.drawable.bus;
-            //tabTitle[index] = R.string.bus;
-            //index++;
-        }
-        if (accessStatusResponse.getTrain()) {
-            trainIndex = index;
-            integersIcon.add(R.mipmap.ic_train);
-            integersTitle.add(R.string.train);
-//            tabIcons[index] = R.drawable.train;
-//            tabTitle[index] = R.string.train;
-            //index++;
-        }
-        if (accessStatusResponse.getInternational()) {
-            flightDomesticIndex = index;
-            integersIcon.add(R.mipmap.ic_airplan_top);
-            integersTitle.add(R.string.airPlanInternational);
-//            tabIcons[index] = R.drawable.flight;
-//            tabTitle[index] = R.string.airPlanInternational;
-//            index++;
-        }
-        if (accessStatusResponse.getFlight()) {
-            flightInternationalIndex = index;
-            integersIcon.add(R.mipmap.ic_airplan_top);
-            integersTitle.add(R.string.airPlanDomestic);
-//            tabIcons[index] = R.drawable.flight;
-//            tabTitle[index] = R.string.airPlanDomestic;
-            //index++;
+
+        ArrayList<BaseMenuPermit> values = new ArrayList<>();
+        ArrayList<Integer> valueText = new ArrayList<>();
+
+
+        if (accessStatusResponse.getBus())
+            values.add(new BaseMenuPermit(R.string.bus, R.mipmap.ic_bus, BaseMenuPermit.BUS));
+        if (accessStatusResponse.getTrain())
+            values.add(new BaseMenuPermit(R.string.train, R.mipmap.ic_train, BaseMenuPermit.TRAIN));
+        if (accessStatusResponse.getInternationalHotel())
+            values.add(new BaseMenuPermit(R.string.airPlanInternational, R.mipmap.ic_airplan_top, BaseMenuPermit.INTERNATIONAL_FLIGHT));
+        if (accessStatusResponse.getFlight())
+            values.add(new BaseMenuPermit(R.string.airPlanDomestic, R.mipmap.ic_airplan_top, BaseMenuPermit.DOMESTIC_FLIGHT));
+
+        for (int i = 0; i < values.size(); ++i) {
+            TabLayout.Tab tab = navigationService.newTab();
+            StateListDrawable stateDrawable = new StateListDrawable();
+            Drawable unSelectedDrawable = ContextCompat.getDrawable(getActivity(), values.get(i).getImgResource());
+            unSelectedDrawable.setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
+            Drawable selectedDrawable = createdSelectedDrawable(values.get(i).getImgResource());
+            stateDrawable.addState(new int[]{-android.R.attr.state_selected}, unSelectedDrawable);
+            stateDrawable.addState(new int[]{android.R.attr.state_selected}, selectedDrawable);
+            tab.setIcon(stateDrawable);
+            tab.setText(values.get(i).getTitleResource());
+            tab.setTag(values.get(i).getTagName());
+            navigationService.addTab(tab, i);
         }
 
-        UtilFonts.applyFontTabServices(getActivity(), navigationService, integersTitle, integersIcon);
+        //UtilFonts.applyFontTabServices(getActivity(), navigationService, valueText, valueImage);
         navigationService.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -290,14 +534,14 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                 } else {
                     messageBar.setTitleButton(R.string.searchFlight);
                 }
-                if (tab.getPosition() == busIndex) {
-                    resetBusUi(currentPage);
-                } else if (tab.getPosition() == trainIndex) {
-                    resetTrainUi(currentPage);
-                } else if (tab.getPosition() == flightDomesticIndex) {
+                if (tab.getTag().equals(BaseMenuPermit.DOMESTIC_FLIGHT)) {
                     resetFlightDomesticUi(currentPage);
-                } else if (tab.getPosition() == flightInternationalIndex) {
+                } else if (tab.getTag().equals(BaseMenuPermit.INTERNATIONAL_FLIGHT)) {
                     resetFlightInternationalUi(currentPage);
+                } else if (tab.getTag().equals(BaseMenuPermit.BUS)) {
+                    resetBusUi(currentPage);
+                } else if (tab.getTag().equals(BaseMenuPermit.TRAIN)) {
+                    resetTrainUi(currentPage);
                 }
             }
 
@@ -312,6 +556,16 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
             }
         });
         navigationService.getTabAt(navigationService.getTabCount() - 1).select();
+    }
+
+    private Drawable createdSelectedDrawable(int iconResource) {
+        Bitmap one = BitmapFactory.decodeResource(getResources(), iconResource);
+        Bitmap oneCopy = Bitmap.createBitmap(one.getWidth(), one.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas c = new Canvas(oneCopy);
+        Paint p = new Paint();
+        p.setColorFilter(new PorterDuffColorFilter(ContextCompat.getColor(getActivity(), android.R.color.white), PorterDuff.Mode.SRC_ATOP));
+        c.drawBitmap(one, 0, 0, p);
+        return new BitmapDrawable(getResources(), oneCopy);
     }
 
     //-----------------------------------------------
@@ -396,7 +650,6 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
         getListPurchasesTrain(pageNumber);
     }
 
-
     //-----------------------------------------------
     private void resetFlightInternationalUi(int pageNumber) {
         messageBar.setCallbackButtonNewSearch(callbackMessageBarInternationalFlightClickListener);
@@ -435,7 +688,6 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
         getListPurchasesFlightInternational(pageNumber);
     }
 
-
     //-----------------------------------------------
     private void setupRecyclerViewDomestic(ArrayList<PurchasesFlightDomestic> results) {
         mAdapterFlightDomestic.addData(results);
@@ -455,43 +707,6 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
     private void setupRecyclerViewInternational(ArrayList<PurchasesFlightInternational> results) {
         mAdapterFlightInternational.addData(results);
     }
-
-    //-----------------------------------------------
-    private SelectItemList<PurchasesFlightInternational> ticketInternationalSelectItemList = new SelectItemList<PurchasesFlightInternational>() {
-        @Override
-        public void onSelectItem(PurchasesFlightInternational object, int index) {
-            Intent intent = new Intent(getActivity(), ShowDetailsTicketFlightInternationalActivity.class);
-            intent.putExtra(PurchasesFlightInternational.class.getName(), object);
-            startActivity(intent);
-        }
-    };
-    //-----------------------------------------------
-    private SelectItemList<PurchasesFlightDomestic> selectItemList = new SelectItemList<PurchasesFlightDomestic>() {
-        @Override
-        public void onSelectItem(PurchasesFlightDomestic object, int index) {
-            Intent intent = new Intent(getActivity(), ShowDetailsTicketFlightDomesticActivity.class);
-            intent.putExtra(PurchasesFlightDomestic.class.getName(), object);
-            startActivity(intent);
-        }
-    };
-    //-----------------------------------------------
-    private SelectItemList<PurchasesTrain> purchasesTrainSelectItemList = new SelectItemList<PurchasesTrain>() {
-        @Override
-        public void onSelectItem(PurchasesTrain object, int index) {
-            Intent intent = new Intent(getActivity(), ShowDetailsTicketTrainActivity.class);
-            intent.putExtra(PurchasesTrain.class.getName(), object);
-            startActivity(intent);
-        }
-    };
-    //-----------------------------------------------
-    private SelectItemList<PurchasesBus> purchasesBusSelectItemList = new SelectItemList<PurchasesBus>() {
-        @Override
-        public void onSelectItem(PurchasesBus object, int index) {
-            Intent intent = new Intent(getActivity(), ShowDetailsTicketBusActivity.class);
-            intent.putExtra(PurchasesBus.class.getName(), object);
-            startActivity(intent);
-        }
-    };
 
     //-----------------------------------------------
     private void resetFlightDomesticUi(int pageNumber) {
@@ -541,8 +756,13 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            headerBar.showMessageBar(R.string.gettingTicket);
-                            headerBar.showProgress();
+                            progressDialog = new ProgressDialog(getActivity());
+                            progressDialog.setMessage(getString(R.string.gettingInfo));
+                            progressDialog.setCancelable(false);
+                            progressDialog.show();
+
+//                            headerBar.showMessageBar(R.string.gettingTicket);
+//                            headerBar.showProgress();
                             if (pageNumber == 0) {
                                 messageBar.showProgress(getString(R.string.gettingTicket));
                             }
@@ -669,7 +889,7 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                                 messageBar.hideProgress();
                             }
                             headerBar.showMessageBar(R.string.validateSelectTikcet);
-                            headerBar.hideProgress();
+                            progressDialog.hide();
 
 
                         }
@@ -689,8 +909,10 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            headerBar.showMessageBar(R.string.gettingTicket);
-                            headerBar.showProgress();
+                            progressDialog = new ProgressDialog(getActivity());
+                            progressDialog.setMessage(getString(R.string.gettingInfo));
+                            progressDialog.setCancelable(false);
+                            progressDialog.show();
                             messageBar.hideMessageBar();
                             if (pageNumber == 0) {
                                 messageBar.showProgress(getString(R.string.gettingTicket));
@@ -818,7 +1040,7 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                                 messageBar.hideProgress();
                             }
                             headerBar.showMessageBar(R.string.validateSelectTikcet);
-                            headerBar.hideProgress();
+                            progressDialog.hide();
 
 
                         }
@@ -838,8 +1060,10 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            headerBar.showMessageBar(R.string.gettingTicket);
-                            headerBar.showProgress();
+                            progressDialog = new ProgressDialog(getActivity());
+                            progressDialog.setMessage(getString(R.string.gettingInfo));
+                            progressDialog.setCancelable(false);
+                            progressDialog.show();
                             messageBar.hideMessageBar();
                             if (pageNumber == 0) {
                                 messageBar.showProgress(getString(R.string.gettingTicket));
@@ -967,7 +1191,7 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                                 messageBar.hideProgress();
                             }
                             headerBar.showMessageBar(R.string.validateSelectTikcet);
-                            headerBar.hideProgress();
+                            progressDialog.hide();
 
 
                         }
@@ -987,8 +1211,10 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            headerBar.showMessageBar(R.string.gettingTicket);
-                            headerBar.showProgress();
+                            progressDialog = new ProgressDialog(getActivity());
+                            progressDialog.setMessage(getString(R.string.gettingInfo));
+                            progressDialog.setCancelable(false);
+                            progressDialog.show();
                             messageBar.hideMessageBar();
                             if (pageNumber == 0) {
                                 messageBar.showProgress(getString(R.string.gettingTicket));
@@ -1114,8 +1340,7 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
                                 messageBar.hideProgress();
                             }
                             headerBar.showMessageBar(R.string.validateSelectTikcet);
-                            headerBar.hideProgress();
-
+                            progressDialog.hide();
 
                         }
                     });
@@ -1123,159 +1348,6 @@ public class PastPurchasesServicesMaterialFragment extends Fragment {
             }
         });
     }
-
-    //-----------------------------------------------
-    private View.OnClickListener callbackMessageBarClickListenerReSignIn = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
-            new UserApi(getActivity()).reSignIn(userResponseResultSearchPresenter);
-        }
-    };
-    //-----------------------------------------------
-    private View.OnClickListener callbackMessageBarDomesticFlightClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            resetFlightDomesticUi(currentPage);
-        }
-    };
-    //-----------------------------------------------
-    private View.OnClickListener callbackMessageBarBusClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            resetBusUi(currentPage);
-        }
-    };
-    //-----------------------------------------------
-    private View.OnClickListener callbackMessageBarTrainClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            resetTrainUi(currentPage);
-        }
-    };
-    //-----------------------------------------------
-    private View.OnClickListener callbackMessageBarInternationalFlightClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            resetFlightInternationalUi(currentPage);
-        }
-    };
-    //-----------------------------------------------
-    private View.OnClickListener callbackMessageBarSearchClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            showSearchPage();
-        }
-    };
-    //-----------------------------------------------
-    ResultSearchPresenter<UserResponse> userResponseResultSearchPresenter = new ResultSearchPresenter<UserResponse>() {
-        @Override
-        public void onStart() {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        headerBar.showMessageBar(R.string.authenticating);
-                        messageBar.showProgress(getString(R.string.authenticating));
-                    }
-                });
-            }
-        }
-
-        @Override
-        public void onErrorServer(int type) {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        messageBar.showMessageBar(R.string.msgErrorServer);
-                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
-                        headerBar.showMessageBar(R.string.error);
-                    }
-                });
-            }
-        }
-
-        @Override
-        public void onErrorInternetConnection() {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        messageBar.showMessageBar(R.string.msgErrorInternetConnection);
-                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
-                        headerBar.showMessageBar(R.string.error);
-                    }
-                });
-
-            }
-        }
-
-        @Override
-        public void noResult(final int type) {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        messageBar.showMessageBar(R.string.msgErrorNoLang);
-                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
-                        headerBar.showMessageBar(R.string.validateSelectTikcet);
-                    }
-                });
-            }
-        }
-
-        @Override
-        public void onSuccessResultSearch(UserResponse result) {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        messageBar.hideMessageBar();
-                        switch (navigationService.getSelectedTabPosition()) {
-                            case 0:
-                                resetBusUi(currentPage);
-                            case 1:
-                                resetTrainUi(currentPage);
-                            case 2:
-                                resetFlightInternationalUi(currentPage);
-                            case 3:
-                                resetFlightDomesticUi(currentPage);
-                        }
-                    }
-                });
-            }
-
-        }
-
-        @Override
-        public void onError(final String msg) {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        messageBar.showMessageBar(msg);
-                        messageBar.setCallbackButtonNewSearch(callbackMessageBarClickListenerReSignIn);
-                        headerBar.showMessageBar(R.string.error);
-                    }
-                });
-            }
-        }
-
-        @Override
-        public void onFinish() {
-            if (getActivity() != null) {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        messageBar.hideProgress();
-                    }
-                });
-            }
-        }
-
-
-    };
 
     //-----------------------------------------------
     @Override

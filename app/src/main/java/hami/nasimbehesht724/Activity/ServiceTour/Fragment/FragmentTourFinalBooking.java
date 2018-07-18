@@ -10,8 +10,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 
 import com.mohamadamin.persianmaterialdatetimepicker.utils.PersianCalendar;
 
@@ -43,7 +45,7 @@ public class FragmentTourFinalBooking extends Fragment {
     private RecyclerView rvResult;
     private Boolean hasReserve = false, hasPayment = false;
     private LinearLayout layoutButtonPayment, layoutButtonGetTicket;
-    private TextView txtTitleFinalTicket;
+    private TextView txtTitleFinalTicket, txtWarningCheckInfo;
     private AppCompatButton btnGetTicket, btnBuy, btnEdit, btnExit;
 
     //-----------------------------------------------
@@ -135,6 +137,7 @@ public class FragmentTourFinalBooking extends Fragment {
                             @Override
                             public void run() {
                                 hasPayment = true;
+                                txtWarningCheckInfo.setVisibility(View.GONE);
                                 setupGetTicket();
                             }
                         });
@@ -143,6 +146,11 @@ public class FragmentTourFinalBooking extends Fragment {
 
                 @Override
                 public void onErrorBuy() {
+
+                }
+
+                @Override
+                public void onReTryGetPayment() {
 
                 }
 
@@ -179,6 +187,9 @@ public class FragmentTourFinalBooking extends Fragment {
         layoutButtonGetTicket = (LinearLayout) view.findViewById(R.id.layoutButtonGetTicket);
         layoutButtonPayment = (LinearLayout) view.findViewById(R.id.layoutButtonPayment);
         txtTitleFinalTicket = (TextView) view.findViewById(R.id.titleFinalTicket);
+      //  txtWarningCheckInfo = (TextView) view.findViewById(R.id.txtWarningCheckInfo);
+        txtWarningCheckInfo.setSelected(true);
+        txtWarningCheckInfo.setVisibility(View.VISIBLE);
         btnBuy = (AppCompatButton) view.findViewById(R.id.btnBuy);
         btnEdit = (AppCompatButton) view.findViewById(R.id.btnEditBuy);
 
@@ -218,24 +229,45 @@ public class FragmentTourFinalBooking extends Fragment {
             TextView txtFinalPrice = (TextView) view.findViewById(R.id.txtFinalPrice);
             TextView txtWentDate = (TextView) view.findViewById(R.id.txtWentDate);
             TextView txtWentPlace = (TextView) view.findViewById(R.id.txtWentPlace);
-
+            //ImageView imgGoByFrom = (ImageView) view.findViewById(R.id.imgGoByFrom);
+            //ImageView imgReturnByTo = (ImageView) view.findViewById(R.id.imgReturnByTo);
             TextView txtReturnDate = (TextView) view.findViewById(R.id.txtReturnDate);
             TextView txtReturnPlace = (TextView) view.findViewById(R.id.txtReturnPlace);
 
+           // imgGoByFrom.setImageResource(getIconTour(bookingTourDetails.getTicket().getTour_go_by()));
+           // imgReturnByTo.setImageResource(getIconTour(bookingTourDetails.getTicket().getTour_return_by()));
 
             txtTourName.setText(bookingTourDetails.getTicket().getTour_name());
-            String dateCounter = bookingTourDetails.getTicket().getTour_day_count() + getString(R.string.day) + " و " + bookingTourDetails.getTicket().getTour_night_count() + getString(R.string.night);
+            String dateCounter = "";
+            if (bookingTourDetails.getTicket().getTour_day_count() == null || bookingTourDetails.getTicket().getTour_day_count().length() == 0 || bookingTourDetails.getTicket().getTour_night_count() == null || bookingTourDetails.getTicket().getTour_night_count().length() == 0)
+                dateCounter = "---";
+            else
+                dateCounter = bookingTourDetails.getTicket().getTour_day_count() + getString(R.string.day) + " و " + bookingTourDetails.getTicket().getTour_night_count() + getString(R.string.night);
             txtTourCountDayAndNight.setText(dateCounter);
             txtWentDate.setText(getString(R.string.moveDate) + " " + getPersianDate(bookingTourDetails.getTicket().getTour_start_date()));
             txtReturnDate.setText(getString(R.string.date) + " " + getPersianDate(bookingTourDetails.getTicket().getTour_end_date()));
             txtWentPlace.setText(bookingTourDetails.getTicket().getTour_from() + " به " + bookingTourDetails.getTicket().getTour_to());
             txtReturnPlace.setText(bookingTourDetails.getTicket().getTour_to() + " به " + bookingTourDetails.getTicket().getTour_from());
-            txtFinalPrice.setText("مبلغ نهایی:" + getFinalPrice(bookingTourDetails.getTicket().getFinalprice()));
+            txtFinalPrice.setText(getFinalPrice(bookingTourDetails.getTicket().getFinalprice()));
             setupRecyclerView();
         } catch (Exception e) {
 
+
         }
 
+    }
+
+    //-----------------------------------------------
+    private int getIconTour(String type) {
+        if (type.contentEquals(TourRules.TOUR_BUS)) {
+            return R.mipmap.ic_bus_side_view;
+        } else if (type.contentEquals(TourRules.TOUR_AIRPLANE)) {
+            return R.mipmap.ic_airplan_top;
+        } else if (type.contentEquals(TourRules.TOUR_TRAIN)) {
+            return R.mipmap.ic_train_gray;
+        } else {
+            return -1;
+        }
     }
 
     //-----------------------------------------------
@@ -281,15 +313,15 @@ public class FragmentTourFinalBooking extends Fragment {
     private String getFinalPrice(String price) {
         String finalPrice = "";
         try {
-
             finalPrice = price.replace(",", "");
             finalPrice = NumberFormat.getNumberInstance(Locale.US).format(Long.valueOf(finalPrice) / 10);
-            finalPrice += " تومان";
-
+            finalPrice = getString(R.string.finalPriceWithDiscount) + finalPrice + " تومان";
             return finalPrice;
         } catch (Exception e) {
 
-            return price + " ریال";
+
+            finalPrice = getString(R.string.finalPriceWithDiscount) + price;
+            return finalPrice + " ریال";
         }
 
     }

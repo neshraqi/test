@@ -27,6 +27,7 @@ public class UtilFonts {
     public final static String IRAN_SANS_BOLD = "iransans_bold.ttf";
     public final static String IRAN_SANS_NORMAL = "iran_sans_normal.ttf";
     public final static String TAHOMA = "tahoma.ttf";
+    public final static String BOOK = "iran_sans_web.ttf";
     private static int[] tabIcons = {
             R.mipmap.ic_bus,
             R.mipmap.ic_bus,

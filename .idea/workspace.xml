@@ -1,101 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba1a3fb2-5687-4221-ad48-5a85823d72ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Adapter/PassengerCounterFlight.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/nasimebehesht.iml" />
+    <list default="true" id="f401e04b-9b25-4444-a74a-622328d3bc27" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/BaseController/BaseMenuPermit.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_layout_change_price_message.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_weidongjian_android_progress_button_0_2.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_allattentionhere_fabulousfilter_0_0_5.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_1_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_3.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_22_2_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_22_2_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_0_5.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_1_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_code_troopers_betterpickers_library_3_1_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_3_7_0_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_castorflex_smoothprogressbar_library_1_0_1_SNAPSHOT.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_wooplr_Spotlight_1_3.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_flexbox_0_2_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_15_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_15_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_15_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_15_0_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_15_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_15_0_1.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_16_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_0_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nineoldandroids_library_2_4_0_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ramotion_expandingcollection_expanding_collection_0_9_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_picasso_picasso_2_5_2_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wang_avi_library_2_1_3.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_webianks_library_easy_feedback_1_0_2.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_supercharge_shimmerlayout_1_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/lib/common-1.1.1.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/release/output.json" afterPath="$PROJECT_DIR$/app/release/output.json" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/Adapter/PastPurchasesListFlightDomesticAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/Adapter/PastPurchasesListFlightDomesticAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/Adapter/PastPurchasesListFlightInternationalAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/Adapter/PastPurchasesListFlightInternationalAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/Adapter/PastPurchasesListTrainAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/Adapter/PastPurchasesListTrainAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Controller/Adapter/ResultSearchBusListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Controller/Adapter/ResultSearchBusListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/NewDomesticListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/NewDomesticListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/PassengerDomesticListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Adapter/PassengerDomesticListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentFinalBookingFlightDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentFinalBookingFlightDomestic.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/PastPurchasesServicesMaterialFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/PastPurchases/PastPurchasesServicesMaterialFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/SearchBarService.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/SearchBarService.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/Domestic/Controller/DomesticHotelApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/Domestic/Controller/DomesticHotelApi.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/Domestic/FragmentFinalBookingDomesticHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/Domestic/FragmentFinalBookingDomesticHotel.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/International/Controller/InternationalHotelApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/International/Controller/InternationalHotelApi.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/International/FragmentBookingInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceHotel/International/FragmentBookingInternationalHotel.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/BusApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/BusApi.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/PaymentPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Controller/Presenter/PaymentPresenter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentReserveBus.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceBus/Services/Fragment/FragmentReserveBus.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Model/DomesticRequest.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/DomesticApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Controller/Presenter/DomesticApi.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/FragmentFinalBookingFlightDomestic.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/View/ActivityRegisterPassengerDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/Domestic/Fragment/View/ActivityRegisterPassengerDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Adapter/TrainListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Adapter/TrainListAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/SearchInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Model/SearchInternational.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/InternationalApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/International/Controller/Presenter/InternationalApi.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentFinalBookingFlightInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceFlight/Services/International/Fragment/FragmentFinalBookingFlightInternational.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/RegisterTrainResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/RegisterTrainResponse.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/ViewParamsTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Controller/Model/ViewParamsTrain.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/TrainApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Controller/Presenter/TrainApi.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentFinalBookingTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceSearch/ServiceTrain/Services/Fragment/FragmentFinalBookingTrain.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceTour/Adapter/TourListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceTour/Adapter/TourListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gradiant_blue2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_icon.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_material.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_tools_header_bar_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_tools_header_bar_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layer1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layer2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layer3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layer5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors_material.xml" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-14-37-27-776.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-14-39-19-155.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-14-47-15-295.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-14-47-15-295.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-14-53-12-549.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-14-53-12-549.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-15-41-47-718.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-15-41-47-718.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-15-41-58-016.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-21-15-41-58-016.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-10-21-160.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-10-21-160.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-10-57-930.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-17-50-005.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-18-50-235.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-21-48-784.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-23-10-21-48-784.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-25-15-35-33-039.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-25-15-36-12-365.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-06-25-15-36-12-365.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceTour/Controller/TourApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceTour/Controller/TourApi.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceTour/Fragment/FragmentTourFinalBooking.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Activity/ServiceTour/Fragment/FragmentTourFinalBooking.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Const/TourRules.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Const/TourRules.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/MainActivityMaterial.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/MainActivityMaterial.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Util/UtilFonts.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Util/UtilFonts.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Util/UtilImageLoader.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Util/UtilImageLoader.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Util/UtilPrice.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/nasimbehesht724/Util/UtilPrice.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-18-19-994.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-18-19-994.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-20-59-195.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-20-59-195.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-29-43-773.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-29-43-773.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-04-643.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-04-643.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-25-537.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-25-537.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-46-631.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-46-631.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-55-705.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-12-59-55-705.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-13-00-06-961.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-13-00-06-961.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-13-00-11-496.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-13-00-11-496.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-13-02-06-612.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-13-02-06-612.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-19-48-369.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-19-48-369.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-19-56-406.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-19-56-406.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-23-01-212.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-23-01-212.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-25-26-441.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-25-26-441.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-29-30-789.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-29-30-789.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-29-38-774.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-29-38-774.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-30-22-505.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-15-30-22-505.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-16-03-08-507.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-16-03-08-507.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-16-03-47-085.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-07-14-16-03-47-085.rawproto" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -3026,13 +3086,11 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="678" />
-    <option name="y" value="70" />
-    <option name="width" value="697" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="762" />
+    <option name="width" value="611" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -3048,20 +3106,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
-    <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -3234,16 +3290,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba1a3fb2-5687-4221-ad48-5a85823d72ce" name="Default" comment="" />
-      <created>1531567984183</created>
+      <changelist id="f401e04b-9b25-4444-a74a-622328d3bc27" name="Default" comment="" />
+      <created>1531915613100</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531567984183</updated>
+      <updated>1531915613100</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -3252,21 +3308,21 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10422961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3278,11 +3334,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
