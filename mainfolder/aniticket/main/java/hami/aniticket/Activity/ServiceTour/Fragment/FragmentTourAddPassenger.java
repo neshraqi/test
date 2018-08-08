@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Fragment;
+package hami.mainapp.Activity.ServiceTour.Fragment;
 
 import android.content.Intent;
 import android.graphics.Paint;
@@ -25,26 +25,26 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceTour.Adapter.BottomSheetLayoutPriceTour;
-import hami.nasimbehesht724.Activity.ServiceTour.Adapter.OnSelectItemPassengerTourListener;
-import hami.nasimbehesht724.Activity.ServiceTour.Adapter.PassengerTourListAdapter;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourDetails;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourRequest;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourUserData;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.PassengerTour;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.TourDetailData;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.TourApi;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.CheckBox;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
-import hami.nasimbehesht724.View.ToolsTourOption;
-import hami.nasimbehesht724.View.Validation.ValidationClass;
+import hami.mainapp.Activity.ServiceTour.Adapter.BottomSheetLayoutPriceTour;
+import hami.mainapp.Activity.ServiceTour.Adapter.OnSelectItemPassengerTourListener;
+import hami.mainapp.Activity.ServiceTour.Adapter.PassengerTourListAdapter;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourDetails;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourRequest;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourUserData;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.PassengerTour;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.TourDetailData;
+import hami.mainapp.Activity.ServiceTour.Controller.TourApi;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.CheckBox;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
+import hami.mainapp.View.ToolsTourOption;
+import hami.mainapp.View.Validation.ValidationClass;
 
 
 public class FragmentTourAddPassenger extends Fragment {

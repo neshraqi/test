@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment;
 
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -17,31 +17,31 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Adapter.PassengerTrainListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.ListModelPassengerInfoTrain;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.PassengerInfoTrain;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.OnSelectItemPassengerTrainListener;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.TrainApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment.View.DialogTrainAddPassenger;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment.View.OnPassengerTrainListener;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.Util.UtilImageLoader;
-import hami.nasimbehesht724.View.CheckBox;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
-import hami.nasimbehesht724.View.Validation.ValidationClass;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Adapter.PassengerTrainListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.ListModelPassengerInfoTrain;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.PassengerInfoTrain;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.OnSelectItemPassengerTrainListener;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.TrainApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment.View.DialogTrainAddPassenger;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment.View.OnPassengerTrainListener;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.Util.UtilImageLoader;
+import hami.mainapp.View.CheckBox;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
+import hami.mainapp.View.Validation.ValidationClass;
 
 
 public class FragmentTrainDetails extends Fragment {

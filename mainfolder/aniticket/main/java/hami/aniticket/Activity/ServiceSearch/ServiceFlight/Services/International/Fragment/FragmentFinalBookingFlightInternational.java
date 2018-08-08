@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -21,29 +21,29 @@ import android.widget.Toast;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.PassengerInfoListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.RegisterPassengerResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.ReserveRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.TicketInternational;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalParto;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.FinalFlightInternationalIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.PackageCompletedFlightInternational;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterFlightInternationalResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterPassengerFlightInternationalResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.ReserveInternationalPresenter;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Hashing;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.PassengerInfoListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.RegisterPassengerResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.ReserveRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.TicketInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.FinalFlightInternationalIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.PackageCompletedFlightInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterFlightInternationalResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterPassengerFlightInternationalResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.ReserveInternationalPresenter;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Hashing;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentFinalBookingFlightInternational extends Fragment {

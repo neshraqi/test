@@ -1,9 +1,9 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.PassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.PassengerInfo;
 
 /**
  * Created by renjer on 2017-02-25.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -18,14 +18,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.NewDesignFilterTrainFragmentDialog;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.SelectItemTrainSearchListener;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.NewDesignFilterTrainFragmentDialog;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.SelectItemTrainSearchListener;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
 
 /**
  * Created by renjer on 1/8/2017.

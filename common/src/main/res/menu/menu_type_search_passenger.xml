@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuNormalPassenger"
+        android:title="@string/normalPassenger"></item>
+    <item
+        android:id="@+id/menuManPassenger"
+        android:title="@string/manPassenger"></item>
+    <item
+        android:id="@+id/menuWomanPassenger"
+        android:title="@string/womanPassenger"></item>
+
+</menu>

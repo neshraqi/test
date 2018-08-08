@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter;
 
 
 import android.content.Context;
@@ -8,20 +8,20 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainDataResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Hashing;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainDataResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.BaseNetwork.WebServiceNetwork;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.R;
+import hami.mainapp.Util.Hashing;
 
 
 /**

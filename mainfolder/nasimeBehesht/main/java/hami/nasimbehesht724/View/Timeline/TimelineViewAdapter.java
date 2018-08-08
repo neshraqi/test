@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View.Timeline;
+package hami.mainapp.View.Timeline;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,8 +15,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class TimelineViewAdapter extends ArrayAdapter<TimelineRow> {

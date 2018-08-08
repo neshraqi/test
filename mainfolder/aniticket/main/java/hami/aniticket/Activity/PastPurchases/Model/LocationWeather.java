@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Model;
+package hami.mainapp.Activity.PastPurchases.Model;
 
 /**
  * Created by renjer on 2017-10-16.

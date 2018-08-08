@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatCheckBox;
@@ -10,8 +10,8 @@ import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class CheckBoxRateLtr extends RelativeLayout {

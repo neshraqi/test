@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Const.HotelRules;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Const.HotelRules;
+import hami.mainapp.R;
 
 
 public class ToolsHotelChildAge extends RelativeLayout {

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View.Validation;
+package hami.mainapp.View.Validation;
 
 import android.content.Context;
 import android.support.design.widget.Snackbar;
@@ -10,9 +10,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.ValidateNationalCode;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.R;
+import hami.mainapp.Util.ValidateNationalCode;
+import hami.mainapp.View.ToastMessageBar;
 
 /**
  * Created by renjer on 1/26/2017.

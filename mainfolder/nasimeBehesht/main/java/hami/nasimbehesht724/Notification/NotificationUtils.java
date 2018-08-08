@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Notification;
+package hami.mainapp.Notification;
 
 import android.app.ActivityManager;
 import android.app.Notification;
@@ -28,7 +28,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 
 public class NotificationUtils {

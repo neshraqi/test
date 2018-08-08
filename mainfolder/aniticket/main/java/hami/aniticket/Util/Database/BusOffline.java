@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Util.Database;
+package hami.mainapp.Util.Database;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -11,8 +11,8 @@ import android.util.Log;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
+import hami.mainapp.R;
 
 
 public class BusOffline {

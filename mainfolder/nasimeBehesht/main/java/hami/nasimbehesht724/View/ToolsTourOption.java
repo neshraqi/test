@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 /**
  * Created by renjer on 1/11/2017.

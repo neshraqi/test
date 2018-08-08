@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,18 +15,18 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.BusTicketInformation;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.BusApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Hashing;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.BusTicketInformation;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.BusApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Hashing;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentReserveBus extends Fragment {

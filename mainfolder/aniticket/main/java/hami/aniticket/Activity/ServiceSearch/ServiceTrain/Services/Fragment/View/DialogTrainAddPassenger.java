@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment.View;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment.View;
 
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
@@ -25,16 +25,16 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.DataPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NationalCodePresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainPassengerInfo;
-import hami.nasimbehesht724.Const.TrainRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.ToolsPersianCalendar;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.Validation.ValidationClass;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.DataPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NationalCodePresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainPassengerInfo;
+import hami.mainapp.Const.TrainRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.ToolsPersianCalendar;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.Validation.ValidationClass;
 
 
 public class DialogTrainAddPassenger {

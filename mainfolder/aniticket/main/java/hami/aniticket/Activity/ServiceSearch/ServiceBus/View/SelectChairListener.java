@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.View;
 
 /**
  * Created by renjer on 2017-07-03.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Controller;
+package hami.mainapp.Activity.ServiceTour.Controller;
 
 import android.content.Context;
 
@@ -7,24 +7,24 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourDetails;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourRequest;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourResponse;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.InitialTourResponse;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.SearchTourRequest;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.TourDetailData;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.TourDetailResponse;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.TourItemsResponse;
-import hami.nasimbehesht724.BaseController.CallBackRequestSearch;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.Util.Database.FlightDomesticOffline;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourDetails;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourRequest;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourResponse;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.InitialTourResponse;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.SearchTourRequest;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.TourDetailData;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.TourDetailResponse;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.TourItemsResponse;
+import hami.mainapp.BaseController.CallBackRequestSearch;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.BaseNetwork.WebServiceNetwork;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.Util.Database.FlightDomesticOffline;
 
 /**
  * Created by renjer on 1/10/2017.

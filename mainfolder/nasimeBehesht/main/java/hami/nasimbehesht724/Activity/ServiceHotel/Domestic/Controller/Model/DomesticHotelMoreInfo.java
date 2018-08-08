@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model;
+package hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

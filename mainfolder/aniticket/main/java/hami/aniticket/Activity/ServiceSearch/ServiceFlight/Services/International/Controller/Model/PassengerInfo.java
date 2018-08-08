@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
 
 import android.content.Context;
 import android.os.Parcel;
@@ -6,9 +6,9 @@ import android.os.Parcelable;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.FlightDomesticOffline;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.FlightDomesticOffline;
 
 /**
  * Created by renjer on 1/25/2017.

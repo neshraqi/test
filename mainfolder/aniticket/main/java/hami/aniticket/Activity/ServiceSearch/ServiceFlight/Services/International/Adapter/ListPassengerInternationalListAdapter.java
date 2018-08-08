@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter;
 
 
 import android.content.Context;
@@ -15,10 +15,10 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.PassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.SelectItemPassengerInternational;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.PassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.SelectItemPassengerInternational;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class ListPassengerInternationalListAdapter extends RecyclerView.Adapter<ListPassengerInternationalListAdapter.MyViewHolder> {

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -19,27 +19,27 @@ import com.google.gson.internal.LinkedTreeMap;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.CapacityInternationalListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.IatiRulesInternationalListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.PartoRulesInternationalListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaggaegeResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalParto;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsParto;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.PackageCompletedFlightInternational;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseParto;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.RulesInternationalPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.CapacityInternationalListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.IatiRulesInternationalListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.PartoRulesInternationalListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaggaegeResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.PackageCompletedFlightInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.RulesInternationalPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentInternationalRouting extends Fragment {

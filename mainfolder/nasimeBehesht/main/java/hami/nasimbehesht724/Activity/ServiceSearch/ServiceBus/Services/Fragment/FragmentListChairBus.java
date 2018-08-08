@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Fragment;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -25,32 +25,32 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.BusTicketInformation;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.RegisterBusRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SeatResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SeatRow;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.BusApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.SeatChairBusPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View.SelectChairListener;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.DataPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NationalCodePresenter;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.Util.ValidateNationalCode;
-import hami.nasimbehesht724.View.CheckBox;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
-import hami.nasimbehesht724.View.Validation.ValidationClass;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.BusTicketInformation;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.RegisterBusRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SeatResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SeatRow;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.BusApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.SeatChairBusPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.View.SelectChairListener;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.DataPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NationalCodePresenter;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.Util.ValidateNationalCode;
+import hami.mainapp.View.CheckBox;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
+import hami.mainapp.View.Validation.ValidationClass;
 
 
 public class FragmentListChairBus extends Fragment {

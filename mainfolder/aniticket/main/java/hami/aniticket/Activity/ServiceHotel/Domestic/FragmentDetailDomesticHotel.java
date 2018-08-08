@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic;
+package hami.mainapp.Activity.ServiceHotel.Domestic;
 
 import android.content.Intent;
 import android.graphics.Paint;
@@ -22,25 +22,25 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Adapter.DomesticHotelSlidingImageAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.DomesticHotelApi;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelBookingProcessData;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelDetailsResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelPreBookingRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelPreBookingResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRoom;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilActionCall;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.Util.UtilImageLoader;
-import hami.nasimbehesht724.Util.UtilVibrator;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Adapter.DomesticHotelSlidingImageAdapter;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.DomesticHotelApi;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelBookingProcessData;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelDetailsResponse;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelPreBookingRequest;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelPreBookingResponse;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRoom;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilActionCall;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.Util.UtilImageLoader;
+import hami.mainapp.Util.UtilVibrator;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentDetailDomesticHotel extends Fragment {

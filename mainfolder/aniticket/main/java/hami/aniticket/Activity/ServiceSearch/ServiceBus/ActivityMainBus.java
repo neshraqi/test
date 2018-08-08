@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,16 +8,16 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceSearch.SearchTopSheetDialogFragment;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Fragment.FragmentListWentBus;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Fragment.FragmentReserveBus;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.DialogExpire;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceSearch.SearchTopSheetDialogFragment;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Fragment.FragmentListWentBus;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Fragment.FragmentReserveBus;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.DialogExpire;
 
 
 public class ActivityMainBus extends AppCompatActivity {

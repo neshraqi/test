@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,13 +18,13 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Adapter.SearchPlaceTrainAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.TrainOffline;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Adapter.SearchPlaceTrainAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.TrainOffline;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
 
 /**
  * Created by renjer on 2017-04-30.

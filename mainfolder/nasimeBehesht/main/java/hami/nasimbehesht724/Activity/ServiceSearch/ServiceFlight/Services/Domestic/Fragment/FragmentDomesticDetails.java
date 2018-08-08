@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment;
 
 import android.content.Intent;
 import android.graphics.Paint;
@@ -19,31 +19,31 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter.PassengerDomesticListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlight;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.ListModelPassengerInfoDomestic;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.PassengerInfoDomestic;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightDomesticRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.DomesticApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View.ActivityRegisterPassengerDomestic;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.Util.UtilImageLoader;
-import hami.nasimbehesht724.View.CheckBox;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
-import hami.nasimbehesht724.View.Validation.ValidationClass;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter.PassengerDomesticListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlight;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.ListModelPassengerInfoDomestic;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.PassengerInfoDomestic;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightDomesticRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.RegisterFlightResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.DomesticApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View.ActivityRegisterPassengerDomestic;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.Util.UtilImageLoader;
+import hami.mainapp.View.CheckBox;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
+import hami.mainapp.View.Validation.ValidationClass;
 
 
 public class FragmentDomesticDetails extends Fragment {

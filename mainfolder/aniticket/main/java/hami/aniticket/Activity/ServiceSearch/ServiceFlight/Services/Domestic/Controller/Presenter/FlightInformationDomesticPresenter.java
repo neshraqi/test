@@ -1,8 +1,8 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter;
 
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.FlightInformationResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.FlightInformationResponse;
 
 
 public interface FlightInformationDomesticPresenter {

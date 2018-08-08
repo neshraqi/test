@@ -1,12 +1,12 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterFlightInternationalResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterPassengerFlightInternationalResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterFlightInternationalResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.ResultRegisterPassengerFlightInternationalResponse;
 
 /**
  * Created by renjer on 2017-02-28.

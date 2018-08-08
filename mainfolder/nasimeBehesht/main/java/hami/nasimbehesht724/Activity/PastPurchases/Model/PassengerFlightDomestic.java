@@ -1,8 +1,8 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Model;
+package hami.mainapp.Activity.PastPurchases.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 2017-11-26.

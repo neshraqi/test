@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -30,7 +30,7 @@ public class RegisterPassengerResponse implements Parcelable {
     protected RegisterPassengerResponse(Parcel in) {
         msg = in.readString();
         code = in.readInt();
-        RegisterPassengerData = in.readParcelable(hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.RegisterPassengerData.class.getClassLoader());
+        RegisterPassengerData = in.readParcelable(hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.RegisterPassengerData.class.getClassLoader());
     }
 
     @Override

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Util;
+package hami.mainapp.Util;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 
 
 import java.util.Calendar;
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 1/9/2017.

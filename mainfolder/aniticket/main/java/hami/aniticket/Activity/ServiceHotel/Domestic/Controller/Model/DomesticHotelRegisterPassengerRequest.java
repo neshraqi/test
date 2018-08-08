@@ -1,9 +1,9 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model;
+package hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.BaseController.ToStringClass;
-import hami.nasimbehesht724.Const.KeyConst;
+import hami.mainapp.BaseController.ToStringClass;
+import hami.mainapp.Const.KeyConst;
 
 
 public class DomesticHotelRegisterPassengerRequest extends ToStringClass {

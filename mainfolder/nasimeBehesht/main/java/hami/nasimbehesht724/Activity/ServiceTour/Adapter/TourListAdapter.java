@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Adapter;
+package hami.mainapp.Activity.ServiceTour.Adapter;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -13,12 +13,12 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.TourItem;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.TourItem;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
 
 
 public class TourListAdapter extends RecyclerView.Adapter<TourListAdapter.MyViewHolder> {

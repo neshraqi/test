@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 
 public class ToolsSearchPassengerRespina extends LinearLayout {

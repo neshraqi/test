@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Legs;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Legs;
 
 /**
  * Created by renjer on 1/11/2017.

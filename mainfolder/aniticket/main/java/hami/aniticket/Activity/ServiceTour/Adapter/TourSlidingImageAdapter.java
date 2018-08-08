@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Adapter;
+package hami.mainapp.Activity.ServiceTour.Adapter;
 
 import android.content.Context;
 import android.os.Parcelable;
@@ -12,8 +12,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
 
 
 public class TourSlidingImageAdapter extends PagerAdapter {

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Reminder;
+package hami.mainapp.Reminder;
 
 
 import android.content.BroadcastReceiver;

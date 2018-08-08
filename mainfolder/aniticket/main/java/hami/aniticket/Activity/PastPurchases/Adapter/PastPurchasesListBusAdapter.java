@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Adapter;
+package hami.mainapp.Activity.PastPurchases.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -12,11 +12,11 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBus;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesBus;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
 
 
 /**

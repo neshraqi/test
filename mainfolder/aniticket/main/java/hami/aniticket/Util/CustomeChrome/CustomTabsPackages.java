@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Util.CustomeChrome;
+package hami.mainapp.Util.CustomeChrome;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.R;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class CustomTabsPackages {

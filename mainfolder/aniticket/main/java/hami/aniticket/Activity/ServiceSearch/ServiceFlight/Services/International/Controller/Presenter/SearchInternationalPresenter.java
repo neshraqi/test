@@ -1,8 +1,8 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter;
 
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
 
 /**
  * Created by renjer on 1/10/2017.

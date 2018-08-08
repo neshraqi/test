@@ -1,11 +1,11 @@
-package hami.nasimbehesht724.Util.Database;
+package hami.mainapp.Util.Database;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
 
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserResponse;
+import hami.mainapp.Activity.Authentication.Controller.UserResponse;
 
 /**
  * Created by renjer on 2017-05-16.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter;
+package hami.mainapp.Activity.ServiceHotel.International.Adapter;
 
 import android.content.Context;
 import android.os.Parcelable;
@@ -12,9 +12,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilImageLoader;
 
 
 public class SlidingImageAdapter extends PagerAdapter {

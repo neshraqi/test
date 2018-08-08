@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.dialog;
+package hami.mainapp.Activity.ServiceHotel.Domestic.dialog;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -21,11 +21,11 @@ import com.allattentionhere.fabulousfilter.AAH_FabulousFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.BaseController.AppliedFilters;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.CheckBoxLtr;
-import hami.nasimbehesht724.View.CheckBoxRateRtl;
+import hami.mainapp.BaseController.AppliedFilters;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.CheckBoxLtr;
+import hami.mainapp.View.CheckBoxRateRtl;
 
 
 public class NewDesignFilterDomesticHotelFragmentDialog extends AAH_FabulousFragment {

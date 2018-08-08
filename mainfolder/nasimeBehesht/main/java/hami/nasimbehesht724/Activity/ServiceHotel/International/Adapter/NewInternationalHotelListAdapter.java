@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter;
+package hami.mainapp.Activity.ServiceHotel.International.Adapter;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -20,11 +20,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Dialog.NewDesignFilterInternationalHotelFragmentDialog;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.InternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Dialog.NewDesignFilterInternationalHotelFragmentDialog;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class NewInternationalHotelListAdapter extends RecyclerView.Adapter<NewInternationalHotelListAdapter.MyViewHolder> {

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Notification;
+package hami.mainapp.Notification;
 
 /**
  * Created by renjer on 2018-03-04.

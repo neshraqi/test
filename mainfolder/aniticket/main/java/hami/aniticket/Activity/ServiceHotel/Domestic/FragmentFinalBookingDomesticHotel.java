@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic;
+package hami.mainapp.Activity.ServiceHotel.Domestic;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,16 +14,16 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.DomesticHotelApi;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRegisterPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRegisterPassengerResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRegisterPassengerViewParams;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.DomesticHotelApi;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRegisterPassengerInfo;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRegisterPassengerResponse;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelRegisterPassengerViewParams;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentFinalBookingDomesticHotel extends Fragment {

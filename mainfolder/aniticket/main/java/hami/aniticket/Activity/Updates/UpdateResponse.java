@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.Updates;
+package hami.mainapp.Activity.Updates;
 
 import com.google.gson.annotations.SerializedName;
 

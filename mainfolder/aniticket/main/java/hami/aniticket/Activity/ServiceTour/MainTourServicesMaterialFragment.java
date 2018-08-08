@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour;
+package hami.mainapp.Activity.ServiceTour;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,18 +14,18 @@ import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.DateTour;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.InitialTourResponse;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.NameValue;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.SearchTourRequest;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.TourApi;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.Const.TourRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.DateTour;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.InitialTourResponse;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.NameValue;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.SearchTourRequest;
+import hami.mainapp.Activity.ServiceTour.Controller.TourApi;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.Const.TourRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.ToastMessageBar;
 
 public class MainTourServicesMaterialFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.BaseController;
+package hami.mainapp.BaseController;
 
 import android.content.Context;
 
@@ -6,9 +6,9 @@ import com.google.gson.Gson;
 
 import java.util.HashMap;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.BaseNetwork.WebServiceNetwork;
 
 /**
  * Created by renjer on 2018-03-27.

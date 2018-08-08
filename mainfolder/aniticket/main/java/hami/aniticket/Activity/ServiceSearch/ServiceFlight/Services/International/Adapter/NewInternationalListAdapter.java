@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -20,17 +20,17 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalParto;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.FinalFlightInternationalIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsParto;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Dialog.NewDesignFilterFlightInternationalFragmentDialog;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.AllFlightInternationalParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.FinalFlightInternationalIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.LegsParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Dialog.NewDesignFilterFlightInternationalFragmentDialog;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
 
 /**
  * Created by renjer on 1/8/2017.

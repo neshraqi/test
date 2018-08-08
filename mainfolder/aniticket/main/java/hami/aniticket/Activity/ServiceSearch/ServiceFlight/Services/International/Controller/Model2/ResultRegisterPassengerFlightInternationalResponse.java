@@ -1,12 +1,12 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 2018-01-07.

@@ -1,9 +1,9 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
 
 /**
  * Created by renjer on 2017-02-11.

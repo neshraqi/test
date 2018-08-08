@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.Authentication;
+package hami.mainapp.Activity.Authentication;
 
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserApi;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.Authentication.Controller.UserApi;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.ToastMessageBar;
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 

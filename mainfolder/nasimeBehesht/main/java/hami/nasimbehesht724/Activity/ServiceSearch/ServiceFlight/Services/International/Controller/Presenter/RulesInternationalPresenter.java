@@ -1,8 +1,8 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaggaegeResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseIati;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseParto;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaggaegeResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseIati;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2.RulesResponseParto;
 
 /**
  * Created by renjer on 1/10/2017.

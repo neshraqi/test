@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Util;
+package hami.mainapp.Util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 1/22/2017.

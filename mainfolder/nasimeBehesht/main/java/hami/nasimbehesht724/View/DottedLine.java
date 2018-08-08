@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.graphics.PathDashPathEffect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 import static android.os.Build.VERSION;
 import static android.os.Build.VERSION_CODES;

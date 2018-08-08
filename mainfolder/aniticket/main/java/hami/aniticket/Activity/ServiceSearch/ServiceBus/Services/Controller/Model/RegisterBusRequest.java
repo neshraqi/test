@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model;
 
 import java.util.HashMap;
 import java.util.List;

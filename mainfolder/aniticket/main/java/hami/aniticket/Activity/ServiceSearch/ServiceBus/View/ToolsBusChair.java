@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.View;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 
 public class ToolsBusChair extends RelativeLayout {

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter;
+package hami.mainapp.Activity.ServiceHotel.International.Adapter;
 
 
 import android.content.Context;
@@ -13,12 +13,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.PassengerInfoInternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RoomPassengerInfoInternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RowTypeHotelPassenger;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.PassengerInfoInternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RoomPassengerInfoInternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RowTypeHotelPassenger;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class ListPassengerInternationalHotelListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,9 +12,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.TrainOffline;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.TrainOffline;
 
 /**
  * Created by renjer on 1/28/2017.

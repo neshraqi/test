@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour;
+package hami.mainapp.Activity.ServiceTour;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.SearchTourRequest;
-import hami.nasimbehesht724.Activity.ServiceTour.Fragment.FragmentTourFinalBooking;
-import hami.nasimbehesht724.Activity.ServiceTour.Fragment.FragmentTourList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.SearchTourRequest;
+import hami.mainapp.Activity.ServiceTour.Fragment.FragmentTourFinalBooking;
+import hami.mainapp.Activity.ServiceTour.Fragment.FragmentTourList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
 
 
 public class ActivityMainTour extends AppCompatActivity {

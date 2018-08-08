@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Adapter;
+package hami.mainapp.Activity.ServiceHotel.Domestic.Adapter;
 
 import android.content.Context;
 import android.os.Parcelable;
@@ -10,8 +10,8 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilImageLoader;
 
 
 public class DomesticHotelSlidingImageAdapter extends PagerAdapter {

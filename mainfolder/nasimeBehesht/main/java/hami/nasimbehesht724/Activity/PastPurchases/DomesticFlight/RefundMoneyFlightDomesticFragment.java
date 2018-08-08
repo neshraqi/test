@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight;
+package hami.mainapp.Activity.PastPurchases.DomesticFlight;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -15,17 +15,17 @@ import android.widget.RelativeLayout;
 
 
 
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserApi;
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Adapter.ReFoundMoneyFlightDomesticPassengerAdapter;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.MessageBar;
+import hami.mainapp.Activity.Authentication.Controller.UserApi;
+import hami.mainapp.Activity.Authentication.Controller.UserResponse;
+import hami.mainapp.Activity.PastPurchases.Adapter.ReFoundMoneyFlightDomesticPassengerAdapter;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.MessageBar;
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 public class RefundMoneyFlightDomesticFragment extends Fragment {

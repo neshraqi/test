@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Adapter;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -12,12 +12,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.OnSelectItemPassengerTrainListener;
-import hami.nasimbehesht724.Const.TrainRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.OnSelectItemPassengerTrainListener;
+import hami.mainapp.Const.TrainRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class PassengerTrainListAdapter extends RecyclerView.Adapter<PassengerTrainListAdapter.MyViewHolder> {

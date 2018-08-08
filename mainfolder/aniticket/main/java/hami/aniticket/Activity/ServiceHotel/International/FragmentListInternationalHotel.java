@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International;
+package hami.mainapp.Activity.ServiceHotel.International;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,21 +17,21 @@ import com.allattentionhere.fabulousfilter.AAH_FabulousFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter.NewInternationalHotelListAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotelsResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Dialog.NewDesignFilterInternationalHotelFragmentDialog;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.Util.UtilVibrator;
-import hami.nasimbehesht724.View.HeaderBarLtr;
-import hami.nasimbehesht724.View.MessageBar;
+import hami.mainapp.Activity.ServiceHotel.International.Adapter.NewInternationalHotelListAdapter;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.InternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.InternationalHotelsResponse;
+import hami.mainapp.Activity.ServiceHotel.International.Dialog.NewDesignFilterInternationalHotelFragmentDialog;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.Util.UtilVibrator;
+import hami.mainapp.View.HeaderBarLtr;
+import hami.mainapp.View.MessageBar;
 
 
 public class FragmentListInternationalHotel extends Fragment {

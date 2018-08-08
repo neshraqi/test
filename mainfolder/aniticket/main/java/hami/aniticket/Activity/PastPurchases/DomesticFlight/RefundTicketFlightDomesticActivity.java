@@ -1,14 +1,14 @@
-package hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight;
+package hami.mainapp.Activity.PastPurchases.DomesticFlight;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomestic;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesFlightDomestic;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.ToastMessageBar;
 
 public class RefundTicketFlightDomesticActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel;
+package hami.mainapp.Activity.ServiceHotel;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,22 +31,22 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchCity;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceSearch.SearchPlaceMainActivity;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.ToolsPersianCalendar;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.ToastMessageBar;
-import hami.nasimbehesht724.View.ToolsHotelRoomCountOption;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.SearchCity;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceSearch.SearchPlaceMainActivity;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
+import hami.mainapp.R;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.ToolsPersianCalendar;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.ToastMessageBar;
+import hami.mainapp.View.ToolsHotelRoomCountOption;
 
 public class HotelServicesSearchMaterialFragment extends Fragment {
 

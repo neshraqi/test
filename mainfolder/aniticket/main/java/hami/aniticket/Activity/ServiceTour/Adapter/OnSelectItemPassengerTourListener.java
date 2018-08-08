@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Adapter;
+package hami.mainapp.Activity.ServiceTour.Adapter;
 
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.PassengerTour;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.PassengerTour;
 
 /**
  * Created by renjer on 1/11/2017.

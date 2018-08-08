@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -17,15 +17,15 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlight;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.SelectItemFlightDomestic;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Dialog.NewDesignFilterFlightDomesticFragmentDialog;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.NewDesignFilterTrainFragmentDialog;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticFlight;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.SelectItemFlightDomestic;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Dialog.NewDesignFilterFlightDomesticFragmentDialog;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.NewDesignFilterTrainFragmentDialog;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
 
 
 public class NewDomesticListAdapter extends RecyclerView.Adapter<NewDomesticListAdapter.MyViewHolder> {

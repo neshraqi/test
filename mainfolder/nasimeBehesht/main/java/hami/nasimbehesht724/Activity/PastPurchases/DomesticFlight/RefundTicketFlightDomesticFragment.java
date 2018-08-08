@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight;
+package hami.mainapp.Activity.PastPurchases.DomesticFlight;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -18,22 +18,22 @@ import android.widget.TextView;
 
 
 
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserApi;
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Adapter.ReFoundListFlightDomesticPassengerAdapter;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.SplitResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.Authentication.Controller.UserApi;
+import hami.mainapp.Activity.Authentication.Controller.UserResponse;
+import hami.mainapp.Activity.PastPurchases.Adapter.ReFoundListFlightDomesticPassengerAdapter;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.SplitResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.ToastMessageBar;
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 public class RefundTicketFlightDomesticFragment extends Fragment {

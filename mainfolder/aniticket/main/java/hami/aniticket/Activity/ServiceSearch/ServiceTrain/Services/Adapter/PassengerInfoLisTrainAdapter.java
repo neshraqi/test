@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,10 +10,10 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.ParamTrain;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.ParamTrain;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 /**
  * Created by renjer on 1/8/2017.

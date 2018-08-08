@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ContactUs;
+package hami.mainapp.Activity.ContactUs;
 
 import android.content.Intent;
 import android.graphics.BitmapFactory;
@@ -15,13 +15,13 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilActionCall;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.Timeline.TimelineRow;
-import hami.nasimbehesht724.View.Timeline.TimelineViewAdapter;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilActionCall;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.Timeline.TimelineRow;
+import hami.mainapp.View.Timeline.TimelineViewAdapter;
 
 public class ContactUsMaterialFragment extends Fragment {
 

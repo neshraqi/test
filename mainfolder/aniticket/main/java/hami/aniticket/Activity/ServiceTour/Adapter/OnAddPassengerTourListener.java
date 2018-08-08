@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Adapter;
+package hami.mainapp.Activity.ServiceTour.Adapter;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
 
 /**
  * Created by renjer on 2017-02-25.

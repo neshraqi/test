@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -14,7 +14,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 public class ReadMoreTextView extends android.support.v7.widget.AppCompatTextView {
 

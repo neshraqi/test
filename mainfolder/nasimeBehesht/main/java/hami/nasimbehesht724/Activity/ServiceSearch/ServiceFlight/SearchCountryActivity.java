@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,14 +20,14 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.SearchCountryAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.FlightDomesticOffline;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBar;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter.SearchCountryAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.FlightDomesticOffline;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBar;
 
 /**
  * Created by renjer on 2017-04-30.

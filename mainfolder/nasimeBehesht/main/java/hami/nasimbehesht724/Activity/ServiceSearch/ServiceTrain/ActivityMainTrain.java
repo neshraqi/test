@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment.FragmentFinalBookingTrain;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment.FragmentListWentTrain;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.DialogExpire;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment.FragmentFinalBookingTrain;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment.FragmentListWentTrain;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.DialogExpire;
 
 
 public class ActivityMainTrain extends AppCompatActivity {

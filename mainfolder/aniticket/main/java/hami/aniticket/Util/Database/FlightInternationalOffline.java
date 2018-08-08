@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Util.Database;
+package hami.mainapp.Util.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,7 +11,7 @@ import com.google.gson.Gson;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
 
 /**
  * Created by renjer on 2017-07-26.

@@ -1,10 +1,10 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaggaegeResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaggaegeResponse;
 
 
 public class RulesResponseIati {

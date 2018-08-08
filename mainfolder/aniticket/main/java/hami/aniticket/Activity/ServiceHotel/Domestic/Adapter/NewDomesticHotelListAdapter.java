@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Adapter;
+package hami.mainapp.Activity.ServiceHotel.Domestic.Adapter;
 
 import android.content.Context;
 import android.support.v4.util.ArrayMap;
@@ -15,12 +15,12 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.dialog.NewDesignFilterDomesticHotelFragmentDialog;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotel;
+import hami.mainapp.Activity.ServiceHotel.Domestic.dialog.NewDesignFilterDomesticHotelFragmentDialog;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
 
 
 public class NewDomesticHotelListAdapter extends RecyclerView.Adapter<NewDomesticHotelListAdapter.MyViewHolder> {

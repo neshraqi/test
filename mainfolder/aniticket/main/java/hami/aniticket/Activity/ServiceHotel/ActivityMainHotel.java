@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel;
+package hami.mainapp.Activity.ServiceHotel;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,17 +8,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.FragmentFinalBookingDomesticHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.FragmentListDomesticHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.FragmentBookingInternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.FragmentListInternationalHotel;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.DialogExpire;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.DomesticHotelSearchRequest;
+import hami.mainapp.Activity.ServiceHotel.Domestic.FragmentFinalBookingDomesticHotel;
+import hami.mainapp.Activity.ServiceHotel.Domestic.FragmentListDomesticHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.InternationalHotelSearchRequest;
+import hami.mainapp.Activity.ServiceHotel.International.FragmentBookingInternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.FragmentListInternationalHotel;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.DialogExpire;
 
 
 public class ActivityMainHotel extends AppCompatActivity {

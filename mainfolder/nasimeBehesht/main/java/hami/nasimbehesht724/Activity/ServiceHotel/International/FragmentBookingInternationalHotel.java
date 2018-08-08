@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International;
+package hami.mainapp.Activity.ServiceHotel.International;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -20,20 +20,20 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter.ListPassengerInternationalHotelListAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.PassengerInfoInternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RegisterPassengerInternationalHotelResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RowTypeHotelPassenger;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceHotel.International.Adapter.ListPassengerInternationalHotelListAdapter;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.PassengerInfoInternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RegisterPassengerInternationalHotelResponse;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RowTypeHotelPassenger;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentBookingInternationalHotel extends Fragment {

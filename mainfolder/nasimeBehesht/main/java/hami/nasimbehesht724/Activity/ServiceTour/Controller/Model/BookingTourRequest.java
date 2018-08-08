@@ -1,10 +1,10 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Controller.Model;
+package hami.mainapp.Activity.ServiceTour.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.BaseController.ToStringClass;
+import hami.mainapp.BaseController.ToStringClass;
 
 /**
  * Created by renjer on 2018-03-11.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Adapter;
+package hami.mainapp.Activity.ServiceTour.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -15,10 +15,10 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourDetailsPassenger;
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourDetailsPassenger;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class FinalPassengerTourListAdapter extends RecyclerView.Adapter<FinalPassengerTourListAdapter.MyViewHolder> {

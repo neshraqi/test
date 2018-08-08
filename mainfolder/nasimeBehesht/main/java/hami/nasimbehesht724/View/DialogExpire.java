@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.app.Activity;
 import android.support.v7.app.AlertDialog;
@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 /**
  * Created by renjer on 2018-02-18.

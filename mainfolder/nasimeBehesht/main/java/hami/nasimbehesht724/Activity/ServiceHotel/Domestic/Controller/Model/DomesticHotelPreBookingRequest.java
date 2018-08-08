@@ -1,10 +1,10 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model;
+package hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-import hami.nasimbehesht724.BaseController.ToStringClass;
+import hami.mainapp.BaseController.ToStringClass;
 
 /**
  * Created by renjer on 2018-02-14.

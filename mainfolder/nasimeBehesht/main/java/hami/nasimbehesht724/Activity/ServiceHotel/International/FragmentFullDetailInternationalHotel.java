@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International;
+package hami.mainapp.Activity.ServiceHotel.International;
 
 import android.graphics.Color;
 import android.os.Build;
@@ -20,14 +20,14 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.HotelInfo;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.HotelMoreInfoFacility;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilImageLoader;
-import hami.nasimbehesht724.Util.UtilMap;
-import hami.nasimbehesht724.View.ReadMoreTextView;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.HotelInfo;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.HotelMoreInfoFacility;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilImageLoader;
+import hami.mainapp.Util.UtilMap;
+import hami.mainapp.View.ReadMoreTextView;
 
 
 public class FragmentFullDetailInternationalHotel extends Fragment {

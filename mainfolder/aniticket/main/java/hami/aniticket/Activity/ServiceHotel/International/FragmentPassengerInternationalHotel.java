@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International;
+package hami.mainapp.Activity.ServiceHotel.International;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -18,29 +18,29 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter.ListPassengerInternationalHotelListAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.PassengerInfoInternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RegisterHotelRequest;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RegisterPassengerInternationalHotelResponse;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RoomInfo;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RoomPassengerInfoInternationalHotel;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.RowTypeHotelPassenger;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.Const.RespinaConst;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.CheckBoxLtr;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
-import hami.nasimbehesht724.View.Validation.ValidationClass;
+import hami.mainapp.Activity.ServiceHotel.International.Adapter.ListPassengerInternationalHotelListAdapter;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.HotelDetailResponse;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.PassengerInfoInternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RegisterHotelRequest;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RegisterPassengerInternationalHotelResponse;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RoomInfo;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RoomPassengerInfoInternationalHotel;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.RowTypeHotelPassenger;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.Const.RespinaConst;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.CheckBoxLtr;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
+import hami.mainapp.View.Validation.ValidationClass;
 
 
 public class FragmentPassengerInternationalHotel extends Fragment {

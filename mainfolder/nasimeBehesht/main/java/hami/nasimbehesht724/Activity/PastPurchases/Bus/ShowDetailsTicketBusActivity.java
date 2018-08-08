@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Bus;
+package hami.mainapp.Activity.PastPurchases.Bus;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,15 +13,15 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBus;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Hashing;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBar;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesBus;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.View.ToolsBusChair;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Hashing;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBar;
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 public class ShowDetailsTicketBusActivity extends AppCompatActivity {

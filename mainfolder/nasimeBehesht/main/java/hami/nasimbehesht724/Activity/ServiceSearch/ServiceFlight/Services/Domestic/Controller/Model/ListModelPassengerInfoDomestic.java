@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model;
 
 import android.content.Context;
 
@@ -7,8 +7,8 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
 
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 2017-03-05.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.BaseNetwork;
+package hami.mainapp.BaseNetwork;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -25,10 +25,10 @@ import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.SecureAndroid;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.SecureAndroid;
 
 /**
  * Created by renjer on 1/10/2017.

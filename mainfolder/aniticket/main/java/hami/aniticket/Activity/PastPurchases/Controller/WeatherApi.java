@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Controller;
+package hami.mainapp.Activity.PastPurchases.Controller;
 
 import android.content.Context;
 
@@ -8,12 +8,12 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-import hami.nasimbehesht724.Activity.PastPurchases.Model.Forecast;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.LocationWeather;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.ResponseWeather;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
-import hami.nasimbehesht724.BaseController.CallBackRequestSearch;
-import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
+import hami.mainapp.Activity.PastPurchases.Model.Forecast;
+import hami.mainapp.Activity.PastPurchases.Model.LocationWeather;
+import hami.mainapp.Activity.PastPurchases.Model.ResponseWeather;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
+import hami.mainapp.BaseController.CallBackRequestSearch;
+import hami.mainapp.BaseNetwork.WebServiceNetwork;
 
 /**
  * Created by renjer on 1/10/2017.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.Authentication.Controller;
+package hami.mainapp.Activity.Authentication.Controller;
 
 import android.content.Context;
 
@@ -7,22 +7,22 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PassengerFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PassengerFlightDomesticResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesBusResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomesticResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightInternationalResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesTrainResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.SplitResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.BaseNetwork.WebServiceNetwork;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.Hashing;
+import hami.mainapp.Activity.PastPurchases.Model.PassengerFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.PassengerFlightDomesticResponse;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesBusResponse;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesFlightDomesticResponse;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesFlightInternationalResponse;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesTrainResponse;
+import hami.mainapp.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.SplitResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NetworkListener;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.BaseNetwork.WebServiceNetwork;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.Hashing;
 
 
 /**

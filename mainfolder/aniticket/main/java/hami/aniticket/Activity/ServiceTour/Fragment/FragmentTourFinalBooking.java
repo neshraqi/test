@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Fragment;
+package hami.mainapp.Activity.ServiceTour.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,16 +19,16 @@ import java.text.NumberFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
-import hami.nasimbehesht724.Activity.ServiceTour.Adapter.FinalPassengerTourListAdapter;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.BookingTourDetails;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.TourApi;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.Const.TourRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Hashing;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter.PaymentPresenter;
+import hami.mainapp.Activity.ServiceTour.Adapter.FinalPassengerTourListAdapter;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.BookingTourDetails;
+import hami.mainapp.Activity.ServiceTour.Controller.TourApi;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.Const.TourRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Hashing;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class FragmentTourFinalBooking extends Fragment {

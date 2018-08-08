@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

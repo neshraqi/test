@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Util.Rating;
+package hami.mainapp.Util.Rating;
 
 import android.content.Context;
 import android.util.Log;

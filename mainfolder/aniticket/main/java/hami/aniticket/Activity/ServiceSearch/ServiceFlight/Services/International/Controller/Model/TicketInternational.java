@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
 
 
 import android.os.Parcel;
@@ -34,7 +34,7 @@ public class TicketInternational implements Parcelable {
     protected TicketInternational(Parcel in) {
         outBound = in.readParcelable(OutBound.class.getClassLoader());
         return_ = in.readParcelable(OutBound.class.getClassLoader());
-        RegisterPassengerResponse = in.readParcelable(hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.RegisterPassengerResponse.class.getClassLoader());
+        RegisterPassengerResponse = in.readParcelable(hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.RegisterPassengerResponse.class.getClassLoader());
     }
 
     @Override

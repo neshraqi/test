@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -34,24 +34,24 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.DataPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.PassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NationalCodePresenter;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.ValidateNationalCode;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.SearchCountryActivity;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.BaseResult;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.DataPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.PassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.NationalCodePresenter;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.ValidateNationalCode;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class ActivityRegisterPassengerDomestic extends AppCompatActivity {

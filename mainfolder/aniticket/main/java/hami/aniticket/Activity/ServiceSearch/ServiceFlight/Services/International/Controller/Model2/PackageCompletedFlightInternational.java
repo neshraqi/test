@@ -1,8 +1,8 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model2;
 
 import java.io.Serializable;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.FlightInternationalRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.FlightInternationalRequest;
 
 /**
  * Created by renjer on 2017-11-14.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Controller.Model;
+package hami.mainapp.Activity.ServiceTour.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 

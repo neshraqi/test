@@ -1,4 +1,4 @@
-package hami.nasimbehesht724;
+package hami.mainapp;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceTour.MainTourServicesMaterialFragment;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
+import hami.mainapp.Activity.ServiceTour.MainTourServicesMaterialFragment;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
 
 
 public class MainActivityMaterialService extends AppCompatActivity {

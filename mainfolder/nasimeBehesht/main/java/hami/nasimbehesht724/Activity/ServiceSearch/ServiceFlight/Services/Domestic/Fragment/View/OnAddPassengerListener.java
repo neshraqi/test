@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.View;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
 
 /**
  * Created by renjer on 2017-02-25.

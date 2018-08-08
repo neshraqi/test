@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel;
+package hami.mainapp.Activity.ServiceHotel;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,22 +19,22 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import hami.nasimbehesht724.Activity.FilterHotel;
-import hami.nasimbehesht724.Activity.FilterList;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter.SearchPlaceCityHotelInternationalAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Adapter.SearchPlaceHotelInternationalAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchCity;
-import hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBarLtr;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.FilterHotel;
+import hami.mainapp.Activity.FilterList;
+import hami.mainapp.Activity.ServiceHotel.International.Adapter.SearchPlaceCityHotelInternationalAdapter;
+import hami.mainapp.Activity.ServiceHotel.International.Adapter.SearchPlaceHotelInternationalAdapter;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.InternationalHotelApi;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.SearchCity;
+import hami.mainapp.Activity.ServiceHotel.International.Controller.Model.SearchDestination;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBarLtr;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.ToastMessageBar;
 
 /**
  * Created by renjer on 2017-04-30.

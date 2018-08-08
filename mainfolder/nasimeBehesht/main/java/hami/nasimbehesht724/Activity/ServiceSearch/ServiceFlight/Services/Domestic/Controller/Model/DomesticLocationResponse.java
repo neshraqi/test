@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 

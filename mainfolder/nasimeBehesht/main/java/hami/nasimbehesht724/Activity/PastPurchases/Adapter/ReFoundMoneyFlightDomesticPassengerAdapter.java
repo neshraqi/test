@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Adapter;
+package hami.mainapp.Activity.PastPurchases.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -16,11 +16,11 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PassengerFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.ReFoundPassenger;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.PastPurchases.Model.PassengerFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.ReFoundPassenger;
+import hami.mainapp.Activity.PastPurchases.Model.ReFoundResponseFlightDomestic;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 /**

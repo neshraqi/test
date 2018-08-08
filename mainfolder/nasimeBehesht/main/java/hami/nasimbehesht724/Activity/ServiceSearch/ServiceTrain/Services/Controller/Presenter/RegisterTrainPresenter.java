@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.RegisterTrainResponse;
 
 /**
  * Created by renjer on 2017-03-11.

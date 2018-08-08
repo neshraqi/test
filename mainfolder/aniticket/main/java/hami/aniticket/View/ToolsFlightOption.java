@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.support.design.widget.Snackbar;
@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 1/11/2017.

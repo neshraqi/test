@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Adapter;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.Country;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 2017-05-09.

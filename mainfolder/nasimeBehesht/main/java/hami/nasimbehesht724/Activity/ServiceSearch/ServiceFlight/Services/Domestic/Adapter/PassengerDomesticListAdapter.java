@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Adapter;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -16,11 +16,11 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
-import hami.nasimbehesht724.Const.FlightRules;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticPassengerInfo;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Presenter.OnSelectItemPassengerDomesticListener;
+import hami.mainapp.Const.FlightRules;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 
 public class PassengerDomesticListAdapter extends RecyclerView.Adapter<PassengerDomesticListAdapter.MyViewHolder> {

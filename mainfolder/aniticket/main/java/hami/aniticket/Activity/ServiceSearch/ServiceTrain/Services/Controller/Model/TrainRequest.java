@@ -1,9 +1,9 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model;
 
 import java.io.Serializable;
 import java.util.HashMap;
 
-import hami.nasimbehesht724.Const.TrainRules;
+import hami.mainapp.Const.TrainRules;
 
 /**
  * Created by renjer on 1/30/2017.

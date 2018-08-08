@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model;
+package hami.mainapp.Activity.ServiceHotel.International.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 

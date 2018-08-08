@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter;
 
 import com.google.gson.annotations.SerializedName;
 

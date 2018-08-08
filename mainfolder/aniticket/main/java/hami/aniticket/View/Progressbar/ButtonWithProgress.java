@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View.Progressbar;
+package hami.mainapp.View.Progressbar;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -11,8 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
 
 /**
  * Created by renjer on 2017-07-17.

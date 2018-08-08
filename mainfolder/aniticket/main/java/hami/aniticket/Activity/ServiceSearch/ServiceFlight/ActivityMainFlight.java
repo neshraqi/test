@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,17 +8,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.FragmentFinalBookingFlightDomestic;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.FragmentListWentDomestic;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.FlightInternationalRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment.FragmentFinalBookingFlightInternational;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment.FragmentListWentInternational;
-import hami.nasimbehesht724.Const.KeyConst;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.View.DialogExpire;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Controller.Model.DomesticRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.FragmentFinalBookingFlightDomestic;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.Domestic.Fragment.FragmentListWentDomestic;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.FlightInternationalRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment.FragmentFinalBookingFlightInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Fragment.FragmentListWentInternational;
+import hami.mainapp.Const.KeyConst;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.View.DialogExpire;
 
 
 public class ActivityMainFlight extends AppCompatActivity {

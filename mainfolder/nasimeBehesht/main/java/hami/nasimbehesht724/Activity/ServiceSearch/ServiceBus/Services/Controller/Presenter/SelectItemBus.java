@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Presenter;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.SearchBusResponse;
 
 /**
  * Created by renjer on 2017-02-11.

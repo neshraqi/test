@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.Authentication;
+package hami.mainapp.Activity.Authentication;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,13 +12,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserResponse;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.DataSaver;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilPrice;
-import hami.nasimbehesht724.View.Progressbar.ButtonWithProgress;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.Authentication.Controller.UserResponse;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.DataSaver;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilPrice;
+import hami.mainapp.View.Progressbar.ButtonWithProgress;
+import hami.mainapp.View.ToastMessageBar;
 
 public class SettingUserMaterial extends AppCompatActivity {
 

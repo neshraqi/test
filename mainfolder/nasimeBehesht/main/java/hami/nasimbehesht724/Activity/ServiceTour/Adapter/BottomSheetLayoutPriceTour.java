@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Adapter;
+package hami.mainapp.Activity.ServiceTour.Adapter;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialogFragment;
@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.ToolsTourOption;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.ToolsTourOption;
 
 public class BottomSheetLayoutPriceTour extends BottomSheetDialogFragment {
 

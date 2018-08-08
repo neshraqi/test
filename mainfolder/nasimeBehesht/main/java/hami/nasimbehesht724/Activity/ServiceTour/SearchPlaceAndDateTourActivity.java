@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceTour;
+package hami.mainapp.Activity.ServiceTour;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,18 +15,18 @@ import android.widget.LinearLayout;
 
 
 
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceTour.Adapter.SearchDateTourAdapter;
-import hami.nasimbehesht724.Activity.ServiceTour.Adapter.SearchPlaceTourAdapter;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.DateTour;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.InitialTourResponse;
-import hami.nasimbehesht724.Activity.ServiceTour.Controller.Model.NameValue;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceTour.Adapter.SearchDateTourAdapter;
+import hami.mainapp.Activity.ServiceTour.Adapter.SearchPlaceTourAdapter;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.DateTour;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.InitialTourResponse;
+import hami.mainapp.Activity.ServiceTour.Controller.Model.NameValue;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class SearchPlaceAndDateTourActivity extends AppCompatActivity {

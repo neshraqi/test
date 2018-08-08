@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatButton;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.wang.avi.AVLoadingIndicatorView;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 
 public class MessageBar extends RelativeLayout {

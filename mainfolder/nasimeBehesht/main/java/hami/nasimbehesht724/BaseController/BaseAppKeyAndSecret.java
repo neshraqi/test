@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.BaseController;
+package hami.mainapp.BaseController;
 
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
@@ -6,7 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.Const.KeyConst;
+import hami.mainapp.Const.KeyConst;
 
 /**
  * Created by renjer on 2018-02-10.

@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceHotel.International.Controller.Model;
+package hami.mainapp.Activity.ServiceHotel.International.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -8,8 +8,8 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-import hami.nasimbehesht724.BaseController.FailSafeNumberTypeAdapter;
-import hami.nasimbehesht724.BaseController.FailSafeStringTypeAdapter;
+import hami.mainapp.BaseController.FailSafeNumberTypeAdapter;
+import hami.mainapp.BaseController.FailSafeStringTypeAdapter;
 
 public class HotelMoreInfoRoom implements Parcelable {
     @JsonAdapter(FailSafeStringTypeAdapter.class)

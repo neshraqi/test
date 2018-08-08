@@ -1,11 +1,11 @@
-package hami.nasimbehesht724.Activity.ServiceTour.Controller.Model;
+package hami.mainapp.Activity.ServiceTour.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.BaseController.ToStringClass;
+import hami.mainapp.BaseController.ToStringClass;
 
 /**
  * Created by renjer on 2018-03-06.

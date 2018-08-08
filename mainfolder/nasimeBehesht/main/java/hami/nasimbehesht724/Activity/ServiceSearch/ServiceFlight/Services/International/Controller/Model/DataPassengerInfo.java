@@ -1,8 +1,8 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.Const.FlightRules;
+import hami.mainapp.Const.FlightRules;
 
 /**
  * Created by renjer on 2/1/2017.

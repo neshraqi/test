@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.PastPurchases.Train;
+package hami.mainapp.Activity.PastPurchases.Train;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,23 +14,23 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserApi;
-import hami.nasimbehesht724.Activity.Authentication.Controller.UserResponse;
-import hami.nasimbehesht724.Activity.PastPurchases.Adapter.PastPurchasesListTrainPassengerAdapter;
-import hami.nasimbehesht724.Activity.PastPurchases.DomesticFlight.RefundTicketFlightDomesticActivity;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PassengerFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesFlightDomestic;
-import hami.nasimbehesht724.Activity.PastPurchases.Model.PurchasesTrain;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.CustomeChrome.CustomTabsPackages;
-import hami.nasimbehesht724.Util.Hashing;
-import hami.nasimbehesht724.Util.TimeDate;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.MessageBar;
+import hami.mainapp.Activity.Authentication.Controller.UserApi;
+import hami.mainapp.Activity.Authentication.Controller.UserResponse;
+import hami.mainapp.Activity.PastPurchases.Adapter.PastPurchasesListTrainPassengerAdapter;
+import hami.mainapp.Activity.PastPurchases.DomesticFlight.RefundTicketFlightDomesticActivity;
+import hami.mainapp.Activity.PastPurchases.Model.PassengerFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesFlightDomestic;
+import hami.mainapp.Activity.PastPurchases.Model.PurchasesTrain;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.BaseNetwork.BaseConfig;
+import hami.mainapp.R;
+import hami.mainapp.Util.CustomeChrome.CustomTabsPackages;
+import hami.mainapp.Util.Hashing;
+import hami.mainapp.Util.TimeDate;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.MessageBar;
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 public class ShowDetailsTicketTrainActivity extends AppCompatActivity {

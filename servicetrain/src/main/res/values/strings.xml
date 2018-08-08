@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">ServiceTrain</string>
+
+    <string name="adults">بزرگسال</string>
+    <string name="children">کودک</string>
+    <string name="infant">نوزاد</string>
+    <string name="shahed">شاهد</string>
+    <string name="veteran">جانباز</string>
+    <string name="busyPlace">مسیرهای پرتردد</string>
+    <string name="allPlace">همه ی مسیرها</string>
+
+    <string name="capacityFlight">ظرفیت</string>
+
+    <string name="sortByTimeTitleSoonMorning">بامداد</string>
+    <string name="sortByTimeTitleMorning">صبح</string>
+    <string name="sortByTimeTitleNoon">ظهر</string>
+    <string name="sortByTimeTitleAfternoon">بعدازظهر</string>
+    <string name="sortByTimeTitleEvening">شب</string>
+
+    <string name="sortByTimeValueSoonMorning">00:00 تا 06:59</string>
+    <string name="sortByTimeValueMorning">07:00 تا 10:59</string>
+    <string name="sortByTimeValueNoon">11:00 تا 15:59</string>
+    <string name="sortByTimeValueAfternoon">16:00 تا 19:59</string>
+    <string name="sortByTimeValueEvening">20:00 تا 23:59</string>
+
+    <string name="cope">کوپه ای</string>
+    <string name="hall">سالنی</string>
+    <string name="unitCountTrain">نفره</string>
+
+    <string name="flyingFrom">مبدا را انتخاب کنید</string>
+    <string name="flyingTo">مقصد را انتخاب کنید</string>
+
+    <string name="train">قطار</string>
+
+    <string name="successGetTicket">مسافر محترم بلیط شما با موفقیت صادر گردید جهت دریافت بلیط روی دکمه زیر کلیک کنید </string>
+    <string name="msgErrorRunningGetTicketEng"> Sorry, we encountered a problem in your application, click to issue a ticket to receive a ticket.</string>
+    <string name="msgErrorRunningGetTicket"> متاسفانه در اجرای درخواست شما با مشکل مواجه شدیم،جهت صدور بلیط روی دریافت بلیط کلیک کنید.</string>
+
+    <string name="finalPriceWithDiscount">مبلغ پرداخت با تخفیف:</string>
+    <string name="validateSelectRoutingWentTrain">کدوم قطار رو انتخاب میکنید؟</string>
+    <string name="msgErrorNoTrain">قطاری با این اطلاعات وجود ندارد</string>
+    <string name="msgErrorNoTrainByFilter">قطار  با فیلتر های مورد نظر شما وجود ندارد</string>
+    <string name="showAllTrains">نمایش همه قطارها</string>
+    <string name="validateSelectRoutingWentFlight">کدوم پرواز رو انتخاب میکنید؟</string>
+
+    <string name="msgErrorServer">خطا در دریافت اطلاعات</string>
+    <string name="error">خطا</string>
+    <string name="tryAgainSearch">دوباره سرچ کنم</string>
+    <string name="tryAgain">تلاش مجدد</string>
+    <string name="searchingTrain">در حال جستجو قطار...</string>
+    <string name="msgErrorInternetConnection">خطا در ارتباط با اینترنت</string>
+    <string name="msgErrorTrainIsHall">این قطار کوپه دربست ندارد</string>
+    <string name="msgErrorFullCapacity">ظرفیت قطار تکمیل است</string>
+    <string name="msgErrorByCapacity">ظرفیت قطار کمتر از تعداد درخواستی شماست</string>
+    <string name="msgErrorFullCapacityCope">کوپه خالی برای دربست وجود ندارد</string>
+
+    <string name="addPassenger">افزودن مسافر </string>
+    <string name="warningNoAddPassenger">مسافری ثبت نشده است</string>
+    <string name="mobilePhone">تلفن همراه</string>
+    <string name="rulesInternetBuy">قبل از زدن دکمه ثبت قوانین رزرو اینترنتی را مطالعه نمودم و آن را قبول دارم.</string>
+
+    <string name="validateCopeFull">تعداد مسافران از ظرفیت کوپه بیشتر است.</string>
+    <string name="validateCope">تعداد مسافران از ظرفیت قطار بیشتر است.</string>
+    <string name="validateNoPassenger">اطلاعات مسافر رو وارد نکرده اید</string>
+    <string name="validateMobile">شماره موبایل را وارد کنید</string>
+    <string name="validateEmail">ایمیل را با دقت وارد کنید</string>
+    <string name="validateAcceptRule">چک مربوط به قوانین اینترنتی را بزنید</string>
+    <string name="msgErrorReserveTrain">خطا در رزرو قطار،مجدد تلاش کنید</string>
+    <string name="reserve">رزرو</string>
+    <string name="reserving">درحال رزرو...</string>
+
+    <string name="nationalCode">کد ملی</string>
+    <string name="couNationality">تابعیت</string>
+    <string name="typePassenger">مسافر</string>
+    <string name="birthDayPersian">تاریخ تولد</string>
+    <string name="lNameFarsi">نام خانوادگی</string>
+    <string name="fNameFarsi">نام</string>
+    <string name="nevermind">بیخیال</string>
+    <string name="registerFlight">ثبت</string>
+    <string name="edit">ویرایش</string>
+    <string name="exit">خروج</string>
+    <string name="getTicket">دریافت بلیط</string>
+    <string name="buy">پرداخت</string>
+    <string name="continue_">ادامه</string>
+    <string name="sortBy">مرتب سازی لیست بر اساس ؟</string>
+    <string name="sortByPriceTitle">محدوده قیمت :</string>
+    <string name="trainType">نوع قطار</string>
+    <string name="timeTakeOff">ساعت حرکت</string>
+    <string name="timeLanding">ساعت رسیدن</string>
+    <string name="trainCompany">شرکت ریلی</string>
+    <string name="removeFilter">حذف فیلترها</string>
+    <string name="acceptFilter">اعمال فیلتر</string>
+    <string name="sortAndFilter">مرتب سازی و فیلتر</string>
+
+    <string name="irani">ایرانی</string>
+    <string name="foreign">خارجی</string>
+    <string name="noPassport">شماره پاسپورت</string>
+    <!-- ====================================================== -->
+    <string name="objTag1">objTag1</string>
+    <string name="objTag2">objTag2</string>
+    <!-- ====================================================== -->
+    <string name="validatePassportCode">شماره پاسپورت را با دقت وارد کنید</string>
+    <string name="validateFirstNamePersian">نام را فارسی وارد کنید</string>
+    <string name="validateLastNamePersian"> نام خانوادگی را فارسی وارد کنید</string>
+    <string name="validateBirthDay">تاریخ تولد را با دقت وارد کنید</string>
+    <string name="checkInfoTrain">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات قطار مطمئن شوید.</string>
+
+    <string name="pleaseEnterDestination">Please enter country</string>
+    <string name="secCode">کد امنیتی</string>
+    <string name="email">پست الکترونیک</string>
+
+    <array name="sortTrain">
+        <item>قیمت</item>
+        <item>زمان حرکت</item>
+        <item>زمان رسیدن</item>
+        <item>ظرفیت</item>
+    </array>
+
+</resources>

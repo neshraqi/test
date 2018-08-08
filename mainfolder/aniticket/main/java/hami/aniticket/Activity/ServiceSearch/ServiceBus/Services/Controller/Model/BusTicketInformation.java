@@ -1,11 +1,11 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.R;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 2017-02-21.

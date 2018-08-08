@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Fragment;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,24 +19,24 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import hami.nasimbehesht724.Activity.ServiceSearch.SearchTopSheetDialogFragment;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.NewDesignFilterTrainFragmentDialog;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Adapter.TrainListAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainDataResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.SelectItemTrainSearchListener;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.TrainApi;
-import hami.nasimbehesht724.BaseController.CallBackRequestSearch;
-import hami.nasimbehesht724.BaseController.DividerItemDecoration;
-import hami.nasimbehesht724.BaseController.ResultSearchPresenter;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.Util.UtilFragment;
-import hami.nasimbehesht724.Util.UtilVibrator;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.MessageBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceSearch.SearchTopSheetDialogFragment;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.NewDesignFilterTrainFragmentDialog;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Adapter.TrainListAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainDataResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainRequest;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.TrainResponse;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.SelectItemTrainSearchListener;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Presenter.TrainApi;
+import hami.mainapp.BaseController.CallBackRequestSearch;
+import hami.mainapp.BaseController.DividerItemDecoration;
+import hami.mainapp.BaseController.ResultSearchPresenter;
+import hami.mainapp.R;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.Util.UtilFragment;
+import hami.mainapp.Util.UtilVibrator;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.MessageBar;
+import hami.mainapp.View.ToastMessageBar;
 
 
 public class FragmentListWentTrain extends Fragment {

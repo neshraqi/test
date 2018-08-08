@@ -1,6 +1,6 @@
-package hami.nasimbehesht724.Const;
+package hami.mainapp.Const;
 
-import hami.nasimbehesht724.BaseNetwork.BaseConfig;
+import hami.mainapp.BaseNetwork.BaseConfig;
 
 /**
  * Created by renjer on 2018-04-05.

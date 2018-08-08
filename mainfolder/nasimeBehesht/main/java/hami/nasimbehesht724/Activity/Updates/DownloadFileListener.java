@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.Updates;
+package hami.mainapp.Activity.Updates;
 
 /**
  * Created by renjer on 2017-04-15.

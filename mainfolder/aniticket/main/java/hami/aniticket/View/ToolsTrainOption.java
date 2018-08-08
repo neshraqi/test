@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.View;
+package hami.mainapp.View;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 
-import hami.nasimbehesht724.Const.TrainRules;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Const.TrainRules;
+import hami.mainapp.R;
 
 public class ToolsTrainOption extends LinearLayout {
 

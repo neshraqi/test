@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.Adapter;
+package hami.mainapp.Activity.ServiceSearch.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

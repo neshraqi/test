@@ -1,4 +1,4 @@
-package hami.nasimbehesht724.Activity.ServiceSearch;
+package hami.mainapp.Activity.ServiceSearch;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,28 +23,28 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Adapter.SearchPlaceHotelDomesticAdapter;
-import hami.nasimbehesht724.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
-import hami.nasimbehesht724.Activity.ServiceSearch.ConstService.ServiceID;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Adapter.SearchPlaceBusAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Adapter.SearchPlaceFlightAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.SearchInternationalPresenter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Adapter.SearchPlaceTrainAdapter;
-import hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
-import hami.nasimbehesht724.BaseController.SelectItemList;
-import hami.nasimbehesht724.R;
-import hami.nasimbehesht724.Util.Database.BusOffline;
-import hami.nasimbehesht724.Util.Database.FlightDomesticOffline;
-import hami.nasimbehesht724.Util.Database.FlightInternationalOffline;
-import hami.nasimbehesht724.Util.Database.HotelDomesticOffline;
-import hami.nasimbehesht724.Util.Database.TrainOffline;
-import hami.nasimbehesht724.Util.Keyboard;
-import hami.nasimbehesht724.Util.UtilFonts;
-import hami.nasimbehesht724.View.HeaderBar;
-import hami.nasimbehesht724.View.ToastMessageBar;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Adapter.SearchPlaceHotelDomesticAdapter;
+import hami.mainapp.Activity.ServiceHotel.Domestic.Controller.Model.HotelDomesticCity;
+import hami.mainapp.Activity.ServiceSearch.ConstService.ServiceID;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Adapter.SearchPlaceBusAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceBus.Services.Controller.Model.City;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Adapter.SearchPlaceFlightAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Model.SearchInternational;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.InternationalApi;
+import hami.mainapp.Activity.ServiceSearch.ServiceFlight.Services.International.Controller.Presenter.SearchInternationalPresenter;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Adapter.SearchPlaceTrainAdapter;
+import hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model.CityTrain;
+import hami.mainapp.BaseController.SelectItemList;
+import hami.mainapp.R;
+import hami.mainapp.Util.Database.BusOffline;
+import hami.mainapp.Util.Database.FlightDomesticOffline;
+import hami.mainapp.Util.Database.FlightInternationalOffline;
+import hami.mainapp.Util.Database.HotelDomesticOffline;
+import hami.mainapp.Util.Database.TrainOffline;
+import hami.mainapp.Util.Keyboard;
+import hami.mainapp.Util.UtilFonts;
+import hami.mainapp.View.HeaderBar;
+import hami.mainapp.View.ToastMessageBar;
 
 /**
  * Created by renjer on 2017-04-30.

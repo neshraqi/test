@@ -1,9 +1,9 @@
-package hami.nasimbehesht724.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model;
+package hami.mainapp.Activity.ServiceSearch.ServiceTrain.Services.Controller.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-import hami.nasimbehesht724.Const.TrainRules;
-import hami.nasimbehesht724.R;
+import hami.mainapp.Const.TrainRules;
+import hami.mainapp.R;
 
 /**
  * Created by renjer on 2017-05-25.
