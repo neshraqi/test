@@ -19,18 +19,20 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.MY_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.hami"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="com.hami.servicetrain.ActivityMainTrain">
-            <intent-filter>
-                <action android:name="com.hami.servicetrain.action.MY_ACTION"/>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.hami.servicetrain."/>
-            </intent-filter>
-        </activity>
+        <!--<activity android:name="com.hami.servicetrain.ActivityMainTrain">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.hami.servicetrain.action.MY_ACTION"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="com.hami.servicetrain"/>-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
 
     </application>
 
