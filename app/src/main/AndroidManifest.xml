@@ -24,6 +24,13 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.hami.servicetrain.ActivityMainTrain">
+            <intent-filter>
+                <action android:name="com.hami.servicetrain.action.MY_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.hami.servicetrain."/>
+            </intent-filter>
+        </activity>
 
     </application>
 
