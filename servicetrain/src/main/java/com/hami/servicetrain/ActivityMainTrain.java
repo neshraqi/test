@@ -26,7 +26,7 @@ public class ActivityMainTrain extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_main);
+        setContentView(R.layout.activity_servicetrain_main);
         try {
             trainRequest = (TrainRequest) getIntent().getExtras().getSerializable(TrainRequest.class.getName());
         } catch (Exception e) {
@@ -56,7 +56,7 @@ public class ActivityMainTrain extends AppCompatActivity {
         UtilFonts.overrideFonts(this, findViewById(R.id.layoutMainContent), UtilFonts.IRAN_SANS_NORMAL);
         setupToolbar();
         timer();
-        UtilFragment.changeFragment(getSupportFragmentManager(), FragmentListWentTrain.newInstance(trainRequest), R.id.frame_Layout);
+        //UtilFragment.changeFragment(getSupportFragmentManager(), FragmentListWentTrain.newInstance(trainRequest), R.id.frame_Layout);
     }
 
     //-----------------------------------------------
