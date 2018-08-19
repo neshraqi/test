@@ -38,5 +38,5 @@ dependencies {
     implementation 'com.code-troopers.betterpickers:library:3.1.0'
     implementation project(':common')
 
-    compile project(path: ':servicetrain')
+    implementation project(path: ':servicetrain')
 }

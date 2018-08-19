@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean doubleBackToExitPressedOnce = false;
     private static final String TAG = MainActivity.class.getSimpleName();
     // private AccessStatusResponse accessStatusResponse;
-    private TextView tv_train, tv_flight;
+    private TextView tv_train, tv_flight, tv_bus;
     private FrameLayout frame_Layout;
 
 
@@ -37,11 +37,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         tv_train = (TextView) findViewById(R.id.tv_train);
         tv_flight = (TextView) findViewById(R.id.tv_flight);
+        tv_bus = (TextView) findViewById(R.id.tv_bus);
         txtTitleMenu = (TextView) findViewById(R.id.txtTitleMenu);
         frame_Layout = (FrameLayout) findViewById(R.id.frame_Layout);
 
         tv_flight.setOnClickListener(this);
         tv_train.setOnClickListener(this);
+        tv_bus.setOnClickListener(this);
 
 
 //        tv_train.setOnClickListener(new View.OnClickListener() {
@@ -94,6 +96,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 try {
                     Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.serviceflight.ActivityMainFlight"));
+                    startActivity(myIntent);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+
+            case R.id.tv_bus:
+
+                try {
+                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicebus.ActivityMainBus"));
                     startActivity(myIntent);
                 } catch (ClassNotFoundException e) {
                     e.printStackTrace();

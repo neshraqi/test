@@ -38,9 +38,17 @@
 
         <activity android:name="com.hami.serviceflight.ActivityMainFlight">
             <intent-filter>
-                <action android:name="com.hami.servicetrain.action.MY_ACTION"/>
+                <action android:name="com.hami.serviceflight.action.MY_ACTION"/>
 
-                <category android:name="com.hami.servicetrain"/>
+                <category android:name="com.hami.serviceflight"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.hami.servicebus.ActivityMainBus">
+            <intent-filter>
+                <action android:name="com.hami.servicebus.action.MY_ACTION"/>
+
+                <category android:name="com.hami.servicebus"/>
             </intent-filter>
         </activity>
 

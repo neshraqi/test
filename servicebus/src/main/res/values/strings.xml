@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">servicebus</string>
+    <string name="searchingBus">در حال جستجو اتوبوس...</string>
+    <string name="msgErrorServer">خطا در دریافت اطلاعات</string>
+    <string name="error">خطا</string>
+    <string name="tryAgain">تلاش مجدد</string>
+    <string name="showAllBus">نمایش همه اتوبوس ها</string>
+    <string name="bus_normal">معمولی</string>
+    <string name="bus_vip">وی آی پی</string>
+    <string name="male">مرد</string>
+    <string name="female">زن</string>
+    <string name="continue_">ادامه</string>
+    <string name="gettingInfo">درحال دریافت اطلاعات</string>
+    <string name="registeringInfo">در حال بررسی اطلاعات</string>
+    <string name="gender">جنسیت</string>
+    <string name="nationalCode">کد ملی</string>
+    <string name="lNameFarsi">نام خانوادگی</string>
+    <string name="fNameFarsi">نام</string>
+    <string name="mobilePhone">تلفن همراه</string>
+    <string name="email">پست الکترونیک</string>
+    <string name="reserve">رزرو</string>
+    <string name="reservering">در حال رزرو پرواز</string>
+    <string name="reserving">درحال رزرو...</string>
+    <string name="successGetTicket">مسافر محترم بلیط شما با موفقیت صادر گردید جهت دریافت بلیط روی دکمه زیر کلیک کنید </string>
+    <string name="pricePerPerson">قیمت هر نفر</string>
+    <string name="rulesInternetBuy">قبل از زدن دکمه ثبت قوانین رزرو اینترنتی را مطالعه نمودم و آن را قبول دارم.</string>
+    <string name="finalPriceWithDiscount">مبلغ پرداخت با تخفیف:</string>
+    <string name="selected">انتخاب شده</string>
+    <string name="canSelect">قابل انتخاب</string>
+    <string name="woman">بانوان</string>
+    <string name="mans">آقایان</string>
+    <string name="buy">پرداخت</string>
+    <string name="exit">خروج</string>
+    <string name="getTicket">دریافت بلیط</string>
+    <string name="edit">ویرایش</string>
+    <string name="busType">نوع اتوبوس</string>
+    <string name="timeTakeOff">ساعت حرکت</string>
+    <string name="timeLanding">ساعت رسیدن</string>
+    <string name="nevermind">بیخیال</string>
+    <string name="refund">استرداد</string>
+
+    <string name="checkInfoBus">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات اتوبوس مطمئن شوید.</string>
+
+    <string name="sortAndFilter">مرتب سازی و فیلتر</string>
+    <string name="sortByPriceTitle">محدوده قیمت :</string>
+
+    <string name="sortBy">مرتب سازی لیست بر اساس ؟</string>
+    <string name="sortByTimeTitleSoonMorning">بامداد</string>
+    <string name="sortByTimeTitleMorning">صبح</string>
+    <string name="sortByTimeTitleNoon">ظهر</string>
+    <string name="sortByTimeTitleAfternoon">بعدازظهر</string>
+    <string name="sortByTimeTitleEvening">شب</string>
+
+    <string name="sortByTimeValueSoonMorning">00:00 تا 06:59</string>
+    <string name="sortByTimeValueMorning">07:00 تا 10:59</string>
+    <string name="sortByTimeValueNoon">11:00 تا 15:59</string>
+    <string name="sortByTimeValueAfternoon">16:00 تا 19:59</string>
+    <string name="sortByTimeValueEvening">20:00 تا 23:59</string>
+
+
+    <string name="validateSelectRoutingWentBus">کدوم اتوبوس رو انتخاب کنید</string>
+    <string name="validateSelectRoutingWentFlight">کدوم پرواز رو انتخاب میکنید؟</string>
+    <string name="validateAcceptRuleEng">Accept Online Shop rules, Please</string>
+    <string name="validateEmail">ایمیل را با دقت وارد کنید</string>
+    <string name="validateAcceptRule">چک مربوط به قوانین اینترنتی را بزنید</string>
+    <string name="validateFirstNamePersian">نام را فارسی وارد کنید</string>
+    <string name="validateLastNamePersian"> نام خانوادگی را فارسی وارد کنید</string>
+    <string name="validateMobile">شماره موبایل را وارد کنید</string>
+
+
+    <string name="msgErrorNoBusByFilter">اتوبوس  با فیلتر های مورد نظر شما وجود ندارد</string>
+    <string name="msgErrorInternetConnection">خطا در ارتباط با اینترنت</string>
+    <string name="msgErrorNoBus">اتوبوسی با این اطلاعات وجود ندارد</string>
+    <string name="msgErrorRegisterBus"> لطفا اطلاعات وارد شده را کنترل کرده و پس از اطمینان از درستی آن ها برای پرداخت هزینه اقدام کنید. </string>
+    <string name="msgErrorReserveBus">خطا در رزرو اتوبوس،مجدد تلاش کنید</string>
+    <string name="msgErrorNoSelectChairBus">لطفا صندلی مورد نظر رو انتخاب کنید</string>
+    <!--<string name="msgErrorRunningGetTicket"> متاسفانه در اجرای درخواست شما با مشکل مواجه شدیم،جهت صدور بلیط روی دریافت بلیط کلیک کنید.</string>-->
+
+
+    <string name="doYouRefund">بلیط  با مشخصات  زیر استرداد خواهد شد</string>
+
+    <array name="sortBus">
+        <item>قیمت</item>
+        <item>زمان حرکت</item>
+        <item>نوع اتوبوس</item>
+        <item>ظرفیت</item>
+    </array>
+
+</resources>

@@ -22,6 +22,7 @@ import com.hami.common.Util.Keyboard;
 import com.hami.common.Util.UtilFonts;
 import com.hami.common.View.HeaderBar;
 import com.hami.common.View.ToastMessageBar;
+import com.hami.servicebus.Adapter.SearchPlaceBusAdapter;
 import com.hami.serviceflight.Adapter.SearchPlaceFlightAdapter;
 import com.hami.serviceflight.FlightDomesticOffline;
 import com.hami.serviceflight.FlightInternationalOffline;
@@ -48,7 +49,7 @@ public class SearchPlaceMainActivity extends AppCompatActivity {
     public final static String INTENT_HAS_TAKE_OFF = "INTENT_HAS_TAKE_OFF";
     private SearchPlaceFlightAdapter searchPlaceFlightAdapter;
     private SearchPlaceTrainAdapter searchPlaceTrainAdapter;
-    //private SearchPlaceBusAdapter searchPlaceAdapter;
+    private SearchPlaceBusAdapter searchPlaceAdapter;
     //private SearchPlaceHotelDomesticAdapter searchPlaceHotelDomesticAdapter;
     private EditText autoCompleteFromPlace;
     private ImageView imgBtnBack;
