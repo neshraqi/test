@@ -25,4 +25,7 @@
     <style name="AppTheme.WhiteAccent">
         <item name="colorAccent">@color/orangeMaster</item> <!-- Whatever color you want-->
     </style>
+
+    <color name="styleConfigTabTitleSelected">@android:color/white</color>
+
 </resources>

@@ -21,6 +21,6 @@
     <color name="styleConfigMasterButtonBackground">@color/colorPrimary</color>
     <color name="styleConfigToolbarMaster">#448aff</color>
 
-
+    <color name="main_color_grey_400">#bdbcbc</color>
 
 </resources>

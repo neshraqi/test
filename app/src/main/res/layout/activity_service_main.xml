@@ -7,15 +7,26 @@
     android:orientation="vertical">
 
     <include layout="@layout/layout_toolbar_service" />
+
     <TextView
-        android:id="@+id/tv_ok"
+        android:id="@+id/tv_train"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    
+        android:text="train!"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/tv_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="flight!"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"/>
+
     <FrameLayout
         android:id="@+id/frame_Layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       />
+        android:layout_height="match_parent" />
 </LinearLayout>

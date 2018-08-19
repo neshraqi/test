@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;
     private static final String TAG = MainActivity.class.getSimpleName();
     // private AccessStatusResponse accessStatusResponse;
-    private TextView tv_ok;
+    private TextView tv_train, tv_flight;
     private FrameLayout frame_Layout;
 
 
@@ -35,23 +35,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_main);
 
-        tv_ok = (TextView)findViewById(R.id.tv_ok) ;
-        txtTitleMenu = (TextView)findViewById(R.id.txtTitleMenu) ;
-        frame_Layout = (FrameLayout)findViewById(R.id.frame_Layout) ;
+        tv_train = (TextView) findViewById(R.id.tv_train);
+        tv_flight = (TextView) findViewById(R.id.tv_flight);
+        txtTitleMenu = (TextView) findViewById(R.id.txtTitleMenu);
+        frame_Layout = (FrameLayout) findViewById(R.id.frame_Layout);
 
-        tv_ok.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"ggdgd",Toast.LENGTH_SHORT);
-                try {
+        tv_flight.setOnClickListener(this);
+        tv_train.setOnClickListener(this);
 
-                    Intent myIntent = new Intent(MainActivity.this,Class.forName("com.hami.servicetrain.ActivityMainTrain"));
-                    startActivity(myIntent );
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+
+//        tv_train.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                try {
+//
+//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetrain.ActivityMainTrain"));
+//                    startActivity(myIntent);
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
     }
 
     //-----------------------------------------------
@@ -70,13 +75,31 @@ public class MainActivity extends AppCompatActivity {
         }, 2000);
     }
 
-
-    //-----------------------------------------------
     @Override
-    protected void onResume() {
-        super.onResume();
+    public void onClick(View v) {
 
+        switch (v.getId()) {
+
+            case R.id.tv_train:
+
+                try {
+                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetrain.ActivityMainTrain"));
+                    startActivity(myIntent);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+
+            case R.id.tv_flight:
+
+                try {
+                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.serviceflight.ActivityMainFlight"));
+                    startActivity(myIntent);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
+        }
     }
-//ActivityMainTrain
-
 }
+    //---------

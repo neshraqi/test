@@ -30,4 +30,17 @@
     <string name="validateBirthDayInfants">تاریخ تولد نوزاد باید کمتر از 2 سال باشد</string>
     <string name="validateBirthDayAdults">تاریخ تولد بزرگسال باید بیش از 12 سال باشد</string>
 
+    <string name="flyingFrom">مبدا را انتخاب کنید</string>
+    <string name="flyingTo">مقصد را انتخاب کنید</string>
+
+    <string name="msgErrorPayment">خطا در دسترسی به اطلاعات ،لطفا با پشتیبانی تماس بگیرید </string>
+    <string name="typeCityAndAirport">شهر یا فرودگاه مورد نظر را وارد کنید </string>
+
+
+    <string name="typeCity">شهر مورد نظر را وارد کنید </string>
+
+    <string name="rules">قوانین</string>
+    <string name="details">جزییات</string>
+    <string name="capacity">بار</string>
+
 </resources>

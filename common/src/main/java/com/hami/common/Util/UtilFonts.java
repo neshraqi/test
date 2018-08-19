@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.hami.common.R;
+
 import java.util.ArrayList;
 
 
@@ -62,7 +65,80 @@ public class UtilFonts {
 
         tv.setTypeface(font);
     }
+    //-----------------------------------------------
+    public static void applyFontTabRouting(Activity activity, TabLayout tabLayout) {
+        View view = activity.getLayoutInflater().inflate(R.layout.row_item_tab_gray_white, null);
+        Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/iran_sans_web.ttf");
+        TextView tv = (TextView) view.findViewById(R.id.txtTitle);
+        tv.setText(R.string.capacity);
+        tv.setTypeface(typeface);
+        tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
 
 
+        view = activity.getLayoutInflater().inflate(R.layout.row_item_tab_gray_white, null);
+        tv = (TextView) view.findViewById(R.id.txtTitle);
+        tv.setSelected(true);
+        tv.setText(R.string.rules);
+        tv.setTypeface(typeface);
+        tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
 
+        view = activity.getLayoutInflater().inflate(R.layout.row_item_tab_gray_white, null);
+        tv = (TextView) view.findViewById(R.id.txtTitle);
+        tv.setSelected(true);
+        tv.setText(R.string.details);
+        tv.setTypeface(typeface);
+        tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
+
+
+        tabLayout.getTabAt(2).select();
+
+        //tabLayout.addTab(tabLayout.newTab().setText(R.string.twoWay));
+        //tabLayout.addTab(tabLayout.newTab().setText(R.string.oneWay),true);
+
+//        tv.setText(viewPager.getAdapter().getPageTitle(i));
+//        Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/iran_sans_web.ttf");
+//        tv.setTypeface(typeface);
+//        tabLayout.getTabAt(0).setCustomView(view);
+
+    }
+
+
+    //-----------------------------------------------
+    public static void applyFontTabPassenger(Activity activity, TabLayout tabLayout) {
+        View view = activity.getLayoutInflater().inflate(R.layout.row_item_tab, null);
+        Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/iran_sans_web.ttf");
+        TextView tv = (TextView) view.findViewById(R.id.txtTitle);
+        tv.setText(R.string.infant);
+        tv.setTypeface(typeface);
+        tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
+
+
+        view = activity.getLayoutInflater().inflate(R.layout.row_item_tab, null);
+        tv = (TextView) view.findViewById(R.id.txtTitle);
+        tv.setSelected(true);
+        tv.setText(R.string.children);
+        tv.setTypeface(typeface);
+        tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
+
+        view = activity.getLayoutInflater().inflate(R.layout.row_item_tab, null);
+        tv = (TextView) view.findViewById(R.id.txtTitle);
+        tv.setSelected(true);
+        tv.setText(R.string.adults);
+        tv.setTypeface(typeface);
+        tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
+
+
+        tabLayout.getTabAt(2).select();
+
+        //tabLayout.addTab(tabLayout.newTab().setText(R.string.twoWay));
+        //tabLayout.addTab(tabLayout.newTab().setText(R.string.oneWay),true);
+
+//        tv.setText(viewPager.getAdapter().getPageTitle(i));
+//        Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/iran_sans_web.ttf");
+//        tv.setTypeface(typeface);
+//        tabLayout.getTabAt(0).setCustomView(view);
+
+    }
+
+    //-----------------------------------------------
 }

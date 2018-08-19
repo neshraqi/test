@@ -8,8 +8,8 @@ android {
         applicationId 'hami.mainapp'
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 4
-        versionName "1.4"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -47,9 +47,13 @@ dependencies {
     implementation('com.google.android:flexbox:0.2.7') {
         exclude group: 'com.android.support'
     }
+    implementation 'com.code-troopers.betterpickers:library:3.1.0'
     implementation 'com.android.support:support-annotations:27.1.1'
     compile project(path: ':servicetrain')
     implementation project(':common')
+    implementation project(':serviceflight')
+    compile project(path: ':persianmaterialdatetimepicker')
+
 }
 //apply plugin: "com.google.gms.google-services"
 
