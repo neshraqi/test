@@ -7,181 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="155702e8-6be8-4036-b158-48e95d032d29" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-16-07-445.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-16-07-445.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-19-59-418.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-19-59-418.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-05-323.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-05-323.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-21-297.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-21-297.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-28-467.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-28-467.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-59-403.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-20-59-403.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-21-03-714.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-21-03-714.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-22-00-662.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-22-00-662.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-22-04-202.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-22-04-202.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-24-03-373.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-24-03-373.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-24-28-087.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-24-28-087.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-28-14-137.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-28-14-137.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-28-21-951.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-28-21-951.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-29-05-840.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-29-05-840.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-29-25-005.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-29-25-005.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-31-30-689.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-31-30-689.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-31-50-928.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-31-50-928.rawproto" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/proguard-rules.pro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/servicetour.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/androidTest/java/com/hami/servicetour/ExampleInstrumentedTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/AndroidManifest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/ActivityMainTour.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/BottomSheetLayoutPriceTour.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/FinalPassengerTourListAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/OnAddPassengerTourListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/OnSelectItemPassengerTourListener.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/PassengerTourListAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchDateTourAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchPlaceTourAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/TourListAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/TourSlidingImageAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetails.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsPassenger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsPayment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsTicket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsUser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourRequest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourUserData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/DateTour.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/IdName.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/InitialTourResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/InitialTourValueResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/NameValue.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/PassengerTour.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/SearchTourRequest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourDetailData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourDetailResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourItem.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourItemFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourItemsResponse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/TourApi.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/ActivityRegisterPassengerTour.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourAddPassenger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourDetail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourFinalBooking.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourList.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/MainTourServicesMaterialFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/SearchPlaceAndDateTourActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/drawable/bg_button_orange.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/drawable/ic_clear_black_24dp.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/drawable/no_image_hotel.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/drawable/tour.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_search_place.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_tour_register_passenger.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_servicetour_main.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/dialog_service_register_final_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_result_search.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_tour_material.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_detail_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_final_booking_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_passengerl_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/layout_toolbar_service.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/layout_tour_price_detail.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/row_image_gallery_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/row_search_items_place_new.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/row_search_tour_layout.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/row_service_flight_domestic_info_passenger.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/row_service_more_info_passenger.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/menu/menu_gender.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-hdpi/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-mdpi/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xhdpi/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxhdpi/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxxhdpi/Thumbs.db" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/colors.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/colors_material.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/dimens.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/edittext_style.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/layout/activity_service_search_place.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/layout/fragment_main_tour_material.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/layout/layout_toolbar_service.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/strings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/style.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/style_config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/test/java/com/hami/servicetour/ExampleUnitTest.java" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-42-20-726.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-42-20-726.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-29-447.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-29-447.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-35-152.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-35-152.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-42-788.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-42-788.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-47-152.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-47-47-152.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-48-47-982.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-48-47-982.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-54-16-016.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-54-16-016.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-54-39-900.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-54-39-900.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-56-04-897.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-56-04-897.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-57-09-244.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-57-09-244.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-57-48-864.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-15-57-48-864.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-04-25-432.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-04-25-432.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-07-07-364.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-07-07-364.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-08-23-002.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-08-23-002.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-08-42-728.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-08-42-728.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-08-56-419.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-08-56-419.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-09-01-444.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-09-01-444.rawproto" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-09-38-757.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-09-38-757.rawproto" afterPath="" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/hami/common/Util/UtilFonts.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/hami/common/Util/UtilFonts.java" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/common/src/main/res/values/strings.xml" />
       <change beforePath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" afterPath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" />
       <change beforePath="$PROJECT_DIR$/servicebus/servicebus.iml" afterPath="$PROJECT_DIR$/servicebus/servicebus.iml" />
       <change beforePath="$PROJECT_DIR$/serviceflight/serviceflight.iml" afterPath="$PROJECT_DIR$/serviceflight/serviceflight.iml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/ActivityMainFlight.java" afterPath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/ActivityMainFlight.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_main.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/values/layout/activity_service_main.xml" />
+      <change beforePath="$PROJECT_DIR$/servicetour/servicetour.iml" afterPath="$PROJECT_DIR$/servicetour/servicetour.iml" />
+      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/PassengerTour.java" afterPath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/PassengerTour.java" />
       <change beforePath="$PROJECT_DIR$/servicetrain/servicetrain.iml" afterPath="$PROJECT_DIR$/servicetrain/servicetrain.iml" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -213,41 +58,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/mainapp/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="119" column="120" lean-forward="false" selection-start-line="119" selection-start-column="120" selection-end-line="119" selection-end-column="120" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_service_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityMainFlight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/ActivityMainFlight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -7434,6 +7245,7 @@
         <option value="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/ActivityMainFlight.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/hami/mainapp/MainActivity.java" />
+        <option value="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/PassengerTour.java" />
       </list>
     </option>
   </component>
@@ -7469,7 +7281,12 @@
           <expand>
             <path>
               <item name="mainApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="common" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="mainApp" type="1abcf292:AndroidViewProjectNode" />
+              <item name="common" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
           </expand>
           <select />
@@ -7522,7 +7339,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -7669,14 +7486,14 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17296073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27190334" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -7684,8 +7501,8 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20392749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63884157" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -7829,14 +7646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchDateTourAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchPlaceTourAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -7893,14 +7702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourFinalBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -7967,7 +7768,7 @@
         <state relative-caret-position="555">
           <caret line="59" column="60" lean-forward="false" selection-start-line="59" selection-start-column="60" selection-end-line="59" selection-end-column="60" />
           <folding>
-            <element signature="e#543#561#0" expanded="true" />
+            <element signature="e#543#561#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -8021,6 +7822,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/persianmaterialdatetimepicker/src/main/java/com/mohamadamin/persianmaterialdatetimepicker/time/RadialPickerLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#36800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchDateTourAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="64" column="60" lean-forward="false" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Fragment/FragmentListWentBus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourFinalBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="254" column="44" lean-forward="false" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="44" />
+          <folding>
+            <element signature="e#4780#5117#0" expanded="true" />
+            <element signature="e#5116#5117#0" expanded="true" />
+            <element signature="e#5522#5728#0" expanded="true" />
+            <element signature="e#5727#5728#0" expanded="true" />
+            <element signature="e#9655#9678#0" expanded="true" />
+            <element signature="e#9744#9769#0" expanded="true" />
+            <element signature="e#9861#9889#0" expanded="true" />
+            <element signature="e#10002#10026#0" expanded="true" />
+            <element signature="e#11917#12390#0" expanded="true" />
+            <element signature="e#12389#12390#0" expanded="true" />
+            <element signature="e#12722#12764#0" expanded="true" />
+            <element signature="e#12880#12922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/hami/common/Util/CustomeChrome/CustomTabsPackages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -8037,6 +7893,16 @@
         <state relative-caret-position="393">
           <caret line="119" column="120" lean-forward="false" selection-start-line="119" selection-start-column="120" selection-end-line="119" selection-end-column="120" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/PassengerTour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="63" column="27" lean-forward="false" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
+import com.hami.common.Const.FlightRules;
 
-import hami.nasimbehesht724.Const.FlightRules;
 
 /**
  * Created by renjer on 2018-03-10.
