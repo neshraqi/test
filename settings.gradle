@@ -1,1 +1,1 @@
-include ':app', ':persianmaterialdatetimepicker', ':servicetrain', ':common', ':serviceflight', ':servicebus'
+include ':app', ':persianmaterialdatetimepicker', ':servicetrain', ':common', ':serviceflight', ':servicebus', ':servicetour'

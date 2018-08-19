@@ -33,6 +33,15 @@
         android:layout_marginRight="20dp"/>
 
         <TextView
+            android:id="@+id/tv_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tour"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
             android:id="@+id/tv_bus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

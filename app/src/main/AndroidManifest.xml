@@ -53,6 +53,14 @@
         </activity>
 
 
+        <activity android:name="com.hami.servicetour.ActivityMainTour">
+            <intent-filter>
+                <action android:name="com.hami.servicetour.action.MY_ACTION"/>
+
+                <category android:name="com.hami.servicetour"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

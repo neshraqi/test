@@ -140,5 +140,23 @@ public class UtilFonts {
 
     }
 
+
+    //-----------------------------------------------
+    public static void applyFontTabServicesTour(Activity activity, TabLayout tabLayout) {
+        int resTitle[] = {R.string.InternationalTour, R.string.domesticTour, R.string.dayTour, R.string.allTour};
+        for (int i = 0; i < resTitle.length; i++) {
+            View view = activity.getLayoutInflater().inflate(R.layout.row_item_tab_gray_white, null);
+            Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL);
+            TextView tv = (TextView) view.findViewById(R.id.txtTitle);
+            tv.setText(resTitle[i]);
+            tv.setTypeface(typeface);
+            tv.setTextSize(12);
+            tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
+        }
+
+        tabLayout.getTabAt(tabLayout.getTabCount() - 1).select();
+    }
+
+
     //-----------------------------------------------
 }

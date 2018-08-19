@@ -30,7 +30,7 @@ public class ActivityMainFlight extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_main);
+        setContentView(R.layout.activity_serviceflight_main);
 
         try {
             hasInternational = getIntent().getExtras().getBoolean(TAG_FLIGHT_INTERNATIONAL);

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">servicetour</string>
+
+    <string name="domestic">داخلی</string>
+    <string name="international">خارجی</string>
+    <string name="searchFlight">جستجو</string>
+    <string name="gettingInfo">درحال دریافت اطلاعات</string>
+    <string name="fromPlace">مبدا</string>
+    <string name="moveDate">تاریخ حرکت</string>
+    <string name="passenger">مسافر</string>
+    <string name="expireDatePassport">تاریخ انقضا پاسپورت</string>
+    <string name="day">روز</string>
+    <string name="night">شب</string>
+    <string name="birthDayPersian">تاریخ تولد</string>
+    <string name="nationalCode">کد ملی</string>
+    <string name="fName">نام(انگلیسی)</string>
+    <string name="lName">نام خانوادگی(انگلیسی)</string>
+    <string name="fNameFarsi">نام</string>
+    <string name="lNameFarsi">نام خانوادگی</string>
+    <string name="registerFlight">ثبت</string>
+    <string name="passportDate">تاریخ انقضا پاسپورت</string>
+    <string name="dateOfIssueOfThePassport">تاریخ صدور پاسپورت</string>
+    <string name="noPassport">شماره پاسپورت</string>
+    <string name="mobilePhone">تلفن همراه</string>
+    <string name="exportingCountryDomestic">ملیت(کشور)</string>
+    <string name="gender">جنسیت</string>
+    <string name="male">مرد</string>
+    <string name="female">زن</string>
+    <string name="addPassenger">افزودن مسافر </string>
+    <string name="detailsPrice">جزییات قیمت</string>
+    <string name="bookingOnline">رزرو آنلاین</string>
+    <string name="date">تاریخ برگشت</string>
+    <string name="msgErrorFullCapacityDomestic">ظرفیت برای ثبت مسافر تکمیل شد</string>
+    <string name="secCode">کد امنیتی</string>
+    <string name="email">پست الکترونیک</string>
+    <string name="rulesInternetBuy">قبل از زدن دکمه ثبت قوانین رزرو اینترنتی را مطالعه نمودم و آن را قبول دارم.</string>
+    <string name="reserving">درحال رزرو...</string>
+    <string name="reserve">رزرو</string>
+    <string name="editPassenger">ویرایش مسافر</string>
+    <string name="registerPassenger">ثبت مسافر</string>
+    <string name="editInfoPassenger">ویرایش اطلاعات مسافر</string>
+    <string name="registerInfoPassenger">ثبت اطلاعات مسافر</string>
+    <string name="pricePerPerson">قیمت هر نفر</string>
+    <string name="continue_">ادامه</string>
+    <string name="tryAgain">تلاش مجدد</string>
+    <string name="hotelWaterRecreation">تفریحات آبی</string>
+    <string name="from">از </string>
+    <string name="to">به </string>
+    <string name="timeTakeOff">ساعت حرکت</string>
+    <string name="visa">ویزا</string>
+    <string name="simCard">سیم کارت</string>
+    <string name="insurance">بیمه</string>
+    <string name="leaderTranslate">لیدر فارسی زبان</string>
+    <string name="crossCityTransfer">ترنسفر بین شهری</string>
+    <string name="welcomeHoney">استقبال و بدرقه</string>
+    <string name="edit">ویرایش</string>
+    <string name="tryAgainSearch">دوباره سرچ کنم</string>
+    <string name="buy">پرداخت</string>
+    <string name="exit">خروج</string>
+    <string name="getTicket">دریافت بلیط</string>
+    <string name="checkInfoTour">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات تور مطمئن شوید.</string>
+    <string name="successGetTicket">مسافر محترم بلیط شما با موفقیت صادر گردید جهت دریافت بلیط روی دکمه زیر کلیک کنید </string>
+    <string name="finalPriceWithDiscount">مبلغ پرداخت با تخفیف:</string>
+    <string name="searchingTour">در حال جستجو تور...</string>
+    <string name="error">خطا</string>
+    <string name="flyingFrom">مبدا را انتخاب کنید</string>
+    <string name="flyingTo">مقصد را انتخاب کنید</string>
+    <string name="tour">تور</string>
+    <string name="dayTour">یک روزه</string>
+    <string name="allTour">همه</string>
+
+
+
+    <string name="msgErrorServer">خطا در دریافت اطلاعات</string>
+    <string name="msgErrorInternetConnection">خطا در ارتباط با اینترنت</string>
+    <string name="msgErrorNoTour">تور با این اطلاعات وجود ندارد</string>
+    <string name="msgErrorPayment">خطا در دسترسی به اطلاعات ،لطفا با پشتیبانی تماس بگیرید </string>
+    <string name="msgErrorReserveTour">خطا در رزرو تور،مجدد تلاش کنید</string>
+    <string name="msgErrorCheckInfoPassenger">لطفا اطلاعات وارد شده را با کارت ملی یا پاسسپورت مسافر مقایسه کنید ، در صورت وجود هرگونه اشکال مسئولیت آن به عهده مسافر میباشد</string>
+
+
+
+
+
+    <string name="validateAcceptRule">چک مربوط به قوانین اینترنتی را بزنید</string>
+    <string name="validateSelectFromPlaceTour">شهر مبدا خود را انتخاب کنید</string>
+    <string name="validateSelectFromDateTour">تاریخ حرکت را انتخاب کنید</string>
+    <string name="validateErrorFromPlace">مبدا را انتخاب کنید</string>
+
+    <string name="validateMobile">شماره موبایل را وارد کنید</string>
+    <string name="validateTelephone">تلفن ثابت را وارد کنید</string>
+    <string name="validateEmail">ایمیل را با دقت وارد کنید</string>
+    <string name="validateAdultsFirstPassenger">اولین مسافر باید بزرگسال باشد</string>
+    <string name="validateFirstName">نام را لاتین وارد کنید</string>
+    <string name="validateLastName"> نام خانوادگی را لاتین وارد کنید</string>
+    <string name="validateFirstNamePersian">نام را فارسی وارد کنید</string>
+    <string name="validateLastNamePersian"> نام خانوادگی را فارسی وارد کنید</string>
+    <string name="validatePassportCode">شماره پاسپورت را با دقت وارد کنید</string>
+    <string name="validatePassportExpDate">تاریخ انقضا پاسپورت را وارد کنید</string>
+    <string name="validateSelectRoutingWentTour">کدوم تور رو انتخاب میکنید؟</string>
+
+
+
+
+</resources>

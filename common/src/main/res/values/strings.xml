@@ -43,4 +43,9 @@
     <string name="details">جزییات</string>
     <string name="capacity">بار</string>
 
+
+    <string name="domesticTour">داخلی</string>
+    <string name="InternationalTour">خارجی</string>
+    <string name="dayTour">یک روزه</string>
+    <string name="allTour">همه</string>
 </resources>

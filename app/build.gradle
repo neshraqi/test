@@ -54,6 +54,7 @@ dependencies {
     implementation project(':serviceflight')
     implementation project(path: ':persianmaterialdatetimepicker')
     implementation project(':servicebus')
+    implementation project(':servicetour')
 }
 //apply plugin: "com.google.gms.google-services"
 
