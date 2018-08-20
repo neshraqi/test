@@ -70,7 +70,7 @@
         android:orientation="vertical">
 
 
-        <hami.nasimbehesht724.View.Progressbar.ButtonWithProgress
+        <com.hami.common.View.Progressbar.ButtonWithProgress
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -131,8 +131,9 @@
 
 
 
-
-
+    <string name="moreEng">More</string>
+    <string name="closeEng">Close</string>
+    <string name="removeFilterEng">Reset</string>
 
 
     <array name="sortDomesticHotel">

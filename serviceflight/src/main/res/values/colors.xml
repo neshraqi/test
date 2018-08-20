@@ -17,7 +17,7 @@
     <color name="bpDark_gray">#363636</color>
     <color name="main_color_grey_900">@color/material_grey_900</color>
     <color name="main_color_A600">@color/material_blue_A800</color>
-
+    <color name="blue_button_search">#2aace2</color>
 
 
 </resources>

@@ -37,7 +37,7 @@ import java.util.TimerTask;
  * Created by renjer on 2017-04-30.
  */
 
-public class SearchPlaceHotelActivity extends AppCompatActivity {
+public class   SearchPlaceHotelActivity extends AppCompatActivity {
 
     private Boolean hasDestination;
     public final static String INTENT_HAS_DESTINATION_INTERNATIONAL_HOTEL = "INTENT_HAS_DESTINATION_INTERNATIONAL_HOTEL ";

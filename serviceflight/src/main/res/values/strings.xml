@@ -92,6 +92,8 @@
     <string name="capacity">بار</string>
     <string name="rules">قوانین</string>
 
+    <string name="flightNumber">شماره پرواز</string>
+
     <string name="checkInfoFlight">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات پرواز مطمئن شوید.</string>
     <string name="dearPassenger">مسافر محترم</string>
     <string name="IRealized">متوجه شدم</string>

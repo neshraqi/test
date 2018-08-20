@@ -13,7 +13,7 @@
         android:background="@android:color/white">
 
 
-        <hami.mainapp.View.HeaderBar
+        <com.hami.common.View.HeaderBar
             android:id="@+id/headerBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -31,7 +31,7 @@
             android:scrollbars="vertical" />
 
 
-        <hami.mainapp.View.MessageBar
+        <com.hami.common.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -53,5 +53,5 @@
         app:backgroundTint="@color/styleConfigToolbarMaster"
         app:elevation="0dp"
         app:layout_anchorGravity="bottom|left"
-        app:layout_behavior="hami.nasimbehesht724.Animation.ScrollBehaviorFab" />
+        app:layout_behavior="com.hami.common.Animation.ScrollBehaviorFab" />
 </android.support.design.widget.CoordinatorLayout>

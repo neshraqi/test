@@ -9,7 +9,7 @@
 
     <include layout="@layout/layout_toolbar_service" />
 
-    <hami.avaseir.View.HeaderBar
+    <com.hami.common.View.HeaderBar
         android:id="@+id/headerBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

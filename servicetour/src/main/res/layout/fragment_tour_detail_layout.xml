@@ -366,7 +366,7 @@
                             android:text="@string/pricePerPerson"
                             android:textColor="@android:color/black" />
 
-                        <hami.nasimbehesht724.View.ToolsTourOption
+                        <com.hami.common.View.ToolsTourOption
                             android:id="@+id/toolsTourOption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
@@ -382,7 +382,7 @@
         </android.support.design.widget.CoordinatorLayout>
 
 
-        <hami.nasimbehesht724.View.MessageBar
+        <com.hami.common.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

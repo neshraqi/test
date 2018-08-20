@@ -82,7 +82,7 @@
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
 
-        <hami.nasimbehesht724.View.CheckBoxLtr
+        <com.hami.common.View.CheckBoxLtr
             android:id="@+id/chkAcceptRule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             android:orientation="horizontal">
 
 
-            <hami.nasimbehesht724.View.Progressbar.ButtonWithProgress
+            <com.hami.common.View.Progressbar.ButtonWithProgress
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
