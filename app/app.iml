@@ -145,6 +145,7 @@
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
     <orderEntry type="module" module-name="servicetrain" />
     <orderEntry type="module" module-name="servicebus" />
+    <orderEntry type="module" module-name="servicehotel" />
     <orderEntry type="module" module-name="serviceflight" />
     <orderEntry type="module" module-name="persianmaterialdatetimepicker" />
     <orderEntry type="module" module-name="common" />

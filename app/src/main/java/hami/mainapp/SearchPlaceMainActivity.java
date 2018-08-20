@@ -29,6 +29,7 @@ import com.hami.serviceflight.FlightInternationalOffline;
 import com.hami.serviceflight.Services.International.Controller.Model.SearchInternational;
 import com.hami.serviceflight.Services.International.Controller.Presenter.InternationalApi;
 import com.hami.serviceflight.Services.International.Controller.Presenter.SearchInternationalPresenter;
+import com.hami.servicehotel.Domestic.Adapter.SearchPlaceHotelDomesticAdapter;
 import com.hami.servicetrain.Adapter.SearchPlaceTrainAdapter;
 import com.hami.servicetrain.Services.Controller.Model.CityTrain;
 import com.hami.servicetrain.TrainOffline;
@@ -50,7 +51,7 @@ public class SearchPlaceMainActivity extends AppCompatActivity {
     private SearchPlaceFlightAdapter searchPlaceFlightAdapter;
     private SearchPlaceTrainAdapter searchPlaceTrainAdapter;
     private SearchPlaceBusAdapter searchPlaceAdapter;
-    //private SearchPlaceHotelDomesticAdapter searchPlaceHotelDomesticAdapter;
+    private SearchPlaceHotelDomesticAdapter searchPlaceHotelDomesticAdapter;
     private EditText autoCompleteFromPlace;
     private ImageView imgBtnBack;
     private InternationalApi internationalApi;

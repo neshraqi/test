@@ -159,4 +159,20 @@ public class UtilFonts {
 
 
     //-----------------------------------------------
+    public static void applyFontTabServicesHotel(Activity activity, TabLayout tabLayout) {
+        tabLayout.removeAllTabs();
+        int resTitle[] = {R.string.internationalHotel, R.string.domesticHotel};
+        for (int i = 0; i < resTitle.length; i++) {
+            View view = activity.getLayoutInflater().inflate(R.layout.row_item_tab_filter, null);
+            Typeface typeface = Typeface.createFromAsset(activity.getAssets(), "fonts/" + UtilFonts.IRAN_SANS_NORMAL);
+            TextView tv = (TextView) view.findViewById(R.id.txtTitle);
+            tv.setText(resTitle[i]);
+            tv.setTypeface(typeface);
+            tv.setTextSize(12);
+            tabLayout.addTab(tabLayout.newTab().setCustomView(tv));
+        }
+        tabLayout.getTabAt(tabLayout.getTabCount() - 1).select();
+    }
+
+    //-----------------------------------------------
 }

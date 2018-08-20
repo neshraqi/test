@@ -50,6 +50,15 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="20dp"/>
 
+        <TextView
+            android:id="@+id/tv_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hotel"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+           />
+
 
     </LinearLayout>
 

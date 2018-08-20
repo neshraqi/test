@@ -48,4 +48,7 @@
     <string name="InternationalTour">خارجی</string>
     <string name="dayTour">یک روزه</string>
     <string name="allTour">همه</string>
+
+    <string name="domesticHotel">هتل داخلی</string>
+    <string name="internationalHotel">هتل خارجی</string>
 </resources>

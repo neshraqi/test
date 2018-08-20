@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean doubleBackToExitPressedOnce = false;
     private static final String TAG = MainActivity.class.getSimpleName();
     // private AccessStatusResponse accessStatusResponse;
-    private TextView tv_train, tv_flight, tv_bus,tv_tour;
+    private TextView tv_train, tv_flight, tv_bus,tv_tour, tv_hotel;
     private FrameLayout frame_Layout;
 
-
     //-----------------------------------------------
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_flight = (TextView) findViewById(R.id.tv_flight);
         tv_bus = (TextView) findViewById(R.id.tv_bus);
         tv_tour = (TextView) findViewById(R.id.tv_tour);
+        tv_hotel = (TextView) findViewById(R.id.tv_hotel);
         txtTitleMenu = (TextView) findViewById(R.id.txtTitleMenu);
         frame_Layout = (FrameLayout) findViewById(R.id.frame_Layout);
 
@@ -46,24 +47,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_train.setOnClickListener(this);
         tv_bus.setOnClickListener(this);
         tv_tour.setOnClickListener(this);
+        tv_hotel.setOnClickListener(this);
 
-
-//        tv_train.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                try {
-//
-//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetrain.ActivityMainTrain"));
-//                    startActivity(myIntent);
-//                } catch (ClassNotFoundException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
     }
 
     //-----------------------------------------------
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -78,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }, 2000);
     }
+//-----------------------------------------------
 
     @Override
     public void onClick(View v) {
@@ -123,7 +113,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     e.printStackTrace();
                 }
                 break;
+
+            case R.id.tv_hotel:
+
+                try {
+                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicehotel.ActivityMainHotel"));
+                    startActivity(myIntent);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+                break;
         }
     }
 }
-    //---------
