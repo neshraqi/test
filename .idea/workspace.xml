@@ -1,115 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a76ab948-016c-4ce8-b9f0-94efa68259d4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_airplane_to_left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_airplane_to_right.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_date_range.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_place_to_date.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_reload_orange.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-hdpi/ic_went_date_master.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_airplane_to_left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_airplane_to_right.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_date_range.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_place_to_date.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_reload_orange.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-mdpi/ic_went_date_master.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_airplane_to_left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_airplane_to_right.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_date_range.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_place_to_date.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_reload_orange.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xhdpi/ic_went_date_master.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_airplane_to_left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_airplane_to_right.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_date_range.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_place_to_date.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_reload_orange.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxhdpi/ic_went_date_master.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_airplane_to_left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_airplane_to_right.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_date_range.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_place_to_date.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_reload_orange.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/mipmap-xxxhdpi/ic_went_date_master.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-hdpi/ic_image_gallery.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-hdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-hdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-mdpi/ic_image_gallery.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-mdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-mdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xhdpi/ic_image_gallery.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xhdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xhdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxhdpi/ic_image_gallery.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxhdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxhdpi/ic_wating.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxxhdpi/ic_image_gallery.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxxhdpi/ic_warning.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/servicetour/src/main/res/mipmap-xxxhdpi/ic_wating.png" />
+    <list default="true" id="37972419-96e7-4f6d-817a-4f065f67012c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/build.gradle" afterPath="$PROJECT_DIR$/servicebus/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/servicebus/servicebus.iml" afterPath="$PROJECT_DIR$/servicebus/servicebus.iml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/res/layout/dialog_accept_layout.xml" afterPath="$PROJECT_DIR$/servicebus/src/main/res/layout/dialog_accept_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" afterPath="$PROJECT_DIR$/servicebus/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/res/layout/fragment_main_result_search.xml" afterPath="$PROJECT_DIR$/servicebus/src/main/res/layout/fragment_main_result_search.xml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/res/layout/fragment_service_bus_select_chair.xml" afterPath="$PROJECT_DIR$/servicebus/src/main/res/layout/fragment_service_bus_select_chair.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/build.gradle" afterPath="$PROJECT_DIR$/serviceflight/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/serviceflight.iml" afterPath="$PROJECT_DIR$/serviceflight/serviceflight.iml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_flight_intenational_register_passenger.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_flight_intenational_register_passenger.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_flight_details_layout.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_flight_details_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_search_place.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_search_place.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_main_result_search.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_main_result_search.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/build.gradle" afterPath="$PROJECT_DIR$/servicehotel/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/servicehotel.iml" afterPath="$PROJECT_DIR$/servicehotel/servicehotel.iml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/SearchPlaceHotelActivity.java" afterPath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/SearchPlaceHotelActivity.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/activity_service_search_place_ltr.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/activity_service_search_place_ltr.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_international_hotel_detail_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_international_hotel_detail_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_main_result_search.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_main_result_search.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_main_result_search_ltr.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_main_result_search_ltr.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/layout/row_domestic_hotel_room_layout.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/layout/row_domestic_hotel_room_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/build.gradle" afterPath="$PROJECT_DIR$/servicetour/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/servicetour/servicetour.iml" afterPath="$PROJECT_DIR$/servicetour/servicetour.iml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_search_place.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_search_place.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_tour_register_passenger.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_tour_register_passenger.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/dialog_service_register_final_layout.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/dialog_service_register_final_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_result_search.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_result_search.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_tour_material.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_tour_material.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_detail_layout.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_detail_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_passengerl_layout.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_passengerl_layout.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/res/layout/layout_tour_price_detail.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/res/layout/layout_tour_price_detail.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level1_refund.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level1_refund.xml" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" afterPath="$PROJECT_DIR$/common/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -123,24 +31,19 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view />
-      </state>
-    </system>
-  </component>
   <component name="FileEditorManager">
-    <leaf />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>moreEng</find>
-      <find>removeFilterEng</find>
-      <find>flightNumber</find>
-      <find>MIP</find>
-      <find>blue_button_search</find>
-    </findStrings>
+    <leaf>
+      <file leaf-file-name="HotelServicesSearchMaterialFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/mainapp/HotelServicesSearchMaterialFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-651">
+              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -8149,56 +8052,12 @@
       </map>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/SearchPlaceHotelActivity.java" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/row_domestic_hotel_room_layout.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/activity_service_search_place_ltr.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_international_hotel_detail_layout.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/build.gradle" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_main_result_search.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_main_result_search_ltr.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" />
-        <option value="$PROJECT_DIR$/servicehotel/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" />
-        <option value="$PROJECT_DIR$/servicebus/src/main/res/layout/dialog_accept_layout.xml" />
-        <option value="$PROJECT_DIR$/servicebus/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" />
-        <option value="$PROJECT_DIR$/servicebus/build.gradle" />
-        <option value="$PROJECT_DIR$/serviceflight/build.gradle" />
-        <option value="$PROJECT_DIR$/servicetour/build.gradle" />
-        <option value="$PROJECT_DIR$/servicebus/src/main/res/layout/fragment_main_result_search.xml" />
-        <option value="$PROJECT_DIR$/servicebus/src/main/res/layout/fragment_service_bus_select_chair.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_flight_intenational_register_passenger.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_flight_details_layout.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_service_search_place.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_main_result_search.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/serviceflight/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_tour_register_passenger.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_search_place.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/dialog_service_register_final_layout.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_result_search.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_tour_material.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_detail_layout.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_passengerl_layout.xml" />
-        <option value="$PROJECT_DIR$/servicetour/src/main/res/layout/layout_tour_price_detail.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="762" />
     <option name="width" value="611" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -8215,8 +8074,8 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -8228,11 +8087,13 @@
             <path>
               <item name="mainApp" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="mainApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="mainapp" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -8243,14 +8104,8 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
-    <property name="last_opened_file_path" value="D:/hami/source/nasimebehesht" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.0.1" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\mainApp\servicetour\src\main\res" />
-      <recent name="D:\mainApp\serviceflight\src\main\res" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -8423,16 +8278,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a76ab948-016c-4ce8-b9f0-94efa68259d4" name="Default" comment="" />
-      <created>1534753287248</created>
+      <changelist id="37972419-96e7-4f6d-817a-4f065f67012c" name="Default" comment="" />
+      <created>1534826354130</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1534753287248</updated>
+      <updated>1534826354130</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -8441,22 +8297,20 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16993958" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20845921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14310052" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -8466,39 +8320,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14310052" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17069486" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20845921" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -8508,553 +8329,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/activity_serviceflight_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/hami/mainapp/HotelServicesSearchMaterialFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-651">
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/dialog_tools_gender_dialog_layout_.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_domestic_flight_dialog_filter_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5103">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_main_result_search.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="55" column="72" lean-forward="false" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_service_flight_domestic_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1449">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_service_flight_domestic_factor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_service_flight_international_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-819">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/fragment_service_flight_international_pre_factor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3024">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/include_layout_change_price_message.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-819">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/include_service_flight_domestic_show_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1902">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/include_service_flight_international_show_details_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2889">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/layout_toolbar_service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/new_fragment_dialog_filter_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4982">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_item_spinner_train_white.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_item_tab.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_item_tab_gray_white.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_new_flight_international_went.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3708">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_new_flight_international_went_and_return.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7656">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_search_items_place_header.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_search_items_place_new.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="279" column="52" lean-forward="true" selection-start-line="279" selection-start-column="4" selection-end-line="279" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="93" column="4" lean-forward="false" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_capacity_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="57" column="54" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_domestic_info_passenger.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1701">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_international_passnger_pre_factor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2742">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_international_routing_.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2259">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_international_routing_new.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_passnger_pre_reserve.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3141">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_simple_spinner_dropdown_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/dialog_flight_international_reserve_final_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/include_service_material_search.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_routing_international_waiting.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1160">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/layout/row_service_flight_international_rules_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serviceflight/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_tour_register_passenger.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3750">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/activity_service_search_place.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="60" column="35" lean-forward="false" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/activity_servicetour_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/dialog_service_register_final_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="101" column="64" lean-forward="false" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_result_search.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="55" column="72" lean-forward="false" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_main_tour_material.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_final_booking_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5472">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_passengerl_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="118" column="36" lean-forward="false" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/layout_toolbar_service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/layout_tour_price_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="42" column="49" lean-forward="false" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/row_image_gallery_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/row_search_items_place_new.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/row_search_tour_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1797">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/row_service_flight_domestic_info_passenger.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1713">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/row_service_more_info_passenger.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2217">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/servicetour/src/main/res/layout/fragment_tour_detail_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="71" column="49" lean-forward="false" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
   </component>
