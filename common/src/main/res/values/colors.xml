@@ -22,5 +22,16 @@
     <color name="styleConfigToolbarMaster">#448aff</color>
 
     <color name="main_color_grey_400">#bdbcbc</color>
+    <color name="main_color_grey_900">#ff212121</color>
+    <color name="main_color_grey_700">#616161</color>
+    <color name="main_color_grey_50">#fffafafa</color>
+
+    <color name="styleConfigMasterButton2Title">@android:color/white</color>
+    <color name="styleConfigMasterButton2Background">#616161</color>
+    <color name="styleConfigMasterButtonTitle">@android:color/white</color>
+
+
+
+
 
 </resources>

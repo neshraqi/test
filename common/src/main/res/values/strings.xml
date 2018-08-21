@@ -51,4 +51,40 @@
 
     <string name="domesticHotel">هتل داخلی</string>
     <string name="internationalHotel">هتل خارجی</string>
+
+    <string name="countPassenger">تعداد مسافر</string>
+    <string name="typeTicketTrain">نوع بلیط</string>
+
+
+    <string name="copeFull">برای داشتن کوپه دربست لطفا تیک کوپه دربست رو بزنید.</string>
+    <string name="msgErrorExpireTimeTitle">زمان شما برای رزرو به پایان رسید</string>
+    <string name="msgErrorExpireTimeDesc">با توجه به امکان تغییر نرخ ، بهتر است جستجوی مجدد انجام دهید</string>
+    <string name="back">بازگشت</string>
+
+    <string name="adultEng">Adult</string>
+    <string name="childEng">Child</string>
+
+    <string name="accept_">تایید میکنم</string>
+    <string name="tryAgain">تلاش مجدد</string>
+    <string name="addCountPassenger">تعداد مسافر </string>
+    <string name="oneWay">یک طرفه</string>
+    <string name="twoWay">دوطرفه</string>
+
+    <string-array name="passengerHotel">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+    <string-array name="passengerHotelChild">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
 </resources>
