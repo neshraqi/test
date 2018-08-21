@@ -129,7 +129,9 @@
     <string name="showCaseCheckOutEng">Choose departure date</string>
     <string name="showCaseNationalityEng">Enter your nationality</string>
 
-
+    <string name="hotelContactInfoEng">Hotel Contact Info</string>
+    <string name="fullFeaturesEng">Full features</string>
+    <string name="fullFeaturesHotel">جزئیات هتل</string>
 
     <string name="moreEng">More</string>
     <string name="closeEng">Close</string>
