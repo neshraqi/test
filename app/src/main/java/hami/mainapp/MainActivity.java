@@ -6,13 +6,19 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.hami.common.Util.UtilFragment;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -27,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // private AccessStatusResponse accessStatusResponse;
     private TextView tv_train, tv_flight, tv_bus,tv_tour, tv_hotel;
     private FrameLayout frame_Layout;
+    private LinearLayout fragment;
+    TrainFragment trainFragment;
 
     //-----------------------------------------------
 
@@ -35,20 +43,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_main);
 
-        tv_train = (TextView) findViewById(R.id.tv_train);
-        tv_flight = (TextView) findViewById(R.id.tv_flight);
-        tv_bus = (TextView) findViewById(R.id.tv_bus);
-        tv_tour = (TextView) findViewById(R.id.tv_tour);
-        tv_hotel = (TextView) findViewById(R.id.tv_hotel);
+//        tv_train = (TextView) findViewById(R.id.tv_train);
+//        tv_flight = (TextView) findViewById(R.id.tv_flight);
+//        tv_bus = (TextView) findViewById(R.id.tv_bus);
+//        tv_tour = (TextView) findViewById(R.id.tv_tour);
+//        tv_hotel = (TextView) findViewById(R.id.tv_hotel);
+
+//        tv_flight.setOnClickListener(this);
+//        tv_train.setOnClickListener(this);
+//        tv_bus.setOnClickListener(this);
+//        tv_tour.setOnClickListener(this);
+//        tv_hotel.setOnClickListener(this);
+
         txtTitleMenu = (TextView) findViewById(R.id.txtTitleMenu);
         frame_Layout = (FrameLayout) findViewById(R.id.frame_Layout);
-
-        tv_flight.setOnClickListener(this);
-        tv_train.setOnClickListener(this);
-        tv_bus.setOnClickListener(this);
-        tv_tour.setOnClickListener(this);
-        tv_hotel.setOnClickListener(this);
-
+        fragment = (LinearLayout) findViewById(R.id.fragment);
+        UtilFragment.addNewFragment(getSupportFragmentManager(),new TrainFragment(),R.id.frame_Layout);
+//        FragmentManager manager = getSupportFragmentManager();
+//        FragmentTransaction transaction = manager.beginTransaction();
+//        transaction.add(R.id.fragment, trainFragment);
+//        transaction.addToBackStack("hju");
+//        transaction.commit();
     }
 
     //-----------------------------------------------
@@ -74,55 +89,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
 
-            case R.id.tv_train:
-
-                try {
-                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetrain.ActivityMainTrain"));
-                    startActivity(myIntent);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-                break;
-
-            case R.id.tv_flight:
-
-                try {
-                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.serviceflight.ActivityMainFlight"));
-                    startActivity(myIntent);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-                break;
-
-            case R.id.tv_bus:
-
-                try {
-                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicebus.ActivityMainBus"));
-                    startActivity(myIntent);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-                break;
-
-            case R.id.tv_tour:
-
-                try {
-                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetour.ActivityMainTour"));
-                    startActivity(myIntent);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-                break;
-
-            case R.id.tv_hotel:
-
-                try {
-                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicehotel.ActivityMainHotel"));
-                    startActivity(myIntent);
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
-                break;
+//            case R.id.tv_train:
+//
+//                try {
+//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetrain.ActivityMainTrain"));
+//                    startActivity(myIntent);
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//
+//            case R.id.tv_flight:
+//
+//                try {
+//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.serviceflight.ActivityMainFlight"));
+//                    startActivity(myIntent);
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//
+//            case R.id.tv_bus:
+//
+//                try {
+//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicebus.ActivityMainBus"));
+//                    startActivity(myIntent);
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//
+//            case R.id.tv_tour:
+//
+//                try {
+//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicetour.ActivityMainTour"));
+//                    startActivity(myIntent);
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//
+//            case R.id.tv_hotel:
+//
+//                try {
+//                    Intent myIntent = new Intent(MainActivity.this, Class.forName("com.hami.servicehotel.ActivityMainHotel"));
+//                    startActivity(myIntent);
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
         }
     }
 }

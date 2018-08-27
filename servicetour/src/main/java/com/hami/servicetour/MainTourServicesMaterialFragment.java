@@ -164,6 +164,8 @@ public class MainTourServicesMaterialFragment extends Fragment {
         }
     };
 
+    //-----------------------------------------------
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 0) {
