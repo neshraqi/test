@@ -40,58 +40,48 @@ public class TrainFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
 
-            switch (v.getId()) {
-
-                case R.id.tv_train:
-
-                    try {
-                        Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicetrain.ActivityMainTrain"));
-                        startActivity(myIntent);
-                    } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-
-                case R.id.tv_flight:
-
-                    try {
-                        Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.serviceflight.ActivityMainFlight"));
-                        startActivity(myIntent);
-                    } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-
-                case R.id.tv_bus:
-
-                    try {
-                        Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicebus.ActivityMainBus"));
-                        startActivity(myIntent);
-                    } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-
-                case R.id.tv_tour:
-
-                    try {
-                        Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicetour.ActivityMainTour"));
-                        startActivity(myIntent);
-                    } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-
-                case R.id.tv_hotel:
-
-                    try {
-                        Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicehotel.ActivityMainHotel"));
-                        startActivity(myIntent);
-                    } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                    break;
+        int i = v.getId();
+        if (i == R.id.tv_train) {
+            try {
+                Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicetrain.ActivityMainTrain"));
+                startActivity(myIntent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
             }
+
+        } else if (i == R.id.tv_flight) {
+            try {
+                Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.serviceflight.ActivityMainFlight"));
+                startActivity(myIntent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        } else if (i == R.id.tv_bus) {
+            try {
+                Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicebus.ActivityMainBus"));
+                startActivity(myIntent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        } else if (i == R.id.tv_tour) {
+            try {
+                Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicetour.ActivityMainTour"));
+                startActivity(myIntent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        } else if (i == R.id.tv_hotel) {
+            try {
+                Intent myIntent = new Intent(TrainFragment.this.getActivity(), Class.forName("com.hami.servicehotel.ActivityMainHotel"));
+                startActivity(myIntent);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+
+        }
 
     }
 }

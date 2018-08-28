@@ -66,7 +66,7 @@
     <string name="openingGate">در حال انتقال به درگاه بانکی</string>
     <string name="gettingInfo">درحال دریافت اطلاعات</string>
     <string name="refunding">در حال استرداد بلیط</string>
-    <string name="gettingInfoReّound">در حال بررسی استرداد</string>
+    <string name="gettingInfoRefund">در حال بررسی استرداد</string>
     <string name="pricePerPerson">قیمت هر نفر</string>
     <string name="pricePerPersonSingle">قیمت تک نفر (single)</string>
     <string name="loginPanel">ورود به پنل کاربری</string>
