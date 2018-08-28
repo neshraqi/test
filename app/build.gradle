@@ -1,14 +1,14 @@
-apply plugin: 'com.android.application'
+//apply plugin: 'com.android.application'
 
-//apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
-//group= 'com.github.neshraqi'
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group= 'com.github.neshraqi'
 
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId 'hami.mainapp'
+        //applicationId 'hami.mainapp'
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
