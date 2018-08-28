@@ -53,14 +53,13 @@ dependencies {
     implementation 'com.android.support:support-annotations:27.1.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'io.supercharge:shimmerlayout:1.0.2'
-    implementation project(path: ':servicetrain')
+    implementation project(':servicetrain')
     implementation project(':common')
     implementation project(':serviceflight')
     implementation project(':persianmaterialdatetimepicker')
     implementation project(':servicebus')
     implementation project(':servicetour')
     implementation project(':servicehotel')
-    compile project(path: ':servicehotel')
 }
 //apply plugin: "com.google.gms.google-services"
 
