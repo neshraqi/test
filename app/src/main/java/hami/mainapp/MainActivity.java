@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private LinearLayout fragment;
     TrainFragment trainFragment;
 
+
+    ///testtttttttttttttttt
+    //tdftydtrdrjdrd
+    ///khikhuhuih
+    
     //-----------------------------------------------
 
     @Override
