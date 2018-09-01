@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutErrorMessage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/styleConfigMessageBarBackground">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitleCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/msgErrorNoFlightReturn"
+            android:textColor="@color/styleConfigMessageBarTitle" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/styleConfigMessageBarTitle"
+            app:indicatorName="LineScalePulseOutRapidIndicator" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/tvButtonRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/newSearch"
+            android:textColor="@color/styleConfigMessageBarButtonTitle"
+            app:backgroundTint="@color/styleConfigMessageBarButtonBackground" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0084f7</color>
+    <color name="colorPrimaryDark">#0068c2</color>
+
+    <color name="main_color_grey_600">#757575</color>
+    <color name="main_color_grey_800">#424242</color>
+    <color name="bpLight_gray">#404040</color>
+    <color name="material_orange_400">#faa628</color>
+    <color name="main_color_grey_200">#eeeeee</color>
+    <color name="orangeMaster">#f47a4d</color>
+    <color name="main_color_800">#283990</color>
+    <color name="divider_color">#4554a4</color>
+
+    <color name="styleConfigToolbarMasterTitleTextColor">#ffffffff</color>
+    <color name="styleConfigMessageBarBackground">#ffffffff</color>
+    <color name="styleConfigMessageBarTitle">@color/colorPrimaryDark</color>
+    <color name="styleConfigMessageBarButtonTitle">@color/colorPrimary</color>
+    <color name="styleConfigMessageBarButtonBackground">#eeeeee</color>
+    <color name="styleConfigMasterButtonBackground">@color/colorPrimary</color>
+    <color name="styleConfigToolbarMaster">#448aff</color>
+
+    <color name="main_color_grey_400">#bdbcbc</color>
+    <color name="main_color_grey_900">#ff212121</color>
+    <color name="main_color_grey_700">#616161</color>
+    <color name="main_color_grey_50">#fffafafa</color>
+
+    <color name="styleConfigMasterButton2Title">@android:color/white</color>
+    <color name="styleConfigMasterButton2Background">#616161</color>
+    <color name="styleConfigMasterButtonTitle">@android:color/white</color>
+
+
+
+
+
+</resources>
