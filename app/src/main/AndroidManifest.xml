@@ -23,51 +23,7 @@
                 </intent-filter>
         </activity>
 
-        <activity
-            android:name=".SearchPlaceMainActivity"
-            android:screenOrientation="portrait">
-        </activity>
 
-        <activity android:name="com.hami.servicetrain.ActivityMainTrain">
-            <intent-filter>
-                <action android:name="com.hami.servicetrain.action.MY_ACTION"/>
-
-                <category android:name="com.hami.servicetrain"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.hami.serviceflight.ActivityMainFlight">
-            <intent-filter>
-                <action android:name="com.hami.serviceflight.action.MY_ACTION"/>
-
-                <category android:name="com.hami.serviceflight"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.hami.servicebus.ActivityMainBus">
-            <intent-filter>
-                <action android:name="com.hami.servicebus.action.MY_ACTION"/>
-
-                <category android:name="com.hami.servicebus"/>
-            </intent-filter>
-        </activity>
-
-
-        <activity android:name="com.hami.servicetour.ActivityMainTour">
-            <intent-filter>
-                <action android:name="com.hami.servicetour.action.MY_ACTION"/>
-
-                <category android:name="com.hami.servicetour"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name="com.hami.servicehotel.ActivityMainHotel">
-            <intent-filter>
-                <action android:name="com.hami.servicehotel.action.MY_ACTION"/>
-
-                <category android:name="com.hami.servicehotel"/>
-            </intent-filter>
-        </activity>
 
     </application>
 

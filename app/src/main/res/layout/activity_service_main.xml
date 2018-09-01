@@ -6,7 +6,7 @@
     android:layoutDirection="ltr"
     android:orientation="vertical">
 
-    <include layout="@layout/layout_toolbar_service" />
+
 
     <LinearLayout
         android:id="@+id/fragment"
@@ -24,14 +24,14 @@
         <!--android:layout_marginRight="20dp"/>-->
 
 
-    <!--<TextView-->
-        <!--android:id="@+id/tv_flight"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="flight"-->
-        <!--android:textSize="30dp"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--android:layout_marginRight="20dp"/>-->
+    <TextView
+        android:id="@+id/tv_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="flight"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"/>
 
         <!--<TextView-->
             <!--android:id="@+id/tv_tour"-->
