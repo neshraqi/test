@@ -54,6 +54,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'io.supercharge:shimmerlayout:1.0.2'
     implementation project(':persianmaterialdatetimepicker')
+    implementation project(':common')
+    implementation project(':servicetrain')
 }
 //apply plugin: "com.google.gms.google-services"
 

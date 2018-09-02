@@ -3,8 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/mainApp.iml" filepath="$PROJECT_DIR$/mainApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" filepath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicebus/servicebus.iml" filepath="$PROJECT_DIR$/servicebus/servicebus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceflight/serviceflight.iml" filepath="$PROJECT_DIR$/serviceflight/serviceflight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicehotel/servicehotel.iml" filepath="$PROJECT_DIR$/servicehotel/servicehotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicetour/servicetour.iml" filepath="$PROJECT_DIR$/servicetour/servicetour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servicetrain/servicetrain.iml" filepath="$PROJECT_DIR$/servicetrain/servicetrain.iml" />
     </modules>
   </component>
 </project>
