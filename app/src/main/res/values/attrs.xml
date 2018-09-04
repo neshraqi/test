@@ -33,4 +33,6 @@
             <enum name="trimModeLength" value="1"/>
         </attr>
     </declare-styleable>
+
+
 </resources>

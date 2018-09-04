@@ -63,7 +63,6 @@
     <color name="material_pink_A200">#ee4480</color>
     <color name="material_pink_A400">#ed1458</color>
     <color name="material_pink_A700">#c41d63</color>
-    <color name="material_pink_A800">#cf396e</color>
 
     <!-- Indigo -->
     <color name="material_indigo_500">#4554a4</color>
@@ -96,8 +95,6 @@
     <color name="material_blue_A200">#5880c1</color>
     <color name="material_blue_A400">#4972b8</color>
     <color name="material_blue_A700">#4666af</color>
-    <color name="material_blue_A800">#1f64d5</color>
-    <color name="material_blue_A900">#448aff</color>
 
     <!-- Light Blue -->
     <color name="material_light_blue_500">#38a4dc</color>

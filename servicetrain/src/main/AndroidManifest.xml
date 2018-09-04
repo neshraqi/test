@@ -7,12 +7,12 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application>
-        <activity android:name=".ActivityMainTrain">
+        <activity android:name="hami.mainapp.train.ActivityMainTrain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchPlaceTrainActivity"></activity>
+        <activity android:name="hami.mainapp.train.SearchPlaceTrainActivity"></activity>
     </application>
 </manifest>

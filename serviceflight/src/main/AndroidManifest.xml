@@ -9,12 +9,12 @@
 
 
     <application>
-        <activity android:name=".ActivityMainFlight">
+        <activity android:name="com.hami.request.ActivityMainFlight">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchCountryActivity"></activity>
+        <activity android:name="hami.mainapp.flight.SearchCountryActivity"></activity>
     </application>
 </manifest>

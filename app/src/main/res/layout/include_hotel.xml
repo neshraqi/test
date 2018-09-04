@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutHotel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/styleConfigServiceItem"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsServiceHotel"
+        style="@style/MyTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@android:color/white"
+        android:layoutDirection="ltr"
+        app:tabBackground="@drawable/bg_tab_ways"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@color/main_color_grey_400" />
+
+    <EditText
+        android:id="@+id/edtFromPlaceDest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/country"
+        android:lines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+    <EditText
+        android:id="@+id/edtFromPlaceCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/city"
+        android:lines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+    <EditText
+        android:id="@+id/edtCheckInDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/checkInDate"
+        android:lines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+    <EditText
+        android:id="@+id/edtCheckOutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/checkOutDate"
+        android:lines="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edtNationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/couNationality"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edtSetRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:hint="@string/room"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+</LinearLayout>

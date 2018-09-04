@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">نسیم بهشت</string>
-    <string name="app_namePR">نسیم بهشت</string>
-    <string name="app_nameBrand">نسیم بهشت</string>
+    <string name="app_name">sepehrseir</string>
+    <string name="app_namePR">سپهرسیر</string>
+    <string name="app_nameBrand"> سپهرسیر</string>
     <!-- ====================================================== -->
     <string name="number_picker_formatter">%02d</string>
     <!-- ====================================================== -->
@@ -18,6 +18,7 @@
     <string name="menuSettingUser">تنظیمات کاربر</string>
     <string name="sendRequest">استرداد بلیط(به زودی)</string>
     <string name="pastPurchases">خریدهای گذشته</string>
+    <string name="pastPurchases2">تاریخچه خرید</string>
     <string name="pastPurchasesAndRefund"> خریدهای گذشته و استرداد</string>
     <string name="menuRegister">ثبت نام</string>
     <string name="menuBlog">وبلاگ</string>
@@ -122,6 +123,7 @@
     <string name="registerFlightPassenger">اطلاعات پرواز و مسافر</string>
     <!-- ====================================================== -->
     <string name="userAccount">حساب کاربری</string>
+    <string name="user">ورود کاربر</string>
     <string name="financialSection">بخش مالی</string>
     <string name="giftCard">موجودی</string>
     <string name="getGiftCard">دریافت موجودی</string>
@@ -172,6 +174,7 @@
     <string name="acceptFilter">اعمال فیلتر</string>
     <string name="cancel">انصراف</string>
     <string name="exit">خروج</string>
+    <string name="userExit"> خروج کاربر</string>
     <string name="refund">استرداد</string>
     <string name="checkRefund">بررسی استرداد</string>
     <string name="noRefund">غیرقابل استرداد</string>
@@ -181,8 +184,8 @@
     <string name="back">بازگشت</string>
     <string name="searchByFrom">جستجو براساس مبدا</string>
     <string name="searchByTo">جستجو براساس مقصد</string>
-    <string name="oneWay">یک طرفه</string>
-    <string name="twoWay">دوطرفه</string>
+    <string name="oneWay">بلیط یک طرفه</string>
+    <string name="twoWay">بلیط دو طرفه</string>
     <string name="wentAndReturn">رفت و برگشت</string>
     <string name="wentRouting">مسیر رفت</string>
     <string name="returnRouting">مسیر برگشت</string>
@@ -237,7 +240,7 @@
     <string name="ruleTitleBus">هشدار: بلیط اتوبوس فقط تا 6ساعت قبل از حرکت با کسر 20درصد کنسل می شود و بعد از آن امکان کنسلی وجود ندارد.</string>
     <string name="rulePassport1">توجه ! این سیستم امکان تهیه بلیط هواپیما در تمام دنیا را برای مسافران محترم فراهم آورده است؛ اعتبار بلیط صادره را تضمین نموده و از سوی دیگر بررسی صحت مدارک لازمه سفر جهت ورود به کشور مقصد و یا نقطه میانی از قبیل دارا بودن بلیط دوطرفه، واچر هتل، انواع ویزا و سایر مدارک و فرم های مورد نیاز و محدودیت های گمرکی، ارزی و ... به عهده مسافر می باشد.</string>
     <string name="rulePassport2">2-داشتن ویزای معتبر کشور(های)مقصد(بین راهی) الزامی است</string>
-    <string name="rulePassport3">بدیهی است در صورت عدم کنترا موارد بالا هیچ گونه وجهی بازگردانده نخواهد شد.</string>
+    <string name="rulePassport3">بدیهی است در صورت عدم کنترل موارد بالا هیچ گونه وجهی بازگردانده نخواهد شد.</string>
     <string name="copeFull">برای داشتن کوپه دربست لطفا تیک کوپه دربست رو بزنید.</string>
     <!-- ====================================================== -->
     <string name="lawAdults">بزگتر از 12 سال (بزرگسال)</string>
@@ -451,6 +454,7 @@
     <string name="contactSupport">ارتباط با پشتیبانی</string>
     <string name="address1"> آدرس : مشهد - میدان بیت المقدس کوچه عیدگاه پلاک 23</string>
     <string name="phone1">تلفن : 05131302-05138580950</string>
+    <string name="phone3">تلفن : 05131700</string>
     <string name="phone2">05131302</string>
     <string name="email1">پست الکترونیک 1 : info[at]respina24[dot]com</string>
     <string name="email2">پست الکترونیک 2 :</string>
@@ -463,7 +467,7 @@
     <string name="titleRating">جایگاه الغدیر نزد شما؟</string>
     <string name="titleQuestionRating">برای ارائه خدمات بهتر مارا یاری کنید</string>
     <string name="CommentsAndCriticisms">نظر خورد را بنویسید </string>
-    <string name="rateToRespina">رای به الغدیر</string>
+    <string name="rateToAvaseir">رای به سپهرسیر</string>
     <string name="reportError">گزارش اشکال</string>
     <string name="aboutUsTitle">درباره ی ما</string>
     <string name="aboutUsContent">وب سایت  Respina24  تحت مدیریت شرکت خدمات مسافرت هوایی سامان سیر رسپینا با شماره ثبت 46443  با آدرس مشهد میدان بیت المقدس کوچه عیدگاه پلاک 23  می باشد که در حال حاضربا بیش از 100 نفر کارشناس  خبره  در حال ارائه خدمات خرید آنلاین بلیط هوایپما قطار اتوبوس و رزرو هتل طبق مقررات سازمان های مطبوع در کشور,  به هموطنان گرامی می باشد.</string>
@@ -552,6 +556,7 @@
     <string name="lastNameEng">LastName</string>
     <string name="mobileEng">Mobile</string>
     <string name="rulesInternetBuyEng">I agree the online shopping rules </string>
+    <string name="validateTypeGender">Please Enter Gender</string>
     <string name="validateFirstNameEng">Please Enter FirstName</string>
     <string name="validateTypeFullNameEng">Type FullName</string>
     <string name="validateLastNameEng">Please Enter LastName</string>
@@ -564,7 +569,7 @@
     <string name="ruleInternationalHotel1Eng">Please check the information entered and make sure that it is correct for payment.</string>
     <string name="ruleInternationalHotel2Eng">please pay attention ,If you have entered the information below incorrectly or need to change it, you can use the Edit Information button.</string>
     <string name="sortAndFilterEng">Sort and filter</string>
-    <string name="sortByEng">Sort By  ?</string>
+    <string name="sortByEng">Sort By ?</string>
     <string name="hotelClassEng">Hotel class</string>
     <string name="offerEng">Offer</string>
     <string name="removeFilterEng">Reset</string>
@@ -573,27 +578,37 @@
     <string name="moreEng">More</string>
     <string name="closeEng">Close</string>
     <string name="gettingDetailHotelEng">Getting hotel details</string>
-    <string name="genderEng">Gender</string>
 
-    <string name="name">nasim  -  e  behesht  Travel  Agency </string>
-    <string name="website">www.nasimbehesht724.com</string>
+
+    <string name="name">sepehrseir Tour And Travel  Agency </string>
+    <string name="website">www.sepehr.in</string>
+
+    <string name="mobileCharge">خرید شارژ موبایل</string>
+    <string name="tourList">لیست تورها</string>
 
     <string name="finalPriceWithDiscount">مبلغ پرداخت با تخفیف:</string>
     <string name="msgErrorRunningGetTicketEng"> Sorry, we encountered a problem in your application, click to issue a ticket to receive a ticket.</string>
     <string name="msgErrorRunningGetTicket"> متاسفانه در اجرای درخواست شما با مشکل مواجه شدیم،جهت صدور بلیط روی دریافت بلیط کلیک کنید.</string>
-    <string name="checkInfoHotelEng">Dear traveler: Please make sure you check the hotel information before paying.</string>
 
+    <string name="IRealized">متوجه شدم</string>
+    <string name="checkInfoHotelEng">Dear traveler: Please make sure you check the hotel information before paying.</string>
     <string name="checkInfoFlight">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات پرواز مطمئن شوید.</string>
     <string name="checkInfoBus">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات اتوبوس مطمئن شوید.</string>
     <string name="checkInfoTrain">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات قطار مطمئن شوید.</string>
     <string name="checkInfoHotel">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات هتل مطمئن شوید.</string>
     <string name="checkInfoTour">مسافر محترم:لطفا از قبل پرداخت ، از صحت اطلاعات تور مطمئن شوید.</string>
 
-    <string name="IRealized">متوجه شدم</string>
 
     <string name="mr">Mr</string>
     <string name="mrs">Mrs</string>
     <string name="miss">Miss</string>
+    <string name="genderEng">Gender</string>
+
+
+    <string name="sepehrseirAjency">Tour and Travel Ajency</string>
+
+
+
 </resources>
 
 

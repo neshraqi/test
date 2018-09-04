@@ -9,7 +9,7 @@
 
 
     <application>
-        <activity android:name=".ActivityMainBus">
+        <activity android:name="hami.mainapp.bus.ActivityMainBus">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
