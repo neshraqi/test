@@ -12,7 +12,7 @@
         android:background="@android:color/white">
 
 
-        <hami.sepehrseir.View.HeaderBarLtr
+        <com.hami.common.View.HeaderBarLtr
             android:id="@+id/headerBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -30,7 +30,7 @@
             android:scrollbars="vertical" />
 
 
-        <hami.sepehrseir.View.MessageBar
+        <com.hami.common.View.MessageBar
             android:id="@+id/messageBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

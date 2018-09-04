@@ -94,7 +94,7 @@
                         android:theme="@style/RatingBarYellow"
                         android:visibility="visible" />
 
-                    <hami.sepehrseir.View.ReadMoreTextView
+                    <com.hami.common.View.ReadMoreTextView
                         android:id="@+id/txtHotelDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

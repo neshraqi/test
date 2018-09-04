@@ -1,371 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="277c6077-8890-49fc-94fe-9789ce446d50" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_weidongjian_android_progress_button_0_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_1_jar.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_castorflex_smoothprogressbar_library_1_0_1_SNAPSHOT.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ramotion_expandingcollection_expanding_collection_0_9_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_webianks_library_easy_feedback_1_0_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/ActivityMainFlight.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/footer_menu.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/tabs_style.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/style_config.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/proguard-rules.pro" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/src/androidTest/java/com/hami/request/ExampleInstrumentedTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/src/main/AndroidManifest.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/src/main/res/values/strings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/request/src/test/java/com/hami/request/ExampleUnitTest.java" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_0_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors_material.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles_text_view.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/tabs_style.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-02-10-32-45-676.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-02-10-32-45-676.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_details_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_details_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place_ltr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place_ltr.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour_register_passenger.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour_register_passenger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_hotel_detail_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_hotel_detail_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_tour_material.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_tour_material.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_bus_select_chair.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_bus_select_chair.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_flight_domestic_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_flight_domestic_details.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_train_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_train_details.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_detail_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_detail_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_domestic_hotel_room_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_domestic_hotel_room_layout.xml" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-04-11-53-06-842.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-04-11-53-06-842.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-04-14-59-50-305.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-04-14-59-50-305.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-04-15-00-03-171.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-04-15-00-03-171.rawproto" afterPath="" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
       <change beforePath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" afterPath="$PROJECT_DIR$/persianmaterialdatetimepicker/persianmaterialdatetimepicker.iml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/servicebus.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/servicebus/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/ActivityMainBus.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/ActivityMainBus.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Adapter/SearchPlaceBusAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Adapter/SearchPlaceBusAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Dialog/NewDesignFilterBusFragmentDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Dialog/NewDesignFilterBusFragmentDialog.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Adapter/ResultSearchBusListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Adapter/ResultSearchBusListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/BusTicketInformation.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/BusTicketInformation.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/BusTicketInformationResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/BusTicketInformationResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/City.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/City.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/RegisterBusRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/RegisterBusRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/RegisterBusResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/RegisterBusResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/RegisterTrainParams.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/RegisterTrainParams.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/RegisterTrainViewData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/RegisterTrainViewData.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SearchBusDataResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SearchBusDataResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SearchBusRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SearchBusRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SearchBusResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SearchBusResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SeatData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SeatData.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SeatResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SeatResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SeatResponseData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SeatResponseData.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Model/SeatRow.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Model/SeatRow.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/BusApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/BusApi.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/BusWarehouse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/BusWarehouse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/PaymentPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/PaymentPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/PaymentResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/PaymentResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/RegisterBusPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/RegisterBusPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/ResultSearchBusPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/ResultSearchBusPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/SeatChairBusPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/SeatChairBusPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Controller/Presenter/SelectItemBus.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Controller/Presenter/SelectItemBus.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Fragment/FragmentListChairBus.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Fragment/FragmentListChairBus.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Fragment/FragmentListWentBus.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Fragment/FragmentListWentBus.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/Services/Fragment/FragmentReserveBus.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/Services/Fragment/FragmentReserveBus.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/View/SelectChairListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/View/SelectChairListener.java" />
-      <change beforePath="$PROJECT_DIR$/servicebus/src/main/java/com/hami/servicebus/View/ToolsBusChair.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/bus/View/ToolsBusChair.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/serviceflight.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/serviceflight/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/ActivityMainFlight.java" afterPath="$PROJECT_DIR$/request/src/main/java/com/hami/request/ActivityMainFlight.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Adapter/PassengerCounterFlight.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Adapter/PassengerCounterFlight.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Adapter/SearchPlaceFlightAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Adapter/SearchPlaceFlightAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/FlightDomesticOffline.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/FlightInternationalOffline.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/SearchCountryActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Adapter/NewDomesticListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Adapter/NewDomesticListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Adapter/PassengerDomesticListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Adapter/PassengerDomesticListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Adapter/PassengerInfoLisDomesticAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Adapter/PassengerInfoLisDomesticAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticFlight.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticFlight.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticFlightResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticFlightResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticLocation.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticLocation.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticLocationResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticLocationResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticParams.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticParams.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticPassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticPassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/DomesticRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/DomesticRequest.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/FlightInformationItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/FlightInformationItem.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/FlightInformationResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/FlightInformationResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/ListModelPassengerInfoDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/ListModelPassengerInfoDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/PassengerInfoDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/PassengerInfoDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/RegisterFlightDomesticRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/RegisterFlightDomesticRequest.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/RegisterFlightResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/RegisterFlightResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/TestFlight.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/TestFlight.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Model/ViewParamsDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Model/ViewParamsDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/AirlineListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/AirlineListener.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/DomesticApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/DomesticApi.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/FlightInformationDomesticPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/FlightInformationDomesticPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/OnSelectItemPassengerDomesticListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/OnSelectItemPassengerDomesticListener.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/RegisterFlightDomesticPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/RegisterFlightDomesticPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/ResultSearchDomesticPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/ResultSearchDomesticPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/SelectItemFlightDomestic.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Controller/Presenter/WarehouseDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Controller/Presenter/WarehouseDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Dialog/NewDesignFilterFlightDomesticFragmentDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Dialog/NewDesignFilterFlightDomesticFragmentDialog.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Fragment/FragmentDomesticDetails.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Fragment/FragmentFinalBookingFlightDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Fragment/FragmentFinalBookingFlightDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Fragment/FragmentListWentDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Fragment/FragmentListWentDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Fragment/View/ActivityRegisterPassengerDomestic.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Fragment/View/ActivityRegisterPassengerDomestic.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/Domestic/Fragment/View/OnAddPassengerListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/Domestic/Fragment/View/OnAddPassengerListener.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/ActivityRegisterPassengerInternational.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/CapacityInternationalListAdapter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/CountryAutoCompleteAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/CountryAutoCompleteAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/CountryListArrayAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/CountryListArrayAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/DelayAutoCompleteTextView.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/DelayAutoCompleteTextView.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/IatiRulesInternationalListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/IatiRulesInternationalListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/InternationalListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/InternationalListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/ListPassengerInternationalListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/ListPassengerInternationalListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/NewInternationalListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/NewInternationalListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/PartoRulesInternationalListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/PartoRulesInternationalListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/PassengerInfoListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/PassengerInfoListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/PlaceAutoCompleteFlightAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/PlaceAutoCompleteFlightAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/RoutingInternationalListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/RoutingInternationalListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Adapter/SearchCountryAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Adapter/SearchCountryAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/BaggaegeResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/BaggageInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/BaggageInfo.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/BaseResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/BaseResult.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/BestAirLine.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/BestAirLine.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/Country.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/Country.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/DataPassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/DataPassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/DataPassengerInfoResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/DataPassengerInfoResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/FareRules.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/FareRules.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/FlightInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/FlightInternational.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/FlightInternationalRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/FlightInternationalRequest.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/FlightInternationalResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/Legs.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/Legs.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/OutBound.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/OutBound.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/Passenger.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/Passenger.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/PassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/PassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/RegisterPassengerData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/RegisterPassengerData.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/RegisterPassengerRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/RegisterPassengerRequest.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/RegisterPassengerResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/RegisterPassengerResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/ReserveRequest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/ResultFactorResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/ResultFactorResponse.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/RuleDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/RuleDetails.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/SearchInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/SearchInternational.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/TicketInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/TicketInternational.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model/ViewRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Controller/Model/ViewRequest.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/AllFlightInternationalIati.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/AllFlightInternationalParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/AllFlightInternationalResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/FinalFlightInternationalIati.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/LegsIati.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/LegsParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/LegsResponseParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/OperatingAirlineParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/PackageCompletedFlightInternational.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/ResultRegisterFlightInternationalResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/ResultRegisterPassengerFlightInternationalResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesDetailItemParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesIati.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesItemParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesRequest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesResponseIati.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Model2/RulesResponseParto.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/CaptchaInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/InternationalApi.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/InternationalApi2.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/InternationalWarehouse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/NationalCodePresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/RegisterPassengerInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/ReserveInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/ResultReturnListInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/ResultSearchInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/RulesInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/SearchInternationalPresenter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/SelectItemFlightInternational.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/SelectItemPassengerInternational.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/SelectItemSearchInternational.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Controller/Presenter/SelectItemShowRoutingFlightInternational.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Dialog/NewDesignFilterFlightInternationalFragmentDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Dialog/NewDesignFilterFlightInternationalFragmentDialog.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Fragment/FragmentFinalBookingFlightInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Fragment/FragmentFinalBookingFlightInternational.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Fragment/FragmentInternationalDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Fragment/FragmentInternationalDetails.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Fragment/FragmentInternationalRouting.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Fragment/FragmentInternationalRouting.java" />
-      <change beforePath="$PROJECT_DIR$/serviceflight/src/main/java/com/hami/serviceflight/Services/International/Fragment/FragmentListWentInternational.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/flight/Services/International/Fragment/FragmentListWentInternational.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/servicehotel.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/servicehotel/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/ActivityMainHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/ActivityMainHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Adapter/DomesticHotelSlidingImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Adapter/DomesticHotelSlidingImageAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Adapter/NewDomesticHotelListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Adapter/NewDomesticHotelListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Adapter/SearchPlaceHotelDomesticAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Adapter/SearchPlaceHotelDomesticAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/DomesticHotelApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/DomesticHotelApi.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelBookingProcess.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelBookingProcess.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelBookingProcessData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelBookingProcessData.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelDetailInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelDetailInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelDetailsResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelDetailsResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelMoreInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelMoreInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelMoreInfoValue.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelMoreInfoValue.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelOptions.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelOptions.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelOptionsExtra.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelOptionsExtra.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelPreBookingRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelPreBookingRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelPreBookingResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelPreBookingResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerViewParams.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRegisterPassengerViewParams.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRoom.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRoom.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRoomDiscount.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRoomDiscount.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRoomOption.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRoomOption.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRoomPrice.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRoomPrice.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelRoomPriceList.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelRoomPriceList.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/DomesticHotelSearchRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/DomesticHotelSearchRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/Controller/Model/HotelDomesticCity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/Controller/Model/HotelDomesticCity.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/FragmentDetailDomesticHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/FragmentDetailDomesticHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/FragmentFinalBookingDomesticHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/FragmentFinalBookingDomesticHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/FragmentFullDetailDomesticHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/FragmentFullDetailDomesticHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/FragmentListDomesticHotel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/FragmentPassengerDomesticHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/FragmentPassengerDomesticHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/Domestic/dialog/NewDesignFilterDomesticHotelFragmentDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/Domestic/dialog/NewDesignFilterDomesticHotelFragmentDialog.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/FilterHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/FilterHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/FilterList.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/FilterList.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Adapter/ListPassengerInternationalHotelListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Adapter/ListPassengerInternationalHotelListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Adapter/NewInternationalHotelListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Adapter/NewInternationalHotelListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Adapter/SearchPlaceCityHotelInternationalAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Adapter/SearchPlaceCityHotelInternationalAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Adapter/SearchPlaceHotelInternationalAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Adapter/SearchPlaceHotelInternationalAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Adapter/SlidingImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Adapter/SlidingImageAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/InternationalHotelApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/InternationalHotelApi.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/ArrayListRegisterPassengerInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/ArrayListRegisterPassengerInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelCancellationPolicies.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelCancellationPolicies.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelContactInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelContactInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelContactInfoResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelContactInfoResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelDetail.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelDetail.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelDetailData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelDetailData.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelDetailResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelDetailResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelFacilityResponse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelMoreInfoFacilities.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelMoreInfoFacility.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelMoreInfoFacility.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelMoreInfoFacilityRecords.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelMoreInfoFacilityRecords.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelMoreInfoRoom.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelMoreInfoRoom.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelMoreInfoRoomObject.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelMoreInfoRoomObject.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelsMoreInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelsMoreInfoImages.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelsMoreInfoImages.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/HotelsMoreInfoObject.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/HotelsMoreInfoObject.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/InternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/InternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/InternationalHotelSearchRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/InternationalHotelSearchRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/InternationalHotelsResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/InternationalHotelsResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/PassengerInfoInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/PassengerInfoInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RegisterHotelRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RegisterHotelRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RegisterPassengerInternationalHotelParams.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RegisterPassengerInternationalHotelParams.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RegisterPassengerInternationalHotelResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RegisterPassengerInternationalHotelResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/Room.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RoomInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RoomInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RoomPassengerInfoInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RoomPassengerInfoInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/Rooms.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/Rooms.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RoomsObject.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RoomsObject.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/RowTypeHotelPassenger.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/RowTypeHotelPassenger.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/SearchCity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/SearchCity.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/SearchDestination.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/SearchDestination.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Controller/Model/ToolsHotelFilter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Controller/Model/ToolsHotelFilter.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/Dialog/NewDesignFilterInternationalHotelFragmentDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/Dialog/NewDesignFilterInternationalHotelFragmentDialog.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/FragmentBookingInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/FragmentBookingInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/FragmentDetailInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/FragmentDetailInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/FragmentFullDetailInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/FragmentFullDetailInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/FragmentListInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/FragmentListInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/International/FragmentPassengerInternationalHotel.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/International/FragmentPassengerInternationalHotel.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/SearchPlaceHotelActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/SearchPlaceHotelActivity.java" />
-      <change beforePath="$PROJECT_DIR$/servicehotel/src/main/java/com/hami/servicehotel/ToolsHotelRoomCountOption.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/hotel/ToolsHotelRoomCountOption.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/servicetour.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/servicetour/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/ActivityMainTour.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/ActivityMainTour.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/BottomSheetLayoutPriceTour.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/BottomSheetLayoutPriceTour.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/FinalPassengerTourListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/FinalPassengerTourListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/OnAddPassengerTourListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/OnAddPassengerTourListener.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/OnSelectItemPassengerTourListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/OnSelectItemPassengerTourListener.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/PassengerTourListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/PassengerTourListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchDateTourAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/SearchDateTourAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/SearchPlaceTourAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/SearchPlaceTourAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/TourListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/TourListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Adapter/TourSlidingImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Adapter/TourSlidingImageAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourDetails.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsPassenger.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourDetailsPassenger.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsPayment.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourDetailsPayment.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsTicket.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourDetailsTicket.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourDetailsUser.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourDetailsUser.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/BookingTourUserData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/BookingTourUserData.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/DateTour.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/DateTour.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/IdName.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/IdName.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/InitialTourResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/InitialTourResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/InitialTourValueResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/InitialTourValueResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/NameValue.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/NameValue.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/PassengerTour.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/PassengerTour.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/SearchTourRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/SearchTourRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourDetailData.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/TourDetailData.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourDetailResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/TourDetailResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/TourItem.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourItemFilter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/TourItemFilter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/Model/TourItemsResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/Model/TourItemsResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Controller/TourApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Controller/TourApi.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/ActivityRegisterPassengerTour.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Fragment/ActivityRegisterPassengerTour.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourAddPassenger.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Fragment/FragmentTourAddPassenger.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourDetail.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Fragment/FragmentTourDetail.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourFinalBooking.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Fragment/FragmentTourFinalBooking.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/Fragment/FragmentTourList.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/Fragment/FragmentTourList.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/MainTourServicesMaterialFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/MainTourServicesMaterialFragment.java" />
-      <change beforePath="$PROJECT_DIR$/servicetour/src/main/java/com/hami/servicetour/SearchPlaceAndDateTourActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/tour/SearchPlaceAndDateTourActivity.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/servicetrain.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/servicetrain/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/ActivityMainTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/ActivityMainTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Adapter/PlaceAutoCompleteTrainAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Adapter/PlaceAutoCompleteTrainAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Adapter/SearchPlaceTrainAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Adapter/SearchPlaceTrainAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/NewDesignFilterTrainFragmentDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/NewDesignFilterTrainFragmentDialog.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/SearchPlaceTrainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/SearchPlaceTrainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Adapter/PassengerInfoLisTrainAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Adapter/PassengerInfoLisTrainAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Adapter/PassengerTrainListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Adapter/PassengerTrainListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Adapter/TrainListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Adapter/TrainListAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/CityTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/CityTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/DataPassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/DataPassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/DataPassengerInfoResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/DataPassengerInfoResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/ListModelPassengerInfoTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/ListModelPassengerInfoTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/ParamTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/ParamTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/PassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/PassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/PassengerInfoTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/PassengerInfoTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/PricePassengerTrainParam.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/PricePassengerTrainParam.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/RegisterTrainRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/RegisterTrainRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/RegisterTrainResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/RegisterTrainResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/TrainDataResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/TrainDataResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/TrainPassengerInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/TrainPassengerInfo.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/TrainRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/TrainRequest.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/TrainResponse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/TrainResponse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Model/ViewParamsTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Model/ViewParamsTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/NationalCodePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/NationalCodePresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/OnSelectItemPassengerTrainListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/OnSelectItemPassengerTrainListener.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/RegisterTrainPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/RegisterTrainPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/ResultSearchTrainPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/ResultSearchTrainPresenter.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/SelectItemTrainSearchListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/SelectItemTrainSearchListener.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/TrainApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/TrainApi.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Controller/Presenter/TrainWarehouse.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Controller/Presenter/TrainWarehouse.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Fragment/FragmentFinalBookingTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Fragment/FragmentFinalBookingTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Fragment/FragmentListWentTrain.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Fragment/FragmentListWentTrain.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Fragment/FragmentTrainDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Fragment/FragmentTrainDetails.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Fragment/View/DialogTrainAddPassenger.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Fragment/View/DialogTrainAddPassenger.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/Services/Fragment/View/OnPassengerTrainListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/Services/Fragment/View/OnPassengerTrainListener.java" />
-      <change beforePath="$PROJECT_DIR$/servicetrain/src/main/java/com/hami/servicetrain/TrainOffline.java" afterPath="$PROJECT_DIR$/app/src/main/java/hami/mainapp/train/TrainOffline.java" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -378,6 +58,36 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="fragment_main_result_search.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_main_result_search_ltr.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -4019,6 +3729,35 @@
       </map>
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_flight_intenational_register_passenger.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_details_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_flight_domestic_register_passenger.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_search_place_ltr.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_service_tour_register_passenger.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_bus_register_passenger_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_service_register_final_layout_ltr.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_domestic_hotel_detail_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_domesticl_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fulll_detail_hote_international_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_international_hotel_detail_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main_tour_material.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_passenger_domestic_hotel_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_bus_select_chair.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_flight_domestic_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_service_train_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_detail_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/row_domestic_hotel_room_layout.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="762" />
     <option name="width" value="611" />
@@ -4217,37 +3956,49 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -4257,5 +4008,568 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tour_passengerl_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1953">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_train_dialog_filter_view.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_bus_show_pre_factor_details_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1230">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_hotel.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1629">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_layout_change_price_message.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_layout_expire_time_message.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_bus_info_chairs.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1818">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_flight_domestic_show_details.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_flight_international_show_details_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2889">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_details_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1377">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_details_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_domestic_passenger_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="199" column="38" lean-forward="false" selection-start-line="199" selection-start-column="38" selection-end-line="199" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_international_details_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/include_service_hotel_international_passenger_details_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_room_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_service_train_show_details.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_shimmer_layout_progressbar_signin.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_service.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-747">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar_service_ltr.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_tour_price_detail.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/new_fragment_dialog_filter_view.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4968">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_domestic_hotel_room_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="111" column="60" lean-forward="false" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_image_gallery_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_international_hotel_room_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_item_spinner_train_white.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_new_flight_domestic.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_new_flight_international_went.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_new_flight_international_went_and_return.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_passenger_international_hotel.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_room_passenger_international_hotel.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_hotel_layout_ltr.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2016">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_hotel_layout_rtl.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-2007">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_items_place.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_items_place_header.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_items_place_new.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_items_place_new_ltr.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_search_tour_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_bus_chair.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_capacity_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_domestic_info_passenger.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_international_passnger_pre_factor.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_international_routing_.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_international_routing_new.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_international_rules_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_passnger_pre_reserve.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_flight_routing_international_waiting.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_more_info_passenger.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_service_train_passenger_info.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_simple_spinner_dropdown_item.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search_ltr.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main_result_search.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

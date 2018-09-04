@@ -6,7 +6,7 @@
     android:background="@color/styleConfigServiceBackground"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
-    <hami.sepehrseir.View.MessageBar
+    <com.hami.common.View.MessageBar
         android:id="@+id/messageBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

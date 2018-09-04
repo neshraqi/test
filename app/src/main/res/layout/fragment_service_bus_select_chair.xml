@@ -6,7 +6,7 @@
     android:layoutDirection="ltr"
     android:orientation="vertical">
 
-    <hami.sepehrseir.View.HeaderBar
+    <com.hami.common.View.HeaderBar
         android:id="@+id/headerBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -20,7 +20,7 @@
         android:scaleType="fitXY"
         android:src="@drawable/img_semi_bus" />
 
-    <hami.sepehrseir.View.MessageBar
+    <com.hami.common.View.MessageBar
         android:id="@+id/messageBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

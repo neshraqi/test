@@ -109,7 +109,7 @@
             android:textSize="14sp"
             android:visibility="visible" />
 
-        <hami.sepehrseir.View.Progressbar.ButtonWithProgress
+        <com.hami.common.View.Progressbar.ButtonWithProgress
             android:id="@+id/btnSelectHotelRoom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
